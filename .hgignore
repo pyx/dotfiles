@@ -1,0 +1,36 @@
+syntax: regexp
+
+syntax: glob
+.bzr
+.git
+.svn
+
+*~
+*.swp
+*.old
+*.bak
+*.tmp
+
+*.orig
+*.patch
+*.diff
+.deps
+build
+
+*.[ao]
+*.so
+*.py[co]
+*.class
+*.jar
+*.mo
+
+*.7z
+*.gz
+*.bz?
+*.tbz
+*.tgz
+*.rar
+*.zip
+
+*.deb
+*.rpm
