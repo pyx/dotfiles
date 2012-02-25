@@ -1,0 +1,148 @@
+#!/usr/bin/env python
+# -*- coding: utf=8 -*-
+# Imports {{{1
+import argparse
+import os
+import subprocess
+from sys import stderr, stdout
+
+# Ansi Colored Output {{{1
+ansi_colors = (
+    ('black', '30'),
+    ('red', '31'),
+    ('green', '32'),
+    ('yellow', '33'),
+    ('blue', '34'),
+    ('magenta', '35'),
+    ('cyan', '36'),
+    ('white', '37'),
+    )
+
+def create_color_func(code):
+    return lambda t, bold=False: '\033[{bold};{code}m{text}\033[0m'.format(
+            code=code, text=t, bold=int(bool(bold)))
+
+colors = {}
+for color, code in ansi_colors:
+    colors[color] = create_color_func(code)
+globals().update(colors)
+
+# Context Manager: cd {{{1
+class cd(object):
+    def __init__(self, path):
+        self.path = path
+        self.oldpath = os.getcwd()
+
+    def __enter__(self):
+        if not os.access(self.path, os.X_OK):
+            stderr.write("> '{}' ignored ({}).\n".format(
+                yellow(self.path),
+                red('permission denied')))
+            return
+        os.chdir(self.path)
+
+    def __exit__(self, et, ev, tb):
+        failed = any((et, ev, tb))
+        os.chdir(self.oldpath)
+        if failed:
+            return False
+
+# Class ScriptRunner {{{1
+class ScriptRunner(object):
+    PROMPT = """All valid scripts in directory '{}' will be executed,
+    some scripts may override existing files or do something bad,
+    do you want to continue? [N/y] """
+
+    def __init__(self, prompt=PROMPT, quite=False, silent=False, pretend=False):
+        self.pretend = pretend
+        self.prompt = prompt
+        self.quite = quite
+        self.silent = silent
+
+    def walk(self, path):
+        if self.prompt:
+            ans = raw_input(self.prompt.format(magenta(path, True)))
+            if ans.lower() not in ('y', 'yes'):
+                return
+        for root, dirs, files in os.walk(path):
+            if not self.quite:
+                print "> checking '{}'.".format(white(root, True))
+            with cd(root):
+                scripts = [s for s in files if self.is_valid(s)]
+                if not scripts:
+                    continue
+                for script in scripts:
+                    if self.pretend and not self.quite:
+                        print "> {} to run '{}'.".format(
+                                yellow('Pretending', True),
+                                white(script))
+                    else:
+                        self.action(script)
+
+    def is_valid(self, path):
+        return path.startswith('do_') and os.access(path, os.X_OK)
+
+    def action(self, path):
+        if not self.quite:
+            print "> running '{}'.".format(blue(path, True))
+            stdout.flush()
+        root, ext = os.path.splitext(path)
+        description = yellow(root.replace('_', ' '), True)
+        try:
+            if self.silent:
+                # discard output
+                run = subprocess.check_output
+            else:
+                run = subprocess.check_call
+            run(os.path.abspath(path))
+        except:
+            stderr.write("> {} .. {}.\n".format(
+                description, red('failed', True)))
+            raise
+        if not self.quite:
+            print "> {} .. {}.".format(description, green('done', True))
+
+# Main {{{1
+def main():
+    parser = argparse.ArgumentParser(description='Run Scripts')
+    parser.add_argument('-f', '--force', action='store_true',
+            help='do not ask for confirmation before running any script')
+    parser.add_argument('-s', '--silent', action='store_true',
+            help='suppress output of scripts')
+    parser.add_argument('-p', '--pretend', action='store_true',
+            help='display what scripts will be called instead of'
+                 ' actually running them')
+    parser.add_argument('-q', '--quite', action='store_true',
+            help='suppress output of this program')
+    parser.add_argument('directories', nargs='*',
+            help='list of directories from which executables will'
+                 ' be discovered and called, recursively. Will only'
+                 " call executables with file names begin with 'do_'.")
+    args = parser.parse_args()
+    dirs = args.directories
+
+    if not dirs:
+        parser.print_help()
+
+    runner = ScriptRunner(
+            pretend=args.pretend,
+            quite=args.quite,
+            silent=args.silent
+            )
+    if args.force:
+        runner.prompt = None
+
+    for path in dirs:
+        if not os.path.exists(path):
+            stderr.write("> '{}' not exists.\n".format(yellow(path)))
+            continue
+        runner.walk(path)
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        stderr.write('> Interrupted.\n')
+    except Exception as e:
+        stderr.write("> {}.\n".format(red(e, True)))
