@@ -1,0 +1,40 @@
+# General {{{1
+[general]
+accounts = ACC, GMAIL
+#ui = Blinkenlights
+maxsyncaccounts = 3
+socktimeout = 60
+
+# Account ACC {{{1
+[Account ACC]
+localrepository = acc_local
+remoterepository = acc_remote
+status_backend = sqlite
+
+[Repository acc_local]
+type = Maildir
+localfolders = ~/.mail/acc
+
+[Repository acc_remote]
+type = IMAP
+ssl = yes
+remotehost = MAIL.HOST.TLD
+remoteuser = USER@HOST.TLD
+remotepassfile = ~/.SECRET/ACC.PASS
+
+# Account GMAIL {{{1
+[Account GMAIL]
+localrepository = gmail_local
+remoterepository = gmail_remote
+status_backend = sqlite
+
+[Repository gmail_local]
+type = Maildir
+localfolders = ~/.mail/gmail
+
+[Repository gmail_remote]
+type = Gmail
+remoteuser = USERNAME@gmail.com
+remotepassfile = ~/.SECRET/GMAIL.PASS
+# }}}
+# vim: set foldmethod=marker:
