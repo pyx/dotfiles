@@ -1,0 +1,9 @@
+include ".themes/default/gtk-2.0/gtkrc"
+
+#gtk-icon-theme-name = "Azenis Icons"
+#gtk-icon-theme-name = "LaGaDesk-BlueNight"
+#gtk-icon-theme-name = "LaGaDesk-TechoLike"
+#gtk-icon-theme-name = "LaGaDesk-BlackWhite-III"
+gtk-icon-theme-name = "UltimateGnome"
+#gtk-icon-theme-name = "vamox-celeste"
+gtk-cursor-theme-name = "Grounation-left"
