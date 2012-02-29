@@ -1,0 +1,6 @@
+[user]
+name = Philip Xu
+email = pyx@xrefactor.com
+
+[sendemail]
+smtpserver = /usr/bin/msmtp
