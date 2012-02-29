@@ -1,0 +1,92 @@
+# Compilers, interpreters and runtime
+sys-devel/llvm oalltarget scaml
+sys-devel/clang -alltargets
+dev-lang/mono moonlight nptl
+dev-lang/python sqlite tk
+dev-lang/swig mono
+dev-lisp/sbcl ldb
+dev-scheme/chicken emacs
+dev-scheme/racket backtrace futures jit places plot threads
+
+dev-util/nemiver memoryview
+
+# Editors and IDEs
+app-editors/kile -kde
+dev-util/anjuta devhelp inherit-graph sourceview
+dev-util/codeblocks contrib pch
+dev-util/monodevelop aspnet cxx
+dev-util/qt-creator cmake debugger designer examples kde subversion bineditor bookmarks fakevim git mercurial qtscript
+www-client/firefox mozfranding mozdevelop
+www-client/seamonkey mozdevelop moznomail
+
+# VCS
+dev-vcs/git curl tk
+dev-vcs/mercurial gpg
+# added -dso as per git
+dev-vcs/subversion extras -dso
+
+# Tools
+dev-libs/xerces-c icu
+dev-python/markdown pygments
+
+# Libs
+app-text/enchant aspell
+dev-db/sqlite secure-delete
+dev-libs/gmime mono
+dev-python/pycrypto -gmp
+dev-python/pyside script multimedia
+media-libs/devil allegro
+x11-libs/cairo glitz svg xcb -qt4
+x11-libs/qt-core glib private-headers
+x11-libs/qt-declarative private-headers webkit
+x11-libs/qt-gui private-headers
+x11-libs/qt-qt3support kde
+x11-libs/qt-script private-headers
+x11-libs/qt-webkit kde
+
+# Database
+dev-db/mysql minimal
+dev-db/mongodb v8
+dev-python/sqlobject sqlite
+x11-libs/qt-sql mysql
+
+# Frameworks
+dev-cpp/gtkmm accessibility
+dev-games/cegui devil
+dev-games/ogre cegui cg devil double-precision threads
+dev-python/django sqlite test vhosts
+dev-python/PyQt4 assistant sql webkit
+
+# Docs
+dev-python/jinja i18n
+dev-python/sphinx latex
+app-text/highlight -wxwindows
+app-text/texlive cjk png games graphics music publishers science xml extra tex4ht xetex linguas_zh
+app-text/texlive-core cjk xetex
+dev-libs/libxml2 icu
+dev-libs/libgcrypt static-libs
+dev-python/pymongo mod_wsgi
+
+# Haskell
+dev-haskell/binary hscolour profile
+dev-haskell/dataenc hscolour profile
+dev-haskell/deepseq hscolour profile
+#dev-haskell/hashed-storage hscolour profile
+dev-haskell/hashed-storage hscolour
+#dev-haskell/haskeline hscolour profile
+dev-haskell/haskeline hscolour
+dev-haskell/hscolour profile
+dev-haskell/html profile
+#dev-haskell/http hscolour profile
+dev-haskell/http hscolour
+dev-haskell/mmap hscolour profile
+dev-haskell/network hscolour profile
+dev-haskell/parsec profile
+dev-haskell/regex-base profile
+dev-haskell/regex-compat hscolour profile
+dev-haskell/regex-posix hscolour profile
+dev-haskell/tar hscolour profile
+dev-haskell/terminfo hscolour profile
+dev-haskell/text hscolour profile
+dev-haskell/zlib hscolour profile
+dev-vcs/darcs completion hscolour

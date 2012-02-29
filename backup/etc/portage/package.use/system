@@ -1,0 +1,31 @@
+# Tools
+sys-auth/consolekit policykit
+sys-auth/pambase consolekit gnome-keyring
+app-arch/bzip2 static-libs
+sys-block/parted device-mapper
+app-benchmarks/bootchart acct
+#app-benchmarks/bootchart acct java
+app-misc/screen multiuser
+net-print/cups gnutls -usb
+
+# Libs
+app-arch/libarchive -lzma
+dev-libs/DirectFB fbcon
+sys-apps/hal consolekit policykit
+sys-fs/udev extras
+sys-libs/zlib minizip static-libs
+sys-apps/busybox static
+#required by sys-fs/udev-171-r3[extras], required by x11-base/xorg-server-1.11.2-r2[udev], required by @selected, required by @world (argument)
+>=sys-apps/pciutils-3.1.8 -zlib
+#required by virtual/rubygems-4, required by dev-ruby/racc-1.4.7[-test,ruby_targets_ruby19], required by dev-ruby/rdoc-3.12[ruby_targets_ruby19], required by dev-lang/ruby-1.9.3_p0[rdoc], required by dev-ruby/rake-0.9.2.2[ruby_targets_ruby19], required by dev-ruby/json-1.6.3[-test,-doc,ruby_targets_ruby18], required by @selected, required by @world (argument)
+>=dev-ruby/rubygems-1.8.11 ruby_targets_ruby19
+#required by dev-ruby/rdoc-3.12[ruby_targets_ruby19], required by dev-lang/ruby-1.9.3_p0[rdoc], required by dev-ruby/rake-0.9.2.2[ruby_targets_ruby19], required by dev-ruby/json-1.6.3[-test,-doc,ruby_targets_ruby18], required by @selected, required by @world (argument)
+>=dev-ruby/racc-1.4.7 ruby_targets_ruby19
+#required by dev-ruby/json-1.6.3[-test,-doc,ruby_targets_ruby18], required by dev-ruby/rdoc-3.12[ruby_targets_ruby19], required by dev-lang/ruby-1.9.3_p0[rdoc], required by dev-ruby/racc-1.4.7[ruby_targets_ruby19]
+>=dev-ruby/rake-0.9.2.2 ruby_targets_ruby19
+#required by dev-ruby/rdoc-3.12[ruby_targets_ruby19], required by dev-lang/ruby-1.9.3_p0[rdoc], required by dev-ruby/rake-0.9.2.2[ruby_targets_ruby19], required by dev-ruby/racc-1.4.7[-test,-doc,ruby_targets_ruby19]
+>=dev-ruby/json-1.6.3 ruby_targets_ruby19
+#required by dev-lang/ruby-1.9.3_p0[rdoc], required by dev-ruby/rake-0.9.2.2[ruby_targets_ruby19], required by dev-ruby/json-1.6.3[-test,-doc,ruby_targets_ruby18], required by @selected, required by @world (argument)
+>=dev-ruby/rdoc-3.12 ruby_targets_ruby19
+#required by net-libs/gnutls-2.12.16[nettle], required by net-misc/curl-7.24.0[gnutls], required by dev-vcs/git-1.7.8.4[curl], required by sys-devel/gettext-0.18.1.1-r3[git], required by gnome-base/libgnomecanvas-2.30.3, required by gnome-base/libbonoboui-2.24.5, required by gnome-base/libgnomeui-2.24.5, required by dev-util/glade-3.8.1[gnome], required by x11-libs/gtksourceview-2.10.5-r2[glade], required by dev-python/pygtksourceview-2.10.1
+>=dev-libs/nettle-2.4 gmp

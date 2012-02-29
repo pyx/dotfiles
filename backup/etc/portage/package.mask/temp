@@ -1,0 +1,12 @@
+# try multifox, doesn't work
+# lift temp.
+#>www-client/firefox-4.0
+#>net-libs/xulrunner-2.0
+
+=www-plugins/adobe-flash-10.3.181.14-r1
+#www-client/chromium
+#>www-client/chromium-15.0.874.21
+#>www-client/chromium-14.0.835.163
+# temp. for net
+=sys-apps/openrc-0.9.9
+=x11-misc/xcompmgr-1.1.6

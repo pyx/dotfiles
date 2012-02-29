@@ -1,0 +1,46 @@
+# Audio Players
+media-sound/audacious -gtk gtk3 wma sndfile chardet
+media-plugins/audacious-plugins -gtk
+media-sound/rhythmbox ipod tagwriting
+
+# Video Players
+media-video/mplayer a52 aac directfb dts fbcon live mad mp3 real theora vorbis x264 xvid alsa opengl amd64codecs xvmc iconv srt -openal -enca -cdio
+media-video/totem nautilus
+media-video/vlc dvd ffmpeg mpeg mad wxwindows aac dts a52 ogg flac theora oggvorbis matroska freetype bidi xv svga gnutls stream vlm httpd cdda vcd cdio live threads -samba
+
+# DAWs
+media-sound/ardour lash jack -sys-libs
+media-sound/qtractor dssi libsamplerate osc rubberband
+media-sound/rosegarden dssi export jack
+media-sound/traverso jack lv2a -pulseaudio
+
+# Graphics
+media-gfx/blender blender-game
+
+# Libs
+media-libs/libass enca
+media-libs/freetype kpathsea static-libs
+media-libs/libsamplerate sndfile
+media-libs/slv2 jack
+media-libs/realcodecs -win32codecs
+media-libs/gd fontconfig
+# TODO:  08-06-23: remove quicktime right now. ffmpeg conflict
+media-sound/sox -ffmpeg
+virtual/ffmpeg threads
+media-video/ffmpeg threads
+media-video/transcode -quicktime
+media-libs/lcms static-libs
+
+# required by new USE xvmc
+>=media-libs/mesa-8.0 g3dvl
+
+virtual/jpeg static-libs
+media-libs/jpeg static-libs
+media-libs/libpng static-libs apng
+
+media-libs/libmng static-libs
+
+#www-plugins/adobe-flash 64bit
+
+#bugfix
+media-libs/quvi -examples
