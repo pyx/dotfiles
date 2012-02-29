@@ -1,0 +1,127 @@
+# by 8pm, Jan 14 2009
+# with hp laptop pic as background
+
+update_interval 4.0
+
+double_buffer yes
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+no_buffers yes
+
+alignment top_left
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+minimum_size 1260 780
+
+uppercase no
+
+use_xft yes
+xftalpha 1
+xftfont Envy Code R:size=8
+
+use_spacer left
+background no
+pad_percents 2
+show_graph_scale yes
+#show_graph_range yes
+
+gap_x 10
+gap_y 10
+
+draw_shades yes
+draw_outline no
+draw_borders no
+border_margin 9
+border_width 1
+stippled_borders 0
+
+default_color grey90
+default_shade_color black
+default_outline_color DarkGrey
+
+# Default Colors
+# color0: Title
+color0 ffcb48
+# color1 - color4: different grayscale
+color1 e5e5e5
+color2 c4c4c4
+color3 a3a3a3
+color4 828282
+# color5: item name
+color5 98c2c7
+# color6: item data
+color6 78af78
+# color7: bar - blue tone
+color7 122778
+# color8: bar - red tone
+color8 781227
+# color9: bar - orange tone
+color9 ff4000
+
+#${alignc}${color}${time %a %d %b %Y -%j- %I:%M %p %Z}
+
+TEXT
+${offset 1010}${color0} SYSTEM             ${alignr}${color ff4000}${nodename}
+${alignr}${color a3a3a3}${sysname} ${kernel} ${color}on ${color a3a3a3}${machine}
+${alignr}${color c4c4c4}${time %a %d %b %Y} ${color 828282}-${color9}${time %j}${color 828282}- ${color}${time %I:%M} ${color a3a3a3}${time %p %Z}
+${offset 1010}          ${color5}Uptime: ${color a3a3a3}${uptime} ${alignr}${color5}Users: ${color a3a3a3}${user_number}
+
+
+
+
+${offset 320}${color0}PROCESSES
+${offset 320}  ${color5}Load:                    ${color a3a3a3}${loadavg}
+${offset 320}  ${color5}Processes: ${color a3a3a3}${processes}           ${color5}Running: ${color a3a3a3}${running_processes}
+${offset 320}  ${color green}Top Processes by CPU Usage
+${offset 320}  ${color5}NAME             PID      CPU%     MEM%
+${offset 320}  ${color e5e5e5}${top name 1} ${top pid 1}   ${top cpu 1}   ${top mem 1}
+${offset 320}  ${color c4c4c4}${top name 2} ${top pid 2}   ${top cpu 2}   ${top mem 2}
+${offset 320}  ${color a3a3a3}${top name 3} ${top pid 3}   ${top cpu 3}   ${top mem 3}
+${offset 320}  ${color 828282}${top name 4} ${top pid 4}   ${top cpu 4}   ${top mem 4}
+
+${offset 320}  ${color green}Top Processes by Memory Usage
+${offset 320}  ${color5}NAME             PID      CPU%     MEM%
+${offset 320}  ${color e5e5e5}${top_mem name 1} ${top_mem pid 1}   ${top_mem cpu 1}   ${top_mem mem 1}
+${offset 320}  ${color c4c4c4}${top_mem name 2} ${top_mem pid 2}   ${top_mem cpu 2}   ${top_mem mem 2}
+${offset 320}  ${color a3a3a3}${top_mem name 3} ${top_mem pid 3}   ${top_mem cpu 3}   ${top_mem mem 3}
+${offset 320}  ${color 828282}${top_mem name 4} ${top_mem pid 4}   ${top_mem cpu 4}   ${top_mem mem 4}
+${offset 810}${color0} POWER   ${color green}${battery}
+
+${offset 1010}${color0} PROCESSOR
+${offset 1010}  ${color5}CPU 0:${color a3a3a3} ${freq_g 1} ${color}GHz ${cpu cpu1}%  ${color e5e5e5}${cpubar cpu1}
+${offset 1010}  ${color5}CPU 1:${color a3a3a3} ${freq_g 2} ${color}GHz ${cpu cpu2}%  ${color 828282}${cpubar cpu2}
+${offset 1010}  ${color e5e5e5}${cpugraph cpu1 25,115 c4c4c4 a3a3a3} ${color 828282}${cpugraph cpu2 25,115 c4c4c4 a3a3a3}
+
+${color0} STATS
+  ${color5}Entropy:  ${color ff4000}${entropy_avail}  ${color8}${entropy_bar 6,145}
+  ${color5}RAM:  ${color a3a3a3}${mem}${color}/${color}${memmax} ${color a3a3a3}${memperc}${color}%  ${color7}${membar 6,80}
+  ${color5}Swap: ${color a3a3a3}${swap}${color}/${color}${swapmax} ${color a3a3a3}${swapperc}${color}%  ${color7}${swapbar 6,80}
+
+
+
+
+
+
+
+${offset 20}${color0} NETWORK      ${color orange}eth0   ${color a3a3a3}${addr eth0}
+${offset 20}  ${color5}Upload     ${color a3a3a3}                   ${upspeed eth0}/s
+${offset 20}  ${color5}Download   ${color a3a3a3}                   ${downspeed eth0}/s
+${offset 20}  ${color7}${upspeedgraph eth0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph eth0 25,115 c4c4c4 a3a3a3}
+
+${voffset -60}
+${offset 1010}${color0} NETWORK      ${color orange}wlan0   ${color a3a3a3}${addr wlan0} ${alignr}${color orange}${wireless_link_bar 6,20 wlan0}
+${offset 1010}  ${color5}Upload ${alignr}${color a3a3a3}${upspeed wlan0}/s
+${offset 1010}  ${color5}Download ${alignr}${color a3a3a3}${downspeed wlan0}/s
+${offset 1010}  ${color7}${upspeedgraph wlan0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph wlan0 25,115 c4c4c4 a3a3a3}
+${voffset -30}
+${offset 180}${color0} STORAGE
+${offset 180}  ${color5}/     ${color a3a3a3}${fs_free_perc /}${color}% ${color 828282}${fs_used /}${color}/${color c4c4c4}${fs_size /}  ${color9}${fs_bar 6,85 /}
+${offset 180}  ${color5}/usr  ${color a3a3a3}${fs_free_perc /usr}${color}% ${color 828282}${fs_used /usr}${color}/${color c4c4c4}${fs_size /usr}  ${color9}${fs_bar 6,85 /usr}
+${offset 180}  ${color5}/tmp  ${color a3a3a3}${fs_free_perc /tmp}${color}% ${color 828282}${fs_used /tmp}${color}/${color c4c4c4}${fs_size /tmp}  ${color9}${fs_bar 6,85 /tmp}
+${offset 180}  ${color5}/var  ${color a3a3a3}${fs_free_perc /var}${color}% ${color 828282}${fs_used /var}${color}/${color c4c4c4}${fs_size /var}  ${color9}${fs_bar 6,85 /var}
+${offset 180}  ${color5}/home ${color a3a3a3}${fs_free_perc /home}${color}% ${color 828282}${fs_used /home}${color}/${color c4c4c4}${fs_size /home}  ${color9}${fs_bar 6,85 /home}
+
