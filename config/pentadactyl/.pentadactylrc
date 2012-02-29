@@ -1,0 +1,14 @@
+" 1.2 (created: 2008/08/16 18:51:52)
+" Mappings
+map <F2> :dialog bookmarks<CR>
+
+" Options
+" set guioptions+=Tm
+set nextpattern='\bnext\b','\s*下一页|下一张|下页|下一頁|下一張|下頁\s*',^>$,'^(>>|»)$','^(>|»)','(>|»)$','\bmore\b'
+set previouspattern='\bprev|previous\b','\s*上一页|上一张|上页|上一頁|上一張|上頁\s*,',^<$,'^(<<|«)$','^(<|«)','(<|«)$'
+
+" Abbreviations
+
+source! ~/.pentadactylrc.local
+
+" vim: set ft=vimperator:
