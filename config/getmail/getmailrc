@@ -1,0 +1,13 @@
+[retriever]
+type = SimpleIMAPSSLRetriever
+server = MAIL.HOST.TLD
+username = USERNAME
+password = PASSWORD
+mailboxes = ("INBOX",)
+
+[destination]
+type = Maildir
+path = $HOME/.maildir/
+
+[options]
+message_log = $HOME/.getmail/log
