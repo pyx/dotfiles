@@ -1,0 +1,5 @@
+# vim: set ft=muttrc:
+# hooks
+#folder-hook =BOX1 source "~/.mutt/user.USER1"
+#folder-hook =BOX2 source "~/.mutt/user.USER2"
+#folder-hook =BOX3 source "~/.mutt/user.USER3"

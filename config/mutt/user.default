@@ -1,0 +1,35 @@
+# vim: set ft=muttrc:
+# User specific settings, change as needed.
+
+set realname = "YOURNAME"
+set from = "NAME <MAIL@HOST.TLD>"
+
+set mbox = "+mbox"
+set spoolfile = "+INBOX"
+set postponed = "+INBOX.Drafts"
+set record = "+INBOX.Sent"
+
+# for gmail account {{{
+#set mbox = "+/INBOX"
+#set spoolfile = "+[Gmail].All Mail"
+#set postponed = "+[Gmail].Drafts"
+#set record = "+[Gmail].Sent Mail"
+#}}}
+
+my_hdr X-PGP-Key: http://HOST.TLD/public.asc
+my_hdr X-PGP-Key-ID: 0x12345678
+set pgp_sign_as = "0x12345678"
+set pgp_autosign = yes
+set pgp_replyencrypt = yes
+
+# if not using pgp/gpg {{{
+#unmy_hdr x-pgp-key
+#unmy_hdr x-pgp-key-id
+#unset pgp_sign_as
+#unset pgp_autosign
+#unset pgp_replyencrypt
+#}}}
+
+set signature = ~/.signature
+
+macro index <f5> "<shell-escape>offlineimap -a USERNAME<enter>"

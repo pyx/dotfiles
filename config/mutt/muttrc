@@ -1,0 +1,81 @@
+# General Settings  ---------------------------------------------- {{{1
+# unicode
+set charset = "utf-8"
+# use maildir instead of mbox
+set mbox_type = Maildir
+# be quite
+set nobeep
+
+# User Accounts  ------------------------------------------------- {{{1
+source "~/.mutt/users"
+
+# Address Book  -------------------------------------------------- {{{1
+set alias_file = "~/.mutt/alias"
+source "~/.mutt/alias"
+# lookup names in address book, use it if it exists
+set reverse_alias
+
+# Encryption  ---------------------------------------------------- {{{1
+# a bit hacky here, use output from `ls` instead of a specific path,
+# such as: source "/usr/share/doc/mutt-1.5.21-r8/samples/gpg.rc"
+# makes this script irrelevant to the installed mutt version.
+source `ls -1 /usr/share/doc/mutt-*/samples/gpg.rc`
+
+# Sending E-Mails  ----------------------------------------------- {{{1
+# always save a copy of outgoing messages
+set copy = yes
+# ask forward as separate MIME part or no
+set mime_forward = ask-no
+# use msmtp to send email
+set sendmail = "/usr/bin/msmtp"
+set use_from = yes
+# use -f option of msmtp. msmtp will choose the first account that matches the from address
+set envelope_from = yes
+
+# Getting E-Mails  ----------------------------------------------- {{{1
+# hEADER cACHE FOR imap
+set header_cache = "~/.mutt-headercache"
+
+# Reading E-Mails  ----------------------------------------------- {{{1
+# header fields
+# ignore all lines by default
+ignore *
+# except these
+unignore from date subject to cc
+unignore mail-followup-to x-mailer: x-url
+unignore x-pgp
+
+set sort = threads
+set tilde
+
+# Editing E-Mails  ----------------------------------------------- {{{1
+# edit headers as well
+set edit_headers
+# spell checker
+set ispell = "aspell -e -c"
+
+# Handling Attachments  ------------------------------------------ {{{1
+set mailcap_path = "~/.mutt/mailcap"
+set implicit_autoview
+
+auto_view application/x-gunzip
+auto_view application/x-gzip
+auto_view text/html
+
+# Key Bindings  -------------------------------------------------- {{{1
+source "~/.mutt/bindings"
+
+# Macros  -------------------------------------------------------- {{{1
+source "~/.mutt/macros"
+
+# Hooks  --------------------------------------------------------- {{{1
+source "~/.mutt/hooks"
+
+# Colorscheme  --------------------------------------------------- {{{1
+source "~/.mutt/colors"
+
+# Miscellaneous  ------------------------------------------------- {{{1
+# no need to print
+set print_command = /bin/false
+# }}}
+# -*- vim: set ft=muttrc fdm=marker: ------------------ vim modeline -*-

@@ -1,0 +1,21 @@
+# vim: set ft=muttrc:
+color  hdrdefault  red            default
+color  quoted      brightblue     default
+color  signature   red            default
+color  indicator   brightyellow   red
+color  error       brightred      default
+color  status      brightwhite    blue
+color  tree        magenta        default
+color  tilde       magenta        default
+color  message     brightcyan     default
+color  markers     brightcyan     default
+color  attachment  brightmagenta  default
+color  search      default        green
+
+color  header      brightred      default  ^(From|Subject):
+color  body        magenta        default  "(ftp|http|https)://[^ ]+"
+color  body        magenta        default  [-a-z_0-9.]+@[-a-z_0-9.]+
+color  underline   brightgreen    default
+
+mono   header      underline      ^(From|Subject):
+mono   quoted      bold

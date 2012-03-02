@@ -1,0 +1,10 @@
+# Convert HTML to plain txt
+text/html; lynx -dump -force_html %s ; needsterminal; copiousoutput
+# Convert MS Word document into plain txt
+application/msword; antiword %s ; copiousoutput
+# Convert pdf into plain text
+application/pdf; pdftotext %s -; copiousoutput
+# images
+image/gif; eog %s
+image/jpg; eog %s
+image/png; eog %s

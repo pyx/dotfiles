@@ -1,0 +1,7 @@
+# vim: set ft=muttrc:
+# key bindings
+bind pager G bottom
+bind pager <up> previous-line
+bind pager k previous-line
+bind pager <down> next-line
+bind pager j next-line

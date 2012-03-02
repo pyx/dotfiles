@@ -1,0 +1,5 @@
+# vim: set ft=muttrc:
+# macros
+#macro index <f4>1 "<change-folder>=BOX1/INBOX<enter>"
+#macro index <f4>2 "<change-folder>=BOX2/INBOX<enter>"
+#macro index <f4>3 "<change-folder>=BOX3/INBOX<enter>"

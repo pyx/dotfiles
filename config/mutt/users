@@ -1,0 +1,10 @@
+# vim: set ft=muttrc:
+# User specific settings, change as needed.
+
+# Default location for mailboxes
+set folder = ~/.mail
+
+# Mailboxes which receive mail
+#mailboxes =BOX1 =BOX2 =BOX3
+
+source "~/.mutt/user.default"
