@@ -10,10 +10,10 @@ set postponed = "+INBOX.Drafts"
 set record = "+INBOX.Sent"
 
 # for gmail account {{{
-#set mbox = "+/INBOX"
-#set spoolfile = "+[Gmail].All Mail"
+#set mbox = "+[Gmail].All Mail"
+#set spoolfile = "+/INBOX"
 #set postponed = "+[Gmail].Drafts"
-#set record = "+[Gmail].Sent Mail"
+#unset record
 #}}}
 
 my_hdr X-PGP-Key: http://HOST.TLD/public.asc
