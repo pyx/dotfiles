@@ -80,7 +80,8 @@ tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
     -- tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s)
-    tags[s] = awful.tag({ "1.網絡", "2.開發", "3.終端", "4.文檔", "5.設計", "6.目錄", "7.通訊", "8.影音", "9.其它" }, s, awful.layout.suit.tile)
+    -- tags[s] = awful.tag({ "1.網絡", "2.開發", "3.終端", "4.文檔", "5.設計", "6.目錄", "7.通訊", "8.影音", "9.其它" }, s, awful.layout.suit.tile)
+    tags[s] = awful.tag({ "₁ ☁ ", "₂ ⌨ ", "₃ ⚙ ", "₄ ⎘ ", "₅ ✐ ", "₆ ⎆ ", "₇ ☎ ", "₈ ♨ ", "₉ ☯ " }, s, awful.layout.suit.tile)
 end
 -- }}}
 
@@ -476,4 +477,4 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- added for autostart
-os.execute(".scripts/start-awesome.sh &")
+os.execute(".scripts/start-awesome.sh")
