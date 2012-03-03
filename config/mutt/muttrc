@@ -47,6 +47,7 @@ unignore x-pgp
 
 set sort = threads
 set tilde
+set pager_index_lines = 7
 
 # Editing E-Mails  ----------------------------------------------- {{{1
 # edit headers as well
