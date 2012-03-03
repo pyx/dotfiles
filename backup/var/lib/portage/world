@@ -230,7 +230,7 @@ sys-process/vixie-cron
 virtual/commonlisp
 virtual/pager
 www-client/epiphany
-www-client/firefox
+www-client/firefox-bin
 www-client/google-chrome
 www-client/httrack
 www-client/opera
