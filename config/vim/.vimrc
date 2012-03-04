@@ -397,8 +397,8 @@ let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bun
 " http://github.com/rstacruz/sparkup
 " try this:
 " ihtml:xxs>#wrapper>#nav>h2{navigation}+ul>li#id_$*3>a<<<#main{Page Content}+div#footer{Footer}<c-tab>
-let g:sparkupExecuteMapping = '<c-tab>'
-let g:sparkupNextMapping = '<tab><tab>'
+let g:sparkupExecuteMapping = '<c-]>'
+let g:sparkupNextMapping = '<c-j>'
 
 " SuperTab -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1643
@@ -436,9 +436,11 @@ map <F9> <Plug>TaskList
 " http://www.vim.org/scripts/script.php?script_id=2715
 " official mirror: https://github.com/sirver/ultisnips
 " TextMate style:
-"let g:UltiSnipsExpandTrigger = "<tab>"
-"let g:UltiSnipsJumpForwardTrigger = "<tab>"
-"let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+" local snippets only:
+"let g:UltiSnipsSnippetDirectories=["snippets"]
 " Snippets dir
 "let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
