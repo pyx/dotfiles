@@ -178,6 +178,7 @@ if has("autocmd")
     autocmd FileType java setlocal sw=4 sts=4
     autocmd FileType javascript setlocal sw=4 sts=4
     autocmd FileType jinja setlocal sw=2 sts=2 et
+    autocmd FileType jinja2 setlocal sw=2 sts=2 et
     autocmd FileType make set noet
     autocmd FileType mason setlocal sw=2 sts=2
     autocmd FileType ocaml setlocal sw=2 sts=2
