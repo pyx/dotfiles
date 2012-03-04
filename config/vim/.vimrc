@@ -97,17 +97,6 @@ if has("autocmd")
     autocmd FileType python inoreab <buffer> #! #!/usr/bin/env python
     autocmd FileType python inoreab <buffer> #e # -*- coding: utf=8 -*-
 
-  " Abbreviations for vim modeline -------------------- {{{2
-  augroup vim_modeline
-    au!
-    autocmd FileType c,cpp,vala,genie inoreab <buffer> /*v /* -*- vim: set sts=4 sw=4 et fdm=marker tw=78 ----------- vim modeline -*- */
-    autocmd FileType c,cpp,vala,genie inoreab <buffer> //v // -*- vim: set sts=4 sw=4 et fdm=marker tw=78 ----------- vim modeline -*-
-    autocmd FileType python inoreab <buffer> #v # -*- vim: set sts=4 sw=4 et fdm=marker tw=72: -------- vim modeline -*-
-    autocmd FileType rst inoreab <buffer> ..v .. -*- vim: set sts=2 sw=2 et fdm=marker: ---------------- vim modeline -*-
-    autocmd FileType html,htmldjango inoreab <buffer> {#v {# -*- vim: set sts=2 sw=2 et fdm=marker ft=htmldjango: -- vim modeline -*- #}
-    autocmd FileType html,jinja inoreab <buffer> {#j {# -*- vim: set sts=2 sw=2 et fdm=marker ft=jinja: ------- vim modeline -*- #}
-    autocmd FileType lisp,scheme inoreab <buffer> ;;v ;; -*- vim: set fdm=marker: ------------------------------ vim modeline -*-
-
   " Mappings for reStructuredText: Section Headers ---- {{{2
   augroup restructuredtext
     au!
@@ -119,50 +108,6 @@ if has("autocmd")
     autocmd FileType rst inoremap <buffer> <C-]> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
     " Insert Mode: Headings with underline adornment
     autocmd FileType rst inoremap <buffer> <C-J> <C-\><C-O>:call MarkReSTSessionTitle(0)<CR>
-
-  " Mappings for Django/Jinja Templates: -------------- {{{2
-  augroup django_template
-    au!
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {{ {{  }}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {% {%  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {# {#  #}<left><left><left>
-
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {bs {{ block.super }}
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {c {% comment %}<cr>{% endcomment %}<C-o>O
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {ae+ {% autoescape on %}<cr>{% endautoescape %}<C-o>O
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {ae- {% autoescape off %}<cr>{% endautoescape %}<C-o>O
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {sl {% spaceless %}<cr>{% endspaceless %}<C-o>O
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {bt {% blocktrans %}<cr>{% endblocktrans %}<C-o>O
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {bT {% blocktrans %}{% endblocktrans %}<C-o>%
-
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {l {% load  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {u {% url  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {x {% extends "" %}<left><left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {X {% extends  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {t {% trans "" %}<left><left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {T {% trans  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {inc {% include "" %}<left><left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {INC {% include  %}<left><left><left>
-
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {ic {% ifchanged  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> ic} {% endifchanged %}
-
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {== {% ifequal  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> ==} {% endifequal %}
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {!= {% ifnotequal  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> !=} {% endifnotequal %}
-
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {b {% block  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> b} {% endblock %}
-
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {i {% if  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {e {% else %}
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> i} {% endif %}
-
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {f {% for  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> f} {% endfor %}
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> {w {% with  %}<left><left><left>
-    autocmd FileType htmldjango,django,jinja inoremap <buffer> w} {% endwith %}
 
   " Default tab settings for different file types ----- {{{2
   augroup tab_settings
@@ -587,4 +532,3 @@ function! StripTrailingWhitespace()
   silent! %s/\s*$//e
   call winrestview(l:savedview)
 endfunction
-
