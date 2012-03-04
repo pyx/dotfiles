@@ -239,6 +239,7 @@ www-client/uzbl
 www-plugins/adobe-flash
 www-plugins/nspluginwrapper
 www-servers/tornado
+x11-apps/setxkbmap
 x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
