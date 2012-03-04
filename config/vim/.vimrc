@@ -116,9 +116,9 @@ if has("autocmd")
     " Normal Mode: Sessions with underline adornment
     autocmd FileType rst nnoremap <buffer> <Leader>s :call MarkReSTSessionTitle(0)<CR>
     " Insert Mode: Headings with overline and underline adornments
-    autocmd FileType rst inoremap <buffer> <C-Tab> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
+    autocmd FileType rst inoremap <buffer> <C-]> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
     " Insert Mode: Headings with underline adornment
-    autocmd FileType rst inoremap <buffer> <S-Tab> <C-\><C-O>:call MarkReSTSessionTitle(0)<CR>
+    autocmd FileType rst inoremap <buffer> <C-J> <C-\><C-O>:call MarkReSTSessionTitle(0)<CR>
 
   " Mappings for Django/Jinja Templates: -------------- {{{2
   augroup django_template
@@ -398,8 +398,8 @@ let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bun
 " http://github.com/rstacruz/sparkup
 " try this:
 " ihtml:xxs>#wrapper>#nav>h2{navigation}+ul>li#id_$*3>a<<<#main{Page Content}+div#footer{Footer}<c-tab>
-let g:sparkupExecuteMapping = '<c-]>'
-let g:sparkupNextMapping = '<c-j>'
+let g:sparkupExecuteMapping = '<C-]>'
+let g:sparkupNextMapping = '<C-J>'
 
 " SuperTab -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1643
@@ -441,9 +441,11 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " local snippets only:
-"let g:UltiSnipsSnippetDirectories=["snippets"]
+"let g:UltiSnipsSnippetDirectories = ["snippets"]
 " Snippets dir
-"let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "snippets"]
+" vsplit the snippets edit window
+let g:UltiSnipsEditSplit = 'vertical'
 
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color
