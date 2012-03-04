@@ -105,7 +105,7 @@ if has("autocmd")
     autocmd FileType python inoreab <buffer> #v # -*- vim: set sts=4 sw=4 et fdm=marker tw=72: -------- vim modeline -*-
     autocmd FileType rst inoreab <buffer> ..v .. -*- vim: set sts=2 sw=2 et fdm=marker: ---------------- vim modeline -*-
     autocmd FileType html,htmldjango inoreab <buffer> {#v {# -*- vim: set sts=2 sw=2 et fdm=marker ft=htmldjango: -- vim modeline -*- #}
-    autocmd FileType html,jinja inoreab <buffer> {#v {# -*- vim: set sts=2 sw=2 et fdm=marker ft=jinja: ------- vim modeline -*- #}
+    autocmd FileType html,jinja inoreab <buffer> {#j {# -*- vim: set sts=2 sw=2 et fdm=marker ft=jinja: ------- vim modeline -*- #}
     autocmd FileType lisp,scheme inoreab <buffer> ;;v ;; -*- vim: set fdm=marker: ------------------------------ vim modeline -*-
 
   " Mappings for reStructuredText: Section Headers ---- {{{2
