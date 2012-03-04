@@ -389,6 +389,7 @@ let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bun
 " snipMate -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2540
 " http://github.com/msanders/snipmate.vim
+" https://github.com/garbas/vim-snipmate
 
 " Sparkup --------------------------------------------- {{{2
 " You can write HTML in a CSS-like syntax, and have Sparkup handle the
@@ -430,6 +431,16 @@ nnoremap <silent> <C-F8> :TlistToggle<CR>
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
 map <F9> <Plug>TaskList
+
+" UltiSnips ------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=2715
+" official mirror: https://github.com/sirver/ultisnips
+" TextMate style:
+"let g:UltiSnipsExpandTrigger = "<tab>"
+"let g:UltiSnipsJumpForwardTrigger = "<tab>"
+"let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+" Snippets dir
+"let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color
