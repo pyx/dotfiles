@@ -1,5 +1,18 @@
 # Snippets for jinja2
-#
+# {{ variable
+snippet {{ "variable" !i
+{{ $1 }}
+endsnippet
+
+# {% statement
+snippet {% "statements" !i
+{% $1 %}
+endsnippet
+
+# \{{ output {{
+snippet \{{ "output {{" !i
+{{ '{{' }}
+endsnippet
 
 # vim modeline
 snippet vim "vim modeline" !b
@@ -10,5 +23,5 @@ endsnippet
 snippet {- "horizontal ruler" !b
 {# ------------------------------------------------------------------------ #}
 endsnippet
-#
+
 # vim: ft=snippets:
