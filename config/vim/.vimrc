@@ -13,7 +13,7 @@ set ruler
 set showcmd
 set title
 set wildmenu
-set wildmode=list,longest
+set wildmode=list:longest,list:full
 
 set backup
 set backupdir=~/.tmp,~/tmp,/var/tmp,/tmp
