@@ -88,5 +88,6 @@ dev-haskell/regex-posix hscolour profile
 dev-haskell/tar hscolour profile
 dev-haskell/terminfo hscolour profile
 dev-haskell/text hscolour profile
+dev-haskell/transformers profile
 dev-haskell/zlib hscolour profile
 dev-vcs/darcs completion hscolour

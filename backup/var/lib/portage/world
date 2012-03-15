@@ -83,6 +83,7 @@ dev-python/reportlab
 dev-python/rope
 dev-python/ropemacs
 dev-python/ropemode
+dev-python/rst2pdf
 dev-python/sphinx
 dev-python/sqlalchemy
 dev-python/sqlobject
@@ -186,6 +187,7 @@ media-sound/volumeicon
 media-video/devede
 media-video/gtk-recordmydesktop
 media-video/mplayer
+media-video/nvidia-settings
 media-video/rtmpdump
 media-video/totem
 net-analyzer/gnome-nettool
@@ -218,7 +220,7 @@ sys-boot/grub
 sys-devel/autogen
 sys-devel/clang
 sys-fs/mtools
-sys-fs/ntfsprogs
+sys-fs/ntfs3g
 sys-fs/reiserfsprogs
 sys-kernel/gentoo-sources
 sys-kernel/gentoo-sources:3.2.1-r2
