@@ -97,6 +97,13 @@ if has("autocmd")
     autocmd FileType python inoreab <buffer> #! #!/usr/bin/env python
     autocmd FileType python inoreab <buffer> #e # -*- coding: utf=8 -*-
 
+  " py.test Support ----------------------------------- {{{2
+  augroup pytest
+    au!
+    autocmd FileType python nnoremap <buffer> <silent> <Leader>tf <Esc>:Pytest file looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <Leader>tc <Esc>:Pytest class looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <Leader>tm <Esc>:Pytest method looponfail<CR>
+
   " Mappings for reStructuredText: Section Headers ---- {{{2
   augroup restructuredtext
     au!
@@ -323,6 +330,9 @@ map <F2> :NERDTreeToggle<CR>
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
 " https://github.com/tpope/vim-pathogen
+
+" py.test --------------------------------------------- {{{2
+" https://github.com/alfredodeza/pytest.vim.git
 
 " Rainbow Parentheses --------------------------------- {{{2
 " https://github.com/kien/rainbow_parentheses.vim
