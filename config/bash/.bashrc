@@ -62,8 +62,26 @@ function get_git_repos_branch()
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/"
 }
 
+function get_git_repos_HEAD_hash()
+{
+  git rev-parse HEAD | cut -c -12
+}
+
+function get_git_repos_working_dir_dirty()
+{
+  git diff --no-ext-diff --quiet --exit-code || echo "*"
+}
+
+function get_git_repos_index_dirty()
+{
+  git diff-index --cached --quiet HEAD -- || echo "+"
+}
+
 function repos_info()
 {
+  LEFT_ARROW=" \e${CC_WHITE}← "
+  RIGHT_ARROR=" \e${CC_WHITE}→ "
+
   HG_REV_ID="$(get_hg_rev_id)"
   if [ "${HG_REV_ID}" ]
   then
@@ -86,9 +104,6 @@ function repos_info()
     esac
     HG_REV_ID="\e${CC_WHITE}ID ${HG_REV_PHASE} \e${HG_REV_ID_COLOR}${HG_REV_ID}"
 
-    LEFT_ARROW=" \e${CC_WHITE}← "
-    RIGHT_ARROR=" \e${CC_WHITE}→ "
-
     HG_REV_TAGS="$(get_hg_rev_tags)"
     if [ "${HG_REV_TAGS}" ]
     then
@@ -107,7 +122,17 @@ function repos_info()
   GIT_REPOS_BRANCH="$(get_git_repos_branch)"
   if [ "${GIT_REPOS_BRANCH}" ]
   then
-    printf \\n%b "\e${CC_WHITE}\e${CC_LIGHT_GRAY}Git\e${CC_WHITE} :: Branch \e${CC_YELLOW}${GIT_REPOS_BRANCH}"
+    GIT_REV_HASH="$(get_git_repos_HEAD_hash)"
+    GIT_WD_DIRTY="$(get_git_repos_working_dir_dirty)"
+    GIT_INDEX_DIRTY="$(get_git_repos_index_dirty)"
+    GIT_REV_COLOR="\e${CC_WHITE}"
+    if [ "${GIT_WD_DIRTY}" ]; then
+      GIT_REV_COLOR="\e${CC_LIGHT_RED}"
+    elif [ "${GIT_INDEX_DIRTY}" ]; then
+      GIT_REV_COLOR="\e${CC_YELLOW}"
+    fi
+    GIT_REV_ID="\e${CC_WHITE}Rev ${GIT_REV_COLOR}${GIT_REV_HASH}${GIT_INDEX_DIRTY}${GIT_WD_DIRTY}"
+    printf \\n%b "\e${CC_WHITE}\e${CC_LIGHT_GRAY}Git\e${CC_WHITE} :: Branch \e${CC_LIGHT_BLUE}${GIT_REPOS_BRANCH}${RIGHT_ARROR}${GIT_REV_ID}"
   fi
 }
 
