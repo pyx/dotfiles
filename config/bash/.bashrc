@@ -136,8 +136,19 @@ function repos_info()
   fi
 }
 
+# Disable default virtualenv prompt
+VIRTUAL_ENV_DISABLE_PROMPT="true"
+
+function virtualenv_prompt()
+{
+  VIRTUALENV_PROMPT=$(basename "${VIRTUAL_ENV}")
+  if [ "${VIRTUALENV_PROMPT}" ]; then
+    printf %b "\e${CC_WHITE}→ \e${CC_WHITE}VirtualEnv \e${CC_YELLOW}${VIRTUALENV_PROMPT} "
+  fi
+}
+
 export PS1='$(header)$(repos_info)\n\
-\e${CC_WHITE}[\e${CC_LIGHT_CYAN}Login\e${CC_WHITE}] \e${CC_LIGHT_GREEN}\u \e${CC_RESET}at \e${CC_WHITE}\h \e${CC_RESET}in \e${CC_LIGHT_BLUE}\w\n\
+\e${CC_LIGHT_GREEN}\u \e${CC_RESET}at \e${CC_WHITE}\h $(virtualenv_prompt)\e${CC_WHITE}⎆ \e${CC_LIGHT_BLUE}\w \e${CC_RESET}⏎ \n\
 \[\e${CC_LIGHT_RED}\]\$\[\e${CC_RESET}\] '
 
 alias gv="gvim --remote-silent"
