@@ -79,6 +79,7 @@ dev-python/pygame
 dev-python/pylint
 dev-python/pymongo
 dev-python/pyside-tools
+dev-python/pytest
 dev-python/reportlab
 dev-python/rope
 dev-python/ropemacs
