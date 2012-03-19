@@ -148,7 +148,7 @@ function virtualenv_prompt()
 }
 
 export PS1='$(header)$(repos_info)\n\
-\e${CC_LIGHT_GREEN}\u \e${CC_RESET}at \e${CC_WHITE}\h $(virtualenv_prompt)\e${CC_WHITE}⎆ \e${CC_LIGHT_BLUE}\w \e${CC_RESET}⏎ \n\
+\e${CC_WHITE}Login \e${CC_LIGHT_GREEN}\u \e${CC_RESET}at \e${CC_WHITE}\h $(virtualenv_prompt)\e${CC_WHITE}⎆ \e${CC_LIGHT_BLUE}\w \e${CC_RESET}⏎ \n\
 \[\e${CC_LIGHT_RED}\]\$\[\e${CC_RESET}\] '
 
 alias gv="gvim --remote-silent"
