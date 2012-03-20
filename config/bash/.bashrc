@@ -163,8 +163,6 @@ export SBCL_HOME=/usr/lib/sbcl
 
 export HISTSIZE=2000
 
-set -o vi
-
 if [ -e "${HOME}/.bash.local" ]; then
   source "${HOME}/.bash.local"
 fi
