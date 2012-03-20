@@ -200,6 +200,7 @@ endif " has("autocmd")
 "
 " ColorScheme Table ----------------------------------- {{{2
 " Name          | Background | C/C++ | HTML | CSS | Javascript | Django | Haskell | Lisp | Python
+" badwolf       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " bocau         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " candycode     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " clarity       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
@@ -243,11 +244,15 @@ endif " has("autocmd")
 " solarized:
 " http://ethanschoonover.com/solarized
 "
+" badwolf:
+" http://stevelosh.com/projects/badwolf/
+" hg clone ssh://hg@bitbucket.org/sjl/badwolf
+"
 " }}}2
 
 if has("gui_running")
   set background=dark
-  colorscheme bocau
+  colorscheme badwolf
 else
   set background=dark
   colorscheme bocau
