@@ -12,4 +12,6 @@
 =x11-misc/xcompmgr-1.1.6
 
 # eselect news read 12
-=sys-fs/udev-181
+>=sys-fs/udev-182
+# this one forces me with udev-182
+>=sys-auth/consolekit-0.4.5-r3
