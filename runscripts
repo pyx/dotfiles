@@ -60,11 +60,11 @@ class ScriptRunner(object):
         self.silent = silent
 
     def walk(self, path):
-        if self.prompt:
-            ans = raw_input(self.prompt.format(magenta(path, True)))
-            if ans.lower() not in ('y', 'yes'):
-                return
         for root, dirs, files in os.walk(path):
+            if self.prompt:
+                ans = raw_input(self.prompt.format(magenta(root, True)))
+                if ans.lower() not in ('y', 'yes'):
+                    continue
             if not self.quite:
                 print "> checking '{}'.".format(white(root, True))
             with cd(root):
