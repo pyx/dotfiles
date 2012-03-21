@@ -35,7 +35,7 @@ class cd(object):
 
     def __enter__(self):
         if not os.access(self.path, os.X_OK):
-            stderr.write("> '{}' ignored ({}).\n".format(
+            stderr.write("[!] '{}' ignored ({}).\n".format(
                 yellow(self.path),
                 red('permission denied')))
             return
@@ -49,7 +49,7 @@ class cd(object):
 
 # Class ScriptRunner {{{1
 class ScriptRunner(object):
-    PROMPT = """All valid scripts in directory '{}' will be executed,
+    PROMPT = """[?] all valid scripts in directory '{}' will be executed,
     some scripts may override existing files or do something bad,
     do you want to continue? [N/y] """
 
@@ -66,14 +66,14 @@ class ScriptRunner(object):
                 if ans.lower() not in ('y', 'yes'):
                     continue
             if not self.quite:
-                print "> checking '{}'.".format(white(root, True))
+                print "[>] entering '{}'.".format(white(root, True))
             with cd(root):
                 scripts = [s for s in files if self.is_valid(s)]
                 if not scripts:
                     continue
                 for script in scripts:
                     if self.pretend and not self.quite:
-                        print "> {} to run '{}'.".format(
+                        print "[.] {} to run '{}'.".format(
                                 yellow('Pretending', True),
                                 white(script))
                     else:
@@ -84,7 +84,7 @@ class ScriptRunner(object):
 
     def action(self, path):
         if not self.quite:
-            print "> running '{}'.".format(blue(path, True))
+            print "[*] running '{}'.".format(blue(path, True))
             stdout.flush()
         root, ext = os.path.splitext(path)
         description = yellow(root.replace('_', ' '), True)
@@ -96,11 +96,11 @@ class ScriptRunner(object):
                 run = subprocess.check_call
             run(os.path.abspath(path))
         except:
-            stderr.write("> {} .. {}.\n".format(
+            stderr.write("[!] {} .. {}.\n".format(
                 description, red('failed', True)))
             raise
         if not self.quite:
-            print "> {} .. {}.".format(description, green('done', True))
+            print "[_] {} .. {}.".format(description, green('done', True))
 
 # Main {{{1
 def main():
@@ -134,7 +134,7 @@ def main():
 
     for path in dirs:
         if not os.path.exists(path):
-            stderr.write("> '{}' not exists.\n".format(yellow(path)))
+            stderr.write("[!] '{}' not exists.\n".format(yellow(path)))
             continue
         runner.walk(path)
 
@@ -143,6 +143,6 @@ if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
-        stderr.write('> Interrupted.\n')
+        stderr.write('\n[!] Interrupted.\n')
     except Exception as e:
-        stderr.write("> {}.\n".format(red(e, True)))
+        stderr.write("\n[!] {}.\n".format(red(e, True)))
