@@ -24,9 +24,6 @@ set history=200
 
 set fileencodings=ucs-bom,utf8,cp936,gbk,big5,euc-jp,euc-kr,gb18130,latin1
 
-set laststatus=2
-set statusline=%<%#ColorColumn#%2n%*»%#DiffChange#%{getcwd()}/%*%#DiffAdd#%f%*%#DiffText#%m%r%*»%#Title#%y%*»%#CursorLine#(%l/%L,%c)%*»%=«%#Cursor#%02B%*«%#ErrorMsg#%o%*«%#ModeMsg#%3p%%%*
-
 set dictionary+=/usr/share/dict/words
 
 set grepprg=ack\ -a
@@ -59,6 +56,28 @@ endif
 " Mark extra whitespaces in red
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+" Status Line ----------------------------------------- {{{1
+set laststatus=2
+
+set statusline=%<                            " truncate from the beginning
+set statusline+=%#ColorColumn#%2n            " buffer number
+set statusline+=%*»                          " separator
+set statusline+=%#DiffChange#%{getcwd()}/%*  " current working directory
+set statusline+=%#DiffAdd#%f%*               " path to the file in the buffer
+set statusline+=%#DiffText#%m                " modified flag
+set statusline+=%r                           " readonly flag
+set statusline+=%*»                          " separator
+set statusline+=%#Title#%y                   " filetype
+set statusline+=%*»                          " separator
+set statusline+=%#CursorLine#(%l/%L,%c)%*»   " line no./no. of lines,col no.
+set statusline+=%=«                          " right align the rest
+set statusline+=%#Cursor#%02B                " value of current char in hex
+set statusline+=%*«                          " separator
+set statusline+=%#ErrorMsg#%o                " byte offset
+set statusline+=%*«                          " separator
+set statusline+=%#ModeMsg#%3p%%              " % through file in lines
+set statusline+=%*                           " restore normal highlight
 
 " Fonts ----------------------------------------------- {{{1
 if has("gui_running")
