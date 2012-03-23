@@ -316,6 +316,11 @@ endif " has("autocmd")
 nnoremap <Leader>ff :FufFile<CR>
 nnoremap <Leader>fb :FufBuffer<CR>
 
+" Gundo ----------------------------------------------- {{{2
+" http://sjl.bitbucket.org/gundo.vim/
+" hg clone ssh://hg@bitbucket.org/sjl/gundo.vim
+nnoremap <Leader>u :GundoToggle<CR>
+
 " Haskell Conceal ------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3200
 " https://github.com/Twinside/vim-haskellConceal
