@@ -439,7 +439,7 @@ let g:UltiSnipsEditSplit = 'vertical'
 " This one has more features, I am not using this one right now.
 " It doesn't honor my sw, sts settings.
 
-" Commands, Mappings and Functions ------------------------------ {{{1
+" Commands, Mappings and Functions -------------------- {{{1
 " <Space> in Normal mode ------------------------------ {{{2
 " Center current line
 "nnoremap <Space> zz
