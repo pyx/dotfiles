@@ -43,7 +43,7 @@ if has("gui_running")
   " set spell
 
   " Ctrl-F12 Toggle Menubar and Toolbar
-  nmap <silent> <C-F12> :
+  nnoremap <silent> <C-F12> :
     \ if &guioptions =~# 'T' <Bar>
       \ set guioptions-=T <Bar>
       \ set guioptions-=m <Bar>
@@ -100,17 +100,17 @@ if has("autocmd")
   " py.test Support ----------------------------------- {{{2
   augroup pytest
     au!
-    autocmd FileType python nnoremap <buffer> <silent> <Leader>tf <Esc>:Pytest file looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <Leader>tc <Esc>:Pytest class looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <Leader>tm <Esc>:Pytest method looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <LocalLeader>tf <Esc>:Pytest file looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <LocalLeader>tc <Esc>:Pytest class looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <LocalLeader>tm <Esc>:Pytest method looponfail<CR>
 
   " Mappings for reStructuredText: Section Headers ---- {{{2
   augroup restructuredtext
     au!
     " Normal Mode: Headings with overline and underline adornments
-    autocmd FileType rst nnoremap <buffer> <Leader>h :call MarkReSTSessionTitle(1)<CR>
+    autocmd FileType rst nnoremap <buffer> <LocalLeader>h :call MarkReSTSessionTitle(1)<CR>
     " Normal Mode: Sessions with underline adornment
-    autocmd FileType rst nnoremap <buffer> <Leader>s :call MarkReSTSessionTitle(0)<CR>
+    autocmd FileType rst nnoremap <buffer> <LocalLeader>s :call MarkReSTSessionTitle(0)<CR>
     " Insert Mode: Headings with overline and underline adornments
     autocmd FileType rst inoremap <buffer> <C-]> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
     " Insert Mode: Headings with underline adornment
@@ -267,14 +267,11 @@ endif
 " http://code.google.com/p/conque/
 " interactive shell in vim buffer
 " Bash
-nmap <C-F5> :ConqueTerm bash<CR>
-nmap <F5> :ConqueTermSplit bash<CR>
+nnoremap <Leader>sh :ConqueTermSplit bash<CR>
 " Python Shell
-nmap <C-F6> :ConqueTerm python<CR>
-nmap <F6> :ConqueTermSplit python<CR>
+nnoremap <Leader>py :ConqueTermSplit python<CR>
 " gdb
-nmap <C-F7> :ConqueTerm gdb<CR>
-nmap <F7> :ConqueTermSplit gdb<CR>
+nnoremap <Leader>gdb :ConqueTermSplit gdb<CR>
 
 " Ctrl-P ---------------------------------------------- {{{2
 " http://kien.github.com/ctrlp.vim/
@@ -297,12 +294,11 @@ let g:ctrlp_custom_ignore = {
 " Cute Python ----------------------------------------- {{{2
 " https://github.com/ehamberg/vim-cute-python
 
-" dot.vim --------------------------------------------- {{{2
+" dot.vim ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1225
 if has("autocmd")
   " Mapping for reStructuredText
-  autocmd FileType rst nmap <buffer> <F8> :DotOutlineTree<CR>
-  autocmd FileType rst imap <buffer> <F8> <ESC>:DotOutlineTree<CR>
+  autocmd FileType rst nnoremap <buffer> <LocalLeader>dot :DotOutlineTree<CR>
 endif " has("autocmd")
 
 " FuzzyFinder ----------------------------------------- {{{2
@@ -315,10 +311,10 @@ endif " has("autocmd")
 " mapping for FuzzyFinder
 " use V 3.4
 "set runtimepath+=~/projects/vim-fuzzyfinder/
-"map <F3> :FufFile ~/projects/<CR>
+"nnoremap <Leader>ff :FufFile ~/projects/<CR>
 " search from cwd
-map <F3> :FufFile<CR>
-map <F4> :FufBuffer<CR>
+nnoremap <Leader>ff :FufFile<CR>
+nnoremap <Leader>fb :FufBuffer<CR>
 
 " Haskell Conceal ------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3200
@@ -330,7 +326,7 @@ map <F4> :FufBuffer<CR>
 " NERDTree -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1658
 " https://github.com/scrooloose/nerdtree
-map <F2> :NERDTreeToggle<CR>
+nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
@@ -374,12 +370,12 @@ let g:sparkupNextMapping = '<C-J>'
 " Tagbar ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3465
 " http://github.com/majutsushi/tagbar
-nnoremap <silent> <F8> :TagbarToggle<CR>
+nnoremap <Leader>tb :TagbarToggle<CR>
 
 " Taglist --------------------------------------------- {{{2
 " http://vim-taglist.sourceforge.net/
-nnoremap <silent> <C-F8> :TlistToggle<CR>
-"map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+"nnoremap <Leader>tg :TlistToggle<CR>
+"nnoremap <Leader>gt :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " add python tags
 " ctags file is generated like this:
 " ctags -R -f ~/.vim/tags/python.ctags --c-kinds=+p --fields=+S /usr/lib/python2.6/
@@ -391,7 +387,7 @@ nnoremap <silent> <C-F8> :TlistToggle<CR>
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
-map <F9> <Plug>TaskList
+nnoremap <Leader>tl :TaskList
 
 " UltiSnips ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2715
