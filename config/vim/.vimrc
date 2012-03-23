@@ -398,7 +398,7 @@ nnoremap <Leader>tb :TagbarToggle<CR>
 
 " Taglist --------------------------------------------- {{{2
 " http://vim-taglist.sourceforge.net/
-"nnoremap <Leader>tg :TlistToggle<CR>
+"nnoremap <Leader>tl :TlistToggle<CR>
 "nnoremap <Leader>gt :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " add python tags
 " ctags file is generated like this:
@@ -411,7 +411,6 @@ nnoremap <Leader>tb :TagbarToggle<CR>
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
-nnoremap <Leader>tl :TaskList
 
 " UltiSnips ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2715
