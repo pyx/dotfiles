@@ -466,12 +466,14 @@ let g:UltiSnipsEditSplit = 'vertical'
 " <Space> in Normal mode ------------------------------ {{{2
 " Center current line
 "nnoremap <Space> zz
+" Center current line and reset highlighting for search
+nnoremap <Space> zz:nohlsearch<CR>
 " Next empty Line
 "nnoremap <Space> }
 " Insert one character
 "nnoremap <Space> i_<ESC>r
 " Quick command mode
-nnoremap <Space> :
+"nnoremap <Space> :
 " Toggle fold
 "nnoremap <Space> za
 "
