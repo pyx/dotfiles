@@ -68,6 +68,7 @@ dev-libs/libgcrypt static-libs
 dev-python/pymongo mod_wsgi
 
 # Haskell
+dev-lang/ghc llvm
 dev-haskell/binary hscolour profile
 dev-haskell/dataenc hscolour profile
 dev-haskell/deepseq hscolour profile

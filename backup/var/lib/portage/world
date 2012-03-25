@@ -62,6 +62,8 @@ app-vim/vim-spell-en
 app-vim/vimpython
 dev-cpp/libglademm
 dev-db/mongodb
+dev-haskell/happy
+dev-lang/ghc
 dev-lang/gprolog
 dev-lang/ocaml
 dev-lang/python:2.6
