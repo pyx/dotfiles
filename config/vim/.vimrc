@@ -119,23 +119,23 @@ if has("autocmd")
   " py.test Support ----------------------------------- {{{2
   augroup pytest
     au!
-    autocmd FileType python nnoremap <buffer> <silent> <LocalLeader>tf <Esc>:Pytest file looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <LocalLeader>tc <Esc>:Pytest class looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <LocalLeader>tm <Esc>:Pytest method looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tf <Esc>:Pytest file looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tc <Esc>:Pytest class looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tm <Esc>:Pytest method looponfail<CR>
 
   " Mappings for reStructuredText: Section Headers ---- {{{2
   augroup restructuredtext
     au!
     " Normal Mode: Headings with overline and underline adornments
-    autocmd FileType rst nnoremap <buffer> <LocalLeader>h :call MarkReSTSessionTitle(1)<CR>
+    autocmd FileType rst nnoremap <buffer> <localleader>h :call MarkReSTSessionTitle(1)<CR>
     " Normal Mode: Sessions with underline adornment
-    autocmd FileType rst nnoremap <buffer> <LocalLeader>s :call MarkReSTSessionTitle(0)<CR>
+    autocmd FileType rst nnoremap <buffer> <localleader>s :call MarkReSTSessionTitle(0)<CR>
     " Insert Mode: Headings with overline and underline adornments
     autocmd FileType rst inoremap <buffer> <C-]> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
     " Insert Mode: Headings with underline adornment
     autocmd FileType rst inoremap <buffer> <C-J> <C-\><C-O>:call MarkReSTSessionTitle(0)<CR>
     " Mapping for plugin DOT
-    autocmd FileType rst nnoremap <buffer> <LocalLeader>dot :DotOutlineTree<CR>
+    autocmd FileType rst nnoremap <buffer> <localleader>dot :DotOutlineTree<CR>
 
   " Tamplate Languages -------------------------------- {{{2
   augroup template_langs
@@ -294,11 +294,11 @@ endif
 " http://code.google.com/p/conque/
 " interactive shell in vim buffer
 " Bash
-nnoremap <Leader>sh :ConqueTermSplit bash<CR>
+nnoremap <leader>sh :ConqueTermSplit bash<CR>
 " Python Shell
-nnoremap <Leader>py :ConqueTermSplit python<CR>
+nnoremap <leader>py :ConqueTermSplit python<CR>
 " gdb
-nnoremap <Leader>gdb :ConqueTermSplit gdb<CR>
+nnoremap <leader>gdb :ConqueTermSplit gdb<CR>
 
 " Ctrl-P ---------------------------------------------- {{{2
 " http://kien.github.com/ctrlp.vim/
@@ -334,15 +334,15 @@ let g:ctrlp_custom_ignore = {
 " mapping for FuzzyFinder
 " use V 3.4
 "set runtimepath+=~/projects/vim-fuzzyfinder/
-"nnoremap <Leader>ff :FufFile ~/projects/<CR>
+"nnoremap <leader>ff :FufFile ~/projects/<CR>
 " search from cwd
-nnoremap <Leader>ff :FufFile<CR>
-nnoremap <Leader>fb :FufBuffer<CR>
+nnoremap <leader>ff :FufFile<CR>
+nnoremap <leader>fb :FufBuffer<CR>
 
 " Gundo ----------------------------------------------- {{{2
 " http://sjl.bitbucket.org/gundo.vim/
 " hg clone ssh://hg@bitbucket.org/sjl/gundo.vim
-nnoremap <Leader>u :GundoToggle<CR>
+nnoremap <leader>u :GundoToggle<CR>
 
 " Haskell Conceal ------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3200
@@ -354,7 +354,7 @@ nnoremap <Leader>u :GundoToggle<CR>
 " NERDTree -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1658
 " https://github.com/scrooloose/nerdtree
-nnoremap <Leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
@@ -398,12 +398,12 @@ let g:sparkupNextMapping = '<C-J>'
 " Tagbar ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3465
 " http://github.com/majutsushi/tagbar
-nnoremap <Leader>tb :TagbarToggle<CR>
+nnoremap <leader>tb :TagbarToggle<CR>
 
 " Taglist --------------------------------------------- {{{2
 " http://vim-taglist.sourceforge.net/
-"nnoremap <Leader>tl :TlistToggle<CR>
-"nnoremap <Leader>gt :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+"nnoremap <leader>tl :TlistToggle<CR>
+"nnoremap <leader>gt :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " add python tags
 " ctags file is generated like this:
 " ctags -R -f ~/.vim/tags/python.ctags --c-kinds=+p --fields=+S /usr/lib/python2.6/
@@ -420,9 +420,9 @@ nnoremap <Leader>tb :TagbarToggle<CR>
 " http://www.vim.org/scripts/script.php?script_id=2715
 " official mirror: https://github.com/sirver/ultisnips
 " TextMate style:
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsExpandTrigger = "<Tab>"
+let g:UltiSnipsJumpForwardTrigger = "<Tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
 " local snippets only:
 "let g:UltiSnipsSnippetDirectories = ["snippets"]
 " Snippets dir
@@ -475,7 +475,7 @@ nnoremap <Space> zz:nohlsearch<CR>
 " Next empty Line
 "nnoremap <Space> }
 " Insert one character
-"nnoremap <Space> i_<ESC>r
+"nnoremap <Space> i_<Esc>r
 " Quick command mode
 "nnoremap <Space> :
 " Toggle fold
