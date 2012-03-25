@@ -137,6 +137,12 @@ if has("autocmd")
     " Mapping for plugin DOT
     autocmd FileType rst nnoremap <buffer> <LocalLeader>dot :DotOutlineTree<CR>
 
+  " Tamplate Languages -------------------------------- {{{2
+  augroup template_langs
+    au!
+    " Using something other than {{{,}}} as foldmarker
+    autocmd FileType htmldjango,django,jinja,jinja2 setlocal foldmarker=[--,--] commentstring={#\ %s\ #}
+
   " Default tab settings for different file types ----- {{{2
   augroup tab_settings
     au!
