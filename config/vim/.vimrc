@@ -134,6 +134,8 @@ if has("autocmd")
     autocmd FileType rst inoremap <buffer> <C-]> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
     " Insert Mode: Headings with underline adornment
     autocmd FileType rst inoremap <buffer> <C-J> <C-\><C-O>:call MarkReSTSessionTitle(0)<CR>
+    " Mapping for plugin DOT
+    autocmd FileType rst nnoremap <buffer> <LocalLeader>dot :DotOutlineTree<CR>
 
   " Default tab settings for different file types ----- {{{2
   augroup tab_settings
@@ -315,10 +317,6 @@ let g:ctrlp_custom_ignore = {
 
 " dot.vim ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1225
-if has("autocmd")
-  " Mapping for reStructuredText
-  autocmd FileType rst nnoremap <buffer> <LocalLeader>dot :DotOutlineTree<CR>
-endif " has("autocmd")
 
 " FuzzyFinder ----------------------------------------- {{{2
 " vim-l9 is the requirement of fuzzyfinder 4.*
