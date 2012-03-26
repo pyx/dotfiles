@@ -525,8 +525,8 @@ function! MarkReSTSessionTitle(overline)
     if a:overline
       let l:failed = append(l:curline-1, l:adornment)
     endif
-    normal j
-    normal $
+    normal! j
+    normal! $
   endif
 endfunction
 
