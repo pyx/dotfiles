@@ -437,12 +437,11 @@ let g:UltiSnipsEditSplit = 'vertical'
 " VimIm ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2506
 " vimim settings, show menu background color
-"let g:vimim_wildcard_search=1
-"let g:vimim_sexy_onekey=1
-"let g:vimim_chinese_frequency=10
-"let g:vimim_custom_color=0
+let g:vimim_cloud = -1
+"let g:vimim_map = 'c-bslash'
 "let g:vimim_mode = 'static'
-"let g:vimim_map= 'no-gi'
+"let g:vimim_mycloud = 0
+let g:vimim_toggle = 'pinyin'
 
 " xpt, XP Templates ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2611
