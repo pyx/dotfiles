@@ -57,6 +57,16 @@ function get_hg_rev_phase()
   hg phase . 2> /dev/null | cut -d ' ' -f 2
 }
 
+function get_hg_mq_applied_patches()
+{
+  hg qapplied 2> /dev/null | tr '\n' ' '
+}
+
+function get_hg_mq_top_patches()
+{
+  hg qheader 2> /dev/null
+}
+
 function get_git_repos_branch()
 {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/"
@@ -79,8 +89,8 @@ function get_git_repos_index_dirty()
 
 function repos_info()
 {
-  LEFT_ARROW=" \e${CC_WHITE}← "
-  RIGHT_ARROR=" \e${CC_WHITE}→ "
+  LEFT_ARROW="\e${CC_WHITE}←"
+  RIGHT_ARROR="\e${CC_WHITE}→"
 
   HG_REV_ID="$(get_hg_rev_id)"
   if [ "${HG_REV_ID}" ]
@@ -107,16 +117,23 @@ function repos_info()
     HG_REV_TAGS="$(get_hg_rev_tags)"
     if [ "${HG_REV_TAGS}" ]
     then
-      HG_REV_TAGS="${LEFT_ARROW}\e${CC_LIGHT_PURPLE}${HG_REV_TAGS}"
+      HG_REV_TAGS=" ${LEFT_ARROW} \e${CC_LIGHT_PURPLE}${HG_REV_TAGS}"
     fi
 
     HG_REV_BOOKMARKS="$(get_hg_rev_bookmarks)"
     if [ "${HG_REV_BOOKMARKS}" ]
     then
-      HG_REV_BOOKMARKS="${LEFT_ARROW}\e${CC_LIGHT_GREEN}${HG_REV_BOOKMARKS}"
+      HG_REV_BOOKMARKS=" ${LEFT_ARROW} \e${CC_LIGHT_GREEN}${HG_REV_BOOKMARKS}"
     fi
 
-    printf \\n%b "${HG_BANNER} ${HG_REV_BRANCHES}${RIGHT_ARROR}${HG_REV_ID}${HG_REV_TAGS}${HG_REV_BOOKMARKS}"
+    HG_MQ_PATCHES="$(get_hg_mq_applied_patches)"
+    if [ "${HG_MQ_PATCHES}" ]
+    then
+	    HG_MQ_PATCHES="\n\e${CC_WHITE}Applied Patches \e${CC_BROWN}${HG_MQ_PATCHES}\e${LEFT_ARROW} \e${CC_DARK_GRAY}$(get_hg_mq_top_patches)"
+    fi
+
+    printf \\n%b "${HG_BANNER} ${HG_REV_BRANCHES} ${RIGHT_ARROR} ${HG_REV_ID}${HG_REV_TAGS}${HG_REV_BOOKMARKS}${HG_MQ_PATCHES}"
+
   fi
 
   GIT_REPOS_BRANCH="$(get_git_repos_branch)"
@@ -132,7 +149,7 @@ function repos_info()
       GIT_REV_COLOR="\e${CC_YELLOW}"
     fi
     GIT_REV_ID="\e${CC_WHITE}Rev ${GIT_REV_COLOR}${GIT_REV_HASH}${GIT_INDEX_DIRTY}${GIT_WD_DIRTY}"
-    printf \\n%b "\e${CC_WHITE}\e${CC_LIGHT_GRAY}Git\e${CC_WHITE} :: Branch \e${CC_LIGHT_BLUE}${GIT_REPOS_BRANCH}${RIGHT_ARROR}${GIT_REV_ID}"
+    printf \\n%b "\e${CC_WHITE}\e${CC_LIGHT_GRAY}Git\e${CC_WHITE} :: Branch \e${CC_LIGHT_BLUE}${GIT_REPOS_BRANCH} ${RIGHT_ARROR} ${GIT_REV_ID}"
   fi
 }
 
