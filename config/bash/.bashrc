@@ -129,7 +129,7 @@ function repos_info()
     HG_MQ_PATCHES="$(get_hg_mq_applied_patches)"
     if [ "${HG_MQ_PATCHES}" ]
     then
-	    HG_MQ_PATCHES="\n\e${CC_WHITE}Applied Patches \e${CC_BROWN}${HG_MQ_PATCHES}\e${LEFT_ARROW} \e${CC_DARK_GRAY}$(get_hg_mq_top_patches)"
+	    HG_MQ_PATCHES="\n\e${CC_WHITE}Applied Patches \e${CC_BROWN}${HG_MQ_PATCHES}${LEFT_ARROW} \e${CC_DARK_GRAY}$(get_hg_mq_top_patches)"
     fi
 
     printf \\n%b "${HG_BANNER} ${HG_REV_BRANCHES} ${RIGHT_ARROR} ${HG_REV_ID}${HG_REV_TAGS}${HG_REV_BOOKMARKS}${HG_MQ_PATCHES}"
