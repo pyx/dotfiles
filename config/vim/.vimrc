@@ -7,6 +7,7 @@ syntax on
 set nocompatible
 filetype plugin indent on
 
+set hidden
 set hlsearch
 set incsearch
 set ruler
