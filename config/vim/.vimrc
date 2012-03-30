@@ -120,9 +120,16 @@ if has("autocmd")
   " py.test Support ----------------------------------- {{{2
   augroup pytest
     au!
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tf <Esc>:Pytest file looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tf <Esc>:Pytest function looponfail<CR>
     autocmd FileType python nnoremap <buffer> <silent> <localleader>tc <Esc>:Pytest class looponfail<CR>
     autocmd FileType python nnoremap <buffer> <silent> <localleader>tm <Esc>:Pytest method looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tF <Esc>:Pytest file looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tC <Esc>:Pytest clear<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>te <Esc>:Pytest error<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tn <Esc>:Pytest next<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tp <Esc>:Pytest previous<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>ts <Esc>:Pytest session<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tx <Esc>:Pytest fails<CR>
 
   " Mappings for reStructuredText: Section Headers ---- {{{2
   augroup restructuredtext
@@ -416,6 +423,7 @@ nnoremap <leader>tb :TagbarToggle<CR>
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
+nnoremap <leader>tl <Plug>TaskList
 
 " UltiSnips ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2715
