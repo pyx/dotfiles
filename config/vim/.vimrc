@@ -62,8 +62,8 @@ match ExtraWhitespace /\s\+$/
 set laststatus=2
 
 set statusline=%#ColorColumn#%2n             " buffer number
-set statusline+=%<                           " truncate here
 set statusline+=%*»                          " separator
+set statusline+=%<                           " truncate here
 set statusline+=%#DiffChange#%{getcwd()}/%*  " current working directory
 set statusline+=%#DiffAdd#%f%*               " path to the file in the buffer
 set statusline+=%#DiffText#%m                " modified flag
