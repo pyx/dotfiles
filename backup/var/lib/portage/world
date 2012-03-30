@@ -74,6 +74,7 @@ dev-lisp/sbcl
 dev-python/django
 dev-python/elixir
 dev-python/fabric
+dev-python/ipython
 dev-python/markdown
 dev-python/pep8
 dev-python/pyPdf
