@@ -297,9 +297,13 @@ endif
 " ack.vim, Ack front-end for vim ---------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2572
 " https://github.com/mileszs/ack.vim
+" git clone git://github.com/mileszs/ack.vim.git
 
 " Conque ---------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=2771
 " http://code.google.com/p/conque/
+" svn checkout http://conque.googlecode.com/svn/trunk/ conque
+"
 " interactive shell in vim buffer
 " Bash
 nnoremap <leader>sh :ConqueTermSplit bash<CR>
@@ -309,9 +313,11 @@ nnoremap <leader>py :ConqueTermSplit python<CR>
 nnoremap <leader>gdb :ConqueTermSplit gdb<CR>
 
 " Ctrl-P ---------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3736
 " http://kien.github.com/ctrlp.vim/
-" git://github.com/kien/ctrlp.vim.git
 " https://bitbucket.org/kien/ctrlp.vim
+" git clone git://github.com/kien/ctrlp.vim.git
+"
 " Mappings:
 " let g:ctrlp_map = '<C-P>'
 " Search from project root:
@@ -328,6 +334,7 @@ let g:ctrlp_custom_ignore = {
 
 " Cute Python ----------------------------------------- {{{2
 " https://github.com/ehamberg/vim-cute-python
+" #git clone git://github.com/ehamberg/vim-cute-python.git
 
 " dot.vim ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1225
@@ -336,12 +343,14 @@ let g:ctrlp_custom_ignore = {
 " vim-l9 is the requirement of fuzzyfinder 4.*
 " http://www.vim.org/scripts/script.php?script_id=3252
 " http://bitbucket.org/ns9tks/vim-l9/
-"set runtimepath+=~/projects/vim-l9/
+" #hg clone https://bitbucket.org/ns9tks/vim-l9
+"
 " http://www.vim.org/scripts/script.php?script_id=1984
 " http://bitbucket.org/ns9tks/vim-fuzzyfinder/
+" #hg clone https://bitbucket.org/ns9tks/vim-fuzzyfinder
+"
 " mapping for FuzzyFinder
 " use V 3.4
-"set runtimepath+=~/projects/vim-fuzzyfinder/
 "nnoremap <leader>ff :FufFile ~/projects/<CR>
 " search from cwd
 nnoremap <leader>ff :FufFile<CR>
@@ -349,45 +358,56 @@ nnoremap <leader>fb :FufBuffer<CR>
 
 " Gundo ----------------------------------------------- {{{2
 " http://sjl.bitbucket.org/gundo.vim/
-" hg clone ssh://hg@bitbucket.org/sjl/gundo.vim
+" hg clone https://bitbucket.org/sjl/gundo.vim
 nnoremap <leader>u :GundoToggle<CR>
 
 " Haskell Conceal ------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3200
 " https://github.com/Twinside/vim-haskellConceal
+" #git clone git://github.com/Twinside/vim-haskellConceal.git
 
 " Indent Guides --------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3361
 " https://github.com/nathanaelkane/vim-indent-guides
+" git clone git://github.com/vim-scripts/Indent-Guides.git
 
 " NERDTree -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1658
 " https://github.com/scrooloose/nerdtree
+" git clone git://github.com/scrooloose/nerdtree.git
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
 " https://github.com/tpope/vim-pathogen
+" git clone git://github.com/tpope/vim-pathogen.git
 
 " py.test --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3424
 " https://github.com/alfredodeza/pytest.vim.git
+" git://github.com/alfredodeza/pytest.vim.git
 
 " Rainbow Parentheses --------------------------------- {{{2
 " https://github.com/kien/rainbow_parentheses.vim
+" #git clone git://github.com/kien/rainbow_parentheses.vim.git
 
 " Slimv ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2531
 " https://bitbucket.org/kovisoft/slimv/
+" hg clone https://bitbucket.org/kovisoft/slimv
 let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp" &'
 
 " snipMate -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2540
 " http://github.com/msanders/snipmate.vim
-" https://github.com/garbas/vim-snipmate
+" #git clone git://github.com/msanders/snipmate.vim.git
 
 " Sparkup --------------------------------------------- {{{2
 " You can write HTML in a CSS-like syntax, and have Sparkup handle the
 " expansion to full HTML code.
 " http://github.com/rstacruz/sparkup
+" git clone git://github.com/rstacruz/sparkup.git
+"
 " try this:
 " ihtml:xxs>#wrapper>#nav>h2{navigation}+ul>li#id_$*3>a<<<#main{Page Content}+div#footer{Footer}<c-tab>
 let g:sparkupExecuteMapping = '<C-]>'
@@ -395,26 +415,34 @@ let g:sparkupNextMapping = '<C-J>'
 
 " SuperTab -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1643
+" https://github.com/ervandew/supertab
+" #git clone git://github.com/ervandew/supertab.git
 
 " Surround -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1697
+" https://github.com/tpope/vim-surround
 " git://github.com/tpope/vim-surround.git
 
 " Syntastic ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2736
-" https://github.com/scrooloose/syntastic/
+" https://github.com/scrooloose/syntastic
 " git://github.com/scrooloose/syntastic.git
 
 " Tabular --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3464
 " https://github.com/godlygeek/tabular
+" git://github.com/godlygeek/tabular.git
 
 " Tagbar ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3465
 " http://github.com/majutsushi/tagbar
+" git clone git://github.com/majutsushi/tagbar.git
 nnoremap <leader>tb :TagbarToggle<CR>
 
 " Taglist --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=273
 " http://vim-taglist.sourceforge.net/
+"
 "nnoremap <leader>tl :TlistToggle<CR>
 "nnoremap <leader>gt :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " add python tags
@@ -433,6 +461,8 @@ nnoremap <leader>tl <Plug>TaskList
 " UltiSnips ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2715
 " official mirror: https://github.com/sirver/ultisnips
+" git clone git://github.com/vim-scripts/UltiSnips.git
+"
 " TextMate style:
 let g:UltiSnipsExpandTrigger = "<Tab>"
 let g:UltiSnipsJumpForwardTrigger = "<Tab>"
@@ -446,10 +476,17 @@ let g:UltiSnipsEditSplit = 'vertical'
 
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color
+" git clone git://github.com/skammer/vim-css-color.git
+"
 " let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " VimIm ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2506
+" http://code.google.com/p/vimim/
+" https://github.com/vimim/vimim
+" #svn checkout https://vimim.googlecode.com/svn/trunk/ vimim
+" git clone git://github.com/vimim/vimim.git
+"
 " vimim settings, show menu background color
 let g:vimim_cloud = -1
 "let g:vimim_map = 'c-bslash'
@@ -460,22 +497,24 @@ let g:vimim_toggle = 'pinyin'
 " xpt, XP Templates ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2611
 " http://code.google.com/p/xptemplate
-
+" https://github.com/drmingdrmer/xptemplate
+" #git clone git://github.com/drmingdrmer/xptemplate.git
+"
 " use <Tab> key as trigger
 " let g:xptemplate_key = '<Tab>'
 " no spaces inside ()
 " let g:xptemplate_vars = "SParg="
-
+"
 " not going to set it now.
 " let g:xptemplate_vars = "author=somebody&email=nobody@gmail.com"
-
-" set runtimepath+=~/projects/xpt
-" set runtimepath+=~/projects/xpt/after
 
 " ZenCoding.vim --------------------------------------- {{{2
 " vim plugins for HTML and CSS hi-speed coding.
 " http://www.vim.org/scripts/script.php?script_id=2981
 " http://mattn.github.com/zencoding-vim/
+" https://github.com/mattn/zencoding-vim/
+" #git clone git://github.com/mattn/zencoding-vim.git
+"
 " This one has more features, I am not using this one right now.
 " It doesn't honor my sw, sts settings.
 
