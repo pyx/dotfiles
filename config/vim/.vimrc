@@ -299,6 +299,13 @@ endif
 " https://github.com/mileszs/ack.vim
 " git clone git://github.com/mileszs/ack.vim.git
 
+" Clam ------------------------------------------------ {{{2
+" http://www.vim.org/scripts/script.php?script_id=4000
+" https://github.com/sjl/clam.vim
+" https://bitbucket.org/sjl/clam.vim/
+" hg clone https://bitbucket.org/sjl/clam.vim
+nnoremap <leader>c :Clam<Space>
+
 " Conque ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2771
 " http://code.google.com/p/conque/
