@@ -449,17 +449,7 @@ nnoremap <leader>tb :TagbarToggle<CR>
 " Taglist --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=273
 " http://vim-taglist.sourceforge.net/
-"
 "nnoremap <leader>tl :TlistToggle<CR>
-"nnoremap <leader>gt :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-" add python tags
-" ctags file is generated like this:
-" ctags -R -f ~/.vim/tags/python.ctags --c-kinds=+p --fields=+S /usr/lib/python2.6/
-"set tags+=$HOME/.vim/tags/python.ctags
-" for C/C++ with signature
-" ctags -R -f ~/.vim/tags/c.ctags --c-kinds=+p --fields=+S /usr/include/
-" ctags -R -f ~/.vim/tags/cpp.ctags --c++-kinds=+p --fields=+iaS --extra=+q /usr/include
-"set tags+=$HOME/.vim/tags/cpp.ctags
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
@@ -546,6 +536,11 @@ cnoreab cdh cd %:p:h
 cnoreab cd. cd %:p:h
 cnoreab lcdh lcd %:p:h
 cnoreab lcd. lcd %:p:h
+
+" tags ------------------------------------------------ {{{2
+set tags+=.tags;
+set tags+=tags;
+nnoremap <leader>gt :!ctags -R -f .tags<CR>
 
 " Code Folding ---------------------------------------- {{{2
 " I love markers
