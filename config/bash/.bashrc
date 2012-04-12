@@ -160,7 +160,7 @@ function virtualenv_prompt()
 {
   VIRTUALENV_PROMPT=$(basename "${VIRTUAL_ENV}")
   if [ "${VIRTUALENV_PROMPT}" ]; then
-    printf %b "\e${CC_WHITE}[\e${CC_WHITE}VirtualEnv \e${CC_LIGHT_CYAN}${VIRTUALENV_PROMPT}\e${CC_WHITE}] "
+    printf %b "\e${CC_WHITE}-> \e${CC_WHITE}VirtualEnv \e${CC_LIGHT_CYAN}${VIRTUALENV_PROMPT} "
   fi
 }
 
