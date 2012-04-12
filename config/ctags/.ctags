@@ -1,2 +1,3 @@
 --fields=+afikKlmnsSzt
 --extra=+fq
+--Python-kinds=-i
