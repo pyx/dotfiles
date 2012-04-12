@@ -89,8 +89,8 @@ function get_git_repos_index_dirty()
 
 function repos_info()
 {
-  LEFT_ARROW="\e${CC_WHITE}←"
-  RIGHT_ARROR="\e${CC_WHITE}→"
+  LEFT_ARROW="\e${CC_WHITE}<-"
+  RIGHT_ARROR="\e${CC_WHITE}->"
 
   HG_REV_ID="$(get_hg_rev_id)"
   if [ "${HG_REV_ID}" ]
@@ -160,12 +160,12 @@ function virtualenv_prompt()
 {
   VIRTUALENV_PROMPT=$(basename "${VIRTUAL_ENV}")
   if [ "${VIRTUALENV_PROMPT}" ]; then
-    printf %b "\e${CC_WHITE}→ \e${CC_WHITE}VirtualEnv \e${CC_LIGHT_CYAN}${VIRTUALENV_PROMPT} "
+    printf %b "\e${CC_WHITE}[\e${CC_WHITE}VirtualEnv \e${CC_LIGHT_CYAN}${VIRTUALENV_PROMPT}\e${CC_WHITE}] "
   fi
 }
 
 export PS1='$(header)$(repos_info)\n\
-\e${CC_WHITE}Login \e${CC_LIGHT_GREEN}\u \e${CC_RESET}at \e${CC_YELLOW}\h $(virtualenv_prompt)\e${CC_WHITE}⎆ \e${CC_LIGHT_BLUE}\w \e${CC_RESET}⏎ \n\
+\e${CC_WHITE}Login \e${CC_LIGHT_GREEN}\u \e${CC_RESET}at \e${CC_YELLOW}\h $(virtualenv_prompt)\e${CC_WHITE}>>= \e${CC_LIGHT_BLUE}\w \e${CC_RESET}\n\
 \[\e${CC_LIGHT_RED}\]\$\[\e${CC_RESET}\] '
 
 alias gv="gvim --remote-silent"
