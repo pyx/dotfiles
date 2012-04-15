@@ -52,6 +52,9 @@ if has("gui_running")
 
   set guioptions-=T
   set guioptions-=m
+  " no scroll bars
+  set guioptions-=r
+  set guioptions-=L
 endif
 
 " Mark extra whitespaces in red
