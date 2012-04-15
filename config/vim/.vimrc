@@ -224,8 +224,8 @@ if has("autocmd")
       \   exe "normal! g`\"" |
       \ endif
 
-    " turn on spell checker for email
-    autocmd FileType mail setlocal spell
+    " turn on spell checker for email and plain text file
+    autocmd FileType mail,text setlocal spell
 
   augroup END " --------------------------------------- }}}2
 else
