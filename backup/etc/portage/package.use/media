@@ -30,6 +30,7 @@ virtual/ffmpeg threads
 media-video/ffmpeg threads
 media-video/transcode -quicktime
 media-libs/lcms static-libs
+media-libs/sdl-mixer mod
 
 # required by new USE xvmc
 >=media-libs/mesa-8.0 g3dvl
