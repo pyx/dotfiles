@@ -1,6 +1,13 @@
-[user]
-name = Philip Xu
-email = pyx@xrefactor.com
+[merge]
+tool = splice
+
+[mergetool "splice"]
+cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+trustExitCode = true
 
 [sendemail]
 smtpserver = /usr/bin/msmtp
+
+[user]
+name = Philip Xu
+email = pyx@xrefactor.com

@@ -403,6 +403,10 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 " https://github.com/kien/rainbow_parentheses.vim
 " #git clone git://github.com/kien/rainbow_parentheses.vim.git
 
+" Splice ---------------------------------------------- {{{2
+" https://bitbucket.org/sjl/splice.vim
+" https://github.com/sjl/splice.vim
+
 " Slimv ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2531
 " https://bitbucket.org/kovisoft/slimv/

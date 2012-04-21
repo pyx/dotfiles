@@ -61,6 +61,10 @@ hgsubversion =
 
 [merge-tools]
 #kdiff3.args = $base $local $other -o $output
+splice.executable = gvim
+splice.args = -f $base $local $other $output -c 'SpliceInit'
+splice.premerge = keep
+splice.priority = 1
 
 [mq]
 # For Mercurial >= 2.1
