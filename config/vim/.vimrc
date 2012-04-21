@@ -406,6 +406,7 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 " Splice ---------------------------------------------- {{{2
 " https://bitbucket.org/sjl/splice.vim
 " https://github.com/sjl/splice.vim
+" hg clone https://bitbucket.org/sjl/splice.vim
 
 " Slimv ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2531
