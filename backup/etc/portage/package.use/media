@@ -37,6 +37,8 @@ media-libs/sdl-mixer mod
 
 virtual/jpeg static-libs
 media-libs/jpeg static-libs
+media-libs/libjpeg-turbo static-libs
+
 media-libs/libpng static-libs apng
 
 media-libs/libmng static-libs
