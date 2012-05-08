@@ -16,6 +16,7 @@ media-sound/traverso jack lv2a -pulseaudio
 
 # Graphics
 media-gfx/blender blender-game
+media-gfx/gimp gs jpeg2k
 
 # Libs
 media-libs/libass enca
