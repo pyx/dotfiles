@@ -292,6 +292,7 @@ if has("gui_running")
   set background=dark
   colorscheme badwolf
 else
+  set t_Co=256
   set background=dark
   colorscheme bocau
 endif
