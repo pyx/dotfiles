@@ -182,7 +182,7 @@ if has("autocmd")
     autocmd FileType vala setlocal sw=4 sts=4
     autocmd FileType xhtml setlocal sw=2 sts=2 et
     autocmd FileType xml setlocal sw=2 sts=2 et
-    autocmd FileType text setlocal textwidth=78
+    autocmd FileType text setlocal textwidth=72
 
   " Leave insert mode after 15 seconds of no input ---- {{{2
   augroup auto_escape
