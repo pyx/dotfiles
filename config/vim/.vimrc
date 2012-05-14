@@ -445,6 +445,7 @@ let g:sparkupNextMapping = '<C-J>'
 " http://www.vim.org/scripts/script.php?script_id=2736
 " https://github.com/scrooloose/syntastic
 " git://github.com/scrooloose/syntastic.git
+nnoremap <leader>st :SyntasticToggleMode<CR>
 
 " Tabular --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3464
