@@ -351,6 +351,7 @@ nnoremap <C-M> :CtrlPMixed<CR>
 " #git clone git://github.com/ehamberg/vim-cute-python.git
 
 " dot.vim ------------------------------------------- {{{2
+" https://bitbucket.org/shu/dotoutlinetree
 " http://www.vim.org/scripts/script.php?script_id=1225
 
 " FuzzyFinder ----------------------------------------- {{{2
