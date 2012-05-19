@@ -6,7 +6,7 @@ app-admin/syslog-ng
 app-arch/file-roller
 app-arch/p7zip
 app-arch/unrar
-app-benchmarks/bootchart
+app-benchmarks/bootchart2
 app-benchmarks/siege
 app-cdr/bchunk
 app-cdr/k3b
@@ -52,6 +52,7 @@ app-text/highlight
 app-text/htmldoc
 app-text/htmltidy
 app-text/mupdf
+app-text/pandoc
 app-text/texlive
 app-text/xchm
 app-vim/colorschemes
@@ -96,6 +97,7 @@ dev-python/virtualenv
 dev-ruby/json
 dev-scheme/chicken
 dev-scheme/racket
+dev-texlive/texlive-luatex
 dev-util/ccache
 dev-util/codeblocks
 dev-util/codelite
@@ -255,7 +257,6 @@ x11-libs/xcb-util
 x11-misc/cairo-clock
 x11-misc/dmenu
 x11-misc/e16menuedit2
-x11-misc/fme
 x11-misc/menumaker
 x11-misc/xcompmgr
 x11-plugins/epplets

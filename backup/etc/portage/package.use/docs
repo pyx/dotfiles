@@ -25,6 +25,7 @@ dev-haskell/http doc
 dev-haskell/mmap doc
 dev-haskell/mtl doc
 dev-haskell/network doc
+app-text/pandoc hscolour
 dev-haskell/parsec doc
 dev-haskell/regex-base doc
 dev-haskell/regex-compat doc
