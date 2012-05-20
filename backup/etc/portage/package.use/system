@@ -14,7 +14,7 @@ dev-libs/DirectFB fbcon
 sys-apps/hal consolekit policykit
 sys-fs/udev extras
 sys-libs/zlib minizip static-libs
-sys-apps/busybox static
+sys-apps/busybox sep-usr static
 #required by sys-fs/udev-171-r3[extras], required by x11-base/xorg-server-1.11.2-r2[udev], required by @selected, required by @world (argument)
 >=sys-apps/pciutils-3.1.8 -zlib
 #required by virtual/rubygems-4, required by dev-ruby/racc-1.4.7[-test,ruby_targets_ruby19], required by dev-ruby/rdoc-3.12[ruby_targets_ruby19], required by dev-lang/ruby-1.9.3_p0[rdoc], required by dev-ruby/rake-0.9.2.2[ruby_targets_ruby19], required by dev-ruby/json-1.6.3[-test,-doc,ruby_targets_ruby18], required by @selected, required by @world (argument)
