@@ -64,7 +64,7 @@ function get_hg_mq_applied_patches()
 
 function get_hg_mq_top_patches()
 {
-  hg qheader 2> /dev/null
+  hg qheader 2> /dev/null | head -n1
 }
 
 function get_git_repos_branch()
