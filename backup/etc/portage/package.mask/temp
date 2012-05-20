@@ -10,12 +10,3 @@
 # temp. for net
 =sys-apps/openrc-0.9.9
 =x11-misc/xcompmgr-1.1.6
-
-# eselect news read 12
->=sys-fs/udev-182
-# this one forces me with udev-182
->=sys-auth/consolekit-0.4.5-r1
-
-# removed keyword 'compress-db' cause udev-171-r5 complains
-=sys-apps/pciutils-3.1.9-r2
-=sys-apps/usbutils-005-r1
