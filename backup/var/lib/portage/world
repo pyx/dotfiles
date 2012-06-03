@@ -52,7 +52,6 @@ app-text/highlight
 app-text/htmldoc
 app-text/htmltidy
 app-text/mupdf
-app-text/pandoc
 app-text/texlive
 app-text/xchm
 app-vim/colorschemes
