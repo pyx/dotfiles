@@ -39,7 +39,7 @@ function mkvirtualenv() {
   if [ -d "$VIRTUALENVS_DIR/$1" ]; then
     echo "[!] virtualenv with name [$1] already exist."
   else
-    virtualenv --no-site-packages "$VIRTUALENVS_DIR/$1"
+    virtualenv "$VIRTUALENVS_DIR/$1" ${@:2:7}
     if [ "$?" -ne "0" ]; then
       echo "[!] failed to create virtualenv [$1]."
       if [ -d "$VIRTUALENVS_DIR/$1" ]; then
