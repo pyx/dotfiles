@@ -14,6 +14,7 @@ dev-db/sqlite doc
 dev-games/openscenegraph doc
 dev-games/physfs doc
 dev-haskell/binary doc
+dev-haskell/blaze-markup doc
 dev-haskell/cabal doc
 dev-haskell/dataenc doc
 dev-haskell/deepseq doc

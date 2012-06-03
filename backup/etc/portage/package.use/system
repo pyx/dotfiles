@@ -29,6 +29,4 @@ sys-apps/busybox sep-usr static
 >=dev-ruby/rdoc-3.12 ruby_targets_ruby19
 #required by net-libs/gnutls-2.12.16[nettle], required by net-misc/curl-7.24.0[gnutls], required by dev-vcs/git-1.7.8.4[curl], required by sys-devel/gettext-0.18.1.1-r3[git], required by gnome-base/libgnomecanvas-2.30.3, required by gnome-base/libbonoboui-2.24.5, required by gnome-base/libgnomeui-2.24.5, required by dev-util/glade-3.8.1[gnome], required by x11-libs/gtksourceview-2.10.5-r2[glade], required by dev-python/pygtksourceview-2.10.1
 >=dev-libs/nettle-2.4 gmp
-#required by dev-haskell/parsec-3.1.2-r1, required by dev-haskell/http-4000.2.2, required by dev-vcs/darcs-2.5.2-r1, required by @selected, required by @world (argument)
->=dev-haskell/mtl-2.0.1.0 profile
 sys-fs/ntfs3g ntfsprogs

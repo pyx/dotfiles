@@ -65,32 +65,12 @@ dev-python/sphinx latex
 app-text/highlight -wxwindows
 app-text/texlive cjk png games graphics music publishers science xml extra tex4ht xetex linguas_zh
 app-text/texlive-core cjk xetex
-dev-libs/libxml2 icu
 dev-libs/libgcrypt static-libs
 dev-python/pymongo mod_wsgi
 
 # Haskell
 dev-lang/ghc llvm
-dev-haskell/binary hscolour profile
-dev-haskell/dataenc hscolour profile
-dev-haskell/deepseq hscolour profile
-#dev-haskell/hashed-storage hscolour profile
-dev-haskell/hashed-storage hscolour
-#dev-haskell/haskeline hscolour profile
-dev-haskell/haskeline hscolour
-dev-haskell/hscolour profile
-dev-haskell/html profile
-#dev-haskell/http hscolour profile
-dev-haskell/http hscolour
-dev-haskell/mmap hscolour profile
-dev-haskell/network hscolour profile
-dev-haskell/parsec profile
-dev-haskell/regex-base profile
-dev-haskell/regex-compat hscolour profile
-dev-haskell/regex-posix hscolour profile
-dev-haskell/tar hscolour profile
-dev-haskell/terminfo hscolour profile
-dev-haskell/text hscolour profile
-dev-haskell/transformers profile
-dev-haskell/zlib hscolour profile
+dev-haskell/* hscolour
+dev-haskell/haddock -hscolour
+dev-haskell/citeproc-hs -hscolour
 dev-vcs/darcs completion hscolour
