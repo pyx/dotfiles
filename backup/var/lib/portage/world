@@ -63,6 +63,7 @@ app-vim/vimpython
 dev-cpp/libglademm
 dev-db/mongodb
 dev-haskell/happy
+dev-haskell/haskell-platform
 dev-lang/ghc
 dev-lang/gprolog
 dev-lang/ocaml
