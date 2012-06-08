@@ -17,6 +17,7 @@ app-admin/conky -ipv6 hddtemp nano-syntax rss wifi
 app-arch/file-roller nautilus
 app-crypt/seahorse gedit nautilus
 app-text/evince djvu dvi nautilus
+kde-base/okular chm djvu ebook
 app-text/lcdf-typetools kpathsea
 media-gfx/splashutils gpm mng png truetype fbcondecor
 x11-terms/rxvt-unicode afterimage 256-color blink fading-colors iso14755 pixbuf truetype unicode3
