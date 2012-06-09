@@ -1,2 +1,5 @@
+dev-games/cegui ogre
+games-rpg/sumwars linguas_en tools
 games-strategy/wesnoth server
+games-strategy/ufo-ai editor
 media-libs/sdl-mixer mikmod

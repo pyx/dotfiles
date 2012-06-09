@@ -126,7 +126,6 @@ dev-vcs/hgsubversion
 dev-vcs/hgsvn
 dev-vcs/hgview
 dev-vcs/mercurial
-games-action/supertuxkart
 games-action/trackballs
 games-arcade/frozen-bubble
 games-emulation/dosbox
@@ -134,9 +133,11 @@ games-emulation/nestopia
 games-fps/warsow
 games-misc/cowsay
 games-puzzle/zaz
+games-rpg/sumwars
 games-simulation/flightgear
 games-sports/torcs
 games-sports/trigger
+games-strategy/ufo-ai
 games-strategy/wesnoth
 gnome-base/gdm
 gnome-base/gnome-applets
