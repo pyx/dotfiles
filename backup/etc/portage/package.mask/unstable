@@ -1,5 +1,8 @@
 # these with nvidia driver make everything Avatar
+=media-video/mplayer-1.1
+=sys-fs/udisks-1.98.0
 =www-plugins/adobe-flash-11.2.202.223
 =www-plugins/adobe-flash-11.2.202.228
 =www-plugins/adobe-flash-11.2.202.233
 =www-plugins/adobe-flash-11.2.202.235
+=www-plugins/adobe-flash-11.2.202.236
