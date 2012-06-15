@@ -467,7 +467,7 @@ nnoremap <leader>tb :TagbarToggle<CR>
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
-nnoremap <leader>tl <Plug>TaskList
+nnoremap <leader>tl :TaskList<CR>
 
 " UltiSnips ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2715
