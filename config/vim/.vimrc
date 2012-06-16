@@ -159,6 +159,7 @@ if has("autocmd")
     au!
     autocmd FileType asciidoc setlocal sw=2 sts=2
     autocmd FileType c setlocal sw=4 sts=4
+    autocmd FileType coffee setlocal sw=2 sts=2 et tw=79
     autocmd FileType cpp setlocal sw=4 sts=4
     autocmd FileType css setlocal sw=4 sts=4
     autocmd FileType haskell setlocal sw=4 sts=4 et
@@ -166,7 +167,7 @@ if has("autocmd")
     autocmd FileType htmlcheetah setlocal sw=2 sts=2 et
     autocmd FileType htmldjango setlocal sw=2 sts=2 et
     autocmd FileType java setlocal sw=4 sts=4
-    autocmd FileType javascript setlocal sw=4 sts=4
+    autocmd FileType javascript setlocal sw=2 sts=2
     autocmd FileType jinja setlocal sw=2 sts=2 et
     autocmd FileType jinja2 setlocal sw=2 sts=2 et
     autocmd FileType make set noet
@@ -484,6 +485,11 @@ let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
 let g:UltiSnipsSnippetDirectories = ["UltiSnips", "snippets"]
 " vsplit the snippets edit window
 let g:UltiSnipsEditSplit = 'vertical'
+
+" vim-coffee-script ----------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3590
+" https://github.com/kchmck/vim-coffee-script
+" git clone git://github.com/kchmck/vim-coffee-script.git
 
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color
