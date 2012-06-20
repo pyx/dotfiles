@@ -16,6 +16,7 @@ dev-util/nemiver memoryview
 app-editors/kile -kde
 dev-util/anjuta devhelp inherit-graph sourceview
 dev-util/codeblocks contrib pch
+dev-util/geany-plugins debugger devhelp enchant gpg gtkspell soup
 dev-util/monodevelop aspnet cxx
 dev-util/qt-creator cmake debugger designer examples kde subversion bineditor bookmarks fakevim git mercurial qtscript
 www-client/firefox mozfranding mozdevelop

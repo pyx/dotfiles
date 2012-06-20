@@ -104,6 +104,7 @@ dev-util/codelite
 dev-util/cscope
 dev-util/devhelp
 dev-util/geany
+dev-util/geany-plugins
 dev-util/glade
 dev-util/gnome-devel-docs
 dev-util/gource
