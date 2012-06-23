@@ -127,6 +127,7 @@ dev-vcs/hgsubversion
 dev-vcs/hgsvn
 dev-vcs/hgview
 dev-vcs/mercurial
+dev-vcs/veracity
 games-action/trackballs
 games-arcade/frozen-bubble
 games-emulation/dosbox
