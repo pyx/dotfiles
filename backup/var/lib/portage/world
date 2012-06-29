@@ -227,6 +227,7 @@ sys-apps/hdparm
 sys-apps/less
 sys-apps/smartmontools
 sys-boot/grub
+sys-boot/grub:0
 sys-devel/autogen
 sys-devel/clang
 sys-fs/mtools
