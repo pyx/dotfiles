@@ -36,6 +36,7 @@ dev-python/markdown pygments
 app-text/enchant aspell
 dev-db/sqlite secure-delete
 dev-libs/gmime mono
+dev-python/anyvc bazaar git mercurial
 dev-python/pycrypto -gmp
 dev-python/pyside script multimedia
 media-libs/devil allegro

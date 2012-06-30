@@ -51,7 +51,6 @@ dev-libs/totem-pl-parser doc
 dev-libs/xapian doc
 dev-libs/zziplib doc
 dev-python/PyQt4 doc
-dev-python/anyvc doc
 dev-python/cython doc
 dev-python/dbus-python doc
 #dev-python/django doc
