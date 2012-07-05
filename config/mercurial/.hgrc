@@ -1,4 +1,8 @@
 [alias]
+# chronicle view
+chronicle = log --template "{date|shortdate} - {node|short} [{rev}] - {author|person} - {desc}\n"
+# latest 5
+latest = log --limit 5
 # strip-this-from REV
 # strip the current branch (in DAG) from REV
 strip-this-from = strip -r "first(ancestors(.)-ancestors($1))"
