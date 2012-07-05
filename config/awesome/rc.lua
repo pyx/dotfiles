@@ -395,6 +395,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][4], switchtotag = true } },
     { rule = { class = "Devhelp" },
       properties = { tag = tags[1][4], switchtotag = true } },
+    { rule = { class = "Okular" },
+      properties = { tag = tags[1][4], switchtotag = true } },
     { rule = { class = "Xchm" },
       properties = { tag = tags[1][4], switchtotag = true } },
     -- tag 5: GUI tools
