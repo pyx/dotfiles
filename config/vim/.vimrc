@@ -102,8 +102,12 @@ if has("autocmd")
     au!
     " Make sure this will not be cleared by colorscheme
     autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+    " Show all trailing whitespaces
     autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+    " In insert mode, show trailing whitespaces except when typing at the end
+    " of a line
     autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+    " When leave insert mode, show all trailing whitespaces again.
     autocmd InsertLeave * match ExtraWhitespace /\s\+$/
     autocmd BufWinLeave * call clearmatches()
 
