@@ -95,6 +95,18 @@ endif
 
 " Autocommands ---------------------------------------- {{{1
 if has("autocmd")
+  " Show trailing whitespaces when necessary ---------- {{{2
+  " That is, most of the cases other than editing source code in Whitespace,
+  " the programming language.
+  augroup show_whitespaces
+    au!
+    " Make sure this will not be cleared by colorscheme
+    autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+    autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+    autocmd BufWinLeave * call clearmatches()
+
   " Vala/Genis Support -------------------------------- {{{2
   " get vala.vim here:
   " https://live.gnome.org/Vala/Vim
@@ -119,6 +131,9 @@ if has("autocmd")
     autocmd FileType python set omnifunc=pythoncomplete#Complete
     autocmd FileType python inoreab <buffer> #! #!/usr/bin/env python
     autocmd FileType python inoreab <buffer> #e # -*- coding: utf=8 -*-
+    " Setting 'python_space_error_highlight' = 1 will only highlight mixed
+    " tabs and spaces, I go as far as mark all tabs as error.
+    autocmd Syntax python syn match ExtraWhitespace /\t/
 
   " py.test Support ----------------------------------- {{{2
   augroup pytest
@@ -193,18 +208,6 @@ if has("autocmd")
     "autocmd CursorHoldI * stopinsert
     "autocmd InsertEnter * let updaterestore=&updatetime | set updatetime=15000
     "autocmd InsertLeave * let &updatetime=updaterestore
-
-  " Show trailing whitespaces when necessary ---------- {{{2
-  " That is, most of the cases other than editing source code in Whitespace,
-  " the programming language.
-  augroup show_whitespaces
-    au!
-    " Make sure this will not be cleared by colorscheme
-    autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-    autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-    autocmd BufWinLeave * call clearmatches()
 
   " Misc ---------------------------------------------- {{{2
   augroup editing
