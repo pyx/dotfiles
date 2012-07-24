@@ -1,1 +1,3 @@
 =x11-misc/xcompmgr-1.1.6
+# in response to =x11-drivers/nvidia-drivers-3* masked by gentoo dev
+=media-video/nvidia-settings-302.11
