@@ -352,7 +352,8 @@ let g:ctrlp_custom_ignore = {
 " let g:ctrlp_match_window_bottom = 0
 " switching between buffers
 nnoremap <C-N> :CtrlPBuffer<CR>
-nnoremap <C-M> :CtrlPMixed<CR>
+" works in gvim and some terminals.
+nnoremap <C-A-P> :CtrlPMixed<CR>
 
 " Cute Python ----------------------------------------- {{{2
 " https://github.com/ehamberg/vim-cute-python
