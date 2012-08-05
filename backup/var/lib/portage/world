@@ -75,6 +75,7 @@ dev-lang/vala
 dev-libs/libgee
 dev-lisp/clisp
 dev-lisp/sbcl
+dev-python/autopep8
 dev-python/django
 dev-python/elixir
 dev-python/fabric
