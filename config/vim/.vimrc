@@ -292,7 +292,8 @@ endif " has("autocmd")
 "
 " badwolf:
 " http://stevelosh.com/projects/badwolf/
-" hg clone ssh://hg@bitbucket.org/sjl/badwolf
+" https://bitbucket.org/sjl/badwolf/
+" hg clone https://bitbucket.org/sjl/badwolf
 "
 " }}}2
 
