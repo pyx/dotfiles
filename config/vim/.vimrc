@@ -410,7 +410,7 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 " py.test --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3424
 " https://github.com/alfredodeza/pytest.vim.git
-" git://github.com/alfredodeza/pytest.vim.git
+" git clone git://github.com/alfredodeza/pytest.vim.git
 
 " Rainbow Parentheses --------------------------------- {{{2
 " https://github.com/kien/rainbow_parentheses.vim
@@ -451,18 +451,18 @@ let g:sparkupNextMapping = '<C-J>'
 " Surround -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1697
 " https://github.com/tpope/vim-surround
-" git://github.com/tpope/vim-surround.git
+" git clone git://github.com/tpope/vim-surround.git
 
 " Syntastic ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2736
 " https://github.com/scrooloose/syntastic
-" git://github.com/scrooloose/syntastic.git
+" git clone git://github.com/scrooloose/syntastic.git
 nnoremap <leader>st :SyntasticToggleMode<CR>
 
 " Tabular --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3464
 " https://github.com/godlygeek/tabular
-" git://github.com/godlygeek/tabular.git
+" git clone git://github.com/godlygeek/tabular.git
 
 " Tagbar ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3465
