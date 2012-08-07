@@ -494,16 +494,26 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips", "snippets"]
 " vsplit the snippets edit window
 let g:UltiSnipsEditSplit = 'vertical'
 
-" vim-coffee-script ----------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3590
-" https://github.com/kchmck/vim-coffee-script
-" git clone git://github.com/kchmck/vim-coffee-script.git
-
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color
 " git clone git://github.com/skammer/vim-css-color.git
 "
 " let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+" vim-coffee-script ----------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3590
+" https://github.com/kchmck/vim-coffee-script
+" git clone git://github.com/kchmck/vim-coffee-script.git
+
+" vim-commentary -------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3695
+" https://github.com/tpope/vim-commentary
+" git clone git://github.com/tpope/vim-commentary.git
+
+" vim-indent-object ----------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3037
+" https://github.com/michaeljsmith/vim-indent-object
+" git clone git://github.com/michaeljsmith/vim-indent-object.git
 
 " VimIm ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2506
