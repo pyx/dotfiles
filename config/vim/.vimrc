@@ -497,7 +497,11 @@ let g:UltiSnipsEditSplit = 'vertical'
 
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color
-" git clone git://github.com/skammer/vim-css-color.git
+" #git clone git://github.com/skammer/vim-css-color.git
+"
+" ap's clone, this one has way shorter startup time.
+" https://github.com/ap/vim-css-color
+" git clone git://github.com/ap/vim-css-color.git
 "
 " let g:cssColorVimDoNotMessMyUpdatetime = 1
 
