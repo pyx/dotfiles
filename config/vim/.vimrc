@@ -29,6 +29,13 @@ set dictionary+=/usr/share/dict/words
 
 set grepprg=ack\ -a
 
+" show whitespaces
+set list
+" tabs and eols
+set listchars+=tab:▸\ ,eol:¬
+" spaces
+set listchars+=trail:⋅,nbsp:⋅
+
 if has('mouse')
   set mouse=a
 endif
