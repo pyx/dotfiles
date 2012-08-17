@@ -64,11 +64,19 @@ hgsubversion =
 #preoutgoing.mq-no-push = ! hg qtop > /dev/null 2>&1
 
 [merge-tools]
-#kdiff3.args = $base $local $other -o $output
-splice.executable = gvim
-splice.args = -f $base $local $other $output -c 'SpliceInit'
+splice.executable = vim
+splice.args = $base $local $other $output -c 'SpliceInit'
 splice.premerge = keep
-splice.priority = 1
+splice.priority = 3
+
+gvim.executable = gvim
+gvim.args = -f $base $local $other $output -c 'SpliceInit'
+gvim.premerge = keep
+gvim.gui = True
+gvim.priority = 2
+
+kdiff3.args = $base $local $other -o $output
+kdiff3.gui = True
 
 [mq]
 # For Mercurial >= 2.1
