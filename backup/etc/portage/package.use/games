@@ -4,3 +4,7 @@ games-strategy/wesnoth server
 games-strategy/warzone2100 videos
 games-strategy/ufo-ai editor
 media-libs/sdl-mixer mikmod
+
+# not really games, actually
+sci-astronomy/stellarium stars linguas_zh_CN linguas_zh_HK linguas_zh_TW
+

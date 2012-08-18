@@ -61,7 +61,6 @@ app-vim/vim-latex
 app-vim/vim-spell-en
 app-vim/vimpython
 dev-cpp/libglademm
-dev-db/mongodb
 dev-haskell/happy
 dev-haskell/haskell-platform
 dev-lang/ghc
@@ -85,7 +84,6 @@ dev-python/pep8
 dev-python/pyPdf
 dev-python/pygame
 dev-python/pylint
-dev-python/pymongo
 dev-python/pyside-tools
 dev-python/pytest
 dev-python/reportlab
@@ -120,7 +118,6 @@ dev-util/pida
 dev-util/qdevelop
 dev-util/qt-creator
 dev-util/source-highlight
-dev-util/spe
 dev-util/strace
 dev-util/valgrind
 dev-vcs/bzr
@@ -154,7 +151,6 @@ gnome-extra/avant-window-navigator-extras
 gnome-extra/gcalctool
 gnome-extra/gconf-editor
 gnome-extra/gnome-audio
-gnome-extra/gnome-do
 gnome-extra/gnome-games
 gnome-extra/gnome-power-manager
 gnome-extra/gnome-system-monitor
@@ -224,7 +220,8 @@ net-news/liferea
 net-nntp/pan
 net-p2p/amule
 net-p2p/deluge
-net-wireless/iwl4965-ucode
+sci-astronomy/celestia
+sci-astronomy/stellarium
 sci-geosciences/googleearth
 sys-apps/ack
 sys-apps/hdparm
@@ -234,6 +231,7 @@ sys-boot/grub
 sys-boot/grub:0
 sys-devel/autogen
 sys-devel/clang
+sys-firmware/iwl4965-ucode
 sys-fs/mtools
 sys-fs/ntfs3g
 sys-fs/reiserfsprogs

@@ -8,7 +8,7 @@ dev-lisp/sbcl ldb
 dev-scheme/chicken emacs
 dev-scheme/racket backtrace futures jit places plot threads
 
-dev-python/ipython emacs mongodb notebook sqlite wxwidgets
+dev-python/ipython emacs notebook sqlite wxwidgets
 
 dev-util/nemiver memoryview
 
