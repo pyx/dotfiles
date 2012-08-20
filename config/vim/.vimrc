@@ -188,6 +188,7 @@ if has("autocmd")
     autocmd FileType coffee setlocal sw=2 sts=2 et tw=79
     autocmd FileType cpp setlocal sw=4 sts=4
     autocmd FileType css setlocal sw=4 sts=4
+    autocmd FileType go setlocal sw=4 ts=4 noet
     autocmd FileType haskell setlocal sw=4 sts=4 et
     autocmd FileType html setlocal sw=2 sts=2 et
     autocmd FileType htmlcheetah setlocal sw=2 sts=2 et
@@ -196,13 +197,14 @@ if has("autocmd")
     autocmd FileType javascript setlocal sw=2 sts=2
     autocmd FileType jinja setlocal sw=2 sts=2 et
     autocmd FileType jinja2 setlocal sw=2 sts=2 et
-    autocmd FileType make set noet
+    autocmd FileType make setlocal noet
     autocmd FileType mason setlocal sw=2 sts=2
     autocmd FileType ocaml setlocal sw=2 sts=2
     autocmd FileType perl setlocal sw=4 sts=4
     autocmd FileType php setlocal sw=4 sts=4
     autocmd FileType rst setlocal sw=2 sts=2 et
     autocmd FileType ruby setlocal sw=2 sts=2
+    autocmd FileType rust setlocal sw=4 sts=4
     autocmd FileType python setlocal sw=4 sts=4 et tw=72
     autocmd FileType scheme setlocal sw=2 sts=2 et
     autocmd FileType sql setlocal et
