@@ -171,6 +171,7 @@ media-gfx/comix
 media-gfx/eog
 media-gfx/feh
 media-gfx/gimp
+media-gfx/gimp-arrow-brushes
 media-gfx/inkscape
 media-gfx/mypaint
 media-gfx/scrot
@@ -180,6 +181,7 @@ media-gfx/splashutils
 media-libs/libpng
 media-libs/libpng:1.2
 media-plugins/audacious-plugins
+media-plugins/gimp-gmic
 media-plugins/gimp-greycstoration
 media-plugins/gimp-lqr
 media-plugins/gimp-resynthesizer
