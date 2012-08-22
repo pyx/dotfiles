@@ -183,34 +183,43 @@ if has("autocmd")
   " Default tab settings for different file types ----- {{{2
   augroup tab_settings
     au!
-    autocmd FileType asciidoc setlocal sw=2 sts=2
-    autocmd FileType c setlocal sw=4 sts=4
+    " Indentation with hard tabs:
+    " set 'shiftwidth' and 'tabstop' to the same amount, usually less than 8
+    " for better viewing, leaving 'softtabstop' unset and 'expandtab' at
+    " default value
+    autocmd FileType c setlocal sw=4 ts=4
+    autocmd FileType cpp setlocal sw=4 ts=4
+    autocmd FileType go setlocal sw=4 ts=4
+    autocmd FileType java setlocal sw=4 ts=4
+    autocmd FileType php setlocal sw=4 ts=4
+    autocmd FileType rust setlocal sw=4 ts=4
+    autocmd FileType vala setlocal sw=4 ts=4
+    " Indentation with spaces:
+    " set 'shiftwidth' and 'softtabstop' to the same amount, usually turn on
+    " 'expandtab' to avoid mixing spaces and tabs, leaving 'tabstop' at
+    " default value.
+    autocmd FileType asciidoc setlocal sw=2 sts=2 et
     autocmd FileType coffee setlocal sw=2 sts=2 et tw=79
-    autocmd FileType cpp setlocal sw=4 sts=4
-    autocmd FileType css setlocal sw=4 sts=4
-    autocmd FileType go setlocal sw=4 ts=4 noet
+    autocmd FileType css setlocal sw=4 sts=4 et
     autocmd FileType haskell setlocal sw=4 sts=4 et
     autocmd FileType html setlocal sw=2 sts=2 et
     autocmd FileType htmlcheetah setlocal sw=2 sts=2 et
     autocmd FileType htmldjango setlocal sw=2 sts=2 et
-    autocmd FileType java setlocal sw=4 sts=4
-    autocmd FileType javascript setlocal sw=2 sts=2
+    autocmd FileType javascript setlocal sw=2 sts=2 et
     autocmd FileType jinja setlocal sw=2 sts=2 et
     autocmd FileType jinja2 setlocal sw=2 sts=2 et
-    autocmd FileType make setlocal noet
-    autocmd FileType mason setlocal sw=2 sts=2
-    autocmd FileType ocaml setlocal sw=2 sts=2
-    autocmd FileType perl setlocal sw=4 sts=4
-    autocmd FileType php setlocal sw=4 sts=4
+    autocmd FileType mason setlocal sw=2 sts=2 et
+    autocmd FileType ocaml setlocal sw=2 sts=2 et
+    autocmd FileType perl setlocal sw=4 sts=4 et
     autocmd FileType rst setlocal sw=2 sts=2 et
-    autocmd FileType ruby setlocal sw=2 sts=2
-    autocmd FileType rust setlocal sw=4 sts=4
+    autocmd FileType ruby setlocal sw=2 sts=2 et
     autocmd FileType python setlocal sw=4 sts=4 et tw=72
     autocmd FileType scheme setlocal sw=2 sts=2 et
-    autocmd FileType sql setlocal et
-    autocmd FileType vala setlocal sw=4 sts=4
     autocmd FileType xhtml setlocal sw=2 sts=2 et
     autocmd FileType xml setlocal sw=2 sts=2 et
+    " Others with special requirements
+    autocmd FileType make setlocal noet
+    autocmd FileType sql setlocal et
     autocmd FileType text setlocal textwidth=72
 
   " Leave insert mode after 15 seconds of no input ---- {{{2
