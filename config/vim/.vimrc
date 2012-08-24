@@ -29,8 +29,6 @@ set dictionary+=/usr/share/dict/words
 
 set grepprg=ack\ -a
 
-" show whitespaces
-set list
 " tabs and eols
 set listchars+=tab:▸\ ,eol:¬
 " spaces
@@ -63,10 +61,6 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=L
 endif
-
-" Mark extra whitespaces in red
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
 
 " Status Line ----------------------------------------- {{{1
 set laststatus=2
@@ -109,14 +103,17 @@ if has("autocmd")
     au!
     " Make sure this will not be cleared by colorscheme
     autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-    " Show all trailing whitespaces
-    autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+    " Highlight unwanted whitespaces
+    autocmd BufWinEnter,WinEnter,InsertLeave * call MatchUnwantedWhitespaces()
     " In insert mode, show trailing whitespaces except when typing at the end
     " of a line
     autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-    " When leave insert mode, show all trailing whitespaces again.
-    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-    autocmd BufWinLeave * call clearmatches()
+    " Show whitespaces in insert mode
+    autocmd InsertEnter * set list
+    " and turn it off when leave insert mode
+    autocmd InsertLeave * set nolist
+    " Clear highlight when lose focus
+    autocmd WinLeave * call clearmatches()
 
   " Vala/Genis Support -------------------------------- {{{2
   " get vala.vim here:
@@ -675,6 +672,16 @@ let vala_no_tab_space_error = 1
 "  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 "inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 "  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" MatchUnwantedWhitespaces ---------------------------- {{{2
+function! MatchUnwantedWhitespaces()
+  highlight ExtraWhitespace ctermbg=red guibg=red
+  " Show all trailing whitespaces: /\s\+$/
+  " and spaces followed by tabs:   / \+\t\+\s*/
+  " and tabs followed by spaces:   /\t\+ \+\s*/
+  " combine them together: /\s\+$\| \+\t\+\s*\|\t\+ \+\s*/
+  match ExtraWhitespace /\s\+$\| \+\t\+\s*\|\t\+ \+\s*/
+endfunction
 
 " StripTrailingWhitespace ----------------------------- {{{2
 function! StripTrailingWhitespace()
