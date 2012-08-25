@@ -1,4 +1,4 @@
 #!/bin/sh
-cd $HOME &&
+cd "$HOME" &&
 rm -f .bashrc &&
-ln -sn "$OLDPWD/.bashrc"
+ln -sn "$OLDPWD"/.bashrc

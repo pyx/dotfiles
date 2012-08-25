@@ -1,4 +1,4 @@
 #!/bin/sh
-cd $HOME &&
-rm -f $HOME/.gitconfig &&
-ln -sn "$OLDPWD/.gitconfig"
+cd "$HOME" &&
+rm -f "$HOME"/.gitconfig &&
+ln -sn "$OLDPWD"/.gitconfig

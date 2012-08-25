@@ -1,4 +1,4 @@
 #!/bin/sh
-cd $HOME &&
+cd "$HOME" &&
 rm -f .fonts.conf &&
-ln -sn "$OLDPWD/.fonts.conf"
+ln -sn "$OLDPWD"/.fonts.conf

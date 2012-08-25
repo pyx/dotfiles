@@ -1,4 +1,4 @@
 #!/bin/sh
-cd $HOME &&
+cd "$HOME" &&
 rm -f .ctags &&
-ln -sn "$OLDPWD/.ctags"
+ln -sn "$OLDPWD"/.ctags
