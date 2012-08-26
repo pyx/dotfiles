@@ -694,3 +694,8 @@ function! StripTrailingWhitespace()
   silent! %s/\s*$//e
   call winrestview(l:savedview)
 endfunction
+
+" Load local vimrc if exists
+if filereadable(glob("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
