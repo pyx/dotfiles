@@ -190,7 +190,6 @@ if has("autocmd")
     autocmd FileType java setlocal sw=4 ts=4
     autocmd FileType php setlocal sw=4 ts=4
     autocmd FileType rust setlocal sw=4 ts=4
-    autocmd FileType vala setlocal sw=4 ts=4
     " Indentation with spaces:
     " set 'shiftwidth' and 'softtabstop' to the same amount, usually turn on
     " 'expandtab' to avoid mixing spaces and tabs, leaving 'tabstop' at
@@ -212,6 +211,7 @@ if has("autocmd")
     autocmd FileType ruby setlocal sw=2 sts=2 et
     autocmd FileType python setlocal sw=4 sts=4 et tw=72
     autocmd FileType scheme setlocal sw=2 sts=2 et
+    autocmd FileType vala setlocal sw=4 sts=4 et tw=78
     autocmd FileType xhtml setlocal sw=2 sts=2 et
     autocmd FileType xml setlocal sw=2 sts=2 et
     " Others with special requirements
