@@ -70,11 +70,11 @@ set statusline+=%*»                           " separator
 set statusline+=%<                            " truncate here
 set statusline+=%#DiffChange#%{PWDName()}%*   " current working directory
 set statusline+=%#DiffAdd#%f%*                " path to the file in the buffer
+set statusline+=%#DiffOrig#%{CurrentTag()}%*  " current tag
 set statusline+=%*»                           " separator
 set statusline+=%#Title#%{ReposType()}%*      " current repository type
 set statusline+=%*»                           " separator
 set statusline+=%#ModeMsg#%{RevisionInfo()}%* " current revision info
-set statusline+=%*»                           " separator
 set statusline+=%#DiffText#%m                 " modified flag
 set statusline+=%r                            " readonly flag
 set statusline+=%*»                           " separator
@@ -495,6 +495,10 @@ nnoremap <leader>st :SyntasticToggleMode<CR>
 " http://github.com/majutsushi/tagbar
 " git clone git://github.com/majutsushi/tagbar.git
 nnoremap <leader>tb :TagbarToggle<CR>
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_autoshowtag = 1
+
 
 " Taglist --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=273
@@ -705,6 +709,26 @@ function! StripTrailingWhitespace()
   silent! %s/\s*$//e
   call winrestview(l:savedview)
 endfunction
+
+" CurrentTag ------------------------------------------ {{{2
+function! CurrentTag()
+  if exists('b:show_tag_in_statusline') && b:show_tag_in_statusline == 1
+    return tagbar#currenttag('[%s]','','f')
+  else
+    return ''
+  endif
+endfunction
+
+" ToggleCurrentTag ------------------------------------ {{{2
+function! ToggleCurrentTag()
+  if exists('b:show_tag_in_statusline')
+    let b:show_tag_in_statusline = !b:show_tag_in_statusline
+  else
+    let b:show_tag_in_statusline = 1
+  endif
+endfunction
+command! -nargs=0 CurrentTagToggle call ToggleCurrentTag()
+nnoremap <leader>ct :CurrentTagToggle<CR>
 
 " PWDName --------------------------------------------- {{{2
 function! PWDName()
