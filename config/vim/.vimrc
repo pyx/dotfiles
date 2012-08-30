@@ -499,6 +499,20 @@ let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 let g:tagbar_autoshowtag = 1
 
+let g:tagbar_type_vala = {
+  \ 'ctagstype': 'c#',
+  \ 'kinds': [
+    \ 'c:class',
+    \ 'd:macro',
+    \ 'E:event',
+    \ 'g:enum',
+    \ 'i:interface',
+    \ 'm:method',
+    \ 'n:namespace',
+    \ 'p:properties',
+    \ 's:struct',
+  \ ]
+\ }
 
 " Taglist --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=273
