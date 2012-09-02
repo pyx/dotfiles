@@ -214,7 +214,7 @@ if has("autocmd")
     autocmd FileType perl setlocal sw=4 sts=4 et
     autocmd FileType rst setlocal sw=2 sts=2 et
     autocmd FileType ruby setlocal sw=2 sts=2 et
-    autocmd FileType python setlocal sw=4 sts=4 et tw=72
+    autocmd FileType python setlocal sw=4 sts=4 et tw=78
     autocmd FileType scheme setlocal sw=2 sts=2 et
     autocmd FileType vala setlocal sw=4 sts=4 et tw=78
     autocmd FileType xhtml setlocal sw=2 sts=2 et
