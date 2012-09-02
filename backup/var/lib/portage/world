@@ -82,6 +82,7 @@ dev-python/ipython
 dev-python/markdown
 dev-python/pep8
 dev-python/pyPdf
+dev-python/pyflakes
 dev-python/pygame
 dev-python/pylint
 dev-python/pyside-tools
