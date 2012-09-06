@@ -48,6 +48,7 @@ app-portage/layman
 app-shells/bash-completion
 app-text/antiword
 app-text/convmv
+app-text/diction
 app-text/evince
 app-text/highlight
 app-text/htmldoc
