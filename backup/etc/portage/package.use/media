@@ -8,6 +8,9 @@ media-video/mplayer a52 aac directfb dts fbcon live mad mp3 real theora vorbis x
 media-video/totem nautilus
 media-video/vlc dvd ffmpeg mpeg mad wxwindows aac dts a52 ogg flac theora oggvorbis matroska freetype bidi xv svga gnutls stream vlm httpd cdda vcd cdio live threads -samba
 
+# Video Editors
+media-video/kino gstreamer sox
+
 # DAWs
 media-sound/ardour lash jack -sys-libs
 media-sound/qtractor dssi libsamplerate osc rubberband

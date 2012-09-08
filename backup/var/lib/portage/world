@@ -200,10 +200,14 @@ media-sound/rosegarden
 media-sound/soundconverter
 media-sound/traverso
 media-sound/volumeicon
+media-video/avidemux
+media-video/cinelerra
 media-video/devede
 media-video/gtk-recordmydesktop
+media-video/kino
 media-video/mplayer
 media-video/nvidia-settings
+media-video/pitivi
 media-video/rtmpdump
 media-video/totem
 net-analyzer/gnome-nettool
