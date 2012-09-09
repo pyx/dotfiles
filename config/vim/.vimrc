@@ -722,6 +722,10 @@ let vala_no_tab_space_error = 1
 
 " MatchUnwantedWhitespaces ---------------------------- {{{2
 function! MatchUnwantedWhitespaces()
+  if &filetype == 'help'
+    call clearmatches()
+    return
+  endif
   highlight ExtraWhitespace ctermbg=red guibg=red
   " Show all trailing whitespaces: /\s\+$/
   " and spaces followed by tabs:   / \+\t\+\s*/
