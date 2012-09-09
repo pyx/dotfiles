@@ -224,6 +224,20 @@ if has("autocmd")
     autocmd FileType sql setlocal et
     autocmd FileType text setlocal textwidth=72
 
+  " Switch/Case indentation --------------------------- {{{2
+  augroup switch_case
+    au!
+    " line up case labels with switch:
+    "     switch (a) {
+    "     case 1:
+    "         /* ... */
+    "         break;
+    "     default:
+    "         break;
+    "     }
+    autocmd FileType c set cinoptions=:0
+    autocmd FileType cpp set cinoptions=:0
+    autocmd FileType vala set cinoptions=:0
 
   " Update repository and revision info --------------- {{{2
   augroup update_rev_info
