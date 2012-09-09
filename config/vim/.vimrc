@@ -182,8 +182,8 @@ if has("autocmd")
     " Using something other than {{{,}}} as foldmarker
     autocmd FileType htmldjango,django,jinja,jinja2 setlocal foldmarker=[--,--] commentstring={#\ %s\ #}
 
-  " Default tab settings for different file types ----- {{{2
-  augroup tab_settings
+  " Default whitespace settings for different file types ----- {{{2
+  augroup whitespace_settings
     au!
     " Indentation with hard tabs:
     " set 'shiftwidth' and 'tabstop' to the same amount, usually less than 8
@@ -222,6 +222,8 @@ if has("autocmd")
     " Others with special requirements
     autocmd FileType make setlocal noet
     autocmd FileType sql setlocal et
+    autocmd FileType gitcommit setlocal textwidth=72
+    autocmd FileType hgcommit setlocal textwidth=72
     autocmd FileType text setlocal textwidth=72
 
   " Switch/Case indentation --------------------------- {{{2
