@@ -33,15 +33,14 @@ gvimdiff = gvim -df
 
 [extensions]
 hgext.bookmarks =
-hgext.children =
 hgext.churn =
 hgext.color =
 hgext.convert =
 hgext.extdiff =
-hgext.fetch =
 hgext.gpg =
 hgext.graphlog =
 hgext.highlight =
+hgext.histedit =
 hgext.mq =
 hgext.parentrevspec =
 hgext.patchbomb =
@@ -54,7 +53,7 @@ hgext.schemes =
 hgext.share =
 hgext.transplant =
 hggit =
-hgsubversion =
+#hgsubversion =
 
 [hooks]
 # no longer needed as 2.1, enable secret phase integration instead.
