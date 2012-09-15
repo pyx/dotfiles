@@ -31,6 +31,7 @@ app-i18n/ibus-table-yinma
 app-i18n/poedit
 app-laptop/laptop-mode-tools
 app-misc/dvtm
+app-misc/linux-logo
 app-misc/screen
 app-misc/tmux
 app-misc/tmux-mem-cpu-load
@@ -115,7 +116,6 @@ dev-util/gnome-devel-docs
 dev-util/gource
 dev-util/lafilefixer
 dev-util/meld
-dev-util/mono-debugger
 dev-util/nemiver
 dev-util/pida
 dev-util/qdevelop
@@ -143,6 +143,7 @@ games-rpg/sumwars
 games-simulation/flightgear
 games-sports/torcs
 games-sports/trigger
+games-strategy/0ad
 games-strategy/ufo-ai
 games-strategy/warzone2100
 games-strategy/wesnoth
@@ -256,6 +257,7 @@ sys-process/lsof
 sys-process/vixie-cron
 virtual/commonlisp
 virtual/pager
+www-client/dwb
 www-client/epiphany
 www-client/firefox-bin
 www-client/google-chrome
