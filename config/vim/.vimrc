@@ -29,10 +29,10 @@ set dictionary+=/usr/share/dict/words
 
 set grepprg=ack\ -a
 
-" tabs and eols
-set listchars+=tab:▸\ ,eol:¬
-" spaces
-set listchars+=trail:⋅,nbsp:⋅
+" tabs and spaces
+set listchars+=tab:▸\ ,trail:⋅,nbsp:⋅
+" eols and others
+set listchars+=eol:¬,extends:»,precedes:«
 
 if has('mouse')
   set mouse=a
