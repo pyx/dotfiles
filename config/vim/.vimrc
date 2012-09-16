@@ -298,6 +298,7 @@ endif " has("autocmd")
 " clarity       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " cloudy        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " fruity        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" harlequin     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " hemisu        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " inkpot        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " ir_black      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
@@ -340,6 +341,11 @@ endif " has("autocmd")
 " http://stevelosh.com/projects/badwolf/
 " https://bitbucket.org/sjl/badwolf/
 " hg clone https://bitbucket.org/sjl/badwolf
+"
+" harlequin:
+" http://www.vim.org/scripts/script.php?script_id=4195
+" https://github.com/nielsmadan/harlequin
+" git clone git://github.com/nielsmadan/harlequin.git
 "
 " }}}2
 
