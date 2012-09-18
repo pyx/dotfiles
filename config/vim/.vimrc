@@ -246,6 +246,11 @@ if has("autocmd")
     au!
     autocmd BufReadPost,BufWritePost,FileChangedShellPost * call UpdateRevisionInfo()
 
+  " quicktask filetype -------------------------------- {{{2
+  augroup quicktask_ft
+    au!
+    autocmd BufNewFile,BufRead *.quicktask setf quicktask
+
   " Leave insert mode after 15 seconds of no input ---- {{{2
   augroup auto_escape
     au!
@@ -463,6 +468,12 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 " http://www.vim.org/scripts/script.php?script_id=3424
 " https://github.com/alfredodeza/pytest.vim.git
 " git clone git://github.com/alfredodeza/pytest.vim.git
+
+" quicktask ------------------------------------------- {{{2
+" http://quicktask.aaronbieber.com/
+" https://github.com/aaronbieber/quicktask
+" git clone git://github.com/aaronbieber/quicktask.git
+let g:quicktask_snip_path = expand("~/.snips")
 
 " Rainbow Parentheses --------------------------------- {{{2
 " https://github.com/kien/rainbow_parentheses.vim
