@@ -31,6 +31,7 @@ app-i18n/ibus-table-yinma
 app-i18n/poedit
 app-laptop/laptop-mode-tools
 app-misc/dvtm
+app-misc/figlet
 app-misc/linux-logo
 app-misc/screen
 app-misc/tmux
