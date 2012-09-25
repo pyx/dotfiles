@@ -65,6 +65,7 @@ app-vim/vim-latex
 app-vim/vim-spell-en
 app-vim/vimpython
 dev-cpp/libglademm
+dev-games/ogre
 dev-haskell/happy
 dev-haskell/haskell-platform
 dev-lang/ghc
@@ -141,7 +142,6 @@ games-emulation/nestopia
 games-fps/warsow
 games-misc/cowsay
 games-puzzle/zaz
-games-rpg/sumwars
 games-simulation/flightgear
 games-sports/torcs
 games-sports/trigger
