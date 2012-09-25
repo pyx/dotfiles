@@ -97,6 +97,11 @@ if has("gui_running")
   " Monofur
   " http://www.dafont.com/monofur.font
   set guifont=monofur\ 12
+  " Source Code Pro
+  " http://blogs.adobe.com/typblography/2012/09/source-code-pro.html
+  " http://sourceforge.net/projects/sourcecodepro.adobe/
+  " https://github.com/adobe/Source-Code-Pro
+  " set guifont=Source\ Code\ Pro\ 12
 endif
 
 " Autocommands ---------------------------------------- {{{1
