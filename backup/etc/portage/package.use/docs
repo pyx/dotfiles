@@ -12,6 +12,7 @@ dev-cpp/libgnomecanvasmm doc
 dev-cpp/pangomm doc
 dev-db/sqlite doc
 dev-games/openscenegraph doc
+dev-games/ogre doc
 dev-games/physfs doc
 dev-haskell/* doc
 dev-lang/ghc doc
