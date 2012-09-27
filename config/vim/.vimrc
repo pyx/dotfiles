@@ -471,6 +471,11 @@ nnoremap <leader>u :GundoToggle<CR>
 " git clone git://github.com/scrooloose/nerdtree.git
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
+" NrrwRgn --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3075
+" https://github.com/chrisbra/NrrwRgn
+" git clone git://github.com/chrisbra/NrrwRgn.git
+
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
 " https://github.com/tpope/vim-pathogen
