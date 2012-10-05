@@ -94,14 +94,20 @@ if has("gui_running")
   " Envy Code R
   " http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
   " set guifont=Envy\ Code\ R\ \VS\ 10
+  "
   " Monofur
   " http://www.dafont.com/monofur.font
   set guifont=monofur\ 12
+  "
   " Source Code Pro
   " http://blogs.adobe.com/typblography/2012/09/source-code-pro.html
   " http://sourceforge.net/projects/sourcecodepro.adobe/
   " https://github.com/adobe/Source-Code-Pro
   " set guifont=Source\ Code\ Pro\ 12
+  "
+  " Ubuntu Mono
+  " http://font.ubuntu.com/
+  " set guifont=Ubuntu\ Mono\ 12
 endif
 
 " Autocommands ---------------------------------------- {{{1
