@@ -320,6 +320,7 @@ endif " has("autocmd")
 " gentooish     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " harlequin     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " hemisu        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" hybrid        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
 " inkpot        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " ir_black      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
 " jellybeans    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
@@ -343,36 +344,52 @@ endif " has("autocmd")
 " sift          | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " slate         | dark       | ✓     | ✓    | ✓   | ✓          | ✗      | ✓       | ✓    | ✓
 " twilight      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" Tomorrow-N    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
+" Tomorrow-N-BL | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
+" Tomorrow-N-BR | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
+" Tomorrow-N-E  | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
 " vj            | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " vividchalk    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " wintersday    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " wombat        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" zenburn       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
 " solarized     | light/dark | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " kib_plastic   | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " mayansmoke    | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " proton        | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " pyte          | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 
-" hemisu:
-" only works in gVim
-"
-" ir_black:
-" http://blog.toddwerth.com/entries/8
-" http://blog.toddwerth.com/entry_files/8/ir_black.vim
-"
-" solarized:
-" http://ethanschoonover.com/solarized
-"
 " badwolf:
 " http://stevelosh.com/projects/badwolf/
 " https://bitbucket.org/sjl/badwolf/
 " hg clone https://bitbucket.org/sjl/badwolf
+"
+" hemisu:
+" only works in gVim
+"
+" hybrid:
+" https://github.com/w0ng/vim-hybrid/
+" git clone git://github.com/w0ng/vim-hybrid.git
+"
+" ir_black:
+" http://blog.toddwerth.com/entries/8
+" http://blog.toddwerth.com/entry_files/8/ir_black.vim
 "
 " harlequin:
 " http://www.vim.org/scripts/script.php?script_id=4195
 " https://github.com/nielsmadan/harlequin
 " git clone git://github.com/nielsmadan/harlequin.git
 "
+" solarized:
+" http://ethanschoonover.com/solarized
+"
+" tomorrow:
+" https://github.com/chriskempson/vim-tomorrow-theme/
+" git clone git://github.com/chriskempson/vim-tomorrow-theme.git
+" Tomorrow-N is Tomorrow-Night
+" Tomorrow-N-BL is Tomorrow-Night-Blue
+" Tomorrow-N-BR is Tomorrow-Night-Bright
+" Tomorrow-N-E is Tomorrow-Night-Eighties
 " }}}2
 
 if has("gui_running")
@@ -438,7 +455,7 @@ nnoremap <C-A-P> :CtrlPMixed<CR>
 " https://github.com/ehamberg/vim-cute-python
 " #git clone git://github.com/ehamberg/vim-cute-python.git
 
-" dot.vim ------------------------------------------- {{{2
+" dot.vim --------------------------------------------- {{{2
 " https://bitbucket.org/shu/dotoutlinetree
 " http://www.vim.org/scripts/script.php?script_id=1225
 
