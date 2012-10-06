@@ -24,10 +24,8 @@ app-i18n/ibus-chewing
 app-i18n/ibus-hangul
 app-i18n/ibus-pinyin
 app-i18n/ibus-rime
-app-i18n/ibus-table-cangjie
+app-i18n/ibus-table-chinese
 app-i18n/ibus-table-extraphrase
-app-i18n/ibus-table-xingma
-app-i18n/ibus-table-yinma
 app-i18n/poedit
 app-laptop/laptop-mode-tools
 app-misc/dvtm
