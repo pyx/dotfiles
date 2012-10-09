@@ -1,6 +1,7 @@
 import os
 from fabric.api import local
 from fabric.context_managers import lcd
+from fabric.colors import yellow
 
 def update_all():
     def add_command(path):
@@ -20,4 +21,5 @@ def update_all():
             continue
 
         with lcd(path):
+            print("Checking " + yellow(path))
             local(cmd)
