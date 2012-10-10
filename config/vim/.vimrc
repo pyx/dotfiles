@@ -491,6 +491,13 @@ nnoremap <leader>u :GundoToggle<CR>
 " https://github.com/nathanaelkane/vim-indent-guides
 " git clone git://github.com/vim-scripts/Indent-Guides.git
 
+" Indent Python --------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=974
+" https://github.com/vim-scripts/indentpython.vim
+" git clone git://github.com/vim-scripts/indentpython.vim.git
+"
+" This one is compatible with PEP8, way better than the one bundled with vim.
+
 " NERDTree -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1658
 " https://github.com/scrooloose/nerdtree
