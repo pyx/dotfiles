@@ -711,14 +711,18 @@ cnoreab cd. cd %:p:h
 cnoreab lcdh lcd %:p:h
 cnoreab lcd. lcd %:p:h
 
-" tags ------------------------------------------------ {{{2
-set tags+=.tags;
-set tags+=tags;
-nnoremap <leader>gt :!ctags -R -f .tags<CR>
-
 " Code Folding ---------------------------------------- {{{2
 " I love markers
 set fdm=marker
+
+" CurrentTag ------------------------------------------ {{{2
+function! CurrentTag()
+  if exists('b:show_tag_in_statusline') && b:show_tag_in_statusline == 1
+    return tagbar#currenttag('[%s]','','f')
+  else
+    return ''
+  endif
+endfunction
 
 " DiffOrig -------------------------------------------- {{{2
 " Convenient command to see the difference between the current buffer and the
@@ -758,6 +762,69 @@ function! MarkReSTSessionTitle(overline)
   endif
 endfunction
 
+" MatchUnwantedWhitespaces ---------------------------- {{{2
+function! MatchUnwantedWhitespaces()
+  if &filetype == 'help'
+    call clearmatches()
+    return
+  endif
+  highlight ExtraWhitespace ctermbg=red guibg=red
+  " Show all trailing whitespaces: /\s\+$/
+  " and spaces followed by tabs:   / \+\t\+\s*/
+  " and tabs followed by spaces:   /\t\+ \+\s*/
+  " combine them together: /\s\+$\| \+\t\+\s*\|\t\+ \+\s*/
+  match ExtraWhitespace /\s\+$\| \+\t\+\s*\|\t\+ \+\s*/
+endfunction
+
+" Mercurial Helpers ----------------------------------- {{{2
+" by Steve Losh
+" https://bitbucket.org/sjl
+" https://bitbucket.org/sjl/dotfiles/src/tip/vim/vimrc
+function! s:HgDiff()
+  diffthis
+
+  let fn = expand('%:p')
+  let ft = &ft
+
+  wincmd v
+  edit __hgdiff_orig__
+
+  setlocal buftype=nofile
+
+  normal ggdG
+  execute "silent r!hg cat --rev . " . fn
+  normal ggdd
+
+  execute "setlocal ft=" . ft
+
+  diffthis
+  diffupdate
+endfunction
+command! -nargs=0 HgDiff call s:HgDiff()
+nnoremap <leader>hd :HgDiff<cr>
+
+function! s:HgBlame()
+  let fn = expand('%:p')
+
+  wincmd v
+  wincmd h
+  edit __hgblame__
+  vertical resize 28
+
+  setlocal scrollbind winfixwidth nolist nowrap nonumber buftype=nofile ft=none
+
+  normal ggdG
+  execute "silent r!hg blame -undq " . fn
+  normal ggdd
+  execute ':%s/\v:.*$//'
+
+  wincmd l
+  setlocal scrollbind
+  syncbind
+endfunction
+command! -nargs=0 HgBlame call s:HgBlame()
+nnoremap <leader>hb :HgBlame<cr>
+
 " More vala/genie support ----------------------------- {{{2
 " Vala settings as described here:
 " https://live.gnome.org/Vala/Vim
@@ -789,18 +856,31 @@ let vala_no_tab_space_error = 1
 "inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 "  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
-" MatchUnwantedWhitespaces ---------------------------- {{{2
-function! MatchUnwantedWhitespaces()
-  if &filetype == 'help'
-    call clearmatches()
-    return
+" PWDName --------------------------------------------- {{{2
+function! PWDName()
+  let l:pwd_name = fnamemodify(getcwd(), ':~:.')
+  if l:pwd_name != ""
+    let l:pwd_name .= '/'
   endif
-  highlight ExtraWhitespace ctermbg=red guibg=red
-  " Show all trailing whitespaces: /\s\+$/
-  " and spaces followed by tabs:   / \+\t\+\s*/
-  " and tabs followed by spaces:   /\t\+ \+\s*/
-  " combine them together: /\s\+$\| \+\t\+\s*\|\t\+ \+\s*/
-  match ExtraWhitespace /\s\+$\| \+\t\+\s*\|\t\+ \+\s*/
+  return l:pwd_name
+endfunction
+
+" ReposType ------------------------------------------- {{{2
+" Return repository type if current file is inside one
+function! ReposType()
+  if !exists('b:repos_type')
+    return ''
+  endif
+  return b:repos_type
+endfunction
+
+" RevisionInfo ---------------------------------------- {{{2
+" Return revision info of current file
+function! RevisionInfo()
+  if !exists('b:revision_info')
+    return ''
+  endif
+  return b:revision_info
 endfunction
 
 " StripTrailingWhitespace ----------------------------- {{{2
@@ -815,14 +895,10 @@ function! StripTrailingWhitespace()
   call winrestview(l:savedview)
 endfunction
 
-" CurrentTag ------------------------------------------ {{{2
-function! CurrentTag()
-  if exists('b:show_tag_in_statusline') && b:show_tag_in_statusline == 1
-    return tagbar#currenttag('[%s]','','f')
-  else
-    return ''
-  endif
-endfunction
+" tags ------------------------------------------------ {{{2
+set tags+=.tags;
+set tags+=tags;
+nnoremap <leader>gt :!ctags -R -f .tags<CR>
 
 " ToggleCurrentTag ------------------------------------ {{{2
 function! ToggleCurrentTag()
@@ -834,33 +910,6 @@ function! ToggleCurrentTag()
 endfunction
 command! -nargs=0 CurrentTagToggle call ToggleCurrentTag()
 nnoremap <leader>ct :CurrentTagToggle<CR>
-
-" PWDName --------------------------------------------- {{{2
-function! PWDName()
-  let l:pwd_name = fnamemodify(getcwd(), ':~:.')
-  if l:pwd_name != ""
-    let l:pwd_name .= '/'
-  endif
-  return l:pwd_name
-endfunction
-
-" RevisionInfo ---------------------------------------- {{{2
-" Return revision info of current file
-function! RevisionInfo()
-  if !exists('b:revision_info')
-    return ''
-  endif
-  return b:revision_info
-endfunction
-
-" ReposType ------------------------------------------- {{{2
-" Return repository type if current file is inside one
-function! ReposType()
-  if !exists('b:repos_type')
-    return ''
-  endif
-  return b:repos_type
-endfunction
 
 " UpdateRevisionInfo ---------------------------------- {{{2
 " Update revision info of current file
@@ -913,56 +962,7 @@ function! UpdateRevisionInfo()
   endif
 endfunction
 
-" Mercurial Helpers ----------------------------------- {{{2
-" by Steve Losh
-" https://bitbucket.org/sjl
-" https://bitbucket.org/sjl/dotfiles/src/tip/vim/vimrc
-function! s:HgDiff()
-  diffthis
-
-  let fn = expand('%:p')
-  let ft = &ft
-
-  wincmd v
-  edit __hgdiff_orig__
-
-  setlocal buftype=nofile
-
-  normal ggdG
-  execute "silent r!hg cat --rev . " . fn
-  normal ggdd
-
-  execute "setlocal ft=" . ft
-
-  diffthis
-  diffupdate
-endfunction
-command! -nargs=0 HgDiff call s:HgDiff()
-nnoremap <leader>hd :HgDiff<cr>
-
-function! s:HgBlame()
-  let fn = expand('%:p')
-
-  wincmd v
-  wincmd h
-  edit __hgblame__
-  vertical resize 28
-
-  setlocal scrollbind winfixwidth nolist nowrap nonumber buftype=nofile ft=none
-
-  normal ggdG
-  execute "silent r!hg blame -undq " . fn
-  normal ggdd
-  execute ':%s/\v:.*$//'
-
-  wincmd l
-  setlocal scrollbind
-  syncbind
-endfunction
-command! -nargs=0 HgBlame call s:HgBlame()
-nnoremap <leader>hb :HgBlame<cr>
-
-" Load local vimrc if exists -------------------------- {{{2
+" Load local vimrc if exists -------------------------- {{{1
 if filereadable(glob("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
