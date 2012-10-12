@@ -913,6 +913,55 @@ function! UpdateRevisionInfo()
   endif
 endfunction
 
+" Mercurial Helpers ----------------------------------- {{{2
+" by Steve Losh
+" https://bitbucket.org/sjl
+" https://bitbucket.org/sjl/dotfiles/src/tip/vim/vimrc
+function! s:HgDiff()
+  diffthis
+
+  let fn = expand('%:p')
+  let ft = &ft
+
+  wincmd v
+  edit __hgdiff_orig__
+
+  setlocal buftype=nofile
+
+  normal ggdG
+  execute "silent r!hg cat --rev . " . fn
+  normal ggdd
+
+  execute "setlocal ft=" . ft
+
+  diffthis
+  diffupdate
+endfunction
+command! -nargs=0 HgDiff call s:HgDiff()
+nnoremap <leader>hd :HgDiff<cr>
+
+function! s:HgBlame()
+  let fn = expand('%:p')
+
+  wincmd v
+  wincmd h
+  edit __hgblame__
+  vertical resize 28
+
+  setlocal scrollbind winfixwidth nolist nowrap nonumber buftype=nofile ft=none
+
+  normal ggdG
+  execute "silent r!hg blame -undq " . fn
+  normal ggdd
+  execute ':%s/\v:.*$//'
+
+  wincmd l
+  setlocal scrollbind
+  syncbind
+endfunction
+command! -nargs=0 HgBlame call s:HgBlame()
+nnoremap <leader>hb :HgBlame<cr>
+
 " Load local vimrc if exists -------------------------- {{{2
 if filereadable(glob("~/.vimrc.local"))
   source ~/.vimrc.local
