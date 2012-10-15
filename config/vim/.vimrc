@@ -529,6 +529,12 @@ let g:quicktask_snip_path = expand("~/.snips")
 " https://github.com/kien/rainbow_parentheses.vim
 " #git clone git://github.com/kien/rainbow_parentheses.vim.git
 
+" Scratch --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=664
+" https://github.com/vim-scripts/scratch.vim
+" git clone git://github.com/vim-scripts/scratch.vim.git
+nnoremap <leader><Space> :Sscratch<CR>
+
 " Splice ---------------------------------------------- {{{2
 " https://bitbucket.org/sjl/splice.vim
 " https://github.com/sjl/splice.vim
