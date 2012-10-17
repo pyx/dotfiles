@@ -237,9 +237,10 @@ if has("autocmd")
     autocmd FileType hgcommit setlocal textwidth=72
     autocmd FileType text setlocal textwidth=72
 
-  " Switch/Case indentation --------------------------- {{{2
-  augroup switch_case
+  " Language specific indentation --------------------- {{{2
+  augroup switch_case_indentation
     au!
+    " cino-:
     " line up case labels with switch:
     "     switch (a) {
     "     case 1:
@@ -248,9 +249,64 @@ if has("autocmd")
     "     default:
     "         break;
     "     }
-    autocmd FileType c set cinoptions=:0
-    autocmd FileType cpp set cinoptions=:0
-    autocmd FileType vala set cinoptions=:0
+    autocmd FileType c,cpp,vala setlocal cinoptions+=:0
+
+  augroup case_block_indentation
+    au!
+    " cino-l
+    " align with case label:
+    "     switch (a) {
+    "     case 1: {
+    "         /* ... */
+    "         break;
+    "     }
+    "     default:
+    "         break;
+    "     }
+    autocmd FileType c,cpp,vala setlocal cinoptions+=l1
+
+  augroup access_specifier_indentation
+    au!
+    " cino-g
+    " no indentation for access specifiers
+    "     class C {
+    "     public:
+    "         // ...
+    "     protected:
+    "         // ...
+    "     private:
+    "         // ...
+    "     };
+    autocmd FileType cpp setlocal cinoptions+=g0
+
+  augroup namespace_indentation
+    au!
+    " cino-N
+    " no indentation for namespace
+    "     namespace {
+    "     void function();
+    "     }
+    autocmd FileType cpp,vala setlocal cinoptions+=N-s
+
+  augroup unclosed_parentheses_indentation
+    au!
+    " cino-(
+    " line up inside unclosed parentheses
+    "     if (c1 && (c2 ||
+    "                c3))
+    "         ;
+    "     if (c1 &&
+    "         (c2 || c3))
+    "         ;
+    autocmd FileType c,cpp,vala setlocal cinoptions+=(0
+
+  augroup return_type_indentation
+    au!
+    " cino-t
+    " no indentation for return type declarations
+    "     int
+    "     func()
+    autocmd FileType c,cpp,vala setlocal cinoptions+=t0
 
   " Update repository and revision info --------------- {{{2
   augroup update_rev_info
