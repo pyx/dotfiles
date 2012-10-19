@@ -200,8 +200,8 @@ if has("autocmd")
     " set 'shiftwidth' and 'tabstop' to the same amount, usually less than 8
     " for better viewing, leaving 'softtabstop' unset and 'expandtab' at
     " default value
-    autocmd FileType c setlocal sw=4 ts=4
-    autocmd FileType cpp setlocal sw=4 ts=4
+    autocmd FileType c setlocal sw=4 ts=4 tw=78
+    autocmd FileType cpp setlocal sw=4 ts=4 tw=78
     autocmd FileType go setlocal sw=4 ts=4
     autocmd FileType java setlocal sw=4 ts=4
     autocmd FileType php setlocal sw=4 ts=4
