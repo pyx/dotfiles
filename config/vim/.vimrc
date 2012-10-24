@@ -200,8 +200,6 @@ if has("autocmd")
     " set 'shiftwidth' and 'tabstop' to the same amount, usually less than 8
     " for better viewing, leaving 'softtabstop' unset and 'expandtab' at
     " default value
-    autocmd FileType c setlocal sw=4 ts=4 tw=78
-    autocmd FileType cpp setlocal sw=4 ts=4 tw=78
     autocmd FileType go setlocal sw=4 ts=4
     autocmd FileType java setlocal sw=4 ts=4
     autocmd FileType php setlocal sw=4 ts=4
@@ -211,7 +209,9 @@ if has("autocmd")
     " 'expandtab' to avoid mixing spaces and tabs, leaving 'tabstop' at
     " default value.
     autocmd FileType asciidoc setlocal sw=2 sts=2 et
+    autocmd FileType c setlocal sw=4 sts=4 et tw=78
     autocmd FileType coffee setlocal sw=2 sts=2 et tw=79
+    autocmd FileType cpp setlocal sw=4 sts=4 et tw=78
     autocmd FileType css setlocal sw=4 sts=4 et
     autocmd FileType haskell setlocal sw=4 sts=4 et
     autocmd FileType html setlocal sw=2 sts=2 et
