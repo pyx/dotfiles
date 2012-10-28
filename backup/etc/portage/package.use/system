@@ -32,3 +32,5 @@ sys-apps/busybox sep-usr static
 sys-fs/ntfs3g ntfsprogs
 #required by media-libs/mesa-8.1_rc1_pre20120724[xorg], required by x11-libs/cairo-1.12.2-r2[opengl], required by x11-wm/awesome-3.4.11, required by @selected, required by @world (argument)
 >=x11-libs/libdrm-2.4.37 libkms
+#required by media-gfx/splashutils-1.5.4.4-r2[gpm], required by @selected, required by @world (argument)
+>=sys-libs/gpm-1.20.6-r1 static-libs
