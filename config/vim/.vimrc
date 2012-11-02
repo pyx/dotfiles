@@ -713,6 +713,11 @@ let g:UltiSnipsEditSplit = 'vertical'
 " https://github.com/michaeljsmith/vim-indent-object
 " git clone git://github.com/michaeljsmith/vim-indent-object.git
 
+" vim-lawrencium -------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3861
+" https://bitbucket.org/ludovicchabant/vim-lawrencium
+" hg clone https://bitbucket.org/ludovicchabant/vim-lawrencium
+
 " VimIm ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2506
 " http://code.google.com/p/vimim/
