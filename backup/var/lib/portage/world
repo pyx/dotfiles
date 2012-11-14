@@ -219,7 +219,9 @@ net-analyzer/netcat
 net-analyzer/nmap
 net-analyzer/tcpdump
 net-analyzer/wireshark
+net-irc/weechat
 net-irc/xchat
+net-irc/xchat-otr
 net-libs/nodejs
 net-mail/fetchmail
 net-mail/getmail
