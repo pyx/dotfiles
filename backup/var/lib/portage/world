@@ -54,6 +54,7 @@ app-text/highlight
 app-text/htmldoc
 app-text/htmltidy
 app-text/mupdf
+app-text/pandoc
 app-text/texlive
 app-text/xchm
 app-vim/colorschemes
@@ -67,6 +68,10 @@ dev-cpp/libglademm
 dev-games/ogre
 dev-haskell/happy
 dev-haskell/haskell-platform
+dev-haskell/hoogle
+dev-haskell/test-framework
+dev-haskell/test-framework-quickcheck2
+dev-haskell/yesod-platform
 dev-lang/ghc
 dev-lang/go
 dev-lang/gprolog
