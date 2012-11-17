@@ -58,6 +58,7 @@ app-text/texlive
 app-text/xchm
 app-vim/colorschemes
 app-vim/extra-syntax
+app-vim/haskellmode
 app-vim/taglist
 app-vim/vim-latex
 app-vim/vim-spell-en
