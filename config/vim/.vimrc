@@ -159,6 +159,12 @@ if has("autocmd")
     " tabs and spaces, I go as far as mark all tabs as error.
     autocmd Syntax python syn match ExtraWhitespace /\t/
 
+  " Haskell Support ----------------------------------- {{{2
+  augroup haskell_support
+    au!
+    " set compiler, then restore 'cmdheight' back to 1
+    autocmd BufEnter *.hs compiler ghc | set cmdheight=1
+
   " py.test Support ----------------------------------- {{{2
   augroup pytest
     au!
@@ -541,6 +547,11 @@ nnoremap <leader>u :GundoToggle<CR>
 " http://www.vim.org/scripts/script.php?script_id=3200
 " https://github.com/Twinside/vim-haskellConceal
 " #git clone git://github.com/Twinside/vim-haskellConceal.git
+
+" Haskell Conceal ------------------------------------- {{{2
+" http://projects.haskell.org/haskellmode-vim/
+" installed from gentoo haskell overlay
+let g:haddock_browser = '/usr/bin/firefox'
 
 " Indent Guides --------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3361
