@@ -34,3 +34,5 @@ sys-fs/ntfs3g ntfsprogs
 >=x11-libs/libdrm-2.4.37 libkms
 #required by media-gfx/splashutils-1.5.4.4-r2[gpm], required by @selected, required by @world (argument)
 >=sys-libs/gpm-1.20.6-r1 static-libs
+#required by media-gfx/blender-2.64a, required by @selected, required by @world (argument)
+>=dev-cpp/glog-0.3.2 gflags
