@@ -248,6 +248,7 @@ sys-apps/ack
 sys-apps/hdparm
 sys-apps/less
 sys-apps/smartmontools
+sys-apps/the_silver_searcher
 sys-boot/grub
 sys-boot/grub:0
 sys-devel/autogen
