@@ -170,6 +170,7 @@ export PS1='$(header)$(repos_info)\n\
 
 alias gv="gvim --remote-silent"
 alias mq='hg -R $(hg root)/.hg/patches'
+alias cdr='cd $(hg root)'
 
 source ~/.scripts/virtualenv-helpers.sh
 
