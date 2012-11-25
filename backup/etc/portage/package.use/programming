@@ -72,5 +72,6 @@ dev-python/pymongo mod_wsgi
 dev-lang/ghc llvm
 dev-haskell/* hscolour
 dev-haskell/haddock -hscolour
+dev-haskell/hoogle fetchdb localdb
 dev-haskell/citeproc-hs -hscolour
 dev-vcs/darcs completion hscolour
