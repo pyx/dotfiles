@@ -10,3 +10,4 @@
 # possible fix: #include <cstring> instead of #include <string>
 # It's too fundamental, it should not happen.
 =net-libs/rb_libtorrent-0.16.4
+=dev-libs/libnl-3.2.15
