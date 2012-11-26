@@ -192,7 +192,6 @@ media-libs/libpng
 media-libs/libpng:1.2
 media-plugins/audacious-plugins
 media-plugins/gimp-gmic
-media-plugins/gimp-greycstoration
 media-plugins/gimp-lqr
 media-plugins/gimp-resynthesizer
 media-plugins/gst-plugins-libmms
@@ -287,6 +286,8 @@ x11-libs/xcb-util
 x11-misc/cairo-clock
 x11-misc/dmenu
 x11-misc/e16menuedit2
+x11-misc/i3lock
+x11-misc/i3status
 x11-misc/menumaker
 x11-misc/xcompmgr
 x11-plugins/epplets
@@ -301,7 +302,9 @@ x11-themes/slim-themes
 x11-themes/smplayer-themes
 x11-wm/awesome
 x11-wm/fluxbox
+x11-wm/i3
 x11-wm/openbox
+x11-wm/qtile
 x11-wm/xmonad-contrib
 xfce-base/thunar
 xfce-base/xfce4-meta
