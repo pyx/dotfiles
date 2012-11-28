@@ -170,11 +170,13 @@ assign [class="K3b"] → 5
 
 # 6: CG
 assign [class="Gimp"] → 6
+for_window [class="Gimp"] floating enable
 
 # 7: multimedia
 assign [class="Audacious"] → 7
 assign [class="Smplayer"] → 7
 for_window [class="Audacious"] floating enable
+for_window [class="Smplayer"] floating enable
 
 # 8: others
 assign [class="Amule"] → 8
