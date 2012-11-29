@@ -147,6 +147,9 @@ bar {
         status_command i3status
 }
 
+# lock screen
+bindsym $mod+Escape exec i3lock -d -c 000000 -i ~/.background.lock
+
 # switching back and forth
 workspace_auto_back_and_forth yes
 
