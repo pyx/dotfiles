@@ -163,7 +163,15 @@ if has("autocmd")
   augroup haskell_support
     au!
     " set compiler, then restore 'cmdheight' back to 1
-    autocmd BufEnter *.hs compiler ghc | set cmdheight=1
+    autocmd BufEnter *.hs,*.lhs compiler ghc | set cmdheight=1
+    " changed maplocalleader when editing haskell.
+    " due to implementation details of vim-haskellmode, it is too later if we
+    " set maplocalleader with 'autocmd FileType haskell', so ':setf haskell'
+    " in a newly created unnamed buffer will not get vim-haskellmode hotkeys
+    " set properly.
+    " to avoid this, either hack vim-haskellmode's code or set maplocalleader
+    " globally.
+    autocmd BufReadPre,BufNew,BufNewFile *.hs,*.lhs :let maplocalleader=","
 
   " py.test Support ----------------------------------- {{{2
   augroup pytest
@@ -548,10 +556,10 @@ nnoremap <leader>u :GundoToggle<CR>
 " https://github.com/Twinside/vim-haskellConceal
 " #git clone git://github.com/Twinside/vim-haskellConceal.git
 
-" Haskell Conceal ------------------------------------- {{{2
+" Haskell Mode ---------------------------------------- {{{2
 " http://projects.haskell.org/haskellmode-vim/
 " installed from gentoo haskell overlay
-let g:haddock_browser = '/usr/bin/firefox'
+let g:haddock_browser = '/usr/bin/firefox-bin'
 
 " Indent Guides --------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3361
