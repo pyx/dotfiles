@@ -13,7 +13,7 @@ mail-mta/msmtp gnutls sasl
 net-analyzer/tcpdump -samba
 net-analyzer/wireshark adns gcrypt gnutls  profile smi
 net-misc/openssh -ldap
-net-nds/openldap sasl gnutls
+net-nds/openldap sasl
 net-news/liferea networkmanager
 net-voip/ekiga -kde
 # for >=net-tools-1.60_p201111202031570500, or wicd and NetworkManager will break
