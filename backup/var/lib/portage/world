@@ -12,7 +12,6 @@ app-cdr/bchunk
 app-cdr/k3b
 app-crypt/seahorse
 app-doc/gimp-help
-app-editors/bluefish
 app-editors/gedit
 app-editors/ghex
 app-editors/gvim
@@ -26,7 +25,6 @@ app-i18n/ibus-pinyin
 app-i18n/ibus-rime
 app-i18n/ibus-table-chinese
 app-i18n/ibus-table-extraphrase
-app-i18n/poedit
 app-laptop/laptop-mode-tools
 app-misc/dvtm
 app-misc/figlet
@@ -38,6 +36,7 @@ app-office/abiword
 app-office/dia
 app-office/gnumeric
 app-office/grisbi
+app-office/libreoffice-bin
 app-office/planner
 app-portage/eix
 app-portage/elogv
@@ -107,13 +106,10 @@ dev-python/sqlalchemy
 dev-python/sqlobject
 dev-python/twill
 dev-python/virtualenv
-dev-ruby/json
 dev-scheme/chicken
 dev-scheme/racket
 dev-texlive/texlive-luatex
 dev-util/ccache
-dev-util/codeblocks
-dev-util/codelite
 dev-util/cscope
 dev-util/devhelp
 dev-util/geany
@@ -125,7 +121,6 @@ dev-util/lafilefixer
 dev-util/meld
 dev-util/nemiver
 dev-util/pida
-dev-util/qdevelop
 dev-util/qt-creator
 dev-util/source-highlight
 dev-util/strace
@@ -174,6 +169,7 @@ gnome-extra/swfdec-gnome
 kde-misc/kdiff3
 mail-client/mailx
 mail-client/mutt
+media-fonts/corefonts
 media-fonts/wqy-microhei
 media-fonts/wqy-zenhei
 media-gfx/blender
@@ -188,8 +184,6 @@ media-gfx/scrot
 media-gfx/splash-themes-gentoo
 media-gfx/splash-themes-livecd
 media-gfx/splashutils
-media-libs/libpng
-media-libs/libpng:1.2
 media-plugins/audacious-plugins
 media-plugins/gimp-gmic
 media-plugins/gimp-lqr
@@ -257,7 +251,6 @@ sys-fs/mtools
 sys-fs/ntfs3g
 sys-fs/reiserfsprogs
 sys-kernel/gentoo-sources
-sys-kernel/gentoo-sources:3.2.1-r2
 sys-kernel/module-rebuild
 sys-power/hibernate-script
 sys-process/acct
