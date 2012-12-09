@@ -819,6 +819,15 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" Haskell syntax options ------------------------------ {{{2
+" Specific options handled by haskell.vim
+
+let hs_highlight_delimiters = 1
+let hs_highlight_boolean = 1
+let hs_highlight_types = 1
+let hs_highlight_more_types = 1
+let hs_highlight_debug = 1
+
 " MarkReSTSessionTitle -------------------------------- {{{2
 function! MarkReSTSessionTitle(overline)
   " From reStructuredText Markuo Specification
