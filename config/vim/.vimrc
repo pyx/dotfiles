@@ -779,8 +779,8 @@ let g:vimim_toggle = 'pinyin'
 " <Space> in Normal mode ------------------------------ {{{2
 " Center current line
 "nnoremap <Space> zz
-" Center current line and reset highlighting for search
-nnoremap <Space> zz:nohlsearch<CR>
+" Center current line, reset number and highlighting for search
+nnoremap <Space> zz:set number<CR>:nohlsearch<CR>
 " Next empty Line
 "nnoremap <Space> }
 " Insert one character
