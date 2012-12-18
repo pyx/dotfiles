@@ -573,6 +573,10 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 "
 " This one is compatible with PEP8, way better than the one bundled with vim.
 
+" matchit.vim ----------------------------------------- {{{2
+" enable matchit.vim
+runtime macros/matchit.vim
+
 " NERDTree -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1658
 " https://github.com/scrooloose/nerdtree
