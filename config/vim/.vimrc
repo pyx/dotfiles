@@ -476,6 +476,9 @@ endif
 " http://www.vim.org/scripts/script.php?script_id=2572
 " https://github.com/mileszs/ack.vim
 " git clone git://github.com/mileszs/ack.vim.git
+" used Ag instead.
+" https://github.com/ggreer/the_silver_searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Clam ------------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=4000
