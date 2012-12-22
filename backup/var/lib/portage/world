@@ -248,6 +248,7 @@ sys-boot/grub:0
 sys-devel/autogen
 sys-devel/clang
 sys-firmware/iwl4965-ucode
+sys-fs/dosfstools
 sys-fs/mtools
 sys-fs/ntfs3g
 sys-fs/reiserfsprogs
