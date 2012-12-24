@@ -1,0 +1,14 @@
+# Development - Tools
+dev-util/ccache
+dev-util/cscope
+dev-util/devhelp
+dev-util/glade
+dev-util/gnome-devel-docs
+dev-util/gource
+dev-util/meld
+dev-util/nemiver
+dev-util/source-highlight
+dev-util/strace
+dev-util/valgrind
+kde-misc/kdiff3
+sys-devel/autogen

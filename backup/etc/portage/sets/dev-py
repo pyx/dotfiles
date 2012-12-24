@@ -1,0 +1,26 @@
+# Development - Python Specific
+dev-python/autopep8
+dev-python/django
+dev-python/elixir
+dev-python/fabric
+dev-python/ipython
+dev-python/markdown
+dev-python/paver
+dev-python/pep8
+dev-python/pyPdf
+dev-python/pyflakes
+dev-python/pygame
+dev-python/pylint
+dev-python/pyside-tools
+dev-python/pytest
+dev-python/reportlab
+dev-python/rope
+dev-python/ropemacs
+dev-python/ropemode
+dev-python/rst2pdf
+dev-python/sphinx
+dev-python/sqlalchemy
+dev-python/sqlobject
+dev-python/twill
+dev-python/virtualenv
+www-servers/tornado

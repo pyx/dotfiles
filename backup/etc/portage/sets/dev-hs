@@ -1,0 +1,7 @@
+# Development - Haskell Specific
+dev-haskell/happy
+dev-haskell/haskell-platform
+dev-haskell/hoogle
+dev-haskell/test-framework
+dev-haskell/test-framework-quickcheck2
+dev-haskell/yesod-platform
