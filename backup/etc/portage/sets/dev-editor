@@ -1,0 +1,9 @@
+# Application - Editors and IDEs
+app-editors/gedit
+app-editors/ghex
+app-editors/gvim
+app-editors/kile
+dev-util/geany
+dev-util/geany-plugins
+dev-util/pida
+dev-util/qt-creator

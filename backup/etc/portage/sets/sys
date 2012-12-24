@@ -1,0 +1,20 @@
+# System Tools
+app-admin/logrotate
+app-admin/sudo
+app-admin/syslog-ng
+net-misc/dhcpcd
+sys-apps/hdparm
+sys-apps/less
+sys-apps/smartmontools
+sys-boot/grub
+sys-boot/grub:0
+sys-fs/dosfstools
+sys-fs/mtools
+sys-fs/ntfs3g
+sys-fs/reiserfsprogs
+sys-kernel/gentoo-sources
+sys-kernel/module-rebuild
+sys-process/acct
+sys-process/lsof
+sys-process/vixie-cron
+virtual/pager

@@ -1,0 +1,9 @@
+# Application - Laptop Specific
+app-laptop/laptop-mode-tools
+gnome-extra/nm-applet
+net-misc/networkmanager
+net-misc/networkmanager-vpnc
+net-misc/wicd
+sys-firmware/iwl4965-ucode
+sys-power/hibernate-script
+www-plugins/nspluginwrapper

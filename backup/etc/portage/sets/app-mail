@@ -1,0 +1,7 @@
+# Application - Mail
+mail-client/mailx
+mail-client/mutt
+net-mail/fetchmail
+net-mail/getmail
+net-mail/offlineimap
+net-misc/urlview
