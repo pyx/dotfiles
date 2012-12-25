@@ -6,6 +6,8 @@ gnome-base/gvfs archive fuse gdu
 gnome-base/nautilus sendto
 gnome-extra/nautilus-sendto bluetooth pidgin -cdr
 xfce-base/xfce4-meta minimal
+>=x11-wm/enlightenment-0.17.0 enlightenment_modules_shot
+>=dev-libs/ecore-1.7.4 curl
 
 # WM
 x11-wm/compiz -kde -kde4
