@@ -39,7 +39,7 @@ app-office/abiword-plugins cxx grammar libgda math ots thesaurus wordperfect
 app-office/planner -eds
 
 # Input Method
-app-i18n/ibus gconf gtk3 introspection
+app-i18n/ibus dconf gconf gtk3 introspection
 app-i18n/scim-tables linguas_zh linguas_ja linguas_ko
 
 # Libs
