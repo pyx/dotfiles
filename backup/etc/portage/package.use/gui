@@ -20,6 +20,8 @@ app-arch/file-roller nautilus
 app-crypt/seahorse gedit nautilus
 app-text/evince djvu dvi nautilus
 kde-base/okular chm djvu ebook
+app-text/zathura sqlite
+app-text/zathura-meta  pdf cb djvu postscript
 app-text/lcdf-typetools kpathsea
 media-gfx/splashutils gpm mng png truetype fbcondecor
 x11-terms/rxvt-unicode afterimage 256-color blink fading-colors iso14755 pixbuf truetype unicode3
