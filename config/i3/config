@@ -40,11 +40,13 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# change workspace
+bindsym $mod+Left workspace prev_on_output
+bindsym $mod+Right workspace next_on_output
+
+# move container to workspace
+bindsym $mod+Up move container to workspace prev; workspace prev
+bindsym $mod+Down move container to workspace next; workspace next
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -52,11 +54,11 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+# change output
+bindsym $mod+Shift+Left focus output left
+bindsym $mod+Shift+Right focus output right
+bindsym $mod+Shift+Up focus output up
+bindsym $mod+Shift+Down focus output down
 
 # split in horizontal orientation
 bindsym $mod+Shift+v split h
@@ -150,6 +152,9 @@ bar {
 # lock screen
 bindsym $mod+Escape exec i3lock -d -c 000000 -i ~/.background.lock
 
+# Screenshot
+bindsym $mod+F12 exec scrot -d 3
+
 # switching back and forth
 workspace_auto_back_and_forth yes
 
@@ -159,20 +164,89 @@ bindsym $mod+Shift+minus move scratchpad
 # show scratchpad
 bindsym $mod+minus scratchpad show
 
+# launch mode
+mode "launch" {
+        # hotkey to launch
+        # Shift + hotkey to launch then exit launch mode
+        # a: Audacious
+        bindsym a exec audacious
+        bindsym Shift+a exec audacious; mode "default"
+        # c: google-Chrome
+        bindsym c exec google-chrome
+        bindsym Shift+c exec google-chrome; mode "default"
+        # d: Dwb
+        bindsym d exec dwb
+        bindsym Shift+d exec dwb; mode "default"
+        # e: Evince
+        bindsym e exec evince
+        bindsym Shift+e exec evince; mode "default"
+        # f: Firfox
+        bindsym f exec firefox
+        bindsym Shift+f exec firefox; mode "default"
+        # g: Gimp
+        bindsym g exec gimp
+        bindsym Shift+g exec gimp; mode "default"
+        # h: devHelp
+        bindsym h exec devhelp
+        bindsym Shift+h exec devhelp; mode "default"
+        # k: K3b
+        bindsym k exec k3b
+        bindsym Shift+k exec k3b; mode "default"
+        # m: Meld
+        bindsym m exec meld
+        bindsym Shift+m exec meld; mode "default"
+        # n: Nautilus
+        bindsym n exec nautilus
+        bindsym Shift+n exec nautilus; mode "default"
+        # o: Okular
+        bindsym o exec okular
+        bindsym Shift+o exec okular; mode "default"
+        # r: nemiveR
+        bindsym r exec nemiver
+        bindsym Shift+r exec nemiver; mode "default"
+        # s: Smplayer
+        bindsym s exec smplayer
+        bindsym Shift+s exec smplayer; mode "default"
+        # t: Thunar
+        bindsym t exec thunar
+        bindsym Shift+t exec thunar; mode "default"
+        # u: Uzbl
+        bindsym u exec uzbl-tabbed
+        bindsym Shift+u exec uzbl-tabbed; mode "default"
+        # v: gVim
+        bindsym v exec gvim
+        bindsym Shift+v exec gvim; mode "default"
+        # z: Zathura
+        bindsym z exec zathura
+        bindsym Shift+z exec zathura; mode "default"
+        # Enter, Escape or backslash: back to normal
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym backslash mode "default"
+        bindsym $mod+backslash mode "default"
+}
+
+bindsym $mod+backslash mode "launch"
+
 # Specific apps
 # 1: Web Browsers
+assign [class="Dwb"] → 1
 assign [class="Firefox"] → 1
 assign [class="Google-chrome"] → 1
+assign [class="Uzbl"] → 1
 
 # 2: editors
 assign [class="Gvim"] → 2
 
 # 3: terminal enumerator
 assign [class="Gnome-terminal"] → 3
+assign [class="Nemiver"] → 3
 
 # 4: documents
 assign [class="Devhelp"] → 4
 assign [class="Evince"] → 4
+assign [class="Okular"] → 4
+assign [class="Zathura"] → 4
 
 # 5: file managers
 assign [class="K3b"] → 5
