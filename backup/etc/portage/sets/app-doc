@@ -16,4 +16,5 @@ app-text/mupdf
 app-text/pandoc
 app-text/texlive
 app-text/xchm
+app-text/zathura-meta
 dev-texlive/texlive-luatex
