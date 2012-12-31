@@ -171,21 +171,22 @@ assign [class="Gvim"] → 2
 assign [class="Gnome-terminal"] → 3
 
 # 4: documents
-assign [class="Evince"] → 4
 assign [class="Devhelp"] → 4
+assign [class="Evince"] → 4
 
 # 5: file managers
+assign [class="K3b"] → 5
 assign [class="Nautilus"] → 5
 assign [class="Thunar"] → 5
-assign [class="K3b"] → 5
 
 # 6: CG
+assign [class="Eog"] → 6
 assign [class="Gimp"] → 6
 
 # 7: multimedia
 assign [class="Audacious"] → 7
-assign [class="Smplayer"] → 7
 for_window [class="Audacious"] floating enable
+assign [class="Smplayer"] → 7
 for_window [class="Smplayer"] floating enable
 
 # 8: others
