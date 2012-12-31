@@ -10,4 +10,4 @@ xsetroot -cursor_name left_ptr
 # Caps Lock as Control, clear with: setxkbmap -option ''
 setxkbmap -option ctrl:nocaps
 # make this a symlink to your favorite wallpaper
-fbsetbg ~/.background
+fbsetbg -a ~/.background
