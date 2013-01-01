@@ -117,6 +117,13 @@ bindsym $mod+Shift+Right focus output right
 bindsym $mod+Shift+Up focus output up
 bindsym $mod+Shift+Down focus output down
 
+# Vim-style Marks ------------------------------------------------- {{{1
+# mark current window
+bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
+
+# goto mark
+bindsym $mod+apostrophe exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Go to: '
+
 # Default Application --------------------------------------------- {{{1
 # terminal
 bindsym $mod+Return exec gnome-terminal
