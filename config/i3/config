@@ -44,9 +44,8 @@ bindsym $mod+l focus right
 bindsym $mod+Left workspace prev_on_output
 bindsym $mod+Right workspace next_on_output
 
-# move container to workspace
-bindsym $mod+Up move container to workspace prev; workspace prev
-bindsym $mod+Down move container to workspace next; workspace next
+bindsym $mod+Up workspace prev
+bindsym $mod+Down workspace next
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -146,6 +145,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        mode hide
+        modifier $mod
         status_command i3status
 }
 
