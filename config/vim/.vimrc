@@ -583,8 +583,8 @@ runtime macros/matchit.vim
 " NERDTree -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1658
 " https://github.com/scrooloose/nerdtree
-" git clone git://github.com/scrooloose/nerdtree.git
-nnoremap <leader>nt :NERDTreeToggle<CR>
+" #git clone git://github.com/scrooloose/nerdtree.git
+" nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " NrrwRgn --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3075
