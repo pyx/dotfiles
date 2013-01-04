@@ -20,8 +20,6 @@ bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'Exit?' -b 'Yes, exit i3' 'i3
 
 # Statusbar ------------------------------------------------------- {{{1
 bar {
-	mode hide
-	modifier $mod
 	status_command i3status
 }
 
