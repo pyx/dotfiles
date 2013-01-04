@@ -546,8 +546,8 @@ nnoremap <C-A-P> :CtrlPMixed<CR>
 " use V 3.4
 "nnoremap <leader>ff :FufFile ~/projects/<CR>
 " search from cwd
-nnoremap <leader>ff :FufFile<CR>
-nnoremap <leader>fb :FufBuffer<CR>
+" nnoremap <leader>ff :FufFile<CR>
+" nnoremap <leader>fb :FufBuffer<CR>
 
 " Gundo ----------------------------------------------- {{{2
 " http://sjl.bitbucket.org/gundo.vim/
