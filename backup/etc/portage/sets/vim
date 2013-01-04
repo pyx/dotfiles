@@ -3,7 +3,6 @@ app-vim/colorschemes
 app-vim/extra-syntax
 app-vim/haskellindent
 app-vim/haskellmode
-app-vim/taglist
 app-vim/vim-latex
 app-vim/vim-spell-en
 app-vim/vimpython
