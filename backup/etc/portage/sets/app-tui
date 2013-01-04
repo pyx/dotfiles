@@ -1,12 +1,9 @@
 # Application - TUI Misc.
-app-forensics/chkrootkit
 app-misc/dvtm
 app-misc/screen
 app-misc/tmux
 app-misc/tmux-mem-cpu-load
 app-shells/bash-completion
 net-irc/weechat
-net-irc/xchat
-net-irc/xchat-otr
 sys-apps/ack
 sys-apps/the_silver_searcher

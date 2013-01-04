@@ -1,4 +1,5 @@
 # System Tools
+app-forensics/chkrootkit
 app-admin/logrotate
 app-admin/sudo
 app-admin/syslog-ng
