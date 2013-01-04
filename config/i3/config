@@ -80,7 +80,7 @@ bindsym $mod+Down workspace next
 
 # tab switch
 bindsym $mod+Tab workspace next_on_output
-bindsym $mod+Control+Tab workspace next
+bindsym $mod+Shift+Tab workspace next
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -122,7 +122,7 @@ bindsym $mod+Shift+Up focus output up
 bindsym $mod+Shift+Down focus output down
 
 # tab switch
-bindsym $mod+Shift+Tab focus output right
+bindsym $mod+Control+Tab focus output right
 
 # Vim-style Marks ------------------------------------------------- {{{1
 # mark current window
