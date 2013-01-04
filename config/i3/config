@@ -77,6 +77,8 @@ bindsym $mod+Left workspace prev_on_output
 bindsym $mod+Right workspace next_on_output
 bindsym $mod+Up workspace prev
 bindsym $mod+Down workspace next
+bindsym $mod+Shift+Left workspace prev
+bindsym $mod+Shift+Right workspace next
 
 # tab switch
 bindsym $mod+Tab workspace next_on_output
@@ -116,10 +118,10 @@ bindsym $mod+minus scratchpad show
 
 # Output Management ----------------------------------------------- {{{1
 # focus output
-bindsym $mod+Shift+Left focus output left
-bindsym $mod+Shift+Right focus output right
-bindsym $mod+Shift+Up focus output up
-bindsym $mod+Shift+Down focus output down
+bindsym $mod+Control+Left focus output left
+bindsym $mod+Control+Right focus output right
+bindsym $mod+Control+Up focus output up
+bindsym $mod+Control+Down focus output down
 
 # tab switch
 bindsym $mod+Control+Tab focus output right
