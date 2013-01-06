@@ -1,4 +1,5 @@
 # Development - Tools
+app-text/sloccount
 dev-util/ccache
 dev-util/cscope
 dev-util/devhelp
