@@ -988,12 +988,12 @@ endfunction
 " StripTrailingWhitespace ----------------------------- {{{2
 function! StripTrailingWhitespace()
   " To disable this function, either set ft as keep_whitespace prior saving
-  " or define a buffer local variable named keepWhitespace
-  if &ft =~ 'whitespace\|keep_whitespace' || exists('b:keep_whitespace')
+  " or define a buffer local variable named keep_whitespace
+  if &ft =~ 'vim\|whitespace\|keep_whitespace' || exists('b:keep_whitespace')
     return
   endif
   let l:savedview = winsaveview()
-  silent! %s/\s*$//e
+  keepjumps silent! %s/\s\+$//e
   call winrestview(l:savedview)
 endfunction
 
