@@ -1,9 +1,15 @@
-include ".themes/default/gtk-2.0/gtkrc"
-
-#gtk-icon-theme-name = "Azenis Icons"
-#gtk-icon-theme-name = "LaGaDesk-BlueNight"
-#gtk-icon-theme-name = "LaGaDesk-TechoLike"
-#gtk-icon-theme-name = "LaGaDesk-BlackWhite-III"
-gtk-icon-theme-name = "UltimateGnome"
-#gtk-icon-theme-name = "vamox-celeste"
+# Cursor Themes
+# Gtounation: http://gnome-look.org/content/show.php?content=14484
 gtk-cursor-theme-name = "Grounation-left"
+
+# Icon Themes
+# Buuf: http://gnome-look.org/content/show.php?content=81153
+# Azenis Icons: http://gnome-look.org/content/show.php?content=107544
+# LaGaDesk-BlackWhite-III: http://gnome-look.org/content/show.php?content=124185
+# Ultimate Gnome: http://gnome-look.org/content/show.php?content=75000
+# Vamox: http://gnome-look.org/content/show.php?content=95244
+gtk-icon-theme-name = "Azenis-Red-Icons"
+
+# Gtk Themes
+# Boje: http://gnome-look.org/content/show.php?content=155857
+gtk-theme-name = "Boje-Red"

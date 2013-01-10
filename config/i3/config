@@ -8,6 +8,10 @@ set $mod Mod4
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font xft:Monofur 10
 
+# Color ----------------------------------------------------------- {{{1
+# class        border  bg      text    indicator
+client.focused #b0b0b0 #808080 #ffffff #e0e0e0
+
 # i3 Specific ----------------------------------------------------- {{{1
 # reload the configuration file
 bindsym $mod+Shift+r reload
