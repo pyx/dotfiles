@@ -237,9 +237,9 @@ if has("autocmd")
     autocmd FileType mason setlocal sw=2 sts=2 et
     autocmd FileType ocaml setlocal sw=2 sts=2 et
     autocmd FileType perl setlocal sw=4 sts=4 et
+    autocmd FileType python setlocal sw=4 sts=4 et tw=78
     autocmd FileType rst setlocal sw=2 sts=2 et
     autocmd FileType ruby setlocal sw=2 sts=2 et
-    autocmd FileType python setlocal sw=4 sts=4 et tw=78
     autocmd FileType scheme setlocal sw=2 sts=2 et
     autocmd FileType vala setlocal sw=4 sts=4 et tw=78
     autocmd FileType xhtml setlocal sw=2 sts=2 et
@@ -640,7 +640,7 @@ let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bun
 " git clone git://github.com/rstacruz/sparkup.git
 "
 " try this:
-" ihtml:xxs>#wrapper>#nav>h2{navigation}+ul>li#id_$*3>a<<<#main{Page Content}+div#footer{Footer}<c-tab>
+" ihtml:xxs>#wrapper>#nav>h2{navigation}+ul>li#id_$*3>a<<<#main{Page Content}+div#footer{Footer}<c-]>
 let g:sparkupExecuteMapping = '<C-]>'
 let g:sparkupNextMapping = '<C-J>'
 
