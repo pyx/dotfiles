@@ -5,12 +5,14 @@ gtk-cursor-theme-name = "Grounation-left"
 # Icon Themes
 # Buuf: http://gnome-look.org/content/show.php?content=81153
 # Azenis Icons: http://gnome-look.org/content/show.php?content=107544
+# Faenza: http://gnome-look.org/content/show.php?content=128143
 # LaGaDesk-BlackWhite-III: http://gnome-look.org/content/show.php?content=124185
 # nouveGnome: http://gnome-look.org/content/show.php?content=125474
 # nouveGnomeGray: http://gnome-look.org/content/show.php?content=125474
+# Ubo Icons: http://gnome-look.org/content/show.php?content=122078
 # Ultimate Gnome: http://gnome-look.org/content/show.php?content=75000
 # Vamox: http://gnome-look.org/content/show.php?content=95244
-gtk-icon-theme-name = "vamox-celeste"
+gtk-icon-theme-name = "Faenza"
 
 # Gtk Themes
 # Boje: http://gnome-look.org/content/show.php?content=155857
