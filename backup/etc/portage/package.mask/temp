@@ -1,1 +1,4 @@
 =x11-misc/xcompmgr-1.1.6
+>dev-libs/icu-49.1.2
+# failed to compile NetworkManager: https://bugs.gentoo.org/show_bug.cgi?id=453736
+=dev-libs/libnl-3.2.20

@@ -1,6 +1,5 @@
 # Application - Video
 media-plugins/gst-plugins-libmms
-media-video/avidemux
 media-video/cinelerra
 media-video/devede
 media-video/gtk-recordmydesktop
