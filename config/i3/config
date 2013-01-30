@@ -118,6 +118,9 @@ bindsym $mod+Shift+minus move scratchpad
 # show scratchpad
 bindsym $mod+minus scratchpad show
 
+# jump to urgent workspace
+bindsym $mod+z [urgent=latest] focus
+
 # Output Management ----------------------------------------------- {{{1
 # focus output
 bindsym $mod+Control+Left focus output left
