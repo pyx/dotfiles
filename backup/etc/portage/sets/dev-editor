@@ -3,6 +3,7 @@ app-editors/gedit
 app-editors/ghex
 app-editors/gvim
 app-editors/kile
+app-editors/vim-qt
 dev-util/geany
 dev-util/geany-plugins
 dev-util/pida
