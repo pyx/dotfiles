@@ -10,8 +10,10 @@ filetype plugin indent on
 set hidden
 set hlsearch
 set incsearch
+set matchtime=2
 set ruler
 set showcmd
+set showmatch
 set title
 set wildmenu
 set wildmode=list:longest,list:full
