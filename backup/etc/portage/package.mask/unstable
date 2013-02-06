@@ -1,13 +1,2 @@
-# these with nvidia driver make everything Avatar
-=www-plugins/adobe-flash-11.2.202.223
-=www-plugins/adobe-flash-11.2.202.228
-=www-plugins/adobe-flash-11.2.202.233
-=www-plugins/adobe-flash-11.2.202.235
-=www-plugins/adobe-flash-11.2.202.236
-=www-plugins/adobe-flash-11.2.202.238
-
 # failed to build
-# possible fix: #include <cstring> instead of #include <string>
-# It's too fundamental, it should not happen.
-=net-libs/rb_libtorrent-0.16.4
-=dev-libs/libnl-3.2.15
+=dev-scheme/racket-5.3.2
