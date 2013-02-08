@@ -43,9 +43,6 @@ media-video/transcode -quicktime
 media-libs/lcms static-libs
 media-libs/sdl-mixer mod
 
-# required by new USE xvmc
->=media-libs/mesa-8.0 g3dvl
-
 virtual/jpeg static-libs
 media-libs/jpeg static-libs
 media-libs/libjpeg-turbo static-libs
