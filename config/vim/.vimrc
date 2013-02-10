@@ -755,7 +755,7 @@ let g:UltiSnipsEditSplit = 'vertical'
 "
 " vimim settings, show menu background color
 let g:vimim_cloud = -1
-"let g:vimim_map = 'c-bslash'
+let g:vimim_map = 'no-gi'
 "let g:vimim_mode = 'static'
 "let g:vimim_mycloud = 0
 let g:vimim_toggle = 'pinyin'
