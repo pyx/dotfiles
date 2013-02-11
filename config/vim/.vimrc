@@ -774,6 +774,11 @@ let g:vimim_toggle = 'pinyin'
 " not going to set it now.
 " let g:xptemplate_vars = "author=somebody&email=nobody@gmail.com"
 
+" YAIFA ----------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3096
+" https://github.com/Raimondi/YAIFA
+" git clone git://github.com/Raimondi/YAIFA.git
+
 " ZenCoding.vim --------------------------------------- {{{2
 " vim plugins for HTML and CSS hi-speed coding.
 " http://www.vim.org/scripts/script.php?script_id=2981
