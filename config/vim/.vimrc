@@ -474,6 +474,11 @@ else
 endif
 
 " Plugins --------------------------------------------- {{{1
+" Abolish --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=1545
+" https://github.com/tpope/vim-abolish
+" git clone git://github.com/tpope/vim-abolish.git
+
 " ack.vim, Ack front-end for vim ---------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2572
 " https://github.com/mileszs/ack.vim
