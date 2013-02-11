@@ -476,27 +476,27 @@ endif
 " Plugins --------------------------------------------- {{{1
 " Abolish --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1545
-" https://github.com/tpope/vim-abolish
+" https://github.com/tpope/vim-abolish/
 " git clone git://github.com/tpope/vim-abolish.git
 
 " ack.vim, Ack front-end for vim ---------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2572
-" https://github.com/mileszs/ack.vim
+" https://github.com/mileszs/ack.vim/
 " git clone git://github.com/mileszs/ack.vim.git
 " used Ag instead.
-" https://github.com/ggreer/the_silver_searcher
+" https://github.com/ggreer/the_silver_searcher/
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Clam ------------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=4000
-" https://github.com/sjl/clam.vim
+" https://github.com/sjl/clam.vim/
 " https://bitbucket.org/sjl/clam.vim/
 " hg clone https://bitbucket.org/sjl/clam.vim
 nnoremap <leader>c :Clam<Space>
 
 " Commentary ------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=3695
-" https://github.com/tpope/vim-commentary
+" https://github.com/tpope/vim-commentary/
 " git clone git://github.com/tpope/vim-commentary.git
 
 " Conque ---------------------------------------------- {{{2
@@ -515,7 +515,7 @@ nnoremap <leader>gdb :ConqueTermSplit gdb<CR>
 " Ctrl-P ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3736
 " http://kien.github.com/ctrlp.vim/
-" https://bitbucket.org/kien/ctrlp.vim
+" https://bitbucket.org/kien/ctrlp.vim/
 " git clone git://github.com/kien/ctrlp.vim.git
 "
 " Mappings:
@@ -537,11 +537,11 @@ nnoremap <C-N> :CtrlPBuffer<CR>
 nnoremap <C-A-P> :CtrlPMixed<CR>
 
 " Cute Python ----------------------------------------- {{{2
-" https://github.com/ehamberg/vim-cute-python
+" https://github.com/ehamberg/vim-cute-python/
 " #git clone git://github.com/ehamberg/vim-cute-python.git
 
 " dot.vim --------------------------------------------- {{{2
-" https://bitbucket.org/shu/dotoutlinetree
+" https://bitbucket.org/shu/dotoutlinetree/
 " http://www.vim.org/scripts/script.php?script_id=1225
 
 " FuzzyFinder ----------------------------------------- {{{2
@@ -568,7 +568,7 @@ nnoremap <leader>u :GundoToggle<CR>
 
 " Haskell Conceal ------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3200
-" https://github.com/Twinside/vim-haskellConceal
+" https://github.com/Twinside/vim-haskellConceal/
 " #git clone git://github.com/Twinside/vim-haskellConceal.git
 
 " Haskell Mode ---------------------------------------- {{{2
@@ -578,19 +578,19 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 
 " Indent Guides --------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3361
-" https://github.com/nathanaelkane/vim-indent-guides
+" https://github.com/nathanaelkane/vim-indent-guides/
 " git clone git://github.com/vim-scripts/Indent-Guides.git
 
 " Indent Python --------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=974
-" https://github.com/vim-scripts/indentpython.vim
+" https://github.com/vim-scripts/indentpython.vim/
 " git clone git://github.com/vim-scripts/indentpython.vim.git
 "
 " This one is compatible with PEP8, way better than the one bundled with vim.
 
 " Lawrencium ------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=3861
-" https://bitbucket.org/ludovicchabant/vim-lawrencium
+" https://bitbucket.org/ludovicchabant/vim-lawrencium/
 " hg clone https://bitbucket.org/ludovicchabant/vim-lawrencium
 
 " matchit.vim ----------------------------------------- {{{2
@@ -599,49 +599,49 @@ runtime macros/matchit.vim
 
 " NERDTree -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1658
-" https://github.com/scrooloose/nerdtree
+" https://github.com/scrooloose/nerdtree/
 " #git clone git://github.com/scrooloose/nerdtree.git
 " nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " NrrwRgn --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3075
-" https://github.com/chrisbra/NrrwRgn
+" https://github.com/chrisbra/NrrwRgn/
 " git clone git://github.com/chrisbra/NrrwRgn.git
 
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
-" https://github.com/tpope/vim-pathogen
+" https://github.com/tpope/vim-pathogen/
 " git clone git://github.com/tpope/vim-pathogen.git
 
 " py.test --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3424
-" https://github.com/alfredodeza/pytest.vim.git
+" https://github.com/alfredodeza/pytest.vim/
 " git clone git://github.com/alfredodeza/pytest.vim.git
 
 " quicktask ------------------------------------------- {{{2
 " http://quicktask.aaronbieber.com/
-" https://github.com/aaronbieber/quicktask
+" https://github.com/aaronbieber/quicktask/
 " git clone git://github.com/aaronbieber/quicktask.git
 let g:quicktask_snip_path = expand("~/.snips")
 
 " Rainbow Parentheses --------------------------------- {{{2
-" https://github.com/kien/rainbow_parentheses.vim
+" https://github.com/kien/rainbow_parentheses.vim/
 " #git clone git://github.com/kien/rainbow_parentheses.vim.git
 
 " Repeat ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2136
-" https://github.com/tpope/vim-repeat
+" https://github.com/tpope/vim-repeat/
 " git clone git://github.com/tpope/vim-repeat.git
 
 " Scratch --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=664
-" https://github.com/vim-scripts/scratch.vim
+" https://github.com/vim-scripts/scratch.vim/
 " git clone git://github.com/vim-scripts/scratch.vim.git
 nnoremap <leader><Space> :Sscratch<CR>
 
 " Splice ---------------------------------------------- {{{2
-" https://bitbucket.org/sjl/splice.vim
-" https://github.com/sjl/splice.vim
+" https://bitbucket.org/sjl/splice.vim/
+" https://github.com/sjl/splice.vim/
 " hg clone https://bitbucket.org/sjl/splice.vim
 
 " Slimv ----------------------------------------------- {{{2
@@ -652,13 +652,13 @@ let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bun
 
 " snipMate -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2540
-" http://github.com/msanders/snipmate.vim
+" http://github.com/msanders/snipmate.vim/
 " #git clone git://github.com/msanders/snipmate.vim.git
 
 " Sparkup --------------------------------------------- {{{2
 " You can write HTML in a CSS-like syntax, and have Sparkup handle the
 " expansion to full HTML code.
-" http://github.com/rstacruz/sparkup
+" http://github.com/rstacruz/sparkup/
 " git clone git://github.com/rstacruz/sparkup.git
 "
 " try this:
@@ -668,33 +668,33 @@ let g:sparkupNextMapping = '<C-J>'
 
 " Speeddating ----------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2120
-" https://github.com/tpope/vim-speeddating
+" https://github.com/tpope/vim-speeddating/
 " git clone git://github.com/tpope/vim-speeddating.git
 
 " SuperTab -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1643
-" https://github.com/ervandew/supertab
+" https://github.com/ervandew/supertab/
 " #git clone git://github.com/ervandew/supertab.git
 
 " Surround -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1697
-" https://github.com/tpope/vim-surround
+" https://github.com/tpope/vim-surround/
 " git clone git://github.com/tpope/vim-surround.git
 
 " Syntastic ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2736
-" https://github.com/scrooloose/syntastic
+" https://github.com/scrooloose/syntastic/
 " git clone git://github.com/scrooloose/syntastic.git
 nnoremap <leader>st :SyntasticToggleMode<CR>
 
 " Tabular --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3464
-" https://github.com/godlygeek/tabular
+" https://github.com/godlygeek/tabular/
 " git clone git://github.com/godlygeek/tabular.git
 
 " Tagbar ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3465
-" http://github.com/majutsushi/tagbar
+" http://github.com/majutsushi/tagbar/
 " git clone git://github.com/majutsushi/tagbar.git
 nnoremap <leader>tb :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
@@ -727,7 +727,7 @@ nnoremap <leader>tl :TaskList<CR>
 
 " UltiSnips ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2715
-" official mirror: https://github.com/sirver/ultisnips
+" official mirror: https://github.com/sirver/ultisnips/
 " git clone git://github.com/vim-scripts/UltiSnips.git
 "
 " TextMate style:
@@ -742,29 +742,29 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips", "snippets"]
 let g:UltiSnipsEditSplit = 'vertical'
 
 " Vim CSS Color --------------------------------------- {{{2
-" https://github.com/skammer/vim-css-color
+" https://github.com/skammer/vim-css-color/
 " #git clone git://github.com/skammer/vim-css-color.git
 "
 " ap's clone, this one has way shorter startup time.
-" https://github.com/ap/vim-css-color
+" https://github.com/ap/vim-css-color/
 " git clone git://github.com/ap/vim-css-color.git
 "
 " let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " vim-coffee-script ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3590
-" https://github.com/kchmck/vim-coffee-script
+" https://github.com/kchmck/vim-coffee-script/
 " git clone git://github.com/kchmck/vim-coffee-script.git
 
 " vim-indent-object ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3037
-" https://github.com/michaeljsmith/vim-indent-object
+" https://github.com/michaeljsmith/vim-indent-object/
 " git clone git://github.com/michaeljsmith/vim-indent-object.git
 
 " VimIm ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2506
 " http://code.google.com/p/vimim/
-" https://github.com/vimim/vimim
+" https://github.com/vimim/vimim/
 " #svn checkout https://vimim.googlecode.com/svn/trunk/ vimim
 " git clone git://github.com/vimim/vimim.git
 "
@@ -777,8 +777,8 @@ let g:vimim_toggle = 'pinyin'
 
 " xpt, XP Templates ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2611
-" http://code.google.com/p/xptemplate
-" https://github.com/drmingdrmer/xptemplate
+" http://code.google.com/p/xptemplate/
+" https://github.com/drmingdrmer/xptemplate/
 " #git clone git://github.com/drmingdrmer/xptemplate.git
 "
 " use <Tab> key as trigger
@@ -791,7 +791,7 @@ let g:vimim_toggle = 'pinyin'
 
 " YAIFA ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3096
-" https://github.com/Raimondi/YAIFA
+" https://github.com/Raimondi/YAIFA/
 " git clone git://github.com/Raimondi/YAIFA.git
 
 " ZenCoding.vim --------------------------------------- {{{2
