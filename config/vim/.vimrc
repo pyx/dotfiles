@@ -646,6 +646,11 @@ let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bun
 let g:sparkupExecuteMapping = '<C-]>'
 let g:sparkupNextMapping = '<C-J>'
 
+" Speeddating ----------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=2120
+" https://github.com/tpope/vim-speeddating
+" git clone git://github.com/tpope/vim-speeddating.git
+
 " SuperTab -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1643
 " https://github.com/ervandew/supertab
