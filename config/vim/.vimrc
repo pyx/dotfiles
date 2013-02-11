@@ -494,6 +494,11 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " hg clone https://bitbucket.org/sjl/clam.vim
 nnoremap <leader>c :Clam<Space>
 
+" Commentary ------------------------------------------ {{{2
+" http://www.vim.org/scripts/script.php?script_id=3695
+" https://github.com/tpope/vim-commentary
+" git clone git://github.com/tpope/vim-commentary.git
+
 " Conque ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2771
 " http://code.google.com/p/conque/
@@ -582,6 +587,11 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 " git clone git://github.com/vim-scripts/indentpython.vim.git
 "
 " This one is compatible with PEP8, way better than the one bundled with vim.
+
+" Lawrencium ------------------------------------------ {{{2
+" http://www.vim.org/scripts/script.php?script_id=3861
+" https://bitbucket.org/ludovicchabant/vim-lawrencium
+" hg clone https://bitbucket.org/ludovicchabant/vim-lawrencium
 
 " matchit.vim ----------------------------------------- {{{2
 " enable matchit.vim
@@ -746,20 +756,10 @@ let g:UltiSnipsEditSplit = 'vertical'
 " https://github.com/kchmck/vim-coffee-script
 " git clone git://github.com/kchmck/vim-coffee-script.git
 
-" vim-commentary -------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3695
-" https://github.com/tpope/vim-commentary
-" git clone git://github.com/tpope/vim-commentary.git
-
 " vim-indent-object ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3037
 " https://github.com/michaeljsmith/vim-indent-object
 " git clone git://github.com/michaeljsmith/vim-indent-object.git
-
-" vim-lawrencium -------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3861
-" https://bitbucket.org/ludovicchabant/vim-lawrencium
-" hg clone https://bitbucket.org/ludovicchabant/vim-lawrencium
 
 " VimIm ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2506
