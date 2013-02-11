@@ -618,6 +618,11 @@ let g:quicktask_snip_path = expand("~/.snips")
 " https://github.com/kien/rainbow_parentheses.vim
 " #git clone git://github.com/kien/rainbow_parentheses.vim.git
 
+" Repeat ---------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=2136
+" https://github.com/tpope/vim-repeat
+" git clone git://github.com/tpope/vim-repeat.git
+
 " Scratch --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=664
 " https://github.com/vim-scripts/scratch.vim
