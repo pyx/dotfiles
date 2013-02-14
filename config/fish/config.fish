@@ -24,10 +24,13 @@ set --global prompt_color_cwd $CC_LIGHT_BLUE
 set --global prompt_color_hostname $CC_YELLOW
 set --global prompt_color_login $CC_WHITE
 set --global prompt_color_username $CC_LIGHT_GREEN
+set --global prompt_color_banner_message $CC_LIGHT_PURPLE
 
 # prompt sign:
 set --global prompt_sign '><8> '
 
+# show banner
+set --global prompt_show_banner 1
 # show repository information
 set --global prompt_show_repos_info 1
 
@@ -46,10 +49,16 @@ function __on_init_prompt_header --on-event print_prompt_header
 	set --global __ph_host $prompt_color_hostname(hostname|cut -d . -f 1)
 	set --global __ph_bind $prompt_color_login'>>='
 	# execute once
+	# prompt banner:
+	set_prompt_banner '>>>' '-' '<<<'
+	set --global prompt_banner_message 'Gentoo Linux'
 	functions --erase __on_init_prompt_header
 end
 
 function on_print_prompt_header --on-event print_prompt_header
+	if test $prompt_show_banner = 1
+		print_prompt_banner
+	end
 	if test $prompt_show_repos_info = 1
 		print_git_repos_info
 		print_hg_repos_info
