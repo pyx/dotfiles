@@ -84,7 +84,7 @@ function workon --description 'Activate virtualenv'
 		echo "    type \"mkvirtualenv $_ven\" to create it."
 		return 1
 	else
-		. "$VIRTUALENVS_DIR/$_ven/bin/activate.fish"; or return 1
+		. "$VIRTUALENVS_DIR/$_ven/bin/activate.fish"
 		echo "[.] virtualenv [$_ven] activated."
 		# update the access time, for lsvirtualenv
 		touch -a "$VIRTUALENVS_DIR/$_ven"
