@@ -37,6 +37,11 @@ set --global prompt_show_repos_info 1
 # prompt function:
 function fish_prompt --description 'Customized prompt'
 	emit print_prompt_header
+	if test $VIRTUAL_ENV
+		set_color white --background blue
+		echo -n '['(basename "$VIRTUAL_ENV")']'
+		set_color normal
+	end
 	set_color red
 	echo "$prompt_sign"
 end
@@ -48,10 +53,12 @@ function __on_init_prompt_header --on-event print_prompt_header
 	set --global __ph_at $CC_RESET'at'
 	set --global __ph_host $prompt_color_hostname(hostname|cut -d . -f 1)
 	set --global __ph_bind $prompt_color_login'>>='
-	# execute once
 	# prompt banner:
 	set_prompt_banner '>>>' '-' '<<<'
 	set --global prompt_banner_message 'Gentoo Linux'
+	# disable default virtualenv prompt
+	set --global VIRTUAL_ENV_DISABLE_PROMPT 1
+	# execute once
 	functions --erase __on_init_prompt_header
 end
 
