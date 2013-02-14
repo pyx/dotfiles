@@ -26,7 +26,7 @@ end
 # create a virtualenv
 function mkvirtualenv --description 'Create new virtualenv'
 	if not test (count $argv) -gt 0
-		echo '[!] please specified which virtualenv you want to create.'
+		echo '[!] please specified the name of virtualenv you want to create.'
 		return 1
 	end
 	set _ven $argv[1]
@@ -68,7 +68,7 @@ end
 # list all virtualenv
 function  lsvirtualenv --description 'List available virtualenvs'
 	if test -d "$VIRTUALENVS_DIR"
-		ls -u "$VIRTUALENVS_DIR"
+		command ls -u "$VIRTUALENVS_DIR"
 	end
 end
 
@@ -92,3 +92,7 @@ function workon --description 'Activate virtualenv'
 		cd "$VIRTUALENV_PROJECTS/$_ven"
 	end
 end
+
+# command completion for rmvirtualenv and workon
+complete --command rmvirtualenv --no-files --arguments "(lsvirtualenv)" --description "Python VirtualEnv"
+complete --command workon --no-files --arguments "(lsvirtualenv)" --description "Python VirtualEnv"
