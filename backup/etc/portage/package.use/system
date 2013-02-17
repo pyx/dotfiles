@@ -16,6 +16,9 @@ sys-fs/udev extras
 sys-libs/zlib minizip static-libs
 sys-apps/busybox sep-usr static
 
+# firmware
+sys-kernel/linux-firmware savedconfig
+
 # required by new USE xvmc
 >=media-libs/mesa-8.0 g3dvl
 #required by sys-fs/udev-171-r3[extras], required by x11-base/xorg-server-1.11.2-r2[udev], required by @selected, required by @world (argument)
