@@ -27,7 +27,7 @@ set --global prompt_color_username $CC_LIGHT_GREEN
 set --global prompt_color_banner_message $CC_LIGHT_PURPLE
 
 # prompt sign:
-set --global prompt_sign '><8> '
+set --global prompt_sign '><> '
 
 # show banner
 set --global prompt_show_banner 1
