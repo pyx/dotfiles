@@ -353,7 +353,6 @@ __hg_complete incoming -d 'Recurse into subrepositories' -s S -l subrepos
 __hg_complete incoming -d 'Operate on patch repository' -l mq
 # add path completion
 __hg_complete incoming -a '(hg_list_paths)' -x
-__hg_complete incoming -a '(__fish_complete_directories "*" "Directory to pull")' -x
 
 # Completions for the 'init' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a init --description 'Create a new repository in the given directory'
@@ -442,7 +441,6 @@ __hg_complete outgoing -d 'Recurse into subrepositories' -s S -l subrepos
 __hg_complete outgoing -d 'Operate on patch repository' -l mq
 # add path completion
 __hg_complete outgoing -a '(hg_list_paths)' -x
-__hg_complete outgoing -a '(__fish_complete_directories "*" "Directory to push")' -x
 
 # Completions for the 'parents' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a parents --description 'Show the parents of the working dir or revision'
@@ -488,7 +486,6 @@ __hg_complete pull -d 'Specify merge tool for revase' -s t -l tool -x
 __hg_complete pull -d 'Operate on patch repository' -l mq
 # add path completion
 __hg_complete pull -a '(hg_list_paths)' -x
-__hg_complete pull -a '(__fish_complete_directories "*" "Directory to pull")' -x
 
 # Completions for the 'push' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a push --description 'Push changes to the specified destination'
@@ -504,7 +501,6 @@ __hg_complete push -d 'Do not verify server certificate (ignoring web.cacerts co
 __hg_complete push -d 'Operate on patch repository' -l mq
 # add path completion
 __hg_complete push -a '(hg_list_paths)' -x
-__hg_complete push -a '(__fish_complete_directories "*" "Directory to push")' -x
 
 # Completions for the 'recover' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a recover --description 'Roll back an interrupted transaction'
