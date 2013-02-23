@@ -38,7 +38,7 @@ function print_hg_repos_info --description 'Print Mercurial repository informati
 	end
 	# set color red if there are panding changes
 	switch $_rev_id
-		case '*+'
+		case '*+*'
 			set _ic $CC_LIGHT_RED
 		case '*'
 			set _ic $CC_YELLOW
