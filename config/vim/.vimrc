@@ -809,13 +809,15 @@ let g:vimim_toggle = 'pinyin'
 " Center current line
 "nnoremap <Space> zz
 " Center current line, reset number and highlighting for search
-nnoremap <Space> zz:set number<CR>:nohlsearch<CR>
+" nnoremap <Space> zz:set number<CR>:nohlsearch<CR>
 " Next empty Line
 "nnoremap <Space> }
 " Insert one character
 "nnoremap <Space> i_<Esc>r
 " Quick command mode
 "nnoremap <Space> :
+" Quick command mode with no highlight
+nnoremap <Space> :nohlsearch<CR>:
 " Toggle fold
 "nnoremap <Space> za
 "
