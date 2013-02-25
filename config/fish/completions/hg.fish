@@ -154,7 +154,7 @@ __hg_complete clone -d 'Specify ssh command to use' -s e -l ssh -x
 __hg_complete clone -d 'Specify hg command to run on the remote side' -l remotecmd -x
 __hg_complete clone -d 'Do not verify server certificate (ignoring web.cacerts config)' -l insecure
 # add path completion
-__hg_complete clone -a '(__fish_complete_directories "*" "Directory to clone")' -x
+__hg_complete clone -a '(__fish_complete_directories "" "Directory to clone")' -x
 
 # Completions for the 'commit' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a commit --description 'Commit the specified files or all outstanding changes'
@@ -362,7 +362,7 @@ __hg_complete init -d 'Specify hg command to run on the remote side' -l remotecm
 __hg_complete init -d 'Do not verify server certificate (ignoring web.cacerts config)' -l insecure
 __hg_complete init -d 'Operate on patch repository' -l mq
 # add path completion
-__hg_complete init -a '(__fish_complete_directories "*" "Directory to initialize")' -x
+__hg_complete init -a '(__fish_complete_directories "" "Directory to initialize")' -x
 
 # Completions for the 'locate' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a locate --description 'Locate files matching specific patterns'
@@ -1022,7 +1022,7 @@ __hg_complete purge -d 'Include names matching the given patterns' -s I -l inclu
 __hg_complete purge -d 'Exclude names matching the given patterns' -s X -l exclude -x
 __hg_complete purge -d 'Operate on patch repository' -l mq
 # add path completion
-__hg_complete purge -a '(__fish_complete_directories "*" "Directory to purge")' -x
+__hg_complete purge -a '(__fish_complete_directories "" "Directory to purge")' -x
 # add alias
 __hg_subcommand_alias clean purge
 
