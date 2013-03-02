@@ -3,6 +3,7 @@ app-text/sloccount
 dev-util/ccache
 dev-util/cscope
 dev-util/devhelp
+dev-util/ninja
 dev-util/glade
 dev-util/gnome-devel-docs
 dev-util/gource

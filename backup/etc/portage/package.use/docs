@@ -87,6 +87,7 @@ dev-scheme/racket doc
 dev-util/glade doc
 dev-util/gtk-doc doc
 dev-util/meld doc
+dev-util/ninja doc
 dev-util/qt-creator doc
 dev-util/scons doc
 dev-util/source-highlight doc

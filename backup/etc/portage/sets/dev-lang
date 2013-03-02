@@ -1,5 +1,6 @@
 # Development - Programming Languages and Environments
 app-emacs/slime
+dev-lang/erlang
 dev-lang/ghc
 dev-lang/go
 dev-lang/gprolog
