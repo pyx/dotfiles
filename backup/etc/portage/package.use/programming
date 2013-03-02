@@ -1,6 +1,7 @@
 # Compilers, interpreters and runtime
 sys-devel/llvm oalltarget scaml
 sys-devel/clang -alltargets
+dev-lang/erlang doc emacs hipe kpoll odbc
 dev-lang/mono moonlight nptl
 dev-lang/python sqlite tk
 dev-lisp/sbcl ldb
