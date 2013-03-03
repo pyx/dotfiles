@@ -10,7 +10,7 @@ font xft:Monofur 10
 
 # Color ----------------------------------------------------------- {{{1
 # class        border  bg      text    indicator
-client.focused #b0b0b0 #808080 #ffffff #e0e0e0
+client.focused #303030 #808080 #ffffff #f0f0f0
 
 # i3 Specific ----------------------------------------------------- {{{1
 # reload the configuration file
@@ -40,6 +40,11 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # Window Management ----------------------------------------------- {{{1
+# No window titlebar
+new_window pixel 1
+# Toggle border style
+bindsym $mod+b border toggle
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
