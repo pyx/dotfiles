@@ -84,11 +84,12 @@ dev-python/sqlobject doc
 dev-python/twill doc
 dev-python/wxpython doc
 dev-scheme/racket doc
+dev-qt/qt-creator doc
+dev-qt/qthelp doc
 dev-util/glade doc
 dev-util/gtk-doc doc
 dev-util/meld doc
 dev-util/ninja doc
-dev-util/qt-creator doc
 dev-util/scons doc
 dev-util/source-highlight doc
 dev-vcs/bzr doc
@@ -103,5 +104,4 @@ media-gfx/gimp doc
 media-libs/fontconfig -doc
 net-mail/offlineimap doc
 x11-libs/gtk+ doc
-x11-libs/qt-assistant doc
 x11-libs/wxGTK doc

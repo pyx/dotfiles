@@ -14,11 +14,11 @@ dev-util/nemiver memoryview
 
 # Editors and IDEs
 app-editors/kile -kde
+dev-qt/qt-creator cmake debugger designer examples kde subversion bineditor bookmarks fakevim git mercurial qtscript
 dev-util/anjuta devhelp inherit-graph sourceview
 dev-util/codeblocks contrib pch
 dev-util/geany-plugins debugger devhelp enchant gpg gtkspell soup
 dev-util/monodevelop aspnet cxx
-dev-util/qt-creator cmake debugger designer examples kde subversion bineditor bookmarks fakevim git mercurial qtscript
 www-client/firefox mozfranding mozdevelop
 www-client/seamonkey mozdevelop moznomail
 
@@ -38,20 +38,20 @@ dev-db/sqlite secure-delete
 dev-python/anyvc bazaar git mercurial
 dev-python/pycrypto -gmp
 dev-python/pyside script multimedia
+dev-qt/qt3support kde
+dev-qt/qtcore glib private-headers
+dev-qt/qtdeclarative private-headers webkit
+dev-qt/qtgui private-headers
+dev-qt/qtscript private-headers
+dev-qt/qtwebkit kde
 media-libs/devil allegro
 x11-libs/cairo glitz svg xcb -qt4
-x11-libs/qt-core glib private-headers
-x11-libs/qt-declarative private-headers webkit
-x11-libs/qt-gui private-headers
-x11-libs/qt-qt3support kde
-x11-libs/qt-script private-headers
-x11-libs/qt-webkit kde
 
 # Database
 dev-db/mysql minimal
 dev-db/mongodb v8
 dev-python/sqlobject sqlite
-x11-libs/qt-sql mysql
+dev-qt/qtsql mysql
 
 # Frameworks
 dev-cpp/gtkmm accessibility
