@@ -533,8 +533,11 @@ let g:ctrlp_custom_ignore = {
 " let g:ctrlp_match_window_bottom = 0
 " switching between buffers
 nnoremap <C-N> :CtrlPBuffer<CR>
-" works in gvim and some terminals.
-nnoremap <C-A-P> :CtrlPMixed<CR>
+" mixed mode
+nnoremap <C-M> :CtrlPMixed<CR>
+" goto tags
+nnoremap <leader>t :CtrlPBufTag<CR>
+nnoremap <leader>T :CtrlPTag<CR>
 
 " Cute Python ----------------------------------------- {{{2
 " https://github.com/ehamberg/vim-cute-python/
@@ -723,7 +726,7 @@ let g:tagbar_type_vala = {
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
-nnoremap <leader>tl :TaskList<CR>
+nnoremap <leader>tl <Plug>TaskList<CR>
 
 " UltiSnips ------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2715
