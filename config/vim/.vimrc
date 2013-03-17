@@ -105,6 +105,11 @@ set statusline+=%*                            " restore normal highlight
 " https://github.com/ggreer/the_silver_searcher/
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" Calendar -------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=52
+" https://github.com/mattn/calendar-vim/
+" git clone git://github.com/mattn/calendar-vim
+
 " Clam ------------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=4000
 " https://github.com/sjl/clam.vim/
