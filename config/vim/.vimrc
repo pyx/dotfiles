@@ -396,6 +396,14 @@ let g:vimim_map = 'no-gi'
 "let g:vimim_mycloud = 0
 let g:vimim_toggle = 'pinyin'
 
+" vimwiki --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=2226
+" http://code.google.com/p/vimwiki/
+" hg clone https://code.google.com/p/vimwiki/
+let g:vimwiki_folding = 'expr'
+let g:vimwiki_hl_cb_checked = 1
+let g:vimwiki_hl_headers = 1
+
 " xpt, XP Templates ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2611
 " http://code.google.com/p/xptemplate/
@@ -685,6 +693,7 @@ if has("autocmd")
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType hgcommit setlocal textwidth=72
     autocmd FileType text setlocal textwidth=72
+    autocmd FileType vimwiki setlocal sw=2 sts=2
 
   " Language specific indentation --------------------- {{{2
   augroup switch_case_indentation
@@ -766,6 +775,15 @@ if has("autocmd")
   augroup quicktask_ft
     au!
     autocmd BufNewFile,BufRead *.quicktask setf quicktask
+
+  " vimwiki filetype ---------------------------------- {{{2
+  augroup vimwiki_ft
+    au!
+    " Removed default mappings, conflicting with system input method
+    autocmd FileType vimwiki nmap <buffer> <C-Space> <Nop>
+    autocmd FileType vimwiki vmap <buffer> <C-Space> <Nop>
+    autocmd FileType vimwiki nmap <buffer> <silent> <Space> <Plug>VimwikiToggleListItem
+    autocmd FileType vimwiki vmap <buffer> <silent> <Space> :VimwikiToggleListItem<CR>
 
   " Leave insert mode after 15 seconds of no input ---- {{{2
   augroup auto_escape
