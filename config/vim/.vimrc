@@ -320,6 +320,11 @@ let g:UltiSnipsEditSplit = 'vertical'
 "
 " let g:cssColorVimDoNotMessMyUpdatetime = 1
 
+" Vim Table Mode -------------------------------------- {{{2
+" Dependency: Tabular
+" https://github.com/dhruvasagar/vim-table-mode/
+" git clone git://github.com/dhruvasagar/vim-table-mode.git
+
 " vim-coffee-script ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3590
 " https://github.com/kchmck/vim-coffee-script/
