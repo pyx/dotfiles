@@ -574,7 +574,7 @@ if has("autocmd")
     " Using something other than {{{,}}} as foldmarker
     autocmd FileType htmldjango,django,jinja,jinja2 setlocal foldmarker=[--,--] commentstring={#\ %s\ #}
 
-  " Default whitespace settings for different file types ----- {{{2
+  " Default whitespace settings ----------------------- {{{2
   augroup whitespace_settings
     au!
     " Indentation with hard tabs:
