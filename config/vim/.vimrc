@@ -91,388 +91,6 @@ set statusline+=%*«                           " separator
 set statusline+=%#ModeMsg#%3p%%               " % through file in lines
 set statusline+=%*                            " restore normal highlight
 
-" Fonts ----------------------------------------------- {{{1
-if has("gui_running")
-  " Envy Code R
-  " http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
-  " set guifont=Envy\ Code\ R\ \VS\ 10
-  "
-  " Monofur
-  " http://www.dafont.com/monofur.font
-  set guifont=monofur\ 12
-  "
-  " Source Code Pro
-  " http://blogs.adobe.com/typblography/2012/09/source-code-pro.html
-  " http://sourceforge.net/projects/sourcecodepro.adobe/
-  " https://github.com/adobe/Source-Code-Pro
-  " set guifont=Source\ Code\ Pro\ 12
-  "
-  " Ubuntu Mono
-  " http://font.ubuntu.com/
-  " set guifont=Ubuntu\ Mono\ 12
-endif
-
-" Autocommands ---------------------------------------- {{{1
-if has("autocmd")
-  " Show trailing whitespaces when necessary ---------- {{{2
-  " That is, most of the cases other than editing source code in Whitespace,
-  " the programming language.
-  augroup show_whitespaces
-    au!
-    " Make sure this will not be cleared by colorscheme
-    autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-    " Highlight unwanted whitespaces
-    autocmd BufWinEnter,WinEnter,InsertLeave * call MatchUnwantedWhitespaces()
-    " In insert mode, show trailing whitespaces except when typing at the end
-    " of a line
-    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-    " Show whitespaces in insert mode
-    autocmd InsertEnter * set list
-    " and turn it off when leave insert mode
-    autocmd InsertLeave * set nolist
-    " Clear highlight when lose focus
-    autocmd WinLeave * call clearmatches()
-
-  " Vala/Genis Support -------------------------------- {{{2
-  " get vala.vim here:
-  " https://live.gnome.org/Vala/Vim
-  augroup vala_support
-    au!
-    autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-    autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-    autocmd BufRead,BufNewFile *.vala setfiletype vala
-    autocmd BufRead,BufNewFile *.vapi setfiletype vala
-    autocmd FileType vala setlocal cindent
-
-    " indentation for genie: genie.vim
-    " http://www.vim.org/scripts/script.php?script_id=2349
-    " This will overrule the default filetype grads
-    autocmd BufRead,BufNewFile *.gs setlocal filetype=genie
-
-    autocmd FileType vala,genie setlocal formatoptions+=croql
-
-  " Python Support ------------------------------------ {{{2
-  augroup python_support
-    au!
-    autocmd FileType python set omnifunc=pythoncomplete#Complete
-    autocmd FileType python inoreab <buffer> #! #!/usr/bin/env python
-    autocmd FileType python inoreab <buffer> #e # -*- coding: utf=8 -*-
-    " Setting 'python_space_error_highlight' = 1 will only highlight mixed
-    " tabs and spaces, I go as far as mark all tabs as error.
-    autocmd Syntax python syn match ExtraWhitespace /\t/
-
-  " Haskell Support ----------------------------------- {{{2
-  augroup haskell_support
-    au!
-    " set compiler, then restore 'cmdheight' back to 1
-    autocmd BufEnter *.hs,*.lhs compiler ghc | set cmdheight=1
-    " changed maplocalleader when editing haskell.
-    " due to implementation details of vim-haskellmode, it is too later if we
-    " set maplocalleader with 'autocmd FileType haskell', so ':setf haskell'
-    " in a newly created unnamed buffer will not get vim-haskellmode hotkeys
-    " set properly.
-    " to avoid this, either hack vim-haskellmode's code or set maplocalleader
-    " globally.
-    autocmd BufReadPre,BufNew,BufNewFile *.hs,*.lhs :let maplocalleader=","
-
-  " py.test Support ----------------------------------- {{{2
-  augroup pytest
-    au!
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tf <Esc>:Pytest function looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tc <Esc>:Pytest class looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tm <Esc>:Pytest method looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tt <Esc>:Pytest file looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tC <Esc>:Pytest clear<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>te <Esc>:Pytest error<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tn <Esc>:Pytest next<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tp <Esc>:Pytest previous<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tF <Esc>:Pytest fails<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>ts <Esc>:Pytest session<CR>
-
-  " Mappings for reStructuredText: Section Headers ---- {{{2
-  augroup restructuredtext
-    au!
-    " Normal Mode: Headings with overline and underline adornments
-    autocmd FileType rst nnoremap <buffer> <localleader>h :call MarkReSTSessionTitle(1)<CR>
-    " Normal Mode: Sessions with underline adornment
-    autocmd FileType rst nnoremap <buffer> <localleader>s :call MarkReSTSessionTitle(0)<CR>
-    " Insert Mode: Headings with overline and underline adornments
-    autocmd FileType rst inoremap <buffer> <C-]> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
-    " Insert Mode: Headings with underline adornment
-    autocmd FileType rst inoremap <buffer> <C-J> <C-\><C-O>:call MarkReSTSessionTitle(0)<CR>
-    " Mapping for plugin DOT
-    autocmd FileType rst nnoremap <buffer> <localleader>dot :DotOutlineTree<CR>
-
-  " Tamplate Languages -------------------------------- {{{2
-  augroup template_langs
-    au!
-    " Using something other than {{{,}}} as foldmarker
-    autocmd FileType htmldjango,django,jinja,jinja2 setlocal foldmarker=[--,--] commentstring={#\ %s\ #}
-
-  " Default whitespace settings for different file types ----- {{{2
-  augroup whitespace_settings
-    au!
-    " Indentation with hard tabs:
-    " set 'shiftwidth' and 'tabstop' to the same amount, usually less than 8
-    " for better viewing, leaving 'softtabstop' unset and 'expandtab' at
-    " default value
-    autocmd FileType go setlocal sw=4 ts=4
-    autocmd FileType java setlocal sw=4 ts=4
-    autocmd FileType php setlocal sw=4 ts=4
-    autocmd FileType rust setlocal sw=4 ts=4
-    " Indentation with spaces:
-    " set 'shiftwidth' and 'softtabstop' to the same amount, usually turn on
-    " 'expandtab' to avoid mixing spaces and tabs, leaving 'tabstop' at
-    " default value.
-    autocmd FileType asciidoc setlocal sw=2 sts=2 et
-    autocmd FileType c setlocal sw=4 sts=4 et tw=78
-    autocmd FileType coffee setlocal sw=2 sts=2 et tw=79
-    autocmd FileType cpp setlocal sw=4 sts=4 et tw=78
-    autocmd FileType css setlocal sw=4 sts=4 et
-    autocmd FileType haskell setlocal sw=4 sts=4 et
-    autocmd FileType html setlocal sw=2 sts=2 et
-    autocmd FileType htmlcheetah setlocal sw=2 sts=2 et
-    autocmd FileType htmldjango setlocal sw=2 sts=2 et
-    autocmd FileType javascript setlocal sw=2 sts=2 et
-    autocmd FileType jinja setlocal sw=2 sts=2 et
-    autocmd FileType jinja2 setlocal sw=2 sts=2 et
-    autocmd FileType mason setlocal sw=2 sts=2 et
-    autocmd FileType ocaml setlocal sw=2 sts=2 et
-    autocmd FileType perl setlocal sw=4 sts=4 et
-    autocmd FileType python setlocal sw=4 sts=4 et tw=78
-    autocmd FileType rst setlocal sw=2 sts=2 et
-    autocmd FileType ruby setlocal sw=2 sts=2 et
-    autocmd FileType scheme setlocal sw=2 sts=2 et
-    autocmd FileType vala setlocal sw=4 sts=4 et tw=78
-    autocmd FileType xhtml setlocal sw=2 sts=2 et
-    autocmd FileType xml setlocal sw=2 sts=2 et
-    " Others with special requirements
-    autocmd FileType make setlocal noet
-    autocmd FileType sql setlocal et
-    autocmd FileType gitcommit setlocal textwidth=72
-    autocmd FileType hgcommit setlocal textwidth=72
-    autocmd FileType text setlocal textwidth=72
-
-  " Language specific indentation --------------------- {{{2
-  augroup switch_case_indentation
-    au!
-    " cino-:
-    " line up case labels with switch:
-    "     switch (a) {
-    "     case 1:
-    "         /* ... */
-    "         break;
-    "     default:
-    "         break;
-    "     }
-    autocmd FileType c,cpp,vala setlocal cinoptions+=:0
-
-  augroup case_block_indentation
-    au!
-    " cino-l
-    " align with case label:
-    "     switch (a) {
-    "     case 1: {
-    "         /* ... */
-    "         break;
-    "     }
-    "     default:
-    "         break;
-    "     }
-    autocmd FileType c,cpp,vala setlocal cinoptions+=l1
-
-  augroup access_specifier_indentation
-    au!
-    " cino-g
-    " no indentation for access specifiers
-    "     class C {
-    "     public:
-    "         // ...
-    "     protected:
-    "         // ...
-    "     private:
-    "         // ...
-    "     };
-    autocmd FileType cpp setlocal cinoptions+=g0
-
-  augroup namespace_indentation
-    au!
-    " cino-N
-    " no indentation for namespace
-    "     namespace {
-    "     void function();
-    "     }
-    autocmd FileType cpp,vala setlocal cinoptions+=N-s
-
-  augroup unclosed_parentheses_indentation
-    au!
-    " cino-(
-    " line up inside unclosed parentheses
-    "     if (c1 && (c2 ||
-    "                c3))
-    "         ;
-    "     if (c1 &&
-    "         (c2 || c3))
-    "         ;
-    autocmd FileType c,cpp,vala setlocal cinoptions+=(0
-
-  augroup return_type_indentation
-    au!
-    " cino-t
-    " no indentation for return type declarations
-    "     int
-    "     func()
-    autocmd FileType c,cpp,vala setlocal cinoptions+=t0
-
-  " Update repository and revision info --------------- {{{2
-  augroup update_rev_info
-    au!
-    autocmd BufReadPost,BufWritePost,FileChangedShellPost * call UpdateRevisionInfo()
-
-  " quicktask filetype -------------------------------- {{{2
-  augroup quicktask_ft
-    au!
-    autocmd BufNewFile,BufRead *.quicktask setf quicktask
-
-  " Leave insert mode after 15 seconds of no input ---- {{{2
-  augroup auto_escape
-    au!
-    " nice trick by winzo
-    " http://www.reddit.com/r/vim/comments/kz84u/what_are_some_simple_yet_mindblowing_tweaks_to/c2ol6wd
-    "autocmd CursorHoldI * stopinsert
-    "autocmd InsertEnter * let updaterestore=&updatetime | set updatetime=15000
-    "autocmd InsertLeave * let &updatetime=updaterestore
-
-  " Misc ---------------------------------------------- {{{2
-  augroup editing
-    au!
-    " Toggling between number and relativenumber when entering/leaving insert mode
-    autocmd InsertEnter * set number
-    autocmd InsertLeave * set relativenumber
-    " remove trailing whitespaces
-    autocmd BufWritePre * call StripTrailingWhitespace()
-
-    " When editing a file, always jump to the last known cursor position.
-    " Don't do it when the position is invalid or when inside an event handler
-    " (happens when dropping a file on gvim).
-    " Also don't do it when the mark is in the first line, that is the default
-    " position when opening a file.
-    autocmd BufReadPost *
-      \ if line("'\"") > 1 && line("'\"") <= line("$") |
-      \   exe "normal! g`\"" |
-      \ endif
-
-    " turn on spell checker for commit messages
-    autocmd FileType gitcommit,hgcommit setlocal spell
-    " and emails and plain text files
-    autocmd FileType mail,text setlocal spell
-    " except 'help' files
-    autocmd BufEnter *.txt if &filetype == 'help' | setlocal nospell | endif
-
-  augroup END " --------------------------------------- }}}2
-else
-  set autoindent
-endif " has("autocmd")
-
-" Colorschemes ---------------------------------------- {{{1
-" get them from: http://www.vim.org/
-" also: http://code.google.com/p/vimcolorschemetest/ (recommanded)
-"
-" ColorScheme Table ----------------------------------- {{{2
-" Name          | Background | C/C++ | HTML | CSS | Javascript | Django | Haskell | Lisp | Python
-" badwolf       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" blackboard    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" bocau         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" candycode     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" clarity       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" cloudy        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" darkburn      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
-" fruity        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" fu            | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" gentooish     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" harlequin     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" hemisu        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" hybrid        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
-" inkpot        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" ir_black      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
-" jellybeans    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
-" jellyx        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" kib_darktango | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" koehler       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" mint          | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
-" molokai       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" murphy        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" native        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" navajo-night  | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" neverness     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" northsky      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" oceanblack    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" pablo         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" peaksea       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" peppers       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" redblack      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" relaxedgreen  | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" phd           | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" sift          | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" slate         | dark       | ✓     | ✓    | ✓   | ✓          | ✗      | ✓       | ✓    | ✓
-" twilight      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" Tomorrow-N    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
-" Tomorrow-N-BL | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
-" Tomorrow-N-BR | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
-" Tomorrow-N-E  | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
-" vj            | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" vividchalk    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" wintersday    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" wombat        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" zenburn       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
-" solarized     | light/dark | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" kib_plastic   | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" mayansmoke    | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" proton        | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" pyte          | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-
-" badwolf:
-" http://stevelosh.com/projects/badwolf/
-" https://bitbucket.org/sjl/badwolf/
-" hg clone https://bitbucket.org/sjl/badwolf
-"
-" hemisu:
-" only works in gVim
-"
-" hybrid:
-" https://github.com/w0ng/vim-hybrid/
-" git clone git://github.com/w0ng/vim-hybrid.git
-"
-" ir_black:
-" http://blog.toddwerth.com/entries/8
-" http://blog.toddwerth.com/entry_files/8/ir_black.vim
-"
-" harlequin:
-" http://www.vim.org/scripts/script.php?script_id=4195
-" https://github.com/nielsmadan/harlequin
-" git clone git://github.com/nielsmadan/harlequin.git
-"
-" solarized:
-" http://ethanschoonover.com/solarized
-"
-" tomorrow:
-" https://github.com/chriskempson/vim-tomorrow-theme/
-" git clone git://github.com/chriskempson/vim-tomorrow-theme.git
-" Tomorrow-N is Tomorrow-Night
-" Tomorrow-N-BL is Tomorrow-Night-Blue
-" Tomorrow-N-BR is Tomorrow-Night-Bright
-" Tomorrow-N-E is Tomorrow-Night-Eighties
-" }}}2
-
-if has("gui_running")
-  set background=dark
-  colorscheme badwolf
-else
-  set t_Co=256
-  set background=dark
-  colorscheme bocau
-endif
-
 " Plugins --------------------------------------------- {{{1
 " Abolish --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1545
@@ -806,6 +424,388 @@ let g:vimim_toggle = 'pinyin'
 "
 " This one has more features, I am not using this one right now.
 " It doesn't honor my sw, sts settings.
+
+" Fonts ----------------------------------------------- {{{1
+if has("gui_running")
+  " Envy Code R
+  " http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
+  " set guifont=Envy\ Code\ R\ \VS\ 10
+  "
+  " Monofur
+  " http://www.dafont.com/monofur.font
+  set guifont=monofur\ 12
+  "
+  " Source Code Pro
+  " http://blogs.adobe.com/typblography/2012/09/source-code-pro.html
+  " http://sourceforge.net/projects/sourcecodepro.adobe/
+  " https://github.com/adobe/Source-Code-Pro
+  " set guifont=Source\ Code\ Pro\ 12
+  "
+  " Ubuntu Mono
+  " http://font.ubuntu.com/
+  " set guifont=Ubuntu\ Mono\ 12
+endif
+
+" Colorschemes ---------------------------------------- {{{1
+" get them from: http://www.vim.org/
+" also: http://code.google.com/p/vimcolorschemetest/ (recommanded)
+"
+" ColorScheme Table ----------------------------------- {{{2
+" Name          | Background | C/C++ | HTML | CSS | Javascript | Django | Haskell | Lisp | Python
+" badwolf       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" blackboard    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" bocau         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" candycode     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" clarity       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" cloudy        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" darkburn      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
+" fruity        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" fu            | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" gentooish     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" harlequin     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" hemisu        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" hybrid        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
+" inkpot        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" ir_black      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
+" jellybeans    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
+" jellyx        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" kib_darktango | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" koehler       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" mint          | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
+" molokai       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" murphy        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" native        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" navajo-night  | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" neverness     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" northsky      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" oceanblack    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" pablo         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" peaksea       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" peppers       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" redblack      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" relaxedgreen  | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" phd           | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" sift          | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" slate         | dark       | ✓     | ✓    | ✓   | ✓          | ✗      | ✓       | ✓    | ✓
+" twilight      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" Tomorrow-N    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
+" Tomorrow-N-BL | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
+" Tomorrow-N-BR | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
+" Tomorrow-N-E  | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✗    | ✓
+" vj            | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" vividchalk    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" wintersday    | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" wombat        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" zenburn       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
+" solarized     | light/dark | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" kib_plastic   | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" mayansmoke    | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" proton        | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" pyte          | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+
+" badwolf:
+" http://stevelosh.com/projects/badwolf/
+" https://bitbucket.org/sjl/badwolf/
+" hg clone https://bitbucket.org/sjl/badwolf
+"
+" hemisu:
+" only works in gVim
+"
+" hybrid:
+" https://github.com/w0ng/vim-hybrid/
+" git clone git://github.com/w0ng/vim-hybrid.git
+"
+" ir_black:
+" http://blog.toddwerth.com/entries/8
+" http://blog.toddwerth.com/entry_files/8/ir_black.vim
+"
+" harlequin:
+" http://www.vim.org/scripts/script.php?script_id=4195
+" https://github.com/nielsmadan/harlequin
+" git clone git://github.com/nielsmadan/harlequin.git
+"
+" solarized:
+" http://ethanschoonover.com/solarized
+"
+" tomorrow:
+" https://github.com/chriskempson/vim-tomorrow-theme/
+" git clone git://github.com/chriskempson/vim-tomorrow-theme.git
+" Tomorrow-N is Tomorrow-Night
+" Tomorrow-N-BL is Tomorrow-Night-Blue
+" Tomorrow-N-BR is Tomorrow-Night-Bright
+" Tomorrow-N-E is Tomorrow-Night-Eighties
+" }}}2
+
+if has("gui_running")
+  set background=dark
+  colorscheme badwolf
+else
+  set t_Co=256
+  set background=dark
+  colorscheme bocau
+endif
+
+" Autocommands ---------------------------------------- {{{1
+if has("autocmd")
+  " Show trailing whitespaces when necessary ---------- {{{2
+  " That is, most of the cases other than editing source code in Whitespace,
+  " the programming language.
+  augroup show_whitespaces
+    au!
+    " Make sure this will not be cleared by colorscheme
+    autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+    " Highlight unwanted whitespaces
+    autocmd BufWinEnter,WinEnter,InsertLeave * call MatchUnwantedWhitespaces()
+    " In insert mode, show trailing whitespaces except when typing at the end
+    " of a line
+    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+    " Show whitespaces in insert mode
+    autocmd InsertEnter * set list
+    " and turn it off when leave insert mode
+    autocmd InsertLeave * set nolist
+    " Clear highlight when lose focus
+    autocmd WinLeave * call clearmatches()
+
+  " Vala/Genis Support -------------------------------- {{{2
+  " get vala.vim here:
+  " https://live.gnome.org/Vala/Vim
+  augroup vala_support
+    au!
+    autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    autocmd BufRead,BufNewFile *.vala setfiletype vala
+    autocmd BufRead,BufNewFile *.vapi setfiletype vala
+    autocmd FileType vala setlocal cindent
+
+    " indentation for genie: genie.vim
+    " http://www.vim.org/scripts/script.php?script_id=2349
+    " This will overrule the default filetype grads
+    autocmd BufRead,BufNewFile *.gs setlocal filetype=genie
+
+    autocmd FileType vala,genie setlocal formatoptions+=croql
+
+  " Python Support ------------------------------------ {{{2
+  augroup python_support
+    au!
+    autocmd FileType python set omnifunc=pythoncomplete#Complete
+    autocmd FileType python inoreab <buffer> #! #!/usr/bin/env python
+    autocmd FileType python inoreab <buffer> #e # -*- coding: utf=8 -*-
+    " Setting 'python_space_error_highlight' = 1 will only highlight mixed
+    " tabs and spaces, I go as far as mark all tabs as error.
+    autocmd Syntax python syn match ExtraWhitespace /\t/
+
+  " Haskell Support ----------------------------------- {{{2
+  augroup haskell_support
+    au!
+    " set compiler, then restore 'cmdheight' back to 1
+    autocmd BufEnter *.hs,*.lhs compiler ghc | set cmdheight=1
+    " changed maplocalleader when editing haskell.
+    " due to implementation details of vim-haskellmode, it is too later if we
+    " set maplocalleader with 'autocmd FileType haskell', so ':setf haskell'
+    " in a newly created unnamed buffer will not get vim-haskellmode hotkeys
+    " set properly.
+    " to avoid this, either hack vim-haskellmode's code or set maplocalleader
+    " globally.
+    autocmd BufReadPre,BufNew,BufNewFile *.hs,*.lhs :let maplocalleader=","
+
+  " py.test Support ----------------------------------- {{{2
+  augroup pytest
+    au!
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tf <Esc>:Pytest function looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tc <Esc>:Pytest class looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tm <Esc>:Pytest method looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tt <Esc>:Pytest file looponfail<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tC <Esc>:Pytest clear<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>te <Esc>:Pytest error<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tn <Esc>:Pytest next<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tp <Esc>:Pytest previous<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>tF <Esc>:Pytest fails<CR>
+    autocmd FileType python nnoremap <buffer> <silent> <localleader>ts <Esc>:Pytest session<CR>
+
+  " Mappings for reStructuredText: Section Headers ---- {{{2
+  augroup restructuredtext
+    au!
+    " Normal Mode: Headings with overline and underline adornments
+    autocmd FileType rst nnoremap <buffer> <localleader>h :call MarkReSTSessionTitle(1)<CR>
+    " Normal Mode: Sessions with underline adornment
+    autocmd FileType rst nnoremap <buffer> <localleader>s :call MarkReSTSessionTitle(0)<CR>
+    " Insert Mode: Headings with overline and underline adornments
+    autocmd FileType rst inoremap <buffer> <C-]> <C-\><C-O>:call MarkReSTSessionTitle(1)<CR>
+    " Insert Mode: Headings with underline adornment
+    autocmd FileType rst inoremap <buffer> <C-J> <C-\><C-O>:call MarkReSTSessionTitle(0)<CR>
+    " Mapping for plugin DOT
+    autocmd FileType rst nnoremap <buffer> <localleader>dot :DotOutlineTree<CR>
+
+  " Tamplate Languages -------------------------------- {{{2
+  augroup template_langs
+    au!
+    " Using something other than {{{,}}} as foldmarker
+    autocmd FileType htmldjango,django,jinja,jinja2 setlocal foldmarker=[--,--] commentstring={#\ %s\ #}
+
+  " Default whitespace settings for different file types ----- {{{2
+  augroup whitespace_settings
+    au!
+    " Indentation with hard tabs:
+    " set 'shiftwidth' and 'tabstop' to the same amount, usually less than 8
+    " for better viewing, leaving 'softtabstop' unset and 'expandtab' at
+    " default value
+    autocmd FileType go setlocal sw=4 ts=4
+    autocmd FileType java setlocal sw=4 ts=4
+    autocmd FileType php setlocal sw=4 ts=4
+    autocmd FileType rust setlocal sw=4 ts=4
+    " Indentation with spaces:
+    " set 'shiftwidth' and 'softtabstop' to the same amount, usually turn on
+    " 'expandtab' to avoid mixing spaces and tabs, leaving 'tabstop' at
+    " default value.
+    autocmd FileType asciidoc setlocal sw=2 sts=2 et
+    autocmd FileType c setlocal sw=4 sts=4 et tw=78
+    autocmd FileType coffee setlocal sw=2 sts=2 et tw=79
+    autocmd FileType cpp setlocal sw=4 sts=4 et tw=78
+    autocmd FileType css setlocal sw=4 sts=4 et
+    autocmd FileType haskell setlocal sw=4 sts=4 et
+    autocmd FileType html setlocal sw=2 sts=2 et
+    autocmd FileType htmlcheetah setlocal sw=2 sts=2 et
+    autocmd FileType htmldjango setlocal sw=2 sts=2 et
+    autocmd FileType javascript setlocal sw=2 sts=2 et
+    autocmd FileType jinja setlocal sw=2 sts=2 et
+    autocmd FileType jinja2 setlocal sw=2 sts=2 et
+    autocmd FileType mason setlocal sw=2 sts=2 et
+    autocmd FileType ocaml setlocal sw=2 sts=2 et
+    autocmd FileType perl setlocal sw=4 sts=4 et
+    autocmd FileType python setlocal sw=4 sts=4 et tw=78
+    autocmd FileType rst setlocal sw=2 sts=2 et
+    autocmd FileType ruby setlocal sw=2 sts=2 et
+    autocmd FileType scheme setlocal sw=2 sts=2 et
+    autocmd FileType vala setlocal sw=4 sts=4 et tw=78
+    autocmd FileType xhtml setlocal sw=2 sts=2 et
+    autocmd FileType xml setlocal sw=2 sts=2 et
+    " Others with special requirements
+    autocmd FileType make setlocal noet
+    autocmd FileType sql setlocal et
+    autocmd FileType gitcommit setlocal textwidth=72
+    autocmd FileType hgcommit setlocal textwidth=72
+    autocmd FileType text setlocal textwidth=72
+
+  " Language specific indentation --------------------- {{{2
+  augroup switch_case_indentation
+    au!
+    " cino-:
+    " line up case labels with switch:
+    "     switch (a) {
+    "     case 1:
+    "         /* ... */
+    "         break;
+    "     default:
+    "         break;
+    "     }
+    autocmd FileType c,cpp,vala setlocal cinoptions+=:0
+
+  augroup case_block_indentation
+    au!
+    " cino-l
+    " align with case label:
+    "     switch (a) {
+    "     case 1: {
+    "         /* ... */
+    "         break;
+    "     }
+    "     default:
+    "         break;
+    "     }
+    autocmd FileType c,cpp,vala setlocal cinoptions+=l1
+
+  augroup access_specifier_indentation
+    au!
+    " cino-g
+    " no indentation for access specifiers
+    "     class C {
+    "     public:
+    "         // ...
+    "     protected:
+    "         // ...
+    "     private:
+    "         // ...
+    "     };
+    autocmd FileType cpp setlocal cinoptions+=g0
+
+  augroup namespace_indentation
+    au!
+    " cino-N
+    " no indentation for namespace
+    "     namespace {
+    "     void function();
+    "     }
+    autocmd FileType cpp,vala setlocal cinoptions+=N-s
+
+  augroup unclosed_parentheses_indentation
+    au!
+    " cino-(
+    " line up inside unclosed parentheses
+    "     if (c1 && (c2 ||
+    "                c3))
+    "         ;
+    "     if (c1 &&
+    "         (c2 || c3))
+    "         ;
+    autocmd FileType c,cpp,vala setlocal cinoptions+=(0
+
+  augroup return_type_indentation
+    au!
+    " cino-t
+    " no indentation for return type declarations
+    "     int
+    "     func()
+    autocmd FileType c,cpp,vala setlocal cinoptions+=t0
+
+  " Update repository and revision info --------------- {{{2
+  augroup update_rev_info
+    au!
+    autocmd BufReadPost,BufWritePost,FileChangedShellPost * call UpdateRevisionInfo()
+
+  " quicktask filetype -------------------------------- {{{2
+  augroup quicktask_ft
+    au!
+    autocmd BufNewFile,BufRead *.quicktask setf quicktask
+
+  " Leave insert mode after 15 seconds of no input ---- {{{2
+  augroup auto_escape
+    au!
+    " nice trick by winzo
+    " http://www.reddit.com/r/vim/comments/kz84u/what_are_some_simple_yet_mindblowing_tweaks_to/c2ol6wd
+    "autocmd CursorHoldI * stopinsert
+    "autocmd InsertEnter * let updaterestore=&updatetime | set updatetime=15000
+    "autocmd InsertLeave * let &updatetime=updaterestore
+
+  " Misc ---------------------------------------------- {{{2
+  augroup editing
+    au!
+    " Toggling between number and relativenumber when entering/leaving insert mode
+    autocmd InsertEnter * set number
+    autocmd InsertLeave * set relativenumber
+    " remove trailing whitespaces
+    autocmd BufWritePre * call StripTrailingWhitespace()
+
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event handler
+    " (happens when dropping a file on gvim).
+    " Also don't do it when the mark is in the first line, that is the default
+    " position when opening a file.
+    autocmd BufReadPost *
+      \ if line("'\"") > 1 && line("'\"") <= line("$") |
+      \   exe "normal! g`\"" |
+      \ endif
+
+    " turn on spell checker for commit messages
+    autocmd FileType gitcommit,hgcommit setlocal spell
+    " and emails and plain text files
+    autocmd FileType mail,text setlocal spell
+    " except 'help' files
+    autocmd BufEnter *.txt if &filetype == 'help' | setlocal nospell | endif
+
+  augroup END " --------------------------------------- }}}2
+else
+  set autoindent
+endif " has("autocmd")
 
 " Commands, Mappings and Functions -------------------- {{{1
 " <Space> in Normal mode ------------------------------ {{{2
