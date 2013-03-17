@@ -162,40 +162,14 @@ nnoremap <C-M> :CtrlPMixed<CR>
 nnoremap <leader>t :CtrlPBufTag<CR>
 nnoremap <leader>T :CtrlPTag<CR>
 
-" Cute Python ----------------------------------------- {{{2
-" https://github.com/ehamberg/vim-cute-python/
-" #git clone git://github.com/ehamberg/vim-cute-python.git
-
 " dot.vim --------------------------------------------- {{{2
 " https://bitbucket.org/shu/dotoutlinetree/
 " http://www.vim.org/scripts/script.php?script_id=1225
-
-" FuzzyFinder ----------------------------------------- {{{2
-" vim-l9 is the requirement of fuzzyfinder 4.*
-" http://www.vim.org/scripts/script.php?script_id=3252
-" http://bitbucket.org/ns9tks/vim-l9/
-" #hg clone https://bitbucket.org/ns9tks/vim-l9
-"
-" http://www.vim.org/scripts/script.php?script_id=1984
-" http://bitbucket.org/ns9tks/vim-fuzzyfinder/
-" #hg clone https://bitbucket.org/ns9tks/vim-fuzzyfinder
-"
-" mapping for FuzzyFinder
-" use V 3.4
-"nnoremap <leader>ff :FufFile ~/projects/<CR>
-" search from cwd
-" nnoremap <leader>ff :FufFile<CR>
-" nnoremap <leader>fb :FufBuffer<CR>
 
 " Gundo ----------------------------------------------- {{{2
 " http://sjl.bitbucket.org/gundo.vim/
 " hg clone https://bitbucket.org/sjl/gundo.vim
 nnoremap <leader>u :GundoToggle<CR>
-
-" Haskell Conceal ------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3200
-" https://github.com/Twinside/vim-haskellConceal/
-" #git clone git://github.com/Twinside/vim-haskellConceal.git
 
 " Haskell Mode ---------------------------------------- {{{2
 " http://projects.haskell.org/haskellmode-vim/
@@ -223,12 +197,6 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 " enable matchit.vim
 runtime macros/matchit.vim
 
-" NERDTree -------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=1658
-" https://github.com/scrooloose/nerdtree/
-" #git clone git://github.com/scrooloose/nerdtree.git
-" nnoremap <leader>nt :NERDTreeToggle<CR>
-
 " NrrwRgn --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3075
 " https://github.com/chrisbra/NrrwRgn/
@@ -243,16 +211,6 @@ runtime macros/matchit.vim
 " http://www.vim.org/scripts/script.php?script_id=3424
 " https://github.com/alfredodeza/pytest.vim/
 " git clone git://github.com/alfredodeza/pytest.vim.git
-
-" quicktask ------------------------------------------- {{{2
-" http://quicktask.aaronbieber.com/
-" https://github.com/aaronbieber/quicktask/
-" git clone git://github.com/aaronbieber/quicktask.git
-let g:quicktask_snip_path = expand("~/.snips")
-
-" Rainbow Parentheses --------------------------------- {{{2
-" https://github.com/kien/rainbow_parentheses.vim/
-" #git clone git://github.com/kien/rainbow_parentheses.vim.git
 
 " Repeat ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2136
@@ -276,11 +234,6 @@ nnoremap <leader><Space> :Sscratch<CR>
 " hg clone https://bitbucket.org/kovisoft/slimv
 let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp" &'
 
-" snipMate -------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2540
-" http://github.com/msanders/snipmate.vim/
-" #git clone git://github.com/msanders/snipmate.vim.git
-
 " Sparkup --------------------------------------------- {{{2
 " You can write HTML in a CSS-like syntax, and have Sparkup handle the
 " expansion to full HTML code.
@@ -296,11 +249,6 @@ let g:sparkupNextMapping = '<C-J>'
 " http://www.vim.org/scripts/script.php?script_id=2120
 " https://github.com/tpope/vim-speeddating/
 " git clone git://github.com/tpope/vim-speeddating.git
-
-" SuperTab -------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=1643
-" https://github.com/ervandew/supertab/
-" #git clone git://github.com/ervandew/supertab.git
 
 " Surround -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1697
@@ -341,11 +289,6 @@ let g:tagbar_type_vala = {
     \ 's:struct',
   \ ]
 \ }
-
-" Taglist --------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=273
-" http://vim-taglist.sourceforge.net/
-"nnoremap <leader>tl :TlistToggle<CR>
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
@@ -409,34 +352,10 @@ let g:vimwiki_folding = 'expr'
 let g:vimwiki_hl_cb_checked = 1
 let g:vimwiki_hl_headers = 1
 
-" xpt, XP Templates ----------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2611
-" http://code.google.com/p/xptemplate/
-" https://github.com/drmingdrmer/xptemplate/
-" #git clone git://github.com/drmingdrmer/xptemplate.git
-"
-" use <Tab> key as trigger
-" let g:xptemplate_key = '<Tab>'
-" no spaces inside ()
-" let g:xptemplate_vars = "SParg="
-"
-" not going to set it now.
-" let g:xptemplate_vars = "author=somebody&email=nobody@gmail.com"
-
 " YAIFA ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3096
 " https://github.com/Raimondi/YAIFA/
 " git clone git://github.com/Raimondi/YAIFA.git
-
-" ZenCoding.vim --------------------------------------- {{{2
-" vim plugins for HTML and CSS hi-speed coding.
-" http://www.vim.org/scripts/script.php?script_id=2981
-" http://mattn.github.com/zencoding-vim/
-" https://github.com/mattn/zencoding-vim/
-" #git clone git://github.com/mattn/zencoding-vim.git
-"
-" This one has more features, I am not using this one right now.
-" It doesn't honor my sw, sts settings.
 
 " Fonts ----------------------------------------------- {{{1
 if has("gui_running")
@@ -775,11 +694,6 @@ if has("autocmd")
   augroup update_rev_info
     au!
     autocmd BufReadPost,BufWritePost,FileChangedShellPost * call UpdateRevisionInfo()
-
-  " quicktask filetype -------------------------------- {{{2
-  augroup quicktask_ft
-    au!
-    autocmd BufNewFile,BufRead *.quicktask setf quicktask
 
   " vimwiki filetype ---------------------------------- {{{2
   augroup vimwiki_ft
