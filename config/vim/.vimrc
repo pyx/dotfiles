@@ -617,7 +617,7 @@ if has("autocmd")
     autocmd FileType gitcommit setlocal textwidth=72
     autocmd FileType hgcommit setlocal textwidth=72
     autocmd FileType text setlocal textwidth=72
-    autocmd FileType vimwiki setlocal sw=2 sts=2
+    autocmd FileType vimwiki setlocal sw=2 sts=2 et
 
   " Language specific indentation --------------------- {{{2
   augroup switch_case_indentation
