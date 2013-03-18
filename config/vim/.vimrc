@@ -357,11 +357,6 @@ let g:vimwiki_folding = 'expr'
 let g:vimwiki_hl_cb_checked = 1
 let g:vimwiki_hl_headers = 1
 
-" YAIFA ----------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3096
-" https://github.com/Raimondi/YAIFA/
-" git clone git://github.com/Raimondi/YAIFA.git
-
 " Fonts ----------------------------------------------- {{{1
 if has("gui_running")
   " Envy Code R
