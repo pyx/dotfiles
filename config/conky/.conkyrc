@@ -4,7 +4,6 @@ update_interval 4.0
 
 double_buffer yes
 #own_window no
-background yes
 own_window yes
 own_window_type override
 own_window_transparent yes
@@ -34,7 +33,7 @@ gap_x 20
 gap_y 20
 
 draw_shades yes
-draw_outline no 
+draw_outline no
 draw_borders yes
 border_inner_margin 10
 border_width 1
