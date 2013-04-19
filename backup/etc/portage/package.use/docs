@@ -3,7 +3,6 @@ app-text/htmldoc fltk
 app-text/texlive doc
 dev-cpp/atkmm doc
 dev-cpp/cairomm doc
-dev-cpp/eigen doc
 dev-cpp/glibmm doc
 dev-cpp/gtkmm doc
 dev-cpp/gtksourceviewmm doc
