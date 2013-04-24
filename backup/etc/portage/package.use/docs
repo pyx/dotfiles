@@ -20,6 +20,7 @@ dev-lang/nasm doc
 dev-lang/perl doc
 dev-lang/python doc
 dev-lang/ruby doc
+dev-lang/swi-prolog doc
 dev-lang/swig doc
 dev-libs/DirectFB doc
 dev-libs/apr doc
