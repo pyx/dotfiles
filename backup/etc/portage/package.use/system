@@ -4,7 +4,7 @@ sys-auth/pambase consolekit gnome-keyring
 app-arch/bzip2 static-libs
 sys-block/parted device-mapper
 app-benchmarks/bootchart acct
-#app-benchmarks/bootchart acct java
+net-fs/cifs-utils upcall
 app-misc/screen multiuser
 net-print/cups gnutls -usb
 
@@ -44,3 +44,4 @@ sys-fs/ntfs3g ntfsprogs
 >=dev-cpp/glog-0.3.2 gflags
 #required by dev-libs/DirectFB-1.6.3[opengl], required by media-video/mplayer-1.1-r1[directfb], required by @selected, required by @world (argument)
 >=media-libs/mesa-9.0.1 gbm
+
