@@ -156,8 +156,12 @@ let g:ctrlp_custom_ignore = {
 " let g:ctrlp_match_window_bottom = 0
 " switching between buffers
 nnoremap <C-N> :CtrlPBuffer<CR>
+" line mode
+nnoremap <leader>l :CtrlPLine<CR>
 " mixed mode
-nnoremap <C-M> :CtrlPMixed<CR>
+nnoremap <leader>m :CtrlPMixed<CR>
+" quickfix mode
+nnoremap <leader>q :CtrlPQuickfix<CR>
 " goto tags
 nnoremap <leader>t :CtrlPBufTag<CR>
 nnoremap <leader>T :CtrlPTag<CR>
