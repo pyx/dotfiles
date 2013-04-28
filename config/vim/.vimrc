@@ -665,6 +665,15 @@ if has("autocmd")
     "     };
     autocmd FileType cpp setlocal cinoptions+=g0
 
+  augroup lambda_function_indentation
+    au!
+    " cino-j
+    " indent anonymous functions correctly
+    "     foo.some_event.connect((a, b) => {
+    "         stdout.printf(a, b);
+    "     });
+    autocmd FileType vala setlocal cinoptions+=j1
+
   augroup namespace_indentation
     au!
     " cino-N
