@@ -9,7 +9,6 @@ dev-lang/icon
 dev-lang/io
 dev-lang/j
 dev-lang/ocaml
-dev-lang/python:2.6
 dev-lang/swi-prolog
 dev-lang/vala
 dev-lisp/clisp
