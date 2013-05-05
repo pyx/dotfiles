@@ -25,3 +25,9 @@ sys-kernel/linux-firmware savedconfig
 >=x11-libs/libdrm-2.4.37 libkms
 #required by media-gfx/blender-2.64a, required by @selected, required by @world (argument)
 >=dev-cpp/glog-0.3.2 gflags
+# required by dev-libs/DirectFB-1.6.3-r1[opengl]
+# required by media-video/mplayer-1.1-r1[directfb]
+# required by @app-video
+# required by @selected
+# required by @world (argument)
+=media-libs/mesa-9.1.2 gbm
