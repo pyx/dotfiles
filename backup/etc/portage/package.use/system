@@ -18,16 +18,3 @@ sys-apps/busybox sep-usr static
 
 # firmware
 sys-kernel/linux-firmware savedconfig
-
-#required by sys-fs/udev-171-r3[extras], required by x11-base/xorg-server-1.11.2-r2[udev], required by @selected, required by @world (argument)
->=sys-apps/pciutils-3.1.8 -zlib
-#required by media-libs/mesa-8.1_rc1_pre20120724[xorg], required by x11-libs/cairo-1.12.2-r2[opengl], required by x11-wm/awesome-3.4.11, required by @selected, required by @world (argument)
->=x11-libs/libdrm-2.4.37 libkms
-#required by media-gfx/blender-2.64a, required by @selected, required by @world (argument)
->=dev-cpp/glog-0.3.2 gflags
-# required by dev-libs/DirectFB-1.6.3-r1[opengl]
-# required by media-video/mplayer-1.1-r1[directfb]
-# required by @app-video
-# required by @selected
-# required by @world (argument)
-=media-libs/mesa-9.1.2 gbm
