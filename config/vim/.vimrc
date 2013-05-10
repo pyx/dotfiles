@@ -37,7 +37,7 @@ set listchars+=tab:▸\ ,trail:⋅,nbsp:⋅
 set listchars+=eol:¬,extends:»,precedes:«
 
 " highlight columns after 'textwidth'
-set colorcolumn=+1,+2,+3,+4
+set colorcolumn=+1,+2,+4,+5,+6,+7,+8
 
 if has('mouse')
   set mouse=a
