@@ -125,19 +125,6 @@ nnoremap <leader>c :Clam<Space>
 " https://github.com/tpope/vim-commentary/
 " git clone git://github.com/tpope/vim-commentary.git
 
-" Conque ---------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2771
-" http://code.google.com/p/conque/
-" svn checkout http://conque.googlecode.com/svn/trunk/ conque
-"
-" interactive shell in vim buffer
-" Bash
-nnoremap <leader>sh :ConqueTermSplit bash<CR>
-" Python Shell
-nnoremap <leader>py :ConqueTermSplit python<CR>
-" gdb
-nnoremap <leader>gdb :ConqueTermSplit gdb<CR>
-
 " Ctrl-P ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3736
 " http://kien.github.com/ctrlp.vim/
