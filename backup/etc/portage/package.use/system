@@ -11,7 +11,7 @@ net-print/cups gnutls -usb
 # Libs
 app-arch/libarchive -lzma
 dev-libs/DirectFB fbcon
-sys-apps/hal consolekit policykit
+media-libs/mesa gbm
 sys-fs/udev extras
 sys-libs/zlib minizip static-libs
 sys-apps/busybox sep-usr static
