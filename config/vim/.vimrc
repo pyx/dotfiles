@@ -145,7 +145,7 @@ let g:ctrlp_custom_ignore = {
 " Match window, top of the screen:
 " let g:ctrlp_match_window_bottom = 0
 " switching between buffers
-nnoremap <C-N> :CtrlPBuffer<CR>
+nnoremap <Tab> :CtrlPBuffer<CR>
 " line mode
 nnoremap <leader>l :CtrlPLine<CR>
 " mixed mode
