@@ -17,6 +17,12 @@ set showmatch
 set title
 set wildmenu
 set wildmode=list:longest,list:full
+" ignore files inside vcs dirs
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+" ignore object code files
+set wildignore+=*.o,*.obj,*.a,*.so
+" ignore python cache files
+set wildignore+=*.pyc,*.pyo,*/__pycache__
 
 set backup
 set backupdir=~/.tmp,~/tmp,/var/tmp,/tmp
@@ -135,13 +141,6 @@ nnoremap <leader>c :Clam<Space>
 " let g:ctrlp_map = '<C-P>'
 " Search from project root:
 " let g:ctrlp_working_path_mode = 2
-" Exclude VCS cache dir, either:
-" set wildignore+=*/.git/*,*/.hg/*,*/.svn/*   " for Linux/MacOSX
-" or:
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-  \ 'file': '\.pyc$\|\.so$\|\.o$',
-  \ }
 " Match window, top of the screen:
 " let g:ctrlp_match_window_bottom = 0
 " switching between buffers
