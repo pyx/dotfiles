@@ -19,7 +19,7 @@ media-sound/rosegarden dssi export jack
 media-sound/traverso jack lv2a -pulseaudio
 
 # Graphics
-media-gfx/blender blender-game
+media-gfx/blender blender-game python_single_target_python3_3
 media-gfx/gimp gs jpeg2k
 
 # Libs
