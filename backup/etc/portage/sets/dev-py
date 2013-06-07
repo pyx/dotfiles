@@ -1,7 +1,6 @@
 # Development - Python Specific
 dev-python/autopep8
 dev-python/django
-dev-python/elixir
 dev-python/fabric
 dev-python/ipython
 dev-python/markdown
