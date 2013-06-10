@@ -55,3 +55,6 @@ media-libs/libmng static-libs
 
 #bugfix
 media-libs/quvi -examples
+
+# bug that upstream seemingly have no clue how to fix, fwiu
+media-libs/babl -introspection -vala
