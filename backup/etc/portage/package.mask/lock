@@ -1,2 +1,4 @@
 # no need until new installation
 >=sys-boot/grub-2.00
+# failed to build, not enough menory
+>=dev-scheme/racket-5.3.2
