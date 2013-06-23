@@ -11,7 +11,7 @@ net-im/pidgin qq gnutls
 # Tools
 mail-mta/msmtp gnutls sasl
 net-analyzer/tcpdump -samba
-net-analyzer/wireshark adns gcrypt gnutls  profile smi
+net-analyzer/wireshark adns gcrypt gnutls profile smi -qt4
 net-misc/openssh -ldap
 net-nds/openldap sasl
 net-news/liferea networkmanager
