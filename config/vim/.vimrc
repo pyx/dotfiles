@@ -736,8 +736,8 @@ if has("autocmd")
 
     " turn on spell checker for commit messages
     autocmd FileType gitcommit,hgcommit setlocal spell
-    " and emails and plain text files
-    autocmd FileType mail,text setlocal spell
+    " and emails, makrdown, reStructuredText and plain text files
+    autocmd FileType mail,markdown,rst,text setlocal spell
     " except 'help' files
     autocmd BufEnter *.txt if &filetype == 'help' | setlocal nospell | endif
 
