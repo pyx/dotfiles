@@ -16,6 +16,7 @@ sys-fs/reiserfsprogs
 sys-kernel/gentoo-sources
 sys-kernel/module-rebuild
 sys-process/acct
+sys-process/htop
 sys-process/lsof
 sys-process/vixie-cron
 virtual/pager
