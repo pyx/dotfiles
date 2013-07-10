@@ -65,7 +65,7 @@ end
 function on_print_prompt_header --on-event print_prompt_header
 	# print a carriage return, make sure that following messages will be
 	# printed at the beginning of the line.
-	echo -en '\r'
+	echo -ne '\r'
 	if test $prompt_show_banner = 1
 		print_prompt_banner
 	end
