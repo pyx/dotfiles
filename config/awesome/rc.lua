@@ -42,7 +42,7 @@ end
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "gnome-terminal"
+terminal = "urxvt"
 -- terminal = "xterm"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
@@ -274,7 +274,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "F9",    function () awful.util.spawn("audacious") end),
     awful.key({ modkey,           }, "F10",   function () awful.util.spawn("meld") end),
     awful.key({ modkey,           }, "F11",   function () awful.util.spawn("nemiver") end),
-    awful.key({ modkey,           }, "F12",   function () awful.util.spawn("gnome-screenshot") end),
+    awful.key({ modkey,           }, "F12",   function () awful.util.spawn("scrot -d 3") end),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),

@@ -225,7 +225,7 @@ nnoremap <leader><Space> :Sscratch<CR>
 " http://www.vim.org/scripts/script.php?script_id=2531
 " https://bitbucket.org/kovisoft/slimv/
 " hg clone https://bitbucket.org/kovisoft/slimv
-let g:slimv_swank_cmd = '! gnome-terminal -e "sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp" &'
+let g:slimv_swank_cmd = '! urxvt -e sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp &'
 
 " Sparkup --------------------------------------------- {{{2
 " You can write HTML in a CSS-like syntax, and have Sparkup handle the

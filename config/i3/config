@@ -145,7 +145,7 @@ bindsym $mod+apostrophe exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Go to:
 
 # Default Application --------------------------------------------- {{{1
 # terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec urxvt
 
 # app launcher
 bindsym $mod+d exec dmenu_run
