@@ -1,7 +1,7 @@
 #!/bin/sh
-nm-applet &
+#nm-applet &
 # -or-
-#wicd-gtk --tray  &
+wicd-gtk --tray &
 ibus-daemon -d -x -r
 xcompmgr -c &
 conky &
