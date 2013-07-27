@@ -3,6 +3,9 @@
 call pathogen#infect()
 
 " Basic Settings -------------------------------------- {{{1
+" use a POSIX shell, need this as fish is default shell now
+set shell=/bin/bash
+
 syntax on
 set nocompatible
 filetype plugin indent on
@@ -1021,8 +1024,8 @@ function! UpdateRevisionInfo()
     if v:shell_error == 0
       " with return code 0, assuming nothing went wrong
       if b:repos_type ==# "Git"
-        " git does not provide enough customization of output as we need
-        " remove first 2 chars, e.g, the '* ' part of '* master'
+        " git does not provide enough customization for output so we need to
+        " remove first 2 chars manually, e.g, the '* ' part of '* master'
         let l:info = strpart(l:info, 2)
       endif
       let b:revision_info = substitute(l:info, '\n.*', '', 'g')
