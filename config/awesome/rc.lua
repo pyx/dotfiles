@@ -406,6 +406,8 @@ awful.rules.rules = {
     -- tag 3: term
     { rule = { class = "Gnome-terminal" },
       properties = { tag = tags[1][3], switchtotag = true } },
+    { rule = { class = "URxvt" },
+      properties = { tag = tags[1][3], switchtotag = true } },
     -- tag 4: dev docs
     { rule = { class = "Evince" },
       properties = { tag = tags[1][4], switchtotag = true } },

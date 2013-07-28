@@ -250,6 +250,7 @@ assign [class="Gvim"] → 2
 
 # 3: terminal enumerator
 assign [class="Gnome-terminal"] → 3
+assign [class="URxvt"] → 3
 assign [class="Nemiver"] → 3
 
 # 4: documents
