@@ -16,4 +16,6 @@ gtk-icon-theme-name = "Faenza"
 
 # Gtk Themes
 # Boje: http://gnome-look.org/content/show.php?content=155857
-gtk-theme-name = "Adwaita"
+# Gnome Cupertino: http://gnome-look.org/content/show.php/Gnome+Cupertino?content=147061
+# Zukitwo: http://gnome-look.org/content/show.php/Zukitwo?content=140562
+gtk-theme-name = "Gnome-Cupertino"
