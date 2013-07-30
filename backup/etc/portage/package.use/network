@@ -1,9 +1,6 @@
 # for Network Manager
-gnome-base/gnome-panel networkmanager
-gnome-extra/nm-applet libnotify
 net-dns/avahi autoipd mdnsresponder-compat gtk3 qt3 dbus
 net-misc/curl gnutls
-net-misc/networkmanager dhcpcd
 
 # IM
 net-im/pidgin qq gnutls
@@ -14,8 +11,6 @@ net-analyzer/tcpdump -samba
 net-analyzer/wireshark adns gcrypt gnutls profile smi -qt4
 net-misc/openssh -ldap
 net-nds/openldap sasl
-net-news/liferea networkmanager
-net-voip/ekiga -kde
 # for >=net-tools-1.60_p201111202031570500, or wicd and NetworkManager will break
 sys-apps/net-tools old-output
 mail-client/mutt gnutls gpg idn imap nntp mbox smtp pop sasl sidebar smime

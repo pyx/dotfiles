@@ -1,6 +1,6 @@
 # Tools
 sys-auth/consolekit policykit
-sys-auth/pambase consolekit gnome-keyring
+sys-auth/pambase consolekit
 app-arch/bzip2 static-libs
 sys-block/parted device-mapper
 app-benchmarks/bootchart acct
