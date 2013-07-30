@@ -1,8 +1,5 @@
 # Application - Laptop Specific
 app-laptop/laptop-mode-tools
-gnome-extra/nm-applet
-net-misc/networkmanager
-net-misc/networkmanager-vpnc
 net-misc/wicd
 sys-kernel/linux-firmware
 sys-power/hibernate-script

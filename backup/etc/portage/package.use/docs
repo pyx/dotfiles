@@ -45,8 +45,6 @@ dev-libs/libunique doc
 dev-libs/libusb doc
 dev-libs/libxml2 doc
 dev-libs/rasqal doc
-# failed to compile with doc
-#dev-libs/soprano doc
 dev-libs/tinyxml doc
 dev-libs/totem-pl-parser doc
 dev-libs/xapian doc
@@ -54,18 +52,15 @@ dev-libs/zziplib doc
 dev-python/PyQt4 doc
 dev-python/cython doc
 dev-python/dbus-python doc
-#dev-python/django doc
 dev-python/elixir doc
 dev-python/execnet doc
 dev-python/imaging doc
-#dev-python/jinja -doc
 dev-python/jinja doc
 dev-python/lxml doc
 dev-python/markdown doc
 dev-python/numpy doc
 dev-python/paramiko doc
 dev-python/pycairo doc
-#dev-python/pycrypto -doc
 dev-python/pycrypto doc
 dev-python/pygame doc
 dev-python/pygments doc
@@ -98,7 +93,6 @@ dev-vcs/darcs doc
 dev-vcs/git doc
 dev-vcs/hgview doc
 dev-vcs/subversion doc
-gnome-extra/evolution-data-server -doc
 mail-client/mutt doc
 media-gfx/gimp doc
 media-libs/fontconfig -doc

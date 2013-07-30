@@ -1,5 +1,4 @@
 # X11, Window Managers, Desktop Environments and Tools
-gnome-base/gdm
 x11-apps/setxkbmap
 x11-apps/xrandr
 x11-apps/xsetroot
@@ -13,8 +12,8 @@ x11-misc/i3lock
 x11-misc/i3status
 x11-misc/menumaker
 x11-misc/xcompmgr
+x11-misc/urxvt-perls
 x11-plugins/epplets
-x11-terms/rxvt-unicode
 x11-wm/awesome
 x11-wm/enlightenment:0.17
 x11-wm/fluxbox

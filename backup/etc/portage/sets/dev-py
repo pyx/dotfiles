@@ -1,5 +1,6 @@
 # Development - Python Specific
 dev-python/autopep8
+dev-python/bpython
 dev-python/django
 dev-python/fabric
 dev-python/ipython

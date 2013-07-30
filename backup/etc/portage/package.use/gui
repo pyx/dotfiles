@@ -1,48 +1,32 @@
 # DE
-gnome-base/gnome -ldap
-gnome-base/gnome-mount nautilus
-gnome-base/gnome-volume-manager automount
 gnome-base/gvfs archive fuse gdu
-gnome-base/nautilus sendto
-gnome-extra/nautilus-sendto bluetooth pidgin -cdr
 xfce-base/xfce4-meta minimal
 >=x11-wm/enlightenment-0.17.0 enlightenment_modules_shot
 >=dev-libs/ecore-1.7.4 curl
 
 # WM
-x11-wm/compiz -kde -kde4
-x11-wm/compiz-fusion emerald -kde
 x11-wm/enlightenment xcomposite
 
 # Tools
 app-admin/conky -ipv6 hddtemp nano-syntax rss wifi
-app-arch/file-roller nautilus
-app-crypt/seahorse gedit nautilus
-app-text/evince djvu dvi nautilus
-kde-base/okular chm djvu ebook
 app-text/zathura sqlite
 app-text/zathura-meta  pdf cb djvu postscript
 app-text/lcdf-typetools kpathsea
 media-gfx/splashutils gpm mng png truetype fbcondecor
-x11-terms/rxvt-unicode afterimage 256-color blink fading-colors iso14755 pixbuf truetype unicode3
+x11-terms/rxvt-unicode afterimage 256-color blink fading-colors iso14755 pixbuf truetype unicode3 xft
 #force-hints
 # by request. Oct 22 09
 virtual/poppler lcms
 
 x11-libs/libdesktop-agnostic -gconf -glade
-gnome-extra/avant-window-navigator -gconf
-gnome-extra/avant-window-navigator-extras -gconf
-
 x11-base/xorg-server xnest
 
 # Office
 app-office/abiword -collab
 app-office/abiword-plugins cxx grammar libgda math ots thesaurus wordperfect
-app-office/planner -eds
 
 # Input Method
 app-i18n/ibus dconf gconf gtk3 introspection
-app-i18n/scim-tables linguas_zh linguas_ja linguas_ko
 
 # Libs
 app-emulation/emul-linux-x86-soundlibs -arts

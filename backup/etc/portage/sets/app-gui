@@ -1,13 +1,10 @@
 # Application - GUI Misc.
 app-admin/conky
-media-gfx/comix
-media-gfx/eog
 media-gfx/feh
 media-gfx/scrot
-net-news/liferea
-net-nntp/pan
 net-p2p/amule
 net-p2p/deluge
 sci-astronomy/celestia
 sci-astronomy/stellarium
 sci-geosciences/googleearth
+sys-apps/baobab
