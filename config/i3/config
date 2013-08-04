@@ -267,6 +267,7 @@ assign [class="Thunar"] → 5
 # 6: CG
 assign [class="Eog"] → 6
 assign [class="Gimp"] → 6
+assign [class="Mcomix"] → 6
 
 # 7: multimedia
 assign [class="Audacious"] → 7
