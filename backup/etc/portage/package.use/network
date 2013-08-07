@@ -8,7 +8,7 @@ net-im/pidgin qq gnutls
 # Tools
 mail-mta/msmtp gnutls sasl
 net-analyzer/tcpdump -samba
-net-analyzer/wireshark adns gcrypt gnutls profile smi -qt4
+net-analyzer/wireshark adns gcrypt gnutls profile smi -gtk2 -qt4
 net-misc/openssh -ldap
 net-nds/openldap sasl
 # for >=net-tools-1.60_p201111202031570500, or wicd and NetworkManager will break
