@@ -1,6 +1,7 @@
 #!/bin/sh
 #nm-applet &
 # -or-
+dunst &
 wicd-gtk --tray &
 ibus-daemon -d -x -r
 xcompmgr -c &
