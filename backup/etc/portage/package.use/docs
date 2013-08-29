@@ -50,6 +50,7 @@ dev-libs/totem-pl-parser doc
 dev-libs/xapian doc
 dev-libs/zziplib doc
 dev-python/PyQt4 doc
+dev-python/alembic doc
 dev-python/blinker doc
 dev-python/cython doc
 dev-python/dbus-python doc
