@@ -1,8 +1,19 @@
 # Development - Python Specific
+dev-python/alembic
 dev-python/autopep8
 dev-python/bpython
 dev-python/django
 dev-python/fabric
+dev-python/flask
+dev-python/flask-admin
+dev-python/flask-babel
+dev-python/flask-login
+dev-python/flask-openid
+dev-python/flask-sqlalchemy
+dev-python/flask-testing
+dev-python/flask-uploads
+dev-python/flask-wtf
+dev-python/frozen-flask
 dev-python/ipython
 dev-python/markdown
 dev-python/paver
