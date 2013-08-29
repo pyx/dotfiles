@@ -50,6 +50,7 @@ dev-libs/totem-pl-parser doc
 dev-libs/xapian doc
 dev-libs/zziplib doc
 dev-python/PyQt4 doc
+dev-python/blinker doc
 dev-python/cython doc
 dev-python/dbus-python doc
 dev-python/elixir doc
@@ -77,6 +78,7 @@ dev-python/sphinx doc
 dev-python/sqlalchemy doc
 dev-python/sqlobject doc
 dev-python/twill doc
+dev-python/wtforms doc
 dev-python/wxpython doc
 dev-scheme/racket doc
 dev-qt/qt-creator doc
