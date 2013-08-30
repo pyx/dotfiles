@@ -193,6 +193,11 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 " enable matchit.vim
 runtime macros/matchit.vim
 
+" Netrw ----------------------------------------------- {{{2
+" comes with vim
+" Tree style
+let g:netrw_liststyle = 3
+
 " NrrwRgn --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3075
 " https://github.com/chrisbra/NrrwRgn/
