@@ -353,7 +353,9 @@ let g:vimim_toggle = 'pinyin'
 " vimwiki --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2226
 " http://code.google.com/p/vimwiki/
-" hg clone https://code.google.com/p/vimwiki/
+" https://github.com/vimwiki/vimwiki
+" #hg clone https://code.google.com/p/vimwiki/
+" git clone git://github.com/vimwiki/vimwiki.git
 let g:vimwiki_folding = 'expr'
 let g:vimwiki_hl_cb_checked = 1
 let g:vimwiki_hl_headers = 1
