@@ -524,7 +524,7 @@ if has("autocmd")
     au!
     autocmd FileType python set omnifunc=pythoncomplete#Complete
     autocmd FileType python inoreab <buffer> #! #!/usr/bin/env python
-    autocmd FileType python inoreab <buffer> #e # -*- coding: utf=8 -*-
+    autocmd FileType python inoreab <buffer> #e # -*- coding: utf-8 -*-
     " Setting 'python_space_error_highlight' = 1 will only highlight mixed
     " tabs and spaces, I go as far as mark all tabs as error.
     autocmd Syntax python syn match ExtraWhitespace /\t/
