@@ -811,6 +811,9 @@ let hs_highlight_types = 1
 let hs_highlight_more_types = 1
 let hs_highlight_debug = 1
 
+" HTML indentation options ---------------------------- {{{2
+let g:html_indent_inctags = "html,body,head,tbody"
+
 " MarkReSTSessionTitle -------------------------------- {{{2
 function! MarkReSTSessionTitle(overline)
   " From reStructuredText Markuo Specification
