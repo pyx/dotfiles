@@ -4,7 +4,7 @@
 dunst &
 wicd-gtk --tray &
 ibus-daemon -d -x -r
-xcompmgr -c &
+compton -c &
 conky &
 /usr/bin/volumeicon &
 xsetroot -cursor_name left_ptr

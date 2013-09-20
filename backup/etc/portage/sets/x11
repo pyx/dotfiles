@@ -7,12 +7,12 @@ x11-drivers/nvidia-drivers
 x11-drivers/xf86-input-synaptics
 x11-libs/xcb-util
 x11-misc/cairo-clock
+x11-misc/compton
 x11-misc/dmenu
 x11-misc/dunst
 x11-misc/i3lock
 x11-misc/i3status
 x11-misc/menumaker
-x11-misc/xcompmgr
 x11-misc/urxvt-perls
 x11-plugins/epplets
 x11-wm/awesome
