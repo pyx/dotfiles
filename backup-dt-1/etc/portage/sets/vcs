@@ -1,0 +1,10 @@
+# Development - Version Control Systems
+dev-vcs/bzr
+dev-vcs/darcs
+dev-vcs/fossil
+dev-vcs/git
+dev-vcs/hg-git
+dev-vcs/hgsubversion
+dev-vcs/hgsvn
+dev-vcs/mercurial
+dev-vcs/veracity

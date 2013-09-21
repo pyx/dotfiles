@@ -1,0 +1,15 @@
+# System Tools
+app-forensics/chkrootkit
+app-admin/logrotate
+app-admin/syslog-ng
+net-misc/dhcpcd
+sys-boot/grub
+sys-fs/dosfstools
+sys-fs/mtools
+sys-fs/ntfs3g
+sys-kernel/gentoo-sources
+sys-kernel/module-rebuild
+sys-process/acct
+sys-process/htop
+sys-process/lsof
+sys-process/vixie-cron
