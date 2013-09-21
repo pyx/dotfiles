@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from hashlib import sha1
+import hmac
+
+def genpass(place, account, passphrase):
+    """generates password based on place, account and passphrase
+
+    place, account and passphrase should all be unicode strings
+    return a unicode string as password.
+    """
+    if not place or not account:
+        return ''
+
+    cred = (account + place).encode('utf-8')
+    phrase = passphrase.encode('utf-8')
+    hash = hmac.new(phrase, cred, sha1).hexdigest()
+    password = [
+        hash[9:12].lower(),
+        account[-1].upper(),
+        place[-1].lower(),
+        hash[3:6].upper(),
+        account[0].lower(),
+        hash[6:9].upper(),
+        place[0].lower(),
+        hash[0:3].upper(),
+    ]
+    return ''.join(password)
+
+if __name__ == '__main__':
+    import sys
+    if sys.version_info[0] < 3:
+        input = raw_input
+
+    from getpass import getpass
+
+    try:
+        argc = len(sys.argv)
+        place = sys.argv[1] if argc > 1 else input()
+        account = sys.argv[2] if argc > 2 else input()
+        passphrase = sys.argv[3] if argc > 3 else getpass('')
+
+        print(genpass(place, account, passphrase))
+    except KeyboardInterrupt:
+        pass
