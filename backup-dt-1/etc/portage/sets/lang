@@ -1,0 +1,19 @@
+# Development - Programming Languages and Environments
+app-emacs/slime
+dev-lang/erlang
+dev-lang/ghc
+dev-lang/go
+dev-lang/gprolog
+dev-lang/icon
+dev-lang/io
+dev-lang/j
+dev-lang/ocaml
+dev-lang/swi-prolog
+dev-lang/vala
+dev-lisp/clisp
+dev-lisp/sbcl
+dev-scheme/chicken
+dev-scheme/racket
+net-libs/nodejs
+sys-devel/clang
+virtual/commonlisp
