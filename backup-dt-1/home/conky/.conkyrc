@@ -1,9 +1,6 @@
-# by 8pm, Jan 14 2009
-
 update_interval 4.0
 
 double_buffer yes
-#own_window no
 own_window yes
 own_window_type override
 own_window_transparent yes
@@ -11,11 +8,6 @@ own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 no_buffers yes
 
 alignment top_left
-#alignment top_right
-#alignment bottom_left
-#alignment bottom_right
-
-#minimum_size 1260 780
 
 uppercase no
 
@@ -27,7 +19,6 @@ use_spacer left
 background no
 pad_percents 2
 show_graph_scale yes
-#show_graph_range yes
 
 gap_x 20
 gap_y 20
@@ -61,8 +52,6 @@ color7 122778
 color8 781227
 # color9: bar - orange tone
 color9 ff4000
-
-#${alignc}${color}${time %a %d %b %Y -%j- %I:%M %p %Z}
 
 TEXT
 ${color0}SYSTEM ${alignr}${color9}${nodename}
