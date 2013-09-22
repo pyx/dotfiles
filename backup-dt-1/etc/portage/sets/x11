@@ -12,6 +12,7 @@ x11-misc/i3lock
 x11-misc/i3status
 x11-misc/slim
 x11-misc/urxvt-perls
+x11-misc/xclip
 x11-wm/i3
 xfce-base/thunar
 xfce-extra/thunar-archive-plugin
