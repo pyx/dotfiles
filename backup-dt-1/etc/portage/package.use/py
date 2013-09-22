@@ -1,4 +1,4 @@
 dev-python/django sqlite
-dev-python/ipython emacs notebook sqlite wxwidgets
+dev-python/ipython emacs notebook sqlite wxwidgets -qt4
 dev-python/markdown pygments
 dev-python/sphinx latex
