@@ -1,46 +1,131 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 from hashlib import sha1
+from itertools import cycle, repeat
+from operator import methodcaller
+from string import ascii_lowercase, digits
 import hmac
 
-def genpass(place, account, passphrase):
-    """generates password based on place, account and passphrase
+alphanum = digits + ascii_lowercase
+mappings = dict(enumerate(alphanum))
 
-    place, account and passphrase should all be unicode strings
+
+def genpass(message1, message2, passphrase,
+            length=16, case='mixed', prefix=u'', infix=u'', postfix=u''):
+    """generates password based on message1, message2 and passphrase
+
+    message1, message2 and passphrase should all be unicode strings
     return a unicode string as password.
-    """
-    if not place or not account:
-        return ''
 
-    cred = (account + place).encode('utf-8')
+    Assumptions:
+    We are using sha1 which has hex digest of 40 digits
+    The range from
+    hex 1000000000000000000000000000000000000000 ( 1 followed by 39 0's )
+    or in decimal
+    91343852333181432387730302044767688728495783936
+    up to
+    hex FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF ( 40 F's )
+    or in decimal
+    1461501637330902918203684832716283019655932542975
+    both convert to 31 digits of base-36 string,
+    1va725nck0ge1lp10frlk85h9o1bhts for the former and
+    twj4yidkw7a8pn4g709kzmfoaol3x8f for the latter.
+    That is, we always have 31 alphanumeric characters to choose from.
+    """
+    assert 0 < length <= 31
+    if not message1 or not message2:
+        return u''
+
+    cred = (message1 + message2 + prefix + infix + postfix).encode('utf-8')
     phrase = passphrase.encode('utf-8')
-    hash = hmac.new(phrase, cred, sha1).hexdigest()
-    password = [
-        hash[9:12].lower(),
-        account[-1].upper(),
-        place[-1].lower(),
-        hash[3:6].upper(),
-        account[0].lower(),
-        hash[6:9].upper(),
-        place[0].lower(),
-        hash[0:3].upper(),
-    ]
-    return ''.join(password)
+    hexdigest = hmac.new(phrase, cred, sha1).hexdigest()
+    uint = int(hexdigest, 16)
+    base36digest = uint2base36(uint)
+    assert int(base36digest, 36) == uint
+    output = base36digest[:length]
+
+    to_lower = methodcaller('lower')
+    to_upper = methodcaller('upper')
+    transformers = {
+        'mixed': cycle((to_upper, to_lower)),
+        'lower': repeat(to_lower),
+        'upper': repeat(to_upper),
+    }
+    transformer = transformers[case]
+
+    output = [c if c in digits else next(transformer)(c) for c in output]
+    prefix = list(prefix)
+    infix = list(infix)
+    postfix = list(postfix)
+    half = length // 2
+    output = prefix + output[:half] + infix + output[half:] + postfix
+    return u''.join(output)
+
+
+def uint2base36(uint):
+    """Generator, converts unsigned integer into base-36 string representation
+
+    >>> all(int(uint2base36(n), 36) == n for n in range(1000000))
+    True
+    """
+    if not uint:
+        return u'0'
+    output = []
+    while uint:
+        output.append(mappings[uint % 36])
+        uint //= 36
+    return u''.join(reversed(output))
+
 
 if __name__ == '__main__':
     import sys
     if sys.version_info[0] < 3:
         input = raw_input
+        make_unicode = lambda s: s.decode('utf-8')
+    else:
+        # It is already unicode
+        make_unicode = lambda s: s
 
     from getpass import getpass
+    import argparse
 
-    try:
-        argc = len(sys.argv)
-        place = sys.argv[1] if argc > 1 else input()
-        account = sys.argv[2] if argc > 2 else input()
-        passphrase = sys.argv[3] if argc > 3 else getpass('')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('place', nargs='?', default=u'')
+    parser.add_argument('account', nargs='?', default=u'')
+    parser.add_argument('passphrase', nargs='?', default=u'')
+    parser.add_argument(
+        '-l', '--length', type=int, choices=range(8, 32), default=16,
+        help='length of the output, '
+             'this does not count the length of prefix, infix and postfix',
+    )
+    parser.add_argument(
+        '-c', '--case', choices=('mixed', 'lower', 'upper'), default='mixed',
+        help='generate output in lower, upper, or mixed case',
+    )
+    parser.add_argument(
+        '--prefix', default=u'',
+        help='string that will be prepended to the output',
+    )
+    parser.add_argument(
+        '--infix', default=u'',
+        help='string that will be stuff in the middle of the output',
+    )
+    parser.add_argument(
+        '--postfix', default=u'',
+        help='string that will be appended to the output',
+    )
+    args = parser.parse_args()
 
-        print(genpass(place, account, passphrase))
-    except KeyboardInterrupt:
-        pass
+    place = args.place or input('Place: ')
+    account = args.account or input('Account: ')
+    passphrase = args.passphrase or getpass('Passphrase: ')
+    print(genpass(
+        message1=make_unicode(place),
+        message2=make_unicode(account),
+        passphrase=make_unicode(passphrase),
+        length=args.length,
+        case=args.case,
+        prefix=make_unicode(args.prefix),
+        infix=make_unicode(args.infix),
+        postfix=make_unicode(args.postfix),
+    ))
