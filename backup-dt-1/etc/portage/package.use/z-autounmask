@@ -23,3 +23,8 @@
 # required by media-gfx/inkscape-0.48.4-r1
 # required by @gfx (argument)
 >=media-libs/lcms-1.19-r1:0 python
+# required by media-plugins/gimp-gmic-1.5.7.1
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=sci-libs/fftw-3.3.3-r3 threads

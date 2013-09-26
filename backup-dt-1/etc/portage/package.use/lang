@@ -1,5 +1,6 @@
 dev-lang/erlang emacs hipe kpoll odbc
 dev-lang/ghc binary llvm
+dev-python/pypy-bin sqlite
 dev-lang/python berkdb sqlite tk
 dev-lang/spidermonkey jit
 dev-lang/yasm python
