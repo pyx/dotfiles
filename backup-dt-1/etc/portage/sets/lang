@@ -1,5 +1,4 @@
 # Development - Programming Languages and Environments
-app-emacs/slime
 dev-lang/erlang
 dev-lang/ghc
 dev-lang/go
@@ -9,6 +8,7 @@ dev-lang/io
 dev-lang/j
 dev-lang/nasm
 dev-lang/ocaml
+dev-python/pypy-bin
 dev-lang/swi-prolog
 dev-lang/vala
 dev-lisp/clisp
