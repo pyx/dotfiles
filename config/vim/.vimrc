@@ -256,12 +256,6 @@ let g:sparkupNextMapping = '<C-J>'
 " https://github.com/tpope/vim-surround/
 " git clone git://github.com/tpope/vim-surround.git
 
-" Syntastic ------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2736
-" https://github.com/scrooloose/syntastic/
-" git clone git://github.com/scrooloose/syntastic.git
-nnoremap <leader>st :SyntasticToggleMode<CR>
-
 " Tabular --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3464
 " https://github.com/godlygeek/tabular/
