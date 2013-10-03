@@ -184,9 +184,9 @@ mode "launch" {
 	# c: google-Chrome
 	bindsym c exec google-chrome
 	bindsym Shift+c exec google-chrome; mode "default"
-	# d: Dwb
-	bindsym d exec dwb
-	bindsym Shift+d exec dwb; mode "default"
+	# d: Dia
+	bindsym d exec dia
+	bindsym Shift+d exec dia; mode "default"
 	# e: Evince
 	bindsym e exec evince
 	bindsym Shift+e exec evince; mode "default"
@@ -199,21 +199,21 @@ mode "launch" {
 	# h: devHelp
 	bindsym h exec devhelp
 	bindsym Shift+h exec devhelp; mode "default"
+	# i: Inkscape
+	bindsym i exec inkscape
+	bindsym Shift+i exec inkscape; mode "default"
 	# k: K3b
 	bindsym k exec k3b
 	bindsym Shift+k exec k3b; mode "default"
-	# m: Meld
-	bindsym m exec meld
-	bindsym Shift+m exec meld; mode "default"
-	# n: Nautilus
-	bindsym n exec nautilus
-	bindsym Shift+n exec nautilus; mode "default"
+	# m: Mypaint
+	bindsym m exec mypaint
+	bindsym Shift+m exec mypaint; mode "default"
+	# n: Nemiver
+	bindsym n exec nemiver
+	bindsym Shift+n exec nemiver; mode "default"
 	# o: Okular
 	bindsym o exec okular
 	bindsym Shift+o exec okular; mode "default"
-	# r: nemiveR
-	bindsym r exec nemiver
-	bindsym Shift+r exec nemiver; mode "default"
 	# s: Smplayer
 	bindsym s exec smplayer
 	bindsym Shift+s exec smplayer; mode "default"
@@ -265,9 +265,13 @@ assign [class="Nautilus"] → 5
 assign [class="Thunar"] → 5
 
 # 6: CG
+assign [class="Dia"] → 6
 assign [class="Eog"] → 6
 assign [class="Gimp"] → 6
+assign [class="Inkscape"] → 6
 assign [class="Mcomix"] → 6
+assign [class="Mypaint"] → 6
+assign [class="Nomacs"] → 6
 
 # 7: multimedia
 assign [class="Audacious"] → 7
