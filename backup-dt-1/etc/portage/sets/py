@@ -23,6 +23,7 @@ dev-python/pyflakes
 dev-python/pygame
 dev-python/pylint
 dev-python/pytest
+dev-python/qrcode
 dev-python/reportlab
 dev-python/rope
 dev-python/ropemacs
