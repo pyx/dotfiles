@@ -992,7 +992,7 @@ function! UpdateRevisionInfo()
   let b:revision_info = ""
   let b:repos_type = ""
 
-  if glob("%") == ""
+  if expand("%") == ""
     " No existing file is loaded.
     return
   endif
