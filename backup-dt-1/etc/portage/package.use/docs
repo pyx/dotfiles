@@ -73,6 +73,7 @@ dev-python/pygtksourceview doc
 dev-python/pymongo doc
 dev-python/pyopenssl doc
 dev-python/pyparsing doc
+dev-python/pysfml doc
 dev-python/reportlab doc
 dev-python/sip doc
 dev-python/sphinx doc
@@ -98,7 +99,9 @@ dev-vcs/hgview doc
 dev-vcs/subversion doc
 mail-client/mutt doc
 media-gfx/gimp doc
+media-libs/csfml doc
 media-libs/fontconfig -doc
+media-libs/libsfml doc
 net-mail/offlineimap doc
 x11-libs/gtk+ doc
 x11-libs/wxGTK doc

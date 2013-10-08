@@ -22,6 +22,7 @@ dev-python/pyPdf
 dev-python/pyflakes
 dev-python/pygame
 dev-python/pylint
+dev-python/pysfml
 dev-python/pytest
 dev-python/qrcode
 dev-python/reportlab

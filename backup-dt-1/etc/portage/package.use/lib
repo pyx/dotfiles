@@ -1,5 +1,6 @@
 dev-libs/boost python
 media-libs/libpng apng
+media-libs/libsfml examples
 media-libs/mesa gles1 gles2
 net-libs/rb_libtorrent python
 sys-libs/zlib minizip
