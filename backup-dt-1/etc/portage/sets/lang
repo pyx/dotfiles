@@ -8,6 +8,7 @@ dev-lang/io
 dev-lang/j
 dev-lang/nasm
 dev-lang/ocaml
+dev-lang/rust
 dev-python/pypy-bin
 dev-lang/swi-prolog
 dev-lang/vala
