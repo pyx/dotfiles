@@ -19,7 +19,7 @@ set reverse_alias
 # a bit hacky here, use output from `ls` instead of a specific path,
 # such as: source "/usr/share/doc/mutt-1.5.21-r8/samples/gpg.rc"
 # makes this script irrelevant to the installed mutt version.
-source `ls -1 /usr/share/doc/mutt-*/samples/gpg.rc`
+source "~/.mutt/gpg.rc"
 
 # Sending E-Mails  ----------------------------------------------- {{{1
 # always save a copy of outgoing messages

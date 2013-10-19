@@ -11,6 +11,7 @@ else
   cp macros "$HOME"/.mutt/ &&
   cp hooks "$HOME"/.mutt/ &&
   cp colors "$HOME"/.mutt/ &&
+  cp gpg.rc "$HOME"/.mutt/ &&
   cp user.default "$HOME"/.mutt/user.default &&
   chmod 0600 "$HOME"/.mutt/* &&
   cd "$HOME"/.mutt/ &&
