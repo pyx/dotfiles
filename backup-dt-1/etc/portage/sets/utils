@@ -1,4 +1,5 @@
 # Development - Tools
+app-admin/apache-tools
 app-text/sloccount
 dev-util/ccache
 dev-util/cscope
