@@ -162,6 +162,7 @@ complete -c hg -n '__fish_use_subcommand' -x -a commit --description 'Commit the
 __hg_complete commit -d 'Mark new/missing files as added/removed before committing' -s A -l addremove
 __hg_complete commit -d 'Mark a branch as closed, hiding it from the branch list' -a '(hg_list_branches "Branch to close")' -l close-branch -x
 __hg_complete commit -d 'Amend the parent of the working dir' -l amend
+__hg_complete commit -d 'Use the secret phase for committing' -s s -l secret
 __hg_complete commit -d 'Include names matching the given patterns' -s I -l include -x
 __hg_complete commit -d 'Exclude names matching the given patterns' -s X -l exclude -x
 __hg_complete commit -d 'Use <text> as commit message' -s m -l message -x
@@ -1055,6 +1056,7 @@ complete -c hg -n '__fish_use_subcommand' -x -a record --description 'Interactiv
 __hg_complete record -d 'Mark new/missing files as added/removed before committing' -s A -l addremove
 __hg_complete record -d 'Mark a branch as closed, hiding it from the branch list' -a '(hg_list_branches "Branch to close")' -l close-branch -x
 __hg_complete record -d 'Amend the parent of the working dir' -l amend
+__hg_complete record -d 'Use the secret phase for committing' -s s -l secret
 __hg_complete record -d 'Include names matching the given patterns' -s I -l include -x
 __hg_complete record -d 'Exclude names matching the given patterns' -s X -l exclude -x
 __hg_complete record -d 'Use <text> as commit message' -s m -l message -x
