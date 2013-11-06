@@ -1070,3 +1070,29 @@ __hg_complete record -d 'Operate on patch repository' -l mq
 __hg_complete record -a '(hg_list_added_files)' -x
 __hg_complete record -a '(hg_list_modified_files)' -x
 __hg_complete record -a '(hg_list_removed_files)' -x
+# Completions for the 'shelve' extension {{{1
+# shelve
+complete -c hg -n '__fish_use_subcommand' -x -a shelve --description 'Save and set aside changes from the working directory'
+# add option completion
+__hg_complete shelve -d 'Mark new/missing files as added/removed before committing' -s A -l addremove
+__hg_complete shelve -d 'Delete all shelved changes' -l cleanup
+__hg_complete shelve -d 'Shelve with the specified commit date' -l date -x
+__hg_complete shelve -d 'delete the named shelved change(s)' -a '(hg_list_shelves)' -s d -l delete -x
+__hg_complete shelve -d 'Use <text> as commit message' -s m -l message -x
+__hg_complete shelve -d 'Use the given name for the shelved commit' -s n -l name -x
+__hg_complete shelve -d 'Show patch' -s p -l patch
+__hg_complete shelve -d 'Output diffstat-style summary of changes' -l stat
+__hg_complete shelve -d 'Operate on patch repository' -l mq
+# add file name completion
+__hg_complete shelve -a '(hg_list_added_files)' -x
+__hg_complete shelve -a '(hg_list_modified_files)' -x
+__hg_complete shelve -a '(hg_list_removed_files)' -x
+# unshelve
+complete -c hg -n '__fish_use_subcommand' -x -a unshelve --description 'Restore a shelved change to the working directory'
+# add option completion
+__hg_complete unshelve -d 'Abort an incomplete unshelve operation' -s a -l abort
+__hg_complete unshelve -d 'Continue an incomplete unshelve operation' -s c -l continue
+__hg_complete unshelve -d 'Keep shelve after unshelving' -l keep
+__hg_complete unshelve -d 'Operate on patch repository' -l mq
+# add shelve name completion
+__hg_complete unshelve -a '(hg_list_shelves)' -x
