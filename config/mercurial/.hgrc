@@ -51,6 +51,7 @@ hgext.record =
 hgext.relink =
 hgext.schemes =
 hgext.share =
+hgext.shelve =
 hgext.transplant =
 hggit =
 #hgsubversion =
