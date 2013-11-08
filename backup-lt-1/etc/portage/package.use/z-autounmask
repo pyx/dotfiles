@@ -15,3 +15,8 @@
 # required by @selected
 # required by @world (argument)
 =media-libs/harfbuzz-0.9.20 icu
+# required by media-plugins/gimp-gmic-1.5.7.1
+# required by @app-gfx
+# required by @selected
+# required by @world (argument)
+>=sci-libs/fftw-3.3.3-r3 threads

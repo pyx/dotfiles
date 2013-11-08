@@ -1,6 +1,6 @@
 # Audio Players
 media-sound/audacious -gtk gtk3 wma sndfile chardet
-media-plugins/audacious-plugins -gtk
+media-plugins/audacious-plugins -gtk cue
 media-sound/rhythmbox ipod tagwriting
 
 # Video Players
