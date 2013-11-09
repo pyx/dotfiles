@@ -264,7 +264,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
     -- Added by 8pm
     awful.key({ modkey,           }, "F1",    function () awful.util.spawn("devhelp") end),
-    awful.key({ modkey,           }, "F2",    function () awful.util.spawn("google-chrome") end),
+    awful.key({ modkey,           }, "F2",    function () awful.util.spawn("google-chrome-beta") end),
     awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
     awful.key({ modkey,           }, "F4",    function () awful.util.spawn("gvim") end),
     awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),

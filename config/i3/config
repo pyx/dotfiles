@@ -182,8 +182,8 @@ mode "launch" {
 	bindsym a exec audacious
 	bindsym Shift+a exec audacious; mode "default"
 	# c: google-Chrome
-	bindsym c exec google-chrome
-	bindsym Shift+c exec google-chrome; mode "default"
+	bindsym c exec google-chrome-beta
+	bindsym Shift+c exec google-chrome-beta; mode "default"
 	# d: Dia
 	bindsym d exec dia
 	bindsym Shift+d exec dia; mode "default"
