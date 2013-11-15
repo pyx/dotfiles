@@ -28,3 +28,10 @@
 # required by @selected
 # required by @world (argument)
 >=sci-libs/fftw-3.3.3-r3 threads
+# required by app-text/texlive-core-2013-r1[xetex]
+# required by dev-texlive/texlive-fontutils-2013
+# required by app-text/texlive-2013
+# required by @doc
+# required by @selected
+# required by @world (argument)
+=media-libs/harfbuzz-0.9.23 icu
