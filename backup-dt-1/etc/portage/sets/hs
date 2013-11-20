@@ -1,3 +1,5 @@
 # Development - Haskell Specific
 dev-haskell/haskell-platform
+dev-haskell/hlint
+dev-haskell/hoogle
 dev-haskell/yesod-platform
