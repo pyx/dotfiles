@@ -391,6 +391,7 @@ endif
 " fruity        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " fu            | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " gentooish     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" gruvbox       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " harlequin     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " hemisu        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " hybrid        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
@@ -427,34 +428,19 @@ endif
 " wombat        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " zenburn       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
 " solarized     | light/dark | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" blueshift     | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
 " kib_plastic   | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " mayansmoke    | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " proton        | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " pyte          | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" summerfruit256| light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 
-" badwolf:
-" http://stevelosh.com/projects/badwolf/
-" https://bitbucket.org/sjl/badwolf/
-" hg clone https://bitbucket.org/sjl/badwolf
-"
 " hemisu:
 " only works in gVim
-"
-" hybrid:
-" https://github.com/w0ng/vim-hybrid/
-" git clone git://github.com/w0ng/vim-hybrid.git
 "
 " ir_black:
 " http://blog.toddwerth.com/entries/8
 " http://blog.toddwerth.com/entry_files/8/ir_black.vim
-"
-" harlequin:
-" http://www.vim.org/scripts/script.php?script_id=4195
-" https://github.com/nielsmadan/harlequin
-" git clone git://github.com/nielsmadan/harlequin.git
-"
-" solarized:
-" http://ethanschoonover.com/solarized
 "
 " tomorrow:
 " https://github.com/chriskempson/vim-tomorrow-theme/
