@@ -1,6 +1,7 @@
 # Development - Python Specific
 dev-python/alembic
 dev-python/autopep8
+dev-python/bottle
 dev-python/bpython
 dev-python/django
 dev-python/fabric
