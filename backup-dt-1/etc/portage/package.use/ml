@@ -1,2 +1,3 @@
 dev-ml/* doc
+dev-ml/cairo-ocaml examples
 dev-ml/lwt -doc

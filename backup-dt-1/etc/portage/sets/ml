@@ -1,2 +1,9 @@
 # Development - OCaml Specific
+dev-ml/async
+dev-ml/async_core
+dev-ml/async_extra
+dev-ml/async_unix
+dev-ml/cairo-ocaml
+dev-ml/core
+dev-ml/core_extended
 dev-ml/utop
