@@ -319,6 +319,8 @@ let g:UltiSnipsEditSplit = 'vertical'
 " Dependency: Tabular
 " https://github.com/dhruvasagar/vim-table-mode/
 " git clone git://github.com/dhruvasagar/vim-table-mode.git
+let g:table_mode_map_prefix = '<Leader>-'
+let g:table_mode_tableize_op_map = '<Leader>-T'
 
 " vim-coffee-script ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3590
