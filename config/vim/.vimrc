@@ -229,6 +229,10 @@ nnoremap <leader><Space> :Sscratch<CR>
 " https://github.com/sjl/splice.vim/
 " hg clone https://bitbucket.org/sjl/splice.vim
 
+" Slime ----------------------------------------------- {{{2
+" https://github.com/jpalardy/vim-slime
+" git clone git://github.com/jpalardy/vim-slime.git
+
 " Slimv ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2531
 " https://bitbucket.org/kovisoft/slimv/
