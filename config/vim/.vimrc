@@ -232,6 +232,8 @@ nnoremap <leader><Space> :Sscratch<CR>
 " Slime ----------------------------------------------- {{{2
 " https://github.com/jpalardy/vim-slime
 " git clone git://github.com/jpalardy/vim-slime.git
+let g:slime_target = "tmux"
+let g:slime_paste_file = tempname()
 
 " Slimv ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2531
