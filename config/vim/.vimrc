@@ -372,6 +372,10 @@ if has("gui_running")
   " http://www.dafont.com/monofur.font
   set guifont=monofur\ 12
   "
+  " Cosmic Sans Neue
+  " https://github.com/belluzj/cosmic-sans-neue
+  " set guifont=Cosmic\ Sans\ Neue\ Mono\ 12
+  "
   " Source Code Pro
   " http://blogs.adobe.com/typblography/2012/09/source-code-pro.html
   " http://sourceforge.net/projects/sourcecodepro.adobe/
