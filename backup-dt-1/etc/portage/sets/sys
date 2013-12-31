@@ -8,7 +8,6 @@ sys-fs/dosfstools
 sys-fs/mtools
 sys-fs/ntfs3g
 sys-kernel/gentoo-sources
-sys-kernel/module-rebuild
 sys-process/acct
 sys-process/htop
 sys-process/lsof
