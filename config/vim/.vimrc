@@ -34,7 +34,7 @@ set directory=~/.tmp//,~/tmp//,/var/tmp//,/tmp//
 set backspace=indent,eol,start
 set history=200
 
-set fileencodings=ucs-bom,utf8,cp936,gbk,big5,euc-jp,euc-kr,gb18130,latin1
+set fileencodings=ucs-bom,utf8,cp936,gbk,big5,euc-jp,euc-kr,gb18030,latin1
 
 set dictionary+=/usr/share/dict/words
 
