@@ -406,7 +406,7 @@ endif
 " gruvbox        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " harlequin      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " hemisu         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
-" hybrid         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
+" hybrid         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " inkpot         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " ir_black       | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
 " jellybeans     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
@@ -438,6 +438,7 @@ endif
 " vividchalk     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " wintersday     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " wombat         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" xoria256       | dark       | ✓     | ✓    | ✓   | ✓          | ✗      | ✓       | ✓    | ✓
 " zenburn        | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
 " solarized      | light/dark | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " blueshift      | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✗       | ✓    | ✓
