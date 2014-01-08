@@ -78,6 +78,9 @@ function on_print_prompt_header --on-event print_prompt_header
 	echo -e "$__ph_login $__ph_user $__ph_at $__ph_host $__ph_bind $cwd"
 end
 
+# OPAM configuration
+. ~/.opam/opam-init/init.fish > /dev/null ^ /dev/null
+
 # load local config
 if test -f ~/.local_config.fish
 	. ~/.local_config.fish
