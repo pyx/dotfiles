@@ -575,6 +575,7 @@ if has("autocmd")
     autocmd FileType coffee setlocal sw=2 sts=2 et tw=78
     autocmd FileType cpp setlocal sw=4 sts=4 et tw=78
     autocmd FileType css setlocal sw=4 sts=4 et
+    autocmd FileType erlang setlocal sw=4 sts=4 et
     autocmd FileType haskell setlocal sw=4 sts=4 et
     autocmd FileType html setlocal sw=2 sts=2 et
     autocmd FileType htmlcheetah setlocal sw=2 sts=2 et
