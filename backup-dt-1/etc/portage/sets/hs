@@ -1,6 +1,6 @@
 # Development - Haskell Specific
-dev-haskell/haskell-platform
+@haskell-platform
+@yesod-platform
 dev-haskell/hlint
 dev-haskell/hoogle
 dev-haskell/yesod-bin
-dev-haskell/yesod-platform
