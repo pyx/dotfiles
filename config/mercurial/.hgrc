@@ -1,4 +1,6 @@
 [alias]
+# changed files
+cf = log --template "{node|short}({rev}): {files}\n"
 # chronicle view
 chronicle = log --template "{date|shortdate} - {node|short} [{rev}] - {author|person} - {desc}\n"
 # latest 5
