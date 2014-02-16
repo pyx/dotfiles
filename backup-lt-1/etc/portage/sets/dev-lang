@@ -9,6 +9,7 @@ dev-lang/icon
 dev-lang/io
 dev-lang/j
 dev-lang/ocaml
+dev-lang/rust
 dev-lang/swi-prolog
 dev-lang/vala
 dev-lisp/clisp

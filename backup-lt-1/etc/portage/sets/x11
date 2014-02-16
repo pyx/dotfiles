@@ -16,7 +16,7 @@ x11-misc/menumaker
 x11-misc/urxvt-perls
 x11-plugins/epplets
 x11-wm/awesome
-x11-wm/enlightenment:0.17
+x11-wm/enlightenment
 x11-wm/fluxbox
 x11-wm/i3
 x11-wm/openbox
