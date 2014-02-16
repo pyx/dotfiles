@@ -75,7 +75,6 @@ dev-python/pyopenssl doc
 dev-python/pyparsing doc
 dev-python/reportlab doc
 dev-python/sip doc
-dev-python/sphinx doc
 dev-python/sqlalchemy doc
 dev-python/sqlobject doc
 dev-python/twill doc

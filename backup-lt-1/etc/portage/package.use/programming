@@ -2,7 +2,9 @@
 sys-devel/llvm clang ocaml
 dev-lang/erlang doc emacs hipe kpoll odbc
 dev-lang/mono moonlight nptl
+dev-lang/ocaml tk
 dev-lang/python sqlite tk
+dev-lang/rust clang
 dev-lisp/sbcl ldb
 dev-scheme/chicken emacs
 dev-scheme/racket backtrace futures jit places plot threads
@@ -13,6 +15,7 @@ dev-util/nemiver memoryview
 
 # Editors and IDEs
 app-editors/kile -kde
+app-editors/yi doc
 dev-qt/qt-creator cmake debugger designer examples kde subversion bineditor bookmarks fakevim git mercurial qtscript
 dev-util/anjuta devhelp inherit-graph sourceview
 dev-util/codeblocks contrib pch
@@ -75,3 +78,12 @@ dev-haskell/haddock -hscolour
 dev-haskell/hoogle fetchdb localdb
 dev-haskell/citeproc-hs -hscolour
 dev-vcs/darcs completion hscolour
+
+# OCaml
+dev-ml/* doc
+dev-ml/async examples
+dev-ml/cairo-ocaml examples
+dev-ml/core_extended -doc
+dev-ml/lwt -doc
+dev-ml/menhir examples
+dev-ml/opam darcs git mercurial rsync

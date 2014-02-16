@@ -57,3 +57,6 @@ media-libs/quvi -examples
 
 # bug that upstream seemingly have no clue how to fix, fwiu
 media-libs/babl -introspection -vala
+
+# needed by e17
+dev-libs/efl -xcb audio
