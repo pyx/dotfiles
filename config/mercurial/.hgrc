@@ -6,7 +6,7 @@ chronicle = log --template "{date|shortdate} - {node|short} [{rev}] - {author|pe
 # latest 5
 latest = log --limit 5
 # better log
-lg = log --graph --template "{label(ifeq(phase, 'public', 'lg.public', ifeq(phase, 'draft', 'lg.draft', ifeq(phase, 'secret', 'lg.secret'))), node|short)} {label('lg.rev', rev)} [{label('lg.bookmarks', bookmarks)}:{label('lg.tags', tags)}] {label('lg.date', date|age)} ({label('lg.author', author|person)}) - {label('lg.desc', desc|firstline)}\n"
+lg = log --graph --template "{label(ifeq(phase, 'public', 'lg.public', ifeq(phase, 'draft', 'lg.draft', ifeq(phase, 'secret', 'lg.secret'))), node|short)} {label('lg.rev', rev)} {label('lg.bookmarks', bookmarks)}:{label('lg.tags', tags)} {label('lg.date', date|age)} ({label('lg.author', author|person)}) - {label('lg.desc', desc|firstline)}\n"
 # strip-this-from REV
 # strip the current branch (in DAG) from REV
 strip-this-from = strip -r "first(ancestors(.)-ancestors($1))"
