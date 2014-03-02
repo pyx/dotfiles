@@ -1,8 +1,8 @@
 [alias]
 # changed files
-cf = log --template "{node|short}({rev}): {files}\n"
+cf = log --template "{label(ifeq(phase, 'public', 'lg.public', ifeq(phase, 'draft', 'lg.draft', ifeq(phase, 'secret', 'lg.secret'))), node|short)} {label('lg.rev', rev)} {label('lg.bookmarks', bookmarks)}:{label('lg.tags', tags)}: {files}\n"
 # chronicle view
-chronicle = log --template "{date|shortdate} - {node|short} [{rev}] - {author|person} - {desc}\n"
+chronicle = log --template "{label('lg.date', date|shortdate)} {label(ifeq(phase, 'public', 'lg.public', ifeq(phase, 'draft', 'lg.draft', ifeq(phase, 'secret', 'lg.secret'))), node|short)} {label('lg.rev', rev)} {label('lg.bookmarks', bookmarks)}:{label('lg.tags', tags)} ({label('lg.author', author|person)}) - {label('lg.desc', desc|firstline)}\n"
 # latest 5
 latest = log --limit 5
 # better log
