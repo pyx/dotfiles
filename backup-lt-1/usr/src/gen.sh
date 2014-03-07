@@ -1,8 +1,7 @@
 cd /usr/src/linux
 make clean && \
 make oldconfig && \
-make && \
+make -j3 && \
 make modules_install && \
-module-rebuild populate && \
-module-rebuild rebuild
+emerge @module-rebuild
 cd -
