@@ -9,25 +9,14 @@
 # required by @selected
 # required by @world (argument)
 >=sys-libs/gpm-1.20.7-r1 static-libs
-# required by net-libs/webkit-gtk-2.0.4
-# required by dev-util/devhelp-3.8.2
-# required by @dev-tool
-# required by @selected
-# required by @world (argument)
-=media-libs/harfbuzz-0.9.20 icu
 # required by media-plugins/gimp-gmic-1.5.7.1
 # required by @app-gfx
 # required by @selected
 # required by @world (argument)
 >=sci-libs/fftw-3.3.3-r3 threads
-# required by net-libs/webkit-gtk-2.0.4
-# required by net-libs/libproxy-0.4.11-r1
-# required by net-libs/glib-networking-2.36.2[libproxy]
-# required by net-libs/libsoup-2.42.3.1
-# required by net-libs/libsoup-gnome-2.42.3.1
-# required by gnome-base/gvfs-1.16.4[http]
-# required by xfce-base/thunar-1.6.3[udev]
-# required by @x11
+# required by net-libs/webkit-gtk-2.2.5-r200
+# required by media-gfx/gimp-2.8.10-r1[webkit]
+# required by @app-gfx
 # required by @selected
 # required by @world (argument)
-=media-libs/harfbuzz-0.9.23 icu
+=media-libs/harfbuzz-0.9.26 icu
