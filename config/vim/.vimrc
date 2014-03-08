@@ -670,15 +670,6 @@ if has("autocmd")
     au!
     autocmd BufReadPost,BufWritePost,FileChangedShellPost * call UpdateRevisionInfo()
 
-  " vimwiki filetype ---------------------------------- {{{2
-  augroup vimwiki_ft
-    au!
-    " Removed default mappings, conflicting with system input method
-    autocmd FileType vimwiki nmap <buffer> <C-Space> <Nop>
-    autocmd FileType vimwiki vmap <buffer> <C-Space> <Nop>
-    autocmd FileType vimwiki nmap <buffer> <silent> <Space> <Plug>VimwikiToggleListItem
-    autocmd FileType vimwiki vmap <buffer> <silent> <Space> :VimwikiToggleListItem<CR>
-
   " Leave insert mode after 15 seconds of no input ---- {{{2
   augroup auto_escape
     au!
