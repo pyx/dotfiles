@@ -501,9 +501,6 @@ if has("autocmd")
   " Python Support ------------------------------------ {{{2
   augroup python_support
     au!
-    autocmd FileType python set omnifunc=pythoncomplete#Complete
-    autocmd FileType python inoreab <buffer> #! #!/usr/bin/env python
-    autocmd FileType python inoreab <buffer> #e # -*- coding: utf-8 -*-
     " Setting 'python_space_error_highlight' = 1 will only highlight mixed
     " tabs and spaces, I go as far as mark all tabs as error.
     autocmd Syntax python syn match ExtraWhitespace /\t/
@@ -521,20 +518,6 @@ if has("autocmd")
     " to avoid this, either hack vim-haskellmode's code or set maplocalleader
     " globally.
     autocmd BufReadPre,BufNew,BufNewFile *.hs,*.lhs :let maplocalleader=","
-
-  " py.test Support ----------------------------------- {{{2
-  augroup pytest
-    au!
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tf <Esc>:Pytest function looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tc <Esc>:Pytest class looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tm <Esc>:Pytest method looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tt <Esc>:Pytest file looponfail<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tC <Esc>:Pytest clear<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>te <Esc>:Pytest error<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tn <Esc>:Pytest next<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tp <Esc>:Pytest previous<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>tF <Esc>:Pytest fails<CR>
-    autocmd FileType python nnoremap <buffer> <silent> <localleader>ts <Esc>:Pytest session<CR>
 
   " Mappings for reStructuredText: Section Headers ---- {{{2
   augroup restructuredtext
