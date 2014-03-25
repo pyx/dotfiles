@@ -122,13 +122,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " https://github.com/mattn/calendar-vim/
 " git clone git://github.com/mattn/calendar-vim
 
-" Clam ------------------------------------------------ {{{2
-" http://www.vim.org/scripts/script.php?script_id=4000
-" https://github.com/sjl/clam.vim/
-" https://bitbucket.org/sjl/clam.vim/
-" hg clone https://bitbucket.org/sjl/clam.vim
-nnoremap <leader>c :Clam<Space>
-
 " Commentary ------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=3695
 " https://github.com/tpope/vim-commentary/
@@ -176,6 +169,7 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 " http://www.vim.org/scripts/script.php?script_id=3361
 " https://github.com/nathanaelkane/vim-indent-guides/
 " git clone git://github.com/vim-scripts/Indent-Guides.git
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Indent Python --------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=974
@@ -218,17 +212,6 @@ let g:netrw_liststyle = 3
 " https://github.com/tpope/vim-repeat/
 " git clone git://github.com/tpope/vim-repeat.git
 
-" Scratch --------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=664
-" https://github.com/vim-scripts/scratch.vim/
-" git clone git://github.com/vim-scripts/scratch.vim.git
-nnoremap <leader><Space> :Sscratch<CR>
-
-" Splice ---------------------------------------------- {{{2
-" https://bitbucket.org/sjl/splice.vim/
-" https://github.com/sjl/splice.vim/
-" hg clone https://bitbucket.org/sjl/splice.vim
-
 " Slime ----------------------------------------------- {{{2
 " https://github.com/jpalardy/vim-slime
 " git clone git://github.com/jpalardy/vim-slime.git
@@ -240,17 +223,6 @@ let g:slime_paste_file = tempname()
 " https://bitbucket.org/kovisoft/slimv/
 " hg clone https://bitbucket.org/kovisoft/slimv
 let g:slimv_swank_cmd = '! urxvt -e sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp &'
-
-" Sparkup --------------------------------------------- {{{2
-" You can write HTML in a CSS-like syntax, and have Sparkup handle the
-" expansion to full HTML code.
-" http://github.com/rstacruz/sparkup/
-" git clone git://github.com/rstacruz/sparkup.git
-"
-" try this:
-" ihtml:xxs>#wrapper>#nav>h2{navigation}+ul>li#id_$*3>a<<<#main{Page Content}+div#footer{Footer}<c-]>
-let g:sparkupExecuteMapping = '<C-]>'
-let g:sparkupNextMapping = '<C-J>'
 
 " Speeddating ----------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2120
@@ -294,22 +266,6 @@ let g:tagbar_type_vala = {
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
 nnoremap <leader>tl <Plug>TaskList<CR>
-
-" UltiSnips ------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2715
-" official mirror: https://github.com/sirver/ultisnips/
-" git clone git://github.com/vim-scripts/UltiSnips.git
-"
-" TextMate style:
-let g:UltiSnipsExpandTrigger = "<Tab>"
-let g:UltiSnipsJumpForwardTrigger = "<Tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
-" local snippets only:
-"let g:UltiSnipsSnippetDirectories = ["snippets"]
-" Snippets dir
-let g:UltiSnipsSnippetDirectories = ["UltiSnips", "snippets"]
-" vsplit the snippets edit window
-let g:UltiSnipsEditSplit = 'vertical'
 
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color/
