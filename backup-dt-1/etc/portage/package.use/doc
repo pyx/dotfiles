@@ -2,3 +2,4 @@ app-text/texlive cjk games graphics music png publishers science extra tex4ht xe
 app-text/texlive-core cjk xetex
 app-text/zathura sqlite 
 app-text/zathura-meta cb djvu postscript
+kde-base/okular chm djvu ebook mobi
