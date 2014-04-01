@@ -169,7 +169,7 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 " http://www.vim.org/scripts/script.php?script_id=3361
 " https://github.com/nathanaelkane/vim-indent-guides/
 " git clone git://github.com/vim-scripts/Indent-Guides.git
-let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_enable_on_vim_startup = 1
 
 " Indent Python --------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=974

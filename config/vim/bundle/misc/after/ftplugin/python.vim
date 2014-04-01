@@ -9,3 +9,6 @@ nnoremap <buffer> <silent> <localleader>tn <Esc>:Pytest next<CR>
 nnoremap <buffer> <silent> <localleader>tp <Esc>:Pytest previous<CR>
 nnoremap <buffer> <silent> <localleader>tF <Esc>:Pytest fails<CR>
 nnoremap <buffer> <silent> <localleader>ts <Esc>:Pytest session<CR>
+inoreabb <buffer> #! #!/usr/bin/env python
+inoreabb <buffer> #e # -*- coding: utf-8 -*-
+inoreabb <buffer> pdb; import pdb; pdb.set_trace()
