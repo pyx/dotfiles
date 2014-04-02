@@ -267,6 +267,11 @@ let g:tagbar_type_vala = {
 " http://www.vim.org/scripts/script.php?script_id=2607
 nnoremap <leader>tl <Plug>TaskList<CR>
 
+" TimL ------------------------------------------------ {{{2
+" tpope is the man
+" https://github.com/tpope/timl
+" git clone https://github.com/tpope/timl.git
+
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color/
 " #git clone git://github.com/skammer/vim-css-color.git
