@@ -1,11 +1,11 @@
 # Audio Players
 media-sound/audacious -gtk gtk3 wma sndfile chardet
-media-plugins/audacious-plugins -gtk cue
+media-plugins/audacious-plugins -gtk cue ffmpeg
 media-sound/rhythmbox ipod tagwriting
 
 # Video Players
 media-video/mplayer a52 aac directfb dts fbcon live mad mp3 real theora vorbis x264 xvid alsa opengl amd64codecs xvmc iconv srt -openal -enca -cdio
-media-video/vlc dvd ffmpeg mpeg mad wxwindows aac dts a52 ogg flac theora oggvorbis matroska freetype bidi xv svga gnutls stream vlm httpd cdda vcd cdio live threads
+media-video/vlc dvd ffmpeg mpeg mad wxwindows aac dts a52 ogg flac theora oggvorbis matroska freetype bidi xv svga gnutls stream vlm httpd cdda vcd cdio live
 
 # Video Editors
 media-video/kino gstreamer sox
@@ -36,8 +36,6 @@ media-video/mkvtoolnix pch
 >=media-libs/mlt-0.8.6-r1 kdenlive
 # TODO:  08-06-23: remove quicktime right now. ffmpeg conflict
 media-sound/sox -ffmpeg
-virtual/ffmpeg threads
-media-video/ffmpeg threads
 media-video/transcode -quicktime
 media-libs/lcms static-libs
 media-libs/sdl-mixer mod
@@ -60,3 +58,5 @@ media-libs/babl -introspection -vala
 
 # needed by e17
 dev-libs/efl -xcb audio
+
+app-cdr/k3b ffmpeg

@@ -13,6 +13,7 @@ app-arch/libarchive -lzma
 dev-libs/DirectFB fbcon
 media-libs/mesa gbm
 sys-fs/udev extras
+sys-libs/gpm static-libs
 sys-libs/zlib minizip static-libs
 sys-apps/busybox sep-usr static
 

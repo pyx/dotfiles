@@ -12,8 +12,10 @@ app-admin/conky -ipv6 hddtemp nano-syntax rss wifi
 app-text/zathura sqlite
 app-text/zathura-meta  pdf cb djvu postscript
 app-text/lcdf-typetools kpathsea
+kde-base/okular chm djvu ebook mobi
 media-gfx/splashutils gpm mng png truetype fbcondecor
 x11-terms/rxvt-unicode afterimage 256-color blink fading-colors iso14755 pixbuf truetype unicode3 xft
+xfce-extra/tumbler ffmpeg
 #force-hints
 # by request. Oct 22 09
 virtual/poppler lcms
