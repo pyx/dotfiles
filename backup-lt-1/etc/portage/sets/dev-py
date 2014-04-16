@@ -25,6 +25,7 @@ dev-python/pygame
 dev-python/pylint
 dev-python/pyside-tools
 dev-python/pytest
+dev-python/pypy-bin
 dev-python/qrcode
 dev-python/reportlab
 dev-python/rope
@@ -34,6 +35,7 @@ dev-python/rst2pdf
 dev-python/sphinx
 dev-python/sqlalchemy
 dev-python/sqlobject
+dev-python/tox
 dev-python/twill
 dev-python/virtualenv
 www-servers/tornado
