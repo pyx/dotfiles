@@ -538,6 +538,7 @@ if has("autocmd")
     autocmd FileType vala setlocal sw=4 sts=4 et tw=78
     autocmd FileType xhtml setlocal sw=2 sts=2 et
     autocmd FileType xml setlocal sw=2 sts=2 et
+    autocmd FileType yaml setlocal sw=2 sts=2 et
     " Others with special requirements
     autocmd FileType make setlocal noet
     autocmd FileType sql setlocal et
