@@ -34,6 +34,7 @@ dev-python/rst2pdf
 dev-python/sphinx
 dev-python/sqlalchemy
 dev-python/sqlobject
+dev-python/tox
 dev-python/twill
 dev-python/virtualenv
 www-servers/tornado
