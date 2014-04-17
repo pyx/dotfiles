@@ -10,3 +10,17 @@
 # required by @selected
 # required by @world (argument)
 >=dev-cpp/glog-0.3.3-r1 gflags
+# required by virtual/ffmpeg-9
+# required by media-libs/libpostproc-0.8.0.20121125
+# required by media-video/mplayer2-2.0_p20130428-r1[postproc]
+# required by media-video/smplayer-14.3.0
+# required by @video
+# required by @selected
+# required by @world (argument)
+=media-video/libav-9.12 threads
+# required by media-video/mplayer2-2.0_p20130428-r1
+# required by media-video/smplayer-14.3.0
+# required by @video
+# required by @selected
+# required by @world (argument)
+>=virtual/ffmpeg-9 threads
