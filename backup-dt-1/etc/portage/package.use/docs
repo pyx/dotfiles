@@ -65,7 +65,6 @@ dev-python/paramiko doc
 dev-python/pycairo doc
 dev-python/pycrypto doc
 dev-python/pygame doc
-dev-python/pygments doc
 dev-python/pygobject doc
 dev-python/pygtk doc
 dev-python/pygtkhelpers doc
