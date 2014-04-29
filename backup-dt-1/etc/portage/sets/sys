@@ -3,6 +3,7 @@ app-forensics/chkrootkit
 app-admin/logrotate
 app-admin/syslog-ng
 net-misc/dhcpcd
+sys-apps/pmount
 sys-boot/grub
 sys-fs/dosfstools
 sys-fs/mtools
