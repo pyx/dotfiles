@@ -178,6 +178,20 @@ __hg_complete commit -a '(hg_list_removed_files)' -x
 # add alias
 __hg_subcommand_alias ci commit
 
+# Completions for the 'config' subcommand {{{1
+complete -c hg -n '__fish_use_subcommand' -x -a config --description 'Show combined config settings from all hgrc files'
+# add option completion
+__hg_complete config -d 'Show untrusted configuration options' -s u -l untrusted
+__hg_complete config -d 'Edit user config' -s e -l edit
+__hg_complete config -d 'Edit repository config' -s l -l local
+__hg_complete config -d 'Edit global config' -s g -l global
+__hg_complete config -d 'Operate on patch repository' -l mq
+# add option completion
+__hg_complete config -a '(hg config | sed "s/^\(.*\)=.*/\1\tConfig Item/")' -x
+# add alias
+__hg_subcommand_alias debugconfig config
+__hg_subcommand_alias showconfig config
+
 # Completions for the 'copy' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a copy --description 'Mark files as copied for the next commit'
 # add option completion
@@ -599,16 +613,6 @@ __hg_complete serve -d 'Template style to use' -l style -x
 __hg_complete serve -d 'Use IPv6 in addition to IPv4' -s 6 -l ipv6
 __hg_complete serve -d 'SSL certificate file' -l certificate -x
 __hg_complete serve -d 'Operate on patch repository' -l mq
-
-# Completions for the 'showconfig' subcommand {{{1
-complete -c hg -n '__fish_use_subcommand' -x -a showconfig --description 'Show combined config settings from all hgrc files'
-# add option completion
-__hg_complete showconfig -d 'Show untrusted configuration options' -s u -l untrusted
-__hg_complete showconfig -d 'Operate on patch repository' -l mq
-# add option completion
-__hg_complete showconfig -a '(hg showconfig | sed "s/^\(.*\)=.*/\1\tConfig Item/")' -x
-# add alias
-__hg_subcommand_alias debugconfig showconfig
 
 # Completions for the 'status' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a status --description 'Show changed files in the working directory'
