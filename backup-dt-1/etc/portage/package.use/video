@@ -1,1 +1,3 @@
+media-video/libav threads
 media-video/mplayer bidi
+virtual/ffmpeg threads
