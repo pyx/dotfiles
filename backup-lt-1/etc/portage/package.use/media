@@ -4,7 +4,7 @@ media-plugins/audacious-plugins -gtk cue ffmpeg
 media-sound/rhythmbox ipod tagwriting
 
 # Video Players
-media-video/mplayer a52 aac directfb dts fbcon live mad mp3 real theora vorbis x264 xvid alsa opengl amd64codecs xvmc iconv srt -openal -enca -cdio
+media-video/mplayer a52 aac bidi directfb dts fbcon live mad mp3 real theora vorbis x264 xvid alsa opengl amd64codecs xvmc iconv srt -openal -enca -cdio
 media-video/vlc dvd ffmpeg mpeg mad wxwindows aac dts a52 ogg flac theora oggvorbis matroska freetype bidi xv svga gnutls stream vlm httpd cdda vcd cdio live
 
 # Video Editors
@@ -60,3 +60,7 @@ media-libs/babl -introspection -vala
 dev-libs/efl -xcb audio
 
 app-cdr/k3b ffmpeg
+
+# avoid autounmask
+media-libs/harfbuzz icu
+sci-libs/fftw threads

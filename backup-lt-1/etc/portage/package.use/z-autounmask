@@ -3,9 +3,3 @@
 # required by @selected
 # required by @world (argument)
 >=dev-cpp/glog-0.3.3-r1 gflags
-# required by media-video/smplayer-14.3.0
-# required by x11-themes/smplayer-themes-20120919
-# required by @themes
-# required by @selected
-# required by @world (argument)
-=media-video/mplayer-1.2_pre20130729 bidi
