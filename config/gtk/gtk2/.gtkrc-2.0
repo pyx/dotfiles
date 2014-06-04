@@ -17,5 +17,9 @@ gtk-icon-theme-name = "Faenza"
 # Gtk Themes
 # Boje: http://gnome-look.org/content/show.php?content=155857
 # Gnome Cupertino: http://gnome-look.org/content/show.php/Gnome+Cupertino?content=147061
+# Precise Light: http://gnome-look.org/content/show.php/Precise+Light-themes+GTK+3.12?content=165401
+# Zukimac: http://gnome-look.org/content/show.php/Zukimac?content=165450
 # Zukitwo: http://gnome-look.org/content/show.php/Zukitwo?content=140562
-gtk-theme-name = "Gnome-Cupertino"
+# Zukiwi: http://gnome-look.org/content/show.php/Zukiwi?content=152192
+# gtk-theme-name = "Gnome-Cupertino"
+gtk-theme-name = "PreciseRadiance"
