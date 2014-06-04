@@ -19,3 +19,18 @@
 # required by virtual/rubygems-6
 # required by dev-ruby/json-1.8.1[-test,ruby_targets_ruby20]
 >=dev-ruby/rubygems-2.0.14-r1 ruby_targets_ruby21
+# required by kde-base/libkexiv2-4.13.1
+# required by kde-base/okular-4.13.1-r1[jpeg]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=media-gfx/exiv2-0.23-r2 xmp
+# required by media-gfx/graphviz-2.36.0
+# required by media-gfx/pydot-1.0.28-r2
+# required by dev-tex/dot2tex-2.8.7-r1
+# required by dev-tex/dot2texi-3.0
+# required by app-text/texlive-2013[graphics]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=media-libs/gd-2.0.35-r4 fontconfig
