@@ -7,12 +7,13 @@ gtk-cursor-theme-name = "Grounation-left"
 # Azenis Icons: http://gnome-look.org/content/show.php?content=107544
 # Faenza: http://gnome-look.org/content/show.php?content=128143
 # LaGaDesk-BlackWhite-III: http://gnome-look.org/content/show.php?content=124185
+# Nitrux: http://gnome-look.org/content/show.php?content=154496
 # nouveGnome: http://gnome-look.org/content/show.php?content=125474
 # nouveGnomeGray: http://gnome-look.org/content/show.php?content=125474
 # Ubo Icons: http://gnome-look.org/content/show.php?content=122078
 # Ultimate Gnome: http://gnome-look.org/content/show.php?content=75000
 # Vamox: http://gnome-look.org/content/show.php?content=95244
-gtk-icon-theme-name = "Faenza"
+gtk-icon-theme-name = "vamox-celeste"
 
 # Gtk Themes
 # Boje: http://gnome-look.org/content/show.php?content=155857
@@ -21,5 +22,4 @@ gtk-icon-theme-name = "Faenza"
 # Zukimac: http://gnome-look.org/content/show.php/Zukimac?content=165450
 # Zukitwo: http://gnome-look.org/content/show.php/Zukitwo?content=140562
 # Zukiwi: http://gnome-look.org/content/show.php/Zukiwi?content=152192
-# gtk-theme-name = "Gnome-Cupertino"
-gtk-theme-name = "PreciseRadiance"
+gtk-theme-name = "Gnome-Cupertino"
