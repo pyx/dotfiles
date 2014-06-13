@@ -3,3 +3,9 @@
 # required by @selected
 # required by @world (argument)
 >=dev-cpp/glog-0.3.3-r1 gflags
+# required by kde-base/libkexiv2-4.13.1
+# required by kde-base/okular-4.13.1-r1[jpeg]
+# required by @app-doc
+# required by @selected
+# required by @world (argument)
+>=media-gfx/exiv2-0.24 xmp
