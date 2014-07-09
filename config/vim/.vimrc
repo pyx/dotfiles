@@ -337,6 +337,14 @@ if has("gui_running")
   " https://github.com/belluzj/cosmic-sans-neue
   " set guifont=Cosmic\ Sans\ Neue\ Mono\ 12
   "
+  " Fantasque Sans Mono
+  " http://openfontlibrary.org/en/font/fantasque-sans-mono
+  ""https://github.com/belluzj/fantasque-sans
+  "
+  " Hermit
+  ""https://pcaro.es/p/hermit/
+  " https://github.com/pcaro90/hermit
+  "
   " Source Code Pro
   " http://blogs.adobe.com/typblography/2012/09/source-code-pro.html
   " http://sourceforge.net/projects/sourcecodepro.adobe/
