@@ -1083,11 +1083,14 @@ complete -c hg -n '__fish_use_subcommand' -x -a shelve --description 'Save and s
 __hg_complete shelve -d 'Mark new/missing files as added/removed before committing' -s A -l addremove
 __hg_complete shelve -d 'Delete all shelved changes' -l cleanup
 __hg_complete shelve -d 'Shelve with the specified commit date' -l date -x
-__hg_complete shelve -d 'delete the named shelved change(s)' -a '(hg_list_shelves)' -s d -l delete -x
+__hg_complete shelve -d 'Delete the named shelved change(s)' -a '(hg_list_shelves)' -s d -l delete -x
+__hg_complete shelve -d 'List current shelves' -s l -l list
 __hg_complete shelve -d 'Use <text> as commit message' -s m -l message -x
 __hg_complete shelve -d 'Use the given name for the shelved commit' -s n -l name -x
 __hg_complete shelve -d 'Show patch' -s p -l patch
 __hg_complete shelve -d 'Output diffstat-style summary of changes' -l stat
+__hg_complete shelve -d 'Include names matching the given patterns' -s I -l include -x
+__hg_complete shelve -d 'Exclude names matching the given patterns' -s X -l exclude -x
 __hg_complete shelve -d 'Operate on patch repository' -l mq
 # add file name completion
 __hg_complete shelve -a '(hg_list_added_files)' -x
