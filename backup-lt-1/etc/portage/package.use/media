@@ -39,6 +39,7 @@ media-sound/sox -ffmpeg
 media-video/transcode -quicktime
 media-libs/lcms static-libs
 media-libs/sdl-mixer mod
+media-libs/phonon gstreamer -vlc
 
 virtual/jpeg static-libs
 media-libs/jpeg static-libs

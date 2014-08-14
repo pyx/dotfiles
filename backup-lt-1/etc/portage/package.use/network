@@ -1,5 +1,5 @@
 # for Network Manager
-net-dns/avahi autoipd mdnsresponder-compat gtk3 qt3 dbus
+net-dns/avahi autoipd mdnsresponder-compat gtk3 dbus
 net-misc/curl gnutls
 
 # IM
