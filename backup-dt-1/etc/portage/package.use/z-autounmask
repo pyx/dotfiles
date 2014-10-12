@@ -55,3 +55,9 @@
 # required by @selected
 # required by @world (argument)
 =dev-libs/protobuf-2.5.0-r1 python
+# required by net-print/cups-1.7.5
+# required by www-client/google-chrome-38.0.2125.101_p1
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=app-text/ghostscript-gpl-9.15 cups
