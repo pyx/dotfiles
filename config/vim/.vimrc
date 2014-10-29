@@ -197,6 +197,11 @@ let g:netrw_liststyle = 3
 " https://github.com/chrisbra/NrrwRgn/
 " git clone git://github.com/chrisbra/NrrwRgn.git
 
+" Paredit --------------------------------------------- {{{2
+" http://www.vim.org/scripts/script.php?script_id=3998
+" https://bitbucket.org/kovisoft/paredit
+" hg clone https://bitbucket.org/kovisoft/paredit
+
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
 " https://github.com/tpope/vim-pathogen/
@@ -221,10 +226,10 @@ let g:slime_paste_file = tempname()
 " Slimv ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2531
 " https://bitbucket.org/kovisoft/slimv/
-" hg clone https://bitbucket.org/kovisoft/slimv
-let g:slimv_swank_cmd = '! urxvt -e sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp &'
+" #hg clone https://bitbucket.org/kovisoft/slimv
+" let g:slimv_swank_cmd = '! urxvt -e sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp &'
 " Join all closing parenthesis when appropriate
-let g:paredit_electric_return = 1
+" let g:paredit_electric_return = 1
 
 " Speeddating ----------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2120
