@@ -1,3 +1,16 @@
 --fields=+afikKlmnsSzt
 --extra=+fq
 --Python-kinds=-i
+--langdef=hy
+--langmap=hy:.hy
+--regex-hy=/\([[:space:]]*defclass[[:space:]]+([^][:space:]()[{}\\'";]+)[[:space:]]+(\[[^]]*\])*/\1 \2/c,class/
+--regex-hy=/\([[:space:]]*(def|setv)[[:space:]]+([^][:space:]()[{}\\'";]+)/\2/d,definition/
+--regex-hy=/\([[:space:]]*(defn|defun|defmain)[[:space:]]+([^][:space:]()[{}\\'";]+)[[:space:]]+(\[[^]]*\])*/\2 \3/f,function/
+--regex-hy=/\([[:space:]]*(defn-alias|defun-alias)[[:space:]]+\[([^]]*)\][[:space:]]+(\[[^]]*\])*/\2 (alias) \3/f,function/
+--regex-hy=/\([[:space:]]*defmacro[[:space:]]+([^][:space:]()[{}\\'";]+)[[:space:]]+(\[[^]]*\])*/\1 \2/m,macro/
+--regex-hy=/\([[:space:]]*defmacro-alias[[:space:]]+\[([^]]*)\][[:space:]]+(\[[^]]*\])/\1 (alias) \2/m,macro/
+--regex-hy=/\([[:space:]]*defmacro\/g![[:space:]]+([^][:space:]()[{}\\'";]+)[[:space:]]+(\[[^]]*\])*/\1 \2/m,macro/
+--regex-hy=/\([[:space:]]*defmulti[[:space:]]+([^][:space:]()[{}\\'";]+)/\1 (defmulti)/f,function,arity-overloaded function/
+--regex-hy=/\([[:space:]]*defreader[[:space:]]+([^]()[{}'"#;])/\1/r,macro,reader macro/
+--regex-hy=/\([[:space:]]*import[[:space:]]+\[?([^[:space:]]+)/\1 .../i,imports/
+--regex-hy=/\([[:space:]]*(lambda|fn)[[:space:]]+(\[[^]]*\])*/\1 \2/a,function,anonymous function/
