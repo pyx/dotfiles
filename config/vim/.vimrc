@@ -272,6 +272,19 @@ let g:tagbar_type_vala = {
   \ ]
 \ }
 
+let g:tagbar_type_hy = {
+  \ 'ctagstype': 'hy',
+  \ 'kinds': [
+    \ 'a:anonymous function',
+    \ 'c:class',
+    \ 'd:definition',
+    \ 'f:function',
+    \ 'i:imports',
+    \ 'm:macro',
+    \ 'r:reader macro',
+  \ ]
+\ }
+
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
 nnoremap <leader>tl <Plug>TaskList<CR>
