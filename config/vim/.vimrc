@@ -200,7 +200,9 @@ let g:netrw_liststyle = 3
 " Paredit --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3998
 " https://bitbucket.org/kovisoft/paredit
-" hg clone https://bitbucket.org/kovisoft/paredit
+" #hg clone https://bitbucket.org/kovisoft/paredit
+" use my clone
+" hg clone https://bitbucket.org/pyx/paredit
 
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
@@ -288,6 +290,11 @@ nnoremap <leader>tl <Plug>TaskList<CR>
 " git clone git://github.com/ap/vim-css-color.git
 "
 " let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+" Vim Hy ---------------------------------------------- {{{2
+" Hy language official support
+" https://github.com/hylang/vim-hy
+" git clone https://github.com/hylang/vim-hy.git
 
 " Vim Table Mode -------------------------------------- {{{2
 " Dependency: Tabular
