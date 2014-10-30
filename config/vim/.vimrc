@@ -148,8 +148,7 @@ nnoremap <leader>m :CtrlPMixed<CR>
 " quickfix mode
 nnoremap <leader>q :CtrlPQuickfix<CR>
 " goto tags
-nnoremap <leader>t :CtrlPBufTag<CR>
-nnoremap <leader>T :CtrlPTag<CR>
+nnoremap <leader>t :CtrlPTag<CR>
 
 " dot.vim --------------------------------------------- {{{2
 " https://bitbucket.org/shu/dotoutlinetree/
