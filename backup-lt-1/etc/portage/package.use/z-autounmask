@@ -9,3 +9,13 @@
 # required by @selected
 # required by @world (argument)
 >=media-gfx/exiv2-0.24 xmp
+# required by dev-ml/ocamlgraph-1.8.5[gtk]
+# required by dev-ml/dose3-3.3_beta2-r2
+# required by dev-ml/opam-1.2.0
+# required by dev-ml/react-1.2.0
+# required by dev-ml/lambda-term-1.7
+# required by dev-ml/utop-1.16
+# required by @dev-ml
+# required by @selected
+# required by @world (argument)
+>=dev-ml/lablgtk-2.18.3 gnomecanvas
