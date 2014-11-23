@@ -308,6 +308,17 @@ nnoremap <leader>tl <Plug>TaskList<CR>
 " https://github.com/hylang/vim-hy
 " git clone https://github.com/hylang/vim-hy.git
 
+" vim-sexp -------------------------------------------- {{{2
+" for text objects of s-expressions.
+" https://github.com/guns/vim-sexp
+" git clone https://github.com/guns/vim-sexp.git
+" added filetype: hy
+let g:sexp_filetypes = 'clojure,scheme,lisp,timl,hy'
+
+" vim-sexp-mappings-for-regular-people ---------------- {{{2
+" https://github.com/tpope/vim-sexp-mappings-for-regular-people
+" git clone https://github.com/tpope/vim-sexp-mappings-for-regular-people.git
+
 " Vim Table Mode -------------------------------------- {{{2
 " Dependency: Tabular
 " https://github.com/dhruvasagar/vim-table-mode/
