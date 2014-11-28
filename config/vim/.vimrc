@@ -567,6 +567,7 @@ if has("autocmd")
     autocmd FileType jinja setlocal sw=2 sts=2 et
     autocmd FileType jinja2 setlocal sw=2 sts=2 et
     autocmd FileType lisp setlocal sw=2 sts=2 et
+    autocmd FileType markdown setlocal sw=4 sts=4 et
     autocmd FileType mason setlocal sw=2 sts=2 et
     autocmd FileType ocaml setlocal sw=2 sts=2 et tw=78
     autocmd FileType perl setlocal sw=4 sts=4 et
