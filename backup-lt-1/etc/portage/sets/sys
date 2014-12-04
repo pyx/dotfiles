@@ -19,3 +19,4 @@ sys-process/htop
 sys-process/lsof
 sys-process/vixie-cron
 virtual/pager
+net-print/cndrvcups-lb
