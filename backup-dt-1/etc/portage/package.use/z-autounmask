@@ -61,3 +61,24 @@
 # required by @selected
 # required by @world (argument)
 >=app-text/ghostscript-gpl-9.15 cups
+# required by dev-ml/ocamlgraph-1.8.5[gtk]
+# required by dev-ml/dose3-3.3_beta2-r2
+# required by dev-ml/opam-1.2.0
+# required by dev-ml/react-1.2.0
+# required by dev-ml/lambda-term-1.7
+# required by dev-ml/utop-1.16
+# required by @ml
+# required by @selected
+# required by @world (argument)
+>=dev-ml/lablgtk-2.18.3 gnomecanvas
+# required by media-gfx/mypaint-1.1.0-r1
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+=dev-libs/protobuf-2.5.0-r2 python
+# required by dev-ml/ocaml-ssl-0.4.7
+# required by dev-ml/lwt-2.4.6[ssl]
+# required by dev-ml/lambda-term-1.7
+# required by dev-ml/utop-1.16
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=dev-libs/openssl-0.9.8z_p3:0.9.8 -bindist
