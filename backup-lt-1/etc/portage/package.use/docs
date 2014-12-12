@@ -49,6 +49,10 @@ dev-libs/tinyxml doc
 dev-libs/totem-pl-parser doc
 dev-libs/xapian doc
 dev-libs/zziplib doc
+dev-ml/core_extended -doc
+dev-ml/lwt -doc
+dev-ml/ocaml-expat -doc
+dev-ml/ocamlgraph -doc
 dev-python/PyQt4 doc
 dev-python/alembic doc
 dev-python/blinker doc
