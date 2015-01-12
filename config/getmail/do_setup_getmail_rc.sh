@@ -5,6 +5,6 @@ if [ -d "$HOME"/.getmail/ ]; then
 else
   mkdir -m 0700 "$HOME"/.getmail &&
   cp getmailrc "$HOME"/.getmail/ &&
-  chmod 0600 "$HOME"/.getmail/getnailrc &&
+  chmod 0600 "$HOME"/.getmail/getmailrc &&
   echo "copied getmail rc file template into $HOME/.getmail/, change the file as needed."
 fi
