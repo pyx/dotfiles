@@ -101,9 +101,6 @@ ${color0}STAT
 
 ${color0}DATA
   ${color5}/     ${color}${fs_free_perc /}% ${fs_used /}/${fs_size /}  ${color9}${fs_bar /}
-  ${color5}/tmp  ${color}${fs_free_perc /tmp}% ${fs_used /tmp}/${fs_size /tmp}  ${color9}${fs_bar /tmp}
-  ${color5}/var  ${color}${fs_free_perc /var}% ${fs_used /var}/${fs_size /var}  ${color9}${fs_bar /var}
-  ${color5}/home ${color}${fs_free_perc /home}% ${fs_used /home}/${fs_size /home}  ${color9}${fs_bar /home}
 
 ${color0}NETWORK${if_up enp2s0}
   ${alignc}${color green}ethernet  ${color a3a3a3}${addr enp2s0}
