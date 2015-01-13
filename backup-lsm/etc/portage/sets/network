@@ -1,0 +1,8 @@
+# Network Tools
+net-analyzer/mtr
+net-analyzer/netcat
+net-analyzer/nmap
+net-analyzer/tcpdump
+net-analyzer/wireshark
+net-misc/whois
+net-misc/wicd

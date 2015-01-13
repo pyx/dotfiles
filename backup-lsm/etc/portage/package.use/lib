@@ -1,0 +1,8 @@
+dev-libs/boost python
+media-libs/harfbuzz icu
+media-libs/libpng apng
+media-libs/libsfml examples
+media-libs/mesa gles1 gles2
+media-libs/phonon gstreamer -vlc
+net-libs/rb_libtorrent python
+sys-libs/zlib minizip

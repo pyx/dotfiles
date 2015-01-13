@@ -1,0 +1,10 @@
+dev-ml/* doc
+dev-ml/async examples
+dev-ml/camlbz2 -doc
+dev-ml/cairo-ocaml examples
+dev-ml/dose3 -doc
+dev-ml/lwt -doc
+dev-ml/menhir examples
+dev-ml/ocaml-expat -doc
+dev-ml/ocamlgraph -doc
+dev-ml/opam darcs git mercurial rsync

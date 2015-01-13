@@ -1,0 +1,38 @@
+# required by sys-auth/polkit-0.112-r2
+# required by sys-auth/consolekit-0.4.6[policykit]
+# required by sys-auth/pambase-20140313[consolekit]
+# required by sys-apps/openrc-0.13.6[pam]
+# required by @system
+# required by @world (argument)
+>=dev-lang/spidermonkey-17.0.0-r3:17 -jit
+# required by media-gfx/mypaint-1.1.0-r1
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+=dev-libs/protobuf-2.5.0-r2 python
+# required by kde-base/libkexiv2-4.14.3
+# required by kde-base/okular-4.14.3[jpeg]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=media-gfx/exiv2-0.24 xmp
+# required by dev-ml/ocamlgraph-1.8.5[gtk]
+# required by dev-ml/dose3-3.3_beta2-r2
+# required by dev-ml/opam-1.2.0
+# required by dev-ml/react-1.2.0
+# required by dev-ml/lwt-2.4.6[react]
+# required by dev-ml/lambda-term-1.8
+# required by dev-ml/utop-1.16
+# required by @ml
+# required by @selected
+# required by @world (argument)
+>=dev-ml/lablgtk-2.18.3 gnomecanvas
+# required by media-gfx/graphviz-2.36.0
+# required by media-gfx/pydot-1.0.28-r2
+# required by dev-tex/dot2tex-2.9.0
+# required by dev-tex/dot2texi-3.0
+# required by app-text/texlive-2014[graphics]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=media-libs/gd-2.0.35-r4 fontconfig

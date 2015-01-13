@@ -1,0 +1,3 @@
+mail-client/mutt gnutls gpg idn imap mbox nntp pop qdbm sasl sidebar smime smtp 
+mail-mta/msmtp gnutls
+net-mail/offlineimap sqlite
