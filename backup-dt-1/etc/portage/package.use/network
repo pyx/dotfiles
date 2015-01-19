@@ -1,1 +1,3 @@
+dev-libs/openssl -bindist
 net-analyzer/wireshark gtk3 -gtk2 -qt4
+net-misc/openssh -bindist
