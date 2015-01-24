@@ -19,3 +19,15 @@
 # required by @selected
 # required by @world (argument)
 >=dev-ml/lablgtk-2.18.3 gnomecanvas
+# required by dev-python/jinja-2.7.3
+# required by dev-python/ipython-2.3.0[notebook,-nbconvert]
+# required by @dev-py
+# required by @selected
+# required by @world (argument)
+>=dev-python/markupsafe-0.23 python_targets_python3_3
+# required by dev-python/pygments-2.0.1
+# required by dev-python/markdown-2.5.2[pygments]
+# required by @dev-py
+# required by @selected
+# required by @world (argument)
+=dev-python/setuptools-7.0 python_targets_python3_3

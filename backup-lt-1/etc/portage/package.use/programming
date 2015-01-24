@@ -9,7 +9,7 @@ dev-lisp/sbcl ldb
 dev-scheme/chicken emacs
 dev-scheme/racket backtrace futures jit places plot threads
 
-dev-python/ipython emacs notebook sqlite wxwidgets
+dev-python/ipython emacs notebook sqlite wxwidgets -qt4
 
 dev-util/nemiver memoryview
 
@@ -39,7 +39,6 @@ app-text/enchant aspell
 dev-db/sqlite secure-delete
 dev-python/anyvc bazaar git mercurial
 dev-python/pycrypto -gmp
-dev-python/pyside script multimedia
 dev-qt/qt3support kde
 dev-qt/qtcore glib private-headers
 dev-qt/qtdeclarative private-headers webkit
@@ -71,7 +70,7 @@ dev-libs/libgcrypt static-libs
 dev-python/pymongo mod_wsgi
 
 # Haskell
-dev-lang/ghc llvm
+dev-lang/ghc binary llvm
 dev-haskell/* hscolour
 dev-haskell/haddock -hscolour
 dev-haskell/hoogle fetchdb localdb
