@@ -23,7 +23,6 @@ dev-python/pyPdf
 dev-python/pyflakes
 dev-python/pygame
 dev-python/pylint
-dev-python/pyside-tools
 dev-python/pytest
 dev-python/pypy-bin
 dev-python/qrcode
