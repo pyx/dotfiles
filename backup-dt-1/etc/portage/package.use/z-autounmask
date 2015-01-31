@@ -3,22 +3,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-cpp/glog-0.3.3-r1 gflags
-# required by dev-lang/ruby-2.1.1-r1
-# required by dev-ruby/rubygems-2.0.14[ruby_targets_ruby21]
-# required by virtual/rubygems-7
-# required by dev-ruby/rdoc-4.0.1-r2
-# required by dev-lang/ruby-1.9.3_p545[rdoc]
-# required by dev-ruby/racc-1.4.11[ruby_targets_ruby19]
->=dev-ruby/rake-10.3.1 ruby_targets_ruby21
-# required by dev-lang/ruby-2.1.1-r1
-# required by dev-ruby/racc-1.4.11[ruby_targets_ruby21]
-# required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby20]
-# required by dev-lang/ruby-1.9.3_p545[rdoc]
-# required by dev-ruby/rake-10.3.1[ruby_targets_ruby19]
-# required by dev-lang/ruby-2.0.0_p451
-# required by virtual/rubygems-6
-# required by dev-ruby/json-1.8.1[-test,ruby_targets_ruby20]
->=dev-ruby/rubygems-2.0.14-r1 ruby_targets_ruby21
 # required by kde-base/libkexiv2-4.13.1
 # required by kde-base/okular-4.13.1-r1[jpeg]
 # required by @doc
@@ -41,15 +25,6 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/lcms-1.19-r2:0 python
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby21]
-# required by dev-lang/ruby-2.1.3[rdoc]
-# required by dev-ruby/json-1.8.1[ruby_targets_ruby21]
-# required by dev-lang/ruby-2.0.0_p576
-# required by dev-ruby/rake-10.3.2[ruby_targets_ruby20]
->=dev-ruby/racc-1.4.12 ruby_targets_ruby21
-# required by dev-lang/ruby-2.1.3[rdoc]
-# required by dev-ruby/racc-1.4.12[ruby_targets_ruby21]
->=dev-ruby/rdoc-4.1.2 ruby_targets_ruby21
 # required by media-gfx/mypaint-1.1.0-r1
 # required by @gfx
 # required by @selected
@@ -76,50 +51,3 @@
 # required by @selected
 # required by @world (argument)
 =dev-libs/protobuf-2.5.0-r2 python
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by virtual/rubygems-8
-# required by dev-ruby/json-1.8.1-r1[-test,ruby_targets_ruby22]
-# required by dev-lang/ruby-2.1.5
-# required by dev-ruby/rake-10.4.2[ruby_targets_ruby21]
-# required by dev-lang/ruby-2.0.0_p598
-# required by virtual/rubygems-6
-# required by net-libs/webkit-gtk-2.6.4
-# required by dev-util/devhelp-3.14.0
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=dev-ruby/racc-1.4.12 ruby_targets_ruby22
-# required by dev-lang/ruby-2.2.0
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-1.9.3_p551[rdoc]
-# required by dev-ruby/racc-1.4.12[ruby_targets_ruby19]
->=dev-ruby/rake-10.4.2 ruby_targets_ruby22
-# required by dev-ruby/rdoc-4.1.2[-test,ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by virtual/rubygems-6
-# required by dev-ruby/racc-1.4.12[-test,ruby_targets_ruby20]
->=virtual/rubygems-8 ruby_targets_ruby22
-# required by virtual/rubygems-8
-# required by dev-ruby/json-1.8.1-r1[-test,ruby_targets_ruby22]
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rake-10.4.2[ruby_targets_ruby22]
-# required by dev-ruby/racc-1.4.12[-test,ruby_targets_ruby22]
->=dev-ruby/rubygems-2.4.5 ruby_targets_ruby22
-# required by dev-ruby/rdoc-4.1.2[ruby_targets_ruby22]
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by virtual/rubygems-8
-# required by dev-ruby/racc-1.4.12[-test,ruby_targets_ruby22]
->=dev-ruby/json-1.8.1-r1 ruby_targets_ruby22 ruby_targets_ruby21
-# required by dev-lang/ruby-2.2.0[rdoc]
-# required by dev-ruby/rubygems-2.4.5[ruby_targets_ruby22]
-# required by virtual/rubygems-8
-# required by dev-ruby/json-1.8.1-r1[-test,ruby_targets_ruby22]
-# required by dev-lang/ruby-2.1.5
-# required by dev-ruby/rake-10.4.2[ruby_targets_ruby21]
-# required by dev-ruby/racc-1.4.12[-test,ruby_targets_ruby22]
->=dev-ruby/rdoc-4.1.2 ruby_targets_ruby22
