@@ -31,3 +31,11 @@
 # required by @selected
 # required by @world (argument)
 =dev-python/setuptools-7.0 python_targets_python3_3
+# required by dev-qt/qtcore-5.4.0
+# required by dev-qt/qtwidgets-5.4.0
+# required by dev-qt/qtquick1-5.4.0
+# required by sci-astronomy/stellarium-0.13.2
+# required by @app-gui
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre-8.36 pcre16
