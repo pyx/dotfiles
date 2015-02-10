@@ -96,6 +96,3 @@ end
 # command completion for rmvirtualenv and workon
 complete --command rmvirtualenv --no-files --arguments "(lsvirtualenv)" --description "Python VirtualEnv"
 complete --command workon --no-files --arguments "(lsvirtualenv)" --description "Python VirtualEnv"
-
-# Enable pip download cache
-set -xg PIP_DOWNLOAD_CACHE ~/.pip-download-cache

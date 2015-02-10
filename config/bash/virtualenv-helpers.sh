@@ -100,6 +100,3 @@ function workon() {
     cd "$VIRTUALENV_PROJECTS/$1"
   fi
 }
-
-# enable download cache for pip
-export PIP_DOWNLOAD_CACHE=$HOME/.pip-download-cache
