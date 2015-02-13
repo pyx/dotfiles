@@ -4,4 +4,5 @@ app-arch/p7zip
 app-arch/unrar
 app-cdr/bchunk
 app-cdr/k3b
+app-misc/ranger
 app-text/convmv
