@@ -1,5 +1,6 @@
 # Application - TUI Misc.
 app-misc/dvtm
+app-misc/ranger
 app-misc/screen
 app-misc/tmux
 app-misc/tmux-mem-cpu-load

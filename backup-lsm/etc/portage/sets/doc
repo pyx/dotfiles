@@ -14,5 +14,4 @@ app-text/texlive
 app-text/xchm
 app-text/zathura-meta
 dev-texlive/texlive-luatex
-dev-util/devhelp
 kde-base/okular
