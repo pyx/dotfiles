@@ -117,4 +117,9 @@ ${endif}${if_up wlp2s0}
   ${color5}Upload ${alignr}${color}${upspeed wlp2s0} kb/s
   ${color5}Download ${alignr}${color}${downspeed wlp2s0} kb/s
   ${color7}${upspeedgraph wlp2s0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph wlp2s0 25,115 c4c4c4 a3a3a3}
+${endif}${if_up wlp4s0}
+  ${alignc}${color blue}wifi  ${color a3a3a3}${addr wlp4s0}
+  ${color5}Upload ${alignr}${color}${upspeed wlp4s0} kb/s
+  ${color5}Download ${alignr}${color}${downspeed wlp4s0} kb/s
+  ${color7}${upspeedgraph wlp4s0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph wlp4s0 25,115 c4c4c4 a3a3a3}
 ${endif}
