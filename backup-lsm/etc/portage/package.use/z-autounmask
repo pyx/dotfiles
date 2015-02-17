@@ -36,3 +36,18 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/gd-2.0.35-r4 fontconfig
+# required by dev-qt/qtcore-5.4.0
+# required by dev-qt/qtwidgets-5.4.0
+# required by dev-qt/qtquick1-5.4.0
+# required by sci-astronomy/stellarium-0.13.2
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre-8.36 pcre16
+# required by net-misc/openssh-6.7_p1-r3[-static]
+# required by gnome-base/gvfs-1.22.3
+# required by app-editors/gedit-3.14.3
+# required by @editors
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-1.0.2-r1 -bindist
