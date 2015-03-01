@@ -59,3 +59,8 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libpcre-8.36 pcre16
+# required by media-gfx/mypaint-1.1.0-r2::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=dev-libs/protobuf-2.5.0-r3 python
