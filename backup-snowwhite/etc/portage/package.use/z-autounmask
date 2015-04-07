@@ -1,0 +1,72 @@
+# required by sys-auth/polkit-0.112-r2
+# required by sys-auth/consolekit-0.4.6[policykit]
+# required by sys-auth/pambase-20140313[consolekit]
+# required by sys-apps/openrc-0.13.6[pam]
+# required by @system
+# required by @world (argument)
+>=dev-lang/spidermonkey-17.0.0-r3:17 -jit
+# required by media-gfx/mypaint-1.1.0-r1
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+=dev-libs/protobuf-2.5.0-r2 python
+# required by kde-base/libkexiv2-4.14.3
+# required by kde-base/okular-4.14.3[jpeg]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=media-gfx/exiv2-0.24 xmp
+# required by dev-ml/ocamlgraph-1.8.5[gtk]
+# required by dev-ml/dose3-3.3_beta2-r2
+# required by dev-ml/opam-1.2.0
+# required by dev-ml/react-1.2.0
+# required by dev-ml/lwt-2.4.6[react]
+# required by dev-ml/lambda-term-1.8
+# required by dev-ml/utop-1.16
+# required by @ml
+# required by @selected
+# required by @world (argument)
+>=dev-ml/lablgtk-2.18.3 gnomecanvas
+# required by media-gfx/graphviz-2.36.0
+# required by media-gfx/pydot-1.0.28-r2
+# required by dev-tex/dot2tex-2.9.0
+# required by dev-tex/dot2texi-3.0
+# required by app-text/texlive-2014[graphics]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=media-libs/gd-2.0.35-r4 fontconfig
+# required by dev-qt/qtcore-5.4.0
+# required by dev-qt/qtwidgets-5.4.0
+# required by dev-qt/qtquick1-5.4.0
+# required by sci-astronomy/stellarium-0.13.2
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre-8.36 pcre16
+# required by net-misc/openssh-6.7_p1-r3[-static]
+# required by gnome-base/gvfs-1.22.3
+# required by app-editors/gedit-3.14.3
+# required by @editors
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-1.0.2-r1 -bindist
+# required by net-print/cndrvcups-lb-2.90::gentoo
+# required by @sys (argument)
+>=virtual/jpeg-62 abi_x86_32
+# required by net-print/cndrvcups-lb-2.90::gentoo
+# required by @sys (argument)
+>=dev-libs/libxml2-2.9.2 abi_x86_32
+# required by media-gfx/mypaint-1.1.0-r2::gentoo
+# required by @gfx (argument)
+>=dev-libs/protobuf-2.6.1-r3 python
+# required by dev-libs/libxml2-2.9.2::gentoo
+# required by net-libs/libsoup-2.48.1::gentoo
+# required by gnome-base/gvfs-1.22.4::gentoo[http]
+# required by app-editors/gedit-3.14.3::gentoo
+# required by @editors (argument)
+>=sys-libs/zlib-1.2.8-r1 abi_x86_32
+# required by virtual/jpeg-62::gentoo
+# required by net-print/cndrvcups-lb-2.90::gentoo
+# required by @sys (argument)
+>=media-libs/libjpeg-turbo-1.4.0 abi_x86_32
