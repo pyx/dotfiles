@@ -1,3 +1,5 @@
+# enable 32 bit libraries
+*/* abi_x86_32
 dev-libs/boost python
 media-libs/harfbuzz icu
 media-libs/libpng apng
