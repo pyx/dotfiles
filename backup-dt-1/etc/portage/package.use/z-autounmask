@@ -64,3 +64,14 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/protobuf-2.5.0-r3 python
+# required by dev-qt/qtnetwork-5.4.1::gentoo[ssl]
+# required by dev-qt/qtxmlpatterns-5.4.1::gentoo
+# required by dev-qt/qtquick1-5.4.1-r1::gentoo[xml]
+# required by sci-astronomy/stellarium-0.13.2::gentoo
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-1.0.2a bindist
+# required by dev-qt/qtwebkit-5.4.1::gentoo
+# required by dev-qt/qtwebkit (argument)
+>=dev-qt/qtcore-5.4.1 icu
