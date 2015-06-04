@@ -44,13 +44,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libpcre-8.36 pcre16
-# required by net-misc/openssh-6.7_p1-r3[-static]
-# required by gnome-base/gvfs-1.22.3
-# required by app-editors/gedit-3.14.3
-# required by @editors
-# required by @selected
-# required by @world (argument)
->=dev-libs/openssl-1.0.2-r1 -bindist
 # required by media-gfx/mypaint-1.1.0-r2::gentoo
 # required by @gfx
 # required by @selected
