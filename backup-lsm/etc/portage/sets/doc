@@ -15,4 +15,5 @@ app-text/texlive
 app-text/xchm
 app-text/zathura-meta
 dev-texlive/texlive-luatex
-kde-base/okular
+# move kde-base/okular kde-apps/okular
+kde-apps/okular
