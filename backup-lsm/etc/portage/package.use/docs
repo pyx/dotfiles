@@ -99,6 +99,5 @@ media-gfx/gimp doc
 media-libs/csfml doc
 media-libs/fontconfig -doc
 media-libs/libsfml doc
-net-mail/offlineimap doc
 x11-libs/gtk+ doc
 x11-libs/wxGTK doc
