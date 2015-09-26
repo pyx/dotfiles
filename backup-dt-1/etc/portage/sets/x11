@@ -4,7 +4,8 @@ x11-apps/setxkbmap
 x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
-x11-drivers/radeon-ucode
+# move x11-drivers/radeon-ucode sys-firmware/radeon-ucode
+sys-firmware/radeon-ucode
 x11-misc/compton
 x11-misc/dmenu
 x11-misc/dunst

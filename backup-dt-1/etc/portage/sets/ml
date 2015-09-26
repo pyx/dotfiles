@@ -9,6 +9,8 @@ dev-ml/calendar
 #dev-ml/core_extended
 #dev-ml/macaque
 dev-ml/menhir
+dev-ml/ocaml-ctypes
 dev-ml/ocaml-sqlite3
 dev-ml/opam
+dev-ml/ounit
 dev-ml/utop
