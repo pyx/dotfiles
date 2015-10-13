@@ -66,16 +66,16 @@ class ScriptRunner(object):
                 if ans.lower() not in ('y', 'yes'):
                     continue
             if not self.quite:
-                print "[>] entering '{}'.".format(white(root, True))
+                print("[>] entering '{}'.".format(white(root, True)))
             with cd(root):
                 scripts = [s for s in files if self.is_valid(s)]
                 if not scripts:
                     continue
                 for script in scripts:
                     if self.pretend and not self.quite:
-                        print "[.] {} to run '{}'.".format(
+                        print("[.] {} to run '{}'.".format(
                                 yellow('Pretending', True),
-                                white(script))
+                                white(script)))
                     else:
                         self.action(script)
 
@@ -84,7 +84,7 @@ class ScriptRunner(object):
 
     def action(self, path):
         if not self.quite:
-            print "[*] running '{}'.".format(blue(path, True))
+            print("[*] running '{}'.".format(blue(path, True)))
             stdout.flush()
         root, ext = os.path.splitext(path)
         description = yellow(root.replace('_', ' '), True)
@@ -100,7 +100,7 @@ class ScriptRunner(object):
                 description, red('failed', True)))
             raise
         if not self.quite:
-            print "[_] {} .. {}.".format(description, green('done', True))
+            print("[_] {} .. {}.".format(description, green('done', True)))
 
 # Main {{{1
 def main():
