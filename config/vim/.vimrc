@@ -213,6 +213,11 @@ let g:netrw_liststyle = 3
 " https://github.com/alfredodeza/pytest.vim/
 " git clone git://github.com/alfredodeza/pytest.vim.git
 
+" Rainbow Parentheses Improved ------------------------ {{{2
+" https://github.com/luochen1990/rainbow
+" git clone git://github.com/luochen1990/rainbow.git
+let g:rainbow_active = 0
+
 " Repeat ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2136
 " https://github.com/tpope/vim-repeat/
