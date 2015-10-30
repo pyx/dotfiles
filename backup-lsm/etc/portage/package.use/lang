@@ -12,3 +12,5 @@ dev-scheme/racket backtrace futures jit places plot threads
 sys-devel/clang python
 sys-devel/llvm clang ocaml python
 sys-devel/gcc go multislot
+virtual/pypy sqlite tk
+virtual/pypy sqlite tk
