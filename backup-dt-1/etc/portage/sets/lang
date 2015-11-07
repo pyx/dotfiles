@@ -10,11 +10,12 @@ dev-lang/j
 dev-lang/nasm
 dev-lang/ocaml
 dev-lang/rust-bin
-dev-python/pypy-bin
 dev-lang/swi-prolog
 dev-lang/vala
 dev-lisp/clisp
 dev-lisp/sbcl
+dev-python/pypy-bin
+dev-python/pypy3-bin
 dev-scheme/chicken
 dev-scheme/racket
 net-libs/nodejs
