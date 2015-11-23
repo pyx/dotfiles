@@ -40,7 +40,7 @@ URxvt.scrollTtyKeypress: true
 URxvt.scrollTtyOutput: false
 
 # fonts
-URxvt.font: xft:monofur:size=12,xft:ZhunYuan
+URxvt.font: xft:monofur:size=12,xft:Monospace:size=10,xft:ZhunYuan
 
 # -*- Perl extensions -*-
 URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
