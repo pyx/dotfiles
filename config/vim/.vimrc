@@ -523,6 +523,12 @@ if has("autocmd")
     " globally.
     autocmd BufReadPre,BufNew,BufNewFile *.hs,*.lhs :let maplocalleader=","
 
+  " Hy Support ---------------------------------------- {{{2
+  augroup hy_support
+    au!
+    " recognize lisp comments
+    autocmd FileType hy setlocal comments=n:;
+
   " Mappings for reStructuredText: Section Headers ---- {{{2
   augroup restructuredtext
     au!
