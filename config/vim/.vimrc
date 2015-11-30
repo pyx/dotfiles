@@ -291,7 +291,9 @@ let g:tagbar_type_hy = {
 
 " TaskList -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2607
-nnoremap <leader>tl <Plug>TaskList<CR>
+" https://github.com/vim-scripts/TaskList.vim
+" git clone https://github.com/vim-scripts/TaskList.vim
+nmap <unique> <leader>tl <Plug>TaskList
 
 " TimL ------------------------------------------------ {{{2
 " tpope is the man
