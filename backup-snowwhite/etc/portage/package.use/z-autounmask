@@ -63,3 +63,19 @@
 # required by net-print/cndrvcups-lb-2.90::gentoo
 # required by @sys (argument)
 >=media-libs/libjpeg-turbo-1.4.0 abi_x86_32
+# required by gnome-base/gvfs-1.26.2::gentoo
+# required by app-editors/gedit-3.16.4::gentoo
+# required by @editors
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libgdata-0.17.3 gnome
+# required by gnome-base/gnome-keyring-3.18.3::gentoo
+# required by app-crypt/libsecret-0.18.3::gentoo
+# required by net-libs/gnome-online-accounts-3.18.2.1::gentoo
+# required by dev-libs/libgdata-0.17.3::gentoo[gnome]
+# required by gnome-base/gvfs-1.26.2::gentoo
+# required by app-editors/gedit-3.16.4::gentoo
+# required by @editors
+# required by @selected
+# required by @world (argument)
+>=app-crypt/pinentry-0.9.6-r6 gnome-keyring
