@@ -199,8 +199,6 @@ let g:netrw_liststyle = 3
 " Paredit --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3998
 " https://bitbucket.org/kovisoft/paredit
-" #hg clone https://bitbucket.org/kovisoft/paredit
-" use my clone
 " hg clone https://bitbucket.org/pyx/paredit
 
 " Pathogen -------------------------------------------- {{{2
