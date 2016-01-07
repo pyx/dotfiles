@@ -845,6 +845,11 @@ let vala_no_tab_space_error = 1
 " Minimum lines used for comment syncing (default 50)
 "let vala_minlines = 120
 
+" OCaml support --------------------------------------- {{{2
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+execute "set rtp^=" . g:opamshare . "/ocp-indent/vim"
+
 " Popup Menu in IDE style ----------------------------- {{{2
 " From
 " http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
