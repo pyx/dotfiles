@@ -79,7 +79,7 @@ function on_print_prompt_header --on-event print_prompt_header
 end
 
 # OPAM configuration
-. ~/.opam/opam-init/init.fish > /dev/null ^ /dev/null
+. ~/.opam/opam-init/init.fish > /dev/null 2> /dev/null
 
 # load local config
 if test -f ~/.local_config.fish
