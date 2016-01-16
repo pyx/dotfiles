@@ -79,3 +79,12 @@
 # required by @selected
 # required by @world (argument)
 >=app-crypt/pinentry-0.9.6-r6 gnome-keyring
+# required by dev-qt/qtwebkit-5.5.1::gentoo
+# required by dev-qt/qtwebkit (argument)
+>=dev-qt/qtcore-5.5.1 icu
+# required by media-sound/pulseaudio-7.1::gentoo[alsa-plugin,alsa]
+# required by x11-misc/i3status-2.10::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=media-plugins/alsa-plugins-1.1.0 pulseaudio

@@ -9,9 +9,7 @@ dev-python/flask
 dev-python/flask-admin
 dev-python/flask-babel
 dev-python/flask-login
-dev-python/flask-openid
 dev-python/flask-sqlalchemy
-dev-python/flask-testing
 dev-python/flask-uploads
 dev-python/flask-wtf
 dev-python/frozen-flask
@@ -22,7 +20,6 @@ dev-python/pep8
 dev-python/pyPdf
 dev-python/pyflakes
 dev-python/pygame
-dev-python/pylint
 dev-python/pytest
 dev-python/qrcode
 dev-python/reportlab
@@ -34,6 +31,5 @@ dev-python/sphinx
 dev-python/sqlalchemy
 dev-python/sqlobject
 dev-python/tox
-dev-python/twill
 dev-python/virtualenv
 www-servers/tornado

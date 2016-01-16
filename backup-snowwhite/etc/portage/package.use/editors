@@ -1,1 +1,1 @@
-app-editors/gvim cscope lua python
+app-editors/gvim cscope lua python -python_targets_python3_3 -python_targets_python3_4
