@@ -1,8 +1,6 @@
 # Vim Specific
 app-vim/colorschemes
 app-vim/extra-syntax
-app-vim/haskellindent
-app-vim/haskellmode
 app-vim/nginx-syntax
 app-vim/rust-mode
 app-vim/vim-latex

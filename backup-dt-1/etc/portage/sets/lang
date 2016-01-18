@@ -15,7 +15,6 @@ dev-lang/vala
 dev-lisp/clisp
 dev-lisp/sbcl
 dev-python/pypy-bin
-dev-python/pypy3-bin
 dev-scheme/chicken
 dev-scheme/racket
 net-libs/nodejs
