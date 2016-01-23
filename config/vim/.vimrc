@@ -438,6 +438,10 @@ endif
 " pyte           | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " summerfruit256 | light      | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 
+" base16:
+" https://github.com/chriskempson/base16-vim
+" git clone git://github.com/chriskempson/base16-vim.git
+"
 " hemisu:
 " only works in gVim
 "
