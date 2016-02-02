@@ -449,6 +449,10 @@ endif
 " http://blog.toddwerth.com/entries/8
 " http://blog.toddwerth.com/entry_files/8/ir_black.vim
 "
+" preto
+" https://github.com/ewilazarus/preto
+" git clone git://github.com/ewilazarus/preto.git
+"
 " tomorrow:
 " https://github.com/chriskempson/vim-tomorrow-theme/
 " git clone git://github.com/chriskempson/vim-tomorrow-theme.git
