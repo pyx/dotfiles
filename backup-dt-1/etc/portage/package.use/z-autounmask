@@ -73,3 +73,5 @@
 # required by @selected
 # required by @world (argument)
 >=media-plugins/alsa-plugins-1.1.0 pulseaudio
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=net-libs/rb_libtorrent-1.0.8 -python_targets_python3_3
