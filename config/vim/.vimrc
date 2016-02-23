@@ -727,6 +727,9 @@ if has("autocmd")
     " except 'help' files
     autocmd BufEnter *.txt if &filetype == 'help' | setlocal nospell | endif
 
+    " close preview winodw when completion done
+    autocmd CompleteDone * pclose
+
   augroup END " --------------------------------------- }}}2
 else
   set autoindent
