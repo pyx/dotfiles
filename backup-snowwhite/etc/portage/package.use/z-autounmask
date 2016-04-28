@@ -90,3 +90,40 @@
 >=media-plugins/alsa-plugins-1.1.0 pulseaudio
 # required by rb_libtorrent (argument)
 >=net-libs/rb_libtorrent-1.0.8 -python_targets_python3_3
+# required by kde-plasma/polkit-kde-agent-5.6.3::gentoo
+# required by kde-frameworks/kauth-5.21.0::gentoo[policykit]
+# required by kde-frameworks/kconfigwidgets-5.21.0::gentoo
+# required by kde-frameworks/kcmutils-5.21.0::gentoo
+# required by kde-apps/khelpcenter-5.6.2-r1::gentoo
+# required by kde-base/kdelibs-4.14.19::gentoo[handbook]
+# required by kde-apps/kdebase-kioslaves-15.12.3::gentoo
+# required by www-client/rekonq-2.4.2-r1::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=sys-auth/polkit-qt-0.112.0-r1 qt5
+# required by kde-frameworks/knotifications-5.21.0::gentoo[dbus]
+# required by kde-frameworks/kio-5.21.0::gentoo
+# required by kde-frameworks/kinit-5.21.0::gentoo
+# required by kde-frameworks/kded-5.21.0::gentoo
+# required by kde-frameworks/kdelibs4support-5.21.0::gentoo
+# required by kde-apps/khelpcenter-5.6.2-r1::gentoo
+# required by kde-base/kdelibs-4.14.19::gentoo[handbook]
+# required by kde-apps/kdebase-kioslaves-15.12.3::gentoo
+# required by www-client/rekonq-2.4.2-r1::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-qt-0.9.3_pre20140619-r1 qt5
+# required by media-libs/phonon-4.9.0::gentoo[gstreamer]
+# required by kde-frameworks/khtml-5.21.0::gentoo
+# required by kde-apps/khelpcenter-5.6.2-r1::gentoo
+# required by kde-base/kdelibs-4.14.19::gentoo[handbook]
+# required by kde-apps/kdebase-kioslaves-15.12.3::gentoo
+# required by www-client/rekonq-2.4.2-r1::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=media-libs/phonon-gstreamer-4.9.0 qt5
+# required by media-libs/phonon-gstreamer-4.9.0::gentoo
+>=media-libs/phonon-4.9.0 qt5
