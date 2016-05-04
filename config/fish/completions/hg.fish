@@ -63,8 +63,10 @@ __hg_complete archive -d 'Operate on patch repository' -l mq
 # Completions for the 'backout' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a backout --description 'Reverse effect of earlier changeset'
 # add option completion
-__hg_complete backout -d 'Merge with old dirstate parent after backout' -l merge -x
+__hg_complete backout -d 'Merge with old dirstate parent after backout' -l merge
+__hg_complete backout -d 'Do not commit' -l no-commit
 __hg_complete backout -d 'Revision to backout' -a '(hg_list_all_changesets)' -s r -l rev -x
+__hg_complete backout -d 'Invoke editor on commit messages' -s e -l edit
 __hg_complete backout -d 'Specify merge tool' -s t -l tool -x
 __hg_complete backout -d 'Include names matching the given patterns' -s I -l include -x
 __hg_complete backout -d 'Exclude names matching the given patterns' -s X -l exclude -x
@@ -110,7 +112,6 @@ __hg_complete branch -d 'Operate on patch repository' -l mq
 # Completions for the 'branches' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a branches --description 'List repository named branches'
 # add option completion
-__hg_complete branches -d 'Show only branches that have unmerged heads' -s a -l active
 __hg_complete branches -d 'Show normal and closed branches' -s c -l closed
 __hg_complete branches -d 'Operate on patch repository' -l mq
 
@@ -122,7 +123,7 @@ __hg_complete bundle -d 'Revision to bundle' -a '(hg_list_all_changesets)' -s r 
 __hg_complete bundle -d 'A specific branch you would like to bundle' -a '(hg_list_branches "Branch to bundle")' -s b -l branch -x
 __hg_complete bundle -d 'A base changeset assumed to be available at the destination' -a '(hg_list_all_changesets)' -l base -x
 __hg_complete bundle -d 'Bundle all changesets in the repository' -s a -l all
-__hg_complete bundle -d 'Compression type to use' -a '(hg_list_compression_types)' -s t -l type -x
+__hg_complete bundle -d 'Bundle compression type to use (default: bzip2)' -a '(hg_list_compression_types)' -s t -l type -x
 __hg_complete bundle -d 'Specify ssh command to use' -s e -l ssh -x
 __hg_complete bundle -d 'Specify hg command to run on the remote side' -l remotecmd -x
 __hg_complete bundle -d 'Do not verify server certificate (ignoring web.cacerts config)' -l insecure
@@ -145,7 +146,7 @@ complete -c hg -n '__fish_use_subcommand' -x -a clone --description 'Make a copy
 # add option completion
 __hg_complete clone -d 'The clone will include an empty working copy (only a repository)' -s U -l noupdate
 # only works when inside SOURCE repository
-__hg_complete clone -d 'A changeset you would like to have after cloning' -a '(hg_list_all_changesets)' -s u -l updaterev -x
+__hg_complete clone -d 'Revision, tag, or branch to check out' -a '(hg_list_all_changesets)' -s u -l updaterev -x
 __hg_complete clone -d 'Include the specified changeset' -a '(hg_list_all_changesets)' -s r -l rev -x
 __hg_complete clone -d 'Clone only the specified branch' -a '(hg_list_branches "Branch to clone")' -s b -l branch -x
 __hg_complete clone -d 'Use pull protocol to copy metadata' -l pull
@@ -163,6 +164,8 @@ __hg_complete commit -d 'Mark new/missing files as added/removed before committi
 __hg_complete commit -d 'Mark a branch as closed, hiding it from the branch list' -a '(hg_list_branches "Branch to close")' -l close-branch -x
 __hg_complete commit -d 'Amend the parent of the working dir' -l amend
 __hg_complete commit -d 'Use the secret phase for committing' -s s -l secret
+__hg_complete commit -d 'Invoke editor on commit messages' -s e -l edit
+__hg_complete commit -d 'Use interactive mode' -s i -l interactive
 __hg_complete commit -d 'Include names matching the given patterns' -s I -l include -x
 __hg_complete commit -d 'Exclude names matching the given patterns' -s X -l exclude -x
 __hg_complete commit -d 'Use <text> as commit message' -s m -l message -x
@@ -214,6 +217,7 @@ __hg_complete diff -d 'Change made by revision' -a '(hg_list_all_changesets)' -s
 __hg_complete diff -d 'Treat all files as text' -s a -l text
 __hg_complete diff -d 'Use git extended diff format' -s g -l git
 __hg_complete diff -d 'Omit dates from diff headers' -l nodates
+__hg_complete diff -d 'Omit a/ and b/ prefixes from filenames' -l noprefix
 __hg_complete diff -d 'Show which function each change is in' -s p -l show-function
 __hg_complete diff -d 'Produce a diff that undoes the changes' -l reverse
 __hg_complete diff -d 'Ignore white space when comparing lines' -s w -l ignore-all-space
@@ -221,6 +225,7 @@ __hg_complete diff -d 'Ignore changes in the amount of white space' -s b -l igno
 __hg_complete diff -d 'Ignore changes whose lines are all blank' -s B -l ignore-blank-lines
 __hg_complete diff -d 'Number of lines of context to show' -s U -l unified -x
 __hg_complete diff -d 'Output diffstat-style summary of changes' -l stat
+__hg_complete diff -d 'Produce diffs relative to subdirectory' -l root -x
 __hg_complete diff -d 'Include names matching the given patterns' -s I -l include -x
 __hg_complete diff -d 'Exclude names matching the given patterns' -s X -l exclude -x
 __hg_complete diff -d 'Recurse into subrepositories' -s S -l subrepos
@@ -241,6 +246,16 @@ __hg_complete export -d 'Operate on patch repository' -l mq
 # add revision completion
 __hg_complete export -a '(hg_list_all_changesets)' -x
 
+# Completions for the 'files' subcommand {{{1
+complete -c hg -n '__fish_use_subcommand' -x -a files --description 'List tracked files'
+# add option completion
+__hg_complete files -d 'Search the repository as it is in rev' -a '(hg_list_all_changesets)' -s r -l rev -x
+__hg_complete files -d 'End filenames with NUL, for use with xargs' -s 0 -l print0
+__hg_complete files -d 'Include names matching the given patterns' -s I -l include -x
+__hg_complete files -d 'Exclude names matching the given patterns' -s X -l exclude -x
+__hg_complete files -d 'Recurse into subrepositories' -s S -l subrepos
+__hg_complete files -d 'Operate on patch repository' -l mq
+
 # Completions for the 'forget' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a forget --description 'Forget the specified files on the next commit'
 # add option completion
@@ -259,6 +274,7 @@ __hg_complete graft -d 'Revision to graft' -a $__graft_revset -s r -l rev -x
 __hg_complete graft -d 'Resume interrupted graft' -s c -l continue
 __hg_complete graft -d 'Invoke editor on commit messages' -s e -l edit
 __hg_complete graft -d 'Append graft info to log message' -l log
+__hg_complete graft -d 'Force graft' -s f -l force
 __hg_complete graft -d 'Record the current date as commit date' -s D -l currentdate
 __hg_complete graft -d 'Record the current user as committer' -s U -l currentuser
 __hg_complete graft -d 'Record the specified date as commit date' -s d -l date -x
@@ -306,6 +322,7 @@ complete -c hg -n '__fish_use_subcommand' -x -a help --description 'Show help fo
 __hg_complete help -d 'Show only help for extensions' -s e -l extension
 __hg_complete help -d 'Show only help for commands' -s c -l command
 __hg_complete help -d 'Show topics matching keyword' -s k -l keyword -x
+__hg_complete help -d 'Show help for specific platform(s)' -s s -l system -x
 # add help topic
 __hg_complete help -a '(hg_list_help_topics)' -x
 
@@ -333,7 +350,9 @@ __hg_complete import -d 'Invoke editor on commit messages' -s e -l edit
 __hg_complete import -d 'Skip check for outstanding uncommitted changes' -s f -l force
 __hg_complete import -d 'Do not commit. Just update the working directory' -l no-commit
 __hg_complete import -d 'Apply patch without touching the working directory' -l bypass
-__hg_complete import -d 'Apply patch to the nodes from which it was generated' -l exact
+__hg_complete import -d 'Commit even if some hunks fail' -l partial
+__hg_complete import -d 'Abort if patch would apply lossily' -l exact
+__hg_complete import -d 'Apply patch to subdirectory' -l prefix -x
 __hg_complete import -d 'use any branch information in patch (implied by --exact)' -l import-branch
 __hg_complete import -d 'Use <text> as commit message' -s m -l message -x
 __hg_complete import -d 'Read commit message from <file>' -s l -l logfile -x
@@ -420,6 +439,7 @@ complete -c hg -n '__fish_use_subcommand' -x -a manifest --description 'Output t
 # add option completion
 __hg_complete manifest -d 'Revision to display' -a '(hg_list_all_changesets)' -s r -l rev -x
 __hg_complete manifest -d 'List files from all revisions' -l all
+__hg_complete manifest -d 'Operate on patch repository' -l mq
 
 # Completions for the 'merge' subcommand {{{1
 complete -c hg -n '__fish_use_subcommand' -x -a merge --description 'Merge working directory with another revision'
@@ -482,6 +502,7 @@ __hg_complete phase -d 'Set changeset phase to draft' -s d -l draft
 __hg_complete phase -d 'Set changeset phase to secret' -s s -l secret
 __hg_complete phase -d 'Allow to move boundary backward' -s f -l force
 __hg_complete phase -d 'Target revision' -a '(hg_list_all_changesets)' -s r -l rev -x
+__hg_complete phase -d 'Operate on patch repository' -l mq
 # add revision completion
 __hg_complete phase -a '(hg_list_all_changesets)' -x
 
