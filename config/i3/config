@@ -154,7 +154,7 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+Escape exec i3lock -d -c 000000 -i ~/.background.lock
 
 # screenshot
-bindsym $mod+F12 exec scrot -d 3
+bindsym $mod+F12 exec scrot
 
 # Mode "resize" --------------------------------------------------- {{{1
 mode "resize" {
