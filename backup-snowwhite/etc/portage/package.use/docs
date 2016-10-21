@@ -1,4 +1,4 @@
-app-doc/gimp-help linguas_en linguas_zh_CN
+app-doc/gimp-help l10n_en l10n_zh_CN
 app-text/htmldoc fltk
 app-text/texlive doc
 dev-cpp/atkmm doc
