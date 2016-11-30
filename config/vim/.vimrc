@@ -38,7 +38,10 @@ set fileencodings=ucs-bom,utf8,cp936,gbk,big5,euc-jp,euc-kr,gb18030,latin1
 
 set dictionary+=/usr/share/dict/words
 
-set grepprg=ack\ -a
+" use faster grep cmd if available
+if executable('ag')
+  set grepprg=ag\ --nocolor\ --nogroup
+endif
 
 " tabs and spaces
 set listchars+=tab:▸\ ,trail:⋅,nbsp:⋅
@@ -109,14 +112,6 @@ set statusline+=%*                            " restore normal highlight
 " https://github.com/tpope/vim-abolish/
 " git clone git://github.com/tpope/vim-abolish.git
 
-" ack.vim, Ack front-end for vim ---------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2572
-" https://github.com/mileszs/ack.vim/
-" git clone git://github.com/mileszs/ack.vim.git
-" used Ag instead.
-" https://github.com/ggreer/the_silver_searcher/
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
 " Calendar -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=52
 " https://github.com/mattn/calendar-vim/
@@ -150,10 +145,6 @@ nnoremap <leader>q :CtrlPQuickfix<CR>
 " goto tags
 nnoremap <leader>t :CtrlPTag<CR>
 
-" dot.vim --------------------------------------------- {{{2
-" https://bitbucket.org/shu/dotoutlinetree/
-" http://www.vim.org/scripts/script.php?script_id=1225
-
 " Gundo ----------------------------------------------- {{{2
 " http://sjl.bitbucket.org/gundo.vim/
 " hg clone https://bitbucket.org/sjl/gundo.vim
@@ -164,23 +155,10 @@ nnoremap <leader>u :GundoToggle<CR>
 " installed from gentoo haskell overlay
 let g:haddock_browser = '/usr/bin/firefox-bin'
 
-" Indent Guides --------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3361
-" https://github.com/nathanaelkane/vim-indent-guides/
-" git clone git://github.com/vim-scripts/Indent-Guides.git
-" let g:indent_guides_enable_on_vim_startup = 1
-
 " Indent Python --------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=974
 " https://github.com/vim-scripts/indentpython.vim/
 " git clone git://github.com/vim-scripts/indentpython.vim.git
-"
-" This one is compatible with PEP8, way better than the one bundled with vim.
-
-" Lawrencium ------------------------------------------ {{{2
-" http://www.vim.org/scripts/script.php?script_id=3861
-" https://bitbucket.org/ludovicchabant/vim-lawrencium/
-" hg clone https://bitbucket.org/ludovicchabant/vim-lawrencium
 
 " matchit.vim ----------------------------------------- {{{2
 " enable matchit.vim
@@ -190,11 +168,6 @@ runtime macros/matchit.vim
 " comes with vim
 " Tree style
 let g:netrw_liststyle = 3
-
-" NrrwRgn --------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3075
-" https://github.com/chrisbra/NrrwRgn/
-" git clone git://github.com/chrisbra/NrrwRgn.git
 
 " Paredit --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3998
@@ -319,11 +292,6 @@ nmap <unique> <leader>tl <Plug>TaskList
 " git clone git://github.com/dhruvasagar/vim-table-mode.git
 let g:table_mode_map_prefix = '<Leader>-'
 let g:table_mode_tableize_op_map = '<Leader>-T'
-
-" vim-coffee-script ----------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3590
-" https://github.com/kchmck/vim-coffee-script/
-" git clone git://github.com/kchmck/vim-coffee-script.git
 
 " vim-indent-object ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3037
