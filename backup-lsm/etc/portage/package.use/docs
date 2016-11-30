@@ -1,4 +1,5 @@
-app-doc/gimp-help linguas_en linguas_zh_CN
+app-doc/gimp-help linguas_en linguas_zh_CN l10n_en l10n_zh_CN
+app-text/docbook-xsl-stylesheets -ruby
 app-text/htmldoc fltk
 app-text/texlive doc
 dev-cpp/atkmm doc
@@ -49,6 +50,7 @@ dev-libs/tinyxml doc
 dev-libs/totem-pl-parser doc
 dev-libs/xapian doc
 dev-libs/zziplib doc
+dev-ml/ocaml-re -doc
 dev-python/PyQt4 doc
 dev-python/alembic doc
 dev-python/blinker doc

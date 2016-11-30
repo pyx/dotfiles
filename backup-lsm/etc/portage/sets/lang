@@ -5,13 +5,10 @@ dev-lang/go
 dev-lang/gprolog
 dev-lang/hy
 dev-lang/icon
-dev-lang/io
 dev-lang/j
 dev-lang/nasm
 dev-lang/ocaml
 dev-lang/rust-bin
-#dev-python/pypy-bin
-#dev-python/pypy3-bin
 dev-lang/swi-prolog
 dev-lang/vala
 dev-lisp/clisp
