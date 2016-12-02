@@ -3,5 +3,6 @@ dev-ml/camlbz2 -doc
 dev-ml/cairo-ocaml examples
 dev-ml/menhir examples
 dev-ml/ocaml-expat -doc
+dev-ml/ocaml-re -doc
 dev-ml/ocamlgraph -doc
 dev-ml/opam darcs git mercurial rsync

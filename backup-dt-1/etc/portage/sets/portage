@@ -1,4 +1,5 @@
 # Gentoo/Portage Specific Tools
+app-admin/eclean-kernel
 app-portage/eix
 app-portage/elogv
 app-portage/genlop
