@@ -2,11 +2,11 @@
 media-gfx/blender
 media-gfx/gimp
 media-gfx/gimp-arrow-brushes
+media-gfx/gmic
 media-gfx/inkscape
 media-gfx/mcomix
 media-gfx/mypaint
 media-gfx/viewnior
-media-plugins/gimp-gmic
 media-plugins/gimp-lensfun
 media-plugins/gimp-lqr
 media-plugins/gimp-resynthesizer
