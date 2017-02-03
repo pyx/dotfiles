@@ -1,0 +1,9 @@
+dev-libs/boost python
+dev-libs/libpeas python_targets_python3_4 -python_targets_python3_5
+media-libs/harfbuzz icu
+media-libs/libpng apng
+media-libs/libsfml examples
+media-libs/mesa gles1 gles2
+media-libs/phonon gstreamer -vlc
+net-libs/rb_libtorrent python
+sys-libs/zlib minizip

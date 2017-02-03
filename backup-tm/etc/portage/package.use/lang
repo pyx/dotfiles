@@ -1,0 +1,16 @@
+dev-lang/erlang emacs hipe kpoll odbc
+dev-lang/ghc binary llvm
+dev-lang/rust clang
+dev-python/pypy-bin sqlite
+dev-lang/ocaml tk
+dev-lang/python berkdb sqlite tk
+dev-lang/spidermonkey jit
+dev-lang/yasm python
+dev-lisp/sbcl ldb
+dev-scheme/chicken emacs
+dev-scheme/racket backtrace futures jit places plot threads
+sys-devel/clang python
+sys-devel/llvm clang ocaml python
+sys-devel/gcc go multislot
+virtual/pypy sqlite
+virtual/pypy3 sqlite
