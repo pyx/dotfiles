@@ -130,3 +130,18 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boehm-gc-7.4.2 threads
+# required by kde-apps/okular-16.12.0::gentoo[pdf]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=app-text/poppler-0.49.0 qt5
+# required by kde-apps/okular-16.12.0::gentoo[crypt]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=app-crypt/qca-2.1.1-r1 qt5
+# required by app-shells/fish-2.4.0-r1::gentoo
+# required by @shell
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre2-10.22 pcre32
