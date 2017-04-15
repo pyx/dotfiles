@@ -1,5 +1,6 @@
 # System Tools
 app-forensics/chkrootkit
+app-admin/eclean-kernel
 app-admin/logrotate
 app-admin/syslog-ng
 net-misc/dhcpcd

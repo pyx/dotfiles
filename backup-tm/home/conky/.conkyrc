@@ -75,7 +75,7 @@ ${alignr}${color3}${sysname} ${kernel} ${color}on ${color3}${machine}
   ${color5}CPU 3:${color} ${freq_g 2} GHz ${cpu cpu4}%  ${color4}${cpubar cpu4}
   ${color1}${cpugraph cpu1 25,55 c4c4c4 a3a3a3} ${color2}${cpugraph cpu2 25,55 c4c4c4 a3a3a3} ${color3}${cpugraph cpu3 25,55 c4c4c4 a3a3a3} ${color4}${cpugraph cpu4 25,55 c4c4c4 a3a3a3}
 
-  ${color5}Battery: ${color}${battery}
+  ${color5}Battery: ${color}${battery BAT1}
 
   ${color5}RAM:  ${color}${mem}/${memmax} ${memperc}%  ${color7}${membar}
   ${color5}Swap: ${color}${swap}/${swapmax} ${swapperc}%  ${color7}${swapbar}

@@ -77,7 +77,6 @@ dev-python/sip doc
 dev-python/sqlalchemy doc
 dev-python/sqlobject doc
 dev-python/twill doc
-dev-python/wtforms doc
 dev-python/wxpython doc
 dev-scheme/racket doc
 dev-qt/qt-creator doc

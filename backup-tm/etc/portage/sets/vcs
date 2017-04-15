@@ -6,4 +6,3 @@ dev-vcs/git
 dev-vcs/hg-git
 dev-vcs/hgsubversion
 dev-vcs/mercurial
-dev-vcs/veracity
