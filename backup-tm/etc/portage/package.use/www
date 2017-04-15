@@ -1,0 +1,2 @@
+# firefox 52 is forcing pulseaudio down the throat
+www-client/firefox-bin -pulseaudio
