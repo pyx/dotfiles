@@ -5,5 +5,5 @@ media-libs/libpng apng
 media-libs/libsfml examples
 media-libs/mesa gles1 gles2
 media-libs/phonon gstreamer -vlc
-net-libs/rb_libtorrent python
+net-libs/libtorrent-rasterbar python
 sys-libs/zlib minizip
