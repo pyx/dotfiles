@@ -69,13 +69,11 @@ ${color0}SYSTEM ${alignr}${color9}${nodename}
 ${alignr}${color3}${sysname} ${kernel} ${color}on ${color3}${machine}
 
   ${alignc}${color2}${time %a %d %b %Y} ${color4}-${color9}${time %j}${color4}- ${color}${time %I:%M} ${color3}${time %p %Z}
-  ${color5}CPU 0:${color} ${freq_g 1} GHz ${cpu cpu1}%  ${color1}${cpubar cpu1}
-  ${color5}CPU 1:${color} ${freq_g 2} GHz ${cpu cpu2}%  ${color2}${cpubar cpu2}
-  ${color5}CPU 2:${color} ${freq_g 1} GHz ${cpu cpu3}%  ${color3}${cpubar cpu3}
-  ${color5}CPU 3:${color} ${freq_g 2} GHz ${cpu cpu4}%  ${color4}${cpubar cpu4}
-  ${color1}${cpugraph cpu1 25,55 c4c4c4 a3a3a3} ${color2}${cpugraph cpu2 25,55 c4c4c4 a3a3a3} ${color3}${cpugraph cpu3 25,55 c4c4c4 a3a3a3} ${color4}${cpugraph cpu4 25,55 c4c4c4 a3a3a3}
+  ${color5}CPU 0:${color} ${freq_g 1} GHz ${cpu cpu1}%  ${color7}${cpubar cpu1}
+  ${color5}CPU 1:${color} ${freq_g 2} GHz ${cpu cpu2}%  ${color blue}${cpubar cpu2}
+  ${color7}${cpugraph cpu1 25,115 c4c4c4 a3a3a3} ${color blue}${cpugraph cpu2 25,115 c4c4c4 a3a3a3}
 
-  ${color5}Battery: ${color}${battery BAT1}
+  ${color5}Battery: ${color}${battery}
 
   ${color5}RAM:  ${color}${mem}/${memmax} ${memperc}%  ${color7}${membar}
   ${color5}Swap: ${color}${swap}/${swapmax} ${swapperc}%  ${color7}${swapbar}
@@ -102,12 +100,15 @@ ${color0}STAT
 
 ${color0}DATA
   ${color5}/     ${color}${fs_free_perc /}% ${fs_used /}/${fs_size /}  ${color9}${fs_bar /}
+  ${color5}/tmp  ${color}${fs_free_perc /tmp}% ${fs_used /tmp}/${fs_size /tmp}  ${color9}${fs_bar /tmp}
+  ${color5}/var  ${color}${fs_free_perc /var}% ${fs_used /var}/${fs_size /var}  ${color9}${fs_bar /var}
+  ${color5}/home ${color}${fs_free_perc /home}% ${fs_used /home}/${fs_size /home}  ${color9}${fs_bar /home}
 
-${color0}NETWORK${if_up enp1s0}
-  ${alignc}${color green}ethernet  ${color a3a3a3}${addr enp1s0}
-  ${color5}Upload ${alignr}${color}${upspeed enp1s0} kb/s
-  ${color5}Download ${alignr}${color}${downspeed enp1s0} kb/s
-  ${color7}${upspeedgraph enp1s0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph enp1s0 25,115 c4c4c4 a3a3a3}
+${color0}NETWORK${if_up enp6s0}
+  ${alignc}${color green}ethernet  ${color a3a3a3}${addr enp6s0}
+  ${color5}Upload ${alignr}${color}${upspeed enp6s0} kb/s
+  ${color5}Download ${alignr}${color}${downspeed enp6s0} kb/s
+  ${color7}${upspeedgraph enp6s0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph enp6s0 25,115 c4c4c4 a3a3a3}
 ${endif}${if_up wlp2s0}
   ${alignc}${color blue}wifi  ${color a3a3a3}${addr wlp2s0}
   ${color5}Upload ${alignr}${color}${upspeed wlp2s0} kb/s
