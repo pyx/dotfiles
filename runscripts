@@ -6,6 +6,12 @@ import os
 import subprocess
 from sys import stderr, stdout
 
+try:
+    input = raw_input
+except NameError:
+    # python3, do nothing
+    pass
+
 # Ansi Colored Output {{{1
 ansi_colors = (
     ('black', '30'),
@@ -62,7 +68,7 @@ class ScriptRunner(object):
     def walk(self, path):
         for root, dirs, files in os.walk(path):
             if self.prompt:
-                ans = raw_input(self.prompt.format(magenta(root, True)))
+                ans = input(self.prompt.format(magenta(root, True)))
                 if ans.lower() not in ('y', 'yes'):
                     continue
             if not self.quite:
