@@ -2,6 +2,7 @@
 */* abi_x86_32
 dev-libs/boost python
 dev-libs/libpeas -python_targets_python3_3 -python_targets_python3_4 python_targets_python3_5
+kde-frameworks/kfilemetadata taglib
 media-libs/harfbuzz icu
 media-libs/libpng apng
 media-libs/libsfml examples

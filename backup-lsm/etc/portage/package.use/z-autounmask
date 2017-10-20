@@ -145,3 +145,25 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libpcre2-10.22 pcre32
+# required by media-video/smplayer-17.10.0::gentoo
+# required by @video
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
+# required by dev-qt/qtsingleapplication-2.6.1_p20150629::gentoo
+# required by media-video/smplayer-17.10.0::gentoo
+# required by @video
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
+# required by dev-qt/qtcore-5.9.2::gentoo
+# required by dev-qt/qtdeclarative-5.9.2::gentoo
+# required by kde-frameworks/knewstuff-5.38.0::gentoo
+# required by kde-apps/k3b-17.08.1::gentoo
+# required by @file
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre2-10.30 pcre16
+# required by app-office/libreoffice-5.4.2.2::gentoo
+# required by libreoffice (argument)
+>=dev-libs/xmlsec-1.2.24-r1 nss
