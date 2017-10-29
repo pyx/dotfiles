@@ -277,8 +277,8 @@ assign [class="Viewnior"] → 6
 # 7: multimedia
 assign [class="Audacious"] → 7
 for_window [class="Audacious"] floating enable
-assign [class="Smplayer"] → 7
-for_window [class="Smplayer"] floating enable
+assign [class="smplayer"] → 7
+for_window [class="smplayer"] floating enable
 
 # 8: others
 assign [class="Amule"] → 8
