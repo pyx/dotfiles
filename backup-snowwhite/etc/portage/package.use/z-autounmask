@@ -160,3 +160,29 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libpcre2-10.22 pcre32
+# required by dev-qt/qtcore-5.9.2::gentoo
+# required by dev-qt/qtserialport-5.9.2::gentoo
+# required by sci-astronomy/stellarium-0.16.0-r1::gentoo
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre2-10.30 pcre16
+# required by media-video/smplayer-17.10.0::gentoo
+# required by @video
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
+# required by dev-qt/qtsingleapplication-2.6.1_p20150629::gentoo
+# required by media-video/smplayer-17.10.0::gentoo
+# required by @video
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
+# required by x11-wm/i3-4.14.1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-base/xorg-server-1.19.5 xvfb
+# required by app-office/libreoffice-5.4.2.2::gentoo
+# required by libreoffice (argument)
+>=dev-libs/xmlsec-1.2.24-r1 nss
