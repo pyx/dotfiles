@@ -1,70 +1,63 @@
-# by 8pm, Jan 14 2009
+-- vim: syntax=lua
+-- Updated on Nov 26 2017. using 1.10+ lua syntax
 
-update_interval 4.0
+conky.config = {
+  update_interval = 4.0,
+  double_buffer = true,
+  own_window = true,
+  own_window_type = 'override',
+  own_window_transparent = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+  no_buffers = true,
 
-double_buffer yes
-#own_window no
-own_window yes
-own_window_type override
-own_window_transparent yes
-own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-no_buffers yes
+  alignment = 'top_left',
 
-alignment top_left
-#alignment top_right
-#alignment bottom_left
-#alignment bottom_right
+  uppercase = false,
 
-#minimum_size 1260 780
+  use_xft = true,
+  xftalpha = 1,
+  font = 'Envy Code R:size=8',
 
-uppercase no
+  use_spacer = 'left',
+  background = false,
+  pad_percents = 2,
+  show_graph_scale = true,
 
-use_xft yes
-xftalpha 1
-xftfont Envy Code R:size=8
+  gap_x = 20,
+  gap_y = 20,
 
-use_spacer left
-background no
-pad_percents 2
-show_graph_scale yes
-#show_graph_range yes
+  draw_shades = true,
+  draw_outline = false,
+  draw_borders = true,
+  border_inner_margin = 10,
+  border_width = 1,
+  stippled_borders = 0,
 
-gap_x 20
-gap_y 20
+  default_color = 'grey90',
+  default_shade_color = 'black',
+  default_outline_color = 'DarkGrey',
 
-draw_shades yes
-draw_outline no
-draw_borders yes
-border_inner_margin 10
-border_width 1
-stippled_borders 0
+  -- Default Colors
+  -- color0: Title
+  color0 = 'ffcb48',
+  -- color1 - color4: different grayscale
+  color1 = 'e5e5e5',
+  color2 = 'c4c4c4',
+  color3 = 'a3a3a3',
+  color4 = '828282',
+  -- color5: item name
+  color5 = '98c2c7',
+  -- color6: item data
+  color6 = '78af78',
+  -- color7: bar - blue tone
+  color7 = '122778',
+  -- color8: bar - red tone
+  color8 = '781227',
+  -- color9: bar - orange tone
+  color9 = 'ff4000'
+}
 
-default_color grey90
-default_shade_color black
-default_outline_color DarkGrey
-
-# Default Colors
-# color0: Title
-color0 ffcb48
-# color1 - color4: different grayscale
-color1 e5e5e5
-color2 c4c4c4
-color3 a3a3a3
-color4 828282
-# color5: item name
-color5 98c2c7
-# color6: item data
-color6 78af78
-# color7: bar - blue tone
-color7 122778
-# color8: bar - red tone
-color8 781227
-# color9: bar - orange tone
-color9 ff4000
-
-#${alignc}${color}${time %a %d %b %Y -%j- %I:%M %p %Z}
-
-TEXT
+conky.text = [[
 ${color0}SYSTEM ${alignr}${color9}${nodename}
 ${alignr}${color3}${sysname} ${kernel} ${color}on ${color3}${machine}
 
@@ -115,3 +108,4 @@ ${endif}${if_up wlp2s0}
   ${color5}Download ${alignr}${color}${downspeed wlp2s0} kb/s
   ${color7}${upspeedgraph wlp2s0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph wlp2s0 25,115 c4c4c4 a3a3a3}
 ${endif}
+]]
