@@ -1,2 +1,2 @@
-media-plugins/audacious chardet
-media-plugins/audacious-plugins cue ffmpeg
+media-plugins/audacious-plugins cue ffmpeg gtk3 -gtk -qt5
+media-sound/audacious chardet gtk3 -gtk -qt5
