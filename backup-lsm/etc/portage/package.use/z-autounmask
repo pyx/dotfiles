@@ -167,3 +167,6 @@
 # required by app-office/libreoffice-5.4.2.2::gentoo
 # required by libreoffice (argument)
 >=dev-libs/xmlsec-1.2.24-r1 nss
+# required by media-plugins/audacious-plugins-3.9::gentoo
+# required by media-sound/audacious-3.9::gentoo
+>=dev-libs/glib-2.52.3 utils
