@@ -11,6 +11,7 @@ sys-fs/dosfstools
 sys-fs/mtools
 sys-fs/mtpfs
 sys-fs/ntfs3g
+sys-fs/simple-mtpfs
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-process/acct
