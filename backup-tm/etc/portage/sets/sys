@@ -9,6 +9,7 @@ sys-boot/grub
 sys-fs/btrfs-progs
 sys-fs/dosfstools
 sys-fs/mtools
+sys-fs/mtpfs
 sys-fs/ntfs3g
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware

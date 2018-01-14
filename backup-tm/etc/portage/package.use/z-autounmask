@@ -134,3 +134,5 @@
 # required by media-plugins/audacious-plugins-3.9::gentoo
 # required by media-sound/audacious-3.9::gentoo
 >=dev-libs/glib-2.52.3 utils
+# need this to compile
+sys-apps/the_silver_searcher lzma
