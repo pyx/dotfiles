@@ -9,7 +9,9 @@ sys-boot/grub
 sys-kernel/linux-firmware
 sys-fs/dosfstools
 sys-fs/mtools
+sys-fs/mtpfs
 sys-fs/ntfs3g
+sys-fs/simple-mtpfs
 sys-kernel/gentoo-sources
 sys-process/acct
 sys-process/htop
