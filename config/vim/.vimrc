@@ -146,9 +146,10 @@ nnoremap <leader>q :CtrlPQuickfix<CR>
 nnoremap <leader>t :CtrlPTag<CR>
 
 " Gundo ----------------------------------------------- {{{2
-" http://sjl.bitbucket.org/gundo.vim/
+" https://sjl.bitbucket.io/gundo.vim/
 " hg clone https://bitbucket.org/sjl/gundo.vim
 nnoremap <leader>u :GundoToggle<CR>
+let g:gundo_prefer_python3 = 1
 
 " Haskell Mode ---------------------------------------- {{{2
 " http://projects.haskell.org/haskellmode-vim/
@@ -172,7 +173,9 @@ let g:netrw_liststyle = 3
 " Paredit --------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3998
 " https://bitbucket.org/kovisoft/paredit
-" hg clone https://bitbucket.org/pyx/paredit
+" https://github.com/kovisoft/paredit
+" #hg clone https://bitbucket.org/pyx/paredit
+" git clone https://github.com/kovisoft/paredit
 
 " Pathogen -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2332
