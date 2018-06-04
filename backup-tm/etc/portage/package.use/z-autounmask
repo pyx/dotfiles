@@ -136,3 +136,8 @@
 >=dev-libs/glib-2.52.3 utils
 # need this to compile
 sys-apps/the_silver_searcher lzma
+# required by games-strategy/wesnoth-1.14.1::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=dev-libs/boost-1.65.0 icu
