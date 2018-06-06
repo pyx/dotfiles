@@ -47,6 +47,31 @@ function mkvirtualenv --description 'Create new virtualenv'
 	end
 	echo "    type \"workon $_ven\" to activate this virtualenv."
 end
+#
+# create a python 3 virtualenv
+function mkvenv --description 'Create new python 3 virtualenv'
+	if not test (count $argv) -gt 0
+		echo '[!] please specified the name of virtualenv you want to create.'
+		return 1
+	end
+	set _ven $argv[1]
+	if not test -d "$VIRTUALENVS_DIR/$_ven"
+		set argv[1] "$VIRTUALENVS_DIR/$_ven"
+		python -m venv $argv
+		if test $status = 0
+			echo "[.] virtualenv [$_ven] created."
+		else
+			echo "[!] failed to create virtualenv [$_ven]."
+			if test -d "$argv[1]"
+				rmvirtualenv "$_ven"
+			end
+			return 1
+		end
+	else
+		echo "[!] virtualenv [$_ven] already exist."
+	end
+	echo "    type \"workon $_ven\" to activate this virtualenv."
+end
 
 # delete a virtualenv
 function rmvirtualenv --description 'Delete specified virtualenv'
