@@ -170,3 +170,14 @@
 # required by media-plugins/audacious-plugins-3.9::gentoo
 # required by media-sound/audacious-3.9::gentoo
 >=dev-libs/glib-2.52.3 utils
+# required by games-strategy/wesnoth-1.14.1::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=dev-libs/boost-1.65.0 icu
+# required by net-wireless/wpa_supplicant-2.6-r8::gentoo[-gnutls,ssl,-libressl]
+# required by net-misc/wicd-1.7.4-r3::gentoo
+# required by @network
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-1.0.2o-r4 bindist
