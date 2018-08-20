@@ -141,3 +141,10 @@ sys-apps/the_silver_searcher lzma
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.65.0 icu
+# required by dev-python/pyzmq-17.1.0::gentoo
+# required by dev-python/qtconsole-4.3.1::gentoo
+# required by dev-python/ipython-5.4.1-r1::gentoo[qt5]
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=net-libs/zeromq-4.2.5 drafts
