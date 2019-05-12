@@ -1,0 +1,20 @@
+# Development - Programming Languages and Environments
+dev-lang/erlang
+dev-lang/ghc
+dev-lang/go
+dev-lang/gprolog
+dev-lang/hy
+dev-lang/icon
+dev-lang/j
+dev-lang/nasm
+dev-lang/ocaml
+dev-lang/rust-bin
+dev-lang/swi-prolog
+dev-lang/vala
+dev-lisp/clisp
+dev-lisp/sbcl
+dev-scheme/chicken
+dev-scheme/racket
+net-libs/nodejs
+sys-devel/clang
+virtual/commonlisp

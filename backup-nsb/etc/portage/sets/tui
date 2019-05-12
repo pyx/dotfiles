@@ -1,0 +1,9 @@
+# Application - TUI Misc.
+app-misc/ranger
+app-misc/screen
+app-misc/tmux
+app-misc/tmux-mem-cpu-load
+app-misc/vifm
+net-irc/weechat
+sys-apps/ack
+sys-apps/the_silver_searcher

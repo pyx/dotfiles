@@ -1,0 +1,13 @@
+# enable 32 bit libraries
+*/* abi_x86_32
+dev-libs/boost python
+dev-libs/libpeas -python_targets_python3_3 -python_targets_python3_4 python_targets_python3_5
+kde-frameworks/kfilemetadata taglib
+media-libs/harfbuzz icu
+media-libs/libpng apng
+media-libs/libsfml examples
+media-libs/mesa gles1 gles2
+media-libs/phonon gstreamer -vlc
+net-libs/libtorrent-rasterbar python
+sys-libs/pam -vim-syntax
+sys-libs/zlib minizip

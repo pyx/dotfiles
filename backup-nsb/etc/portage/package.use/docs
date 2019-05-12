@@ -1,0 +1,10 @@
+app-doc/gimp-help linguas_en linguas_zh_CN l10n_en l10n_zh_CN
+dev-lang/erlang doc
+dev-lang/ghc doc
+dev-lang/gprolog doc
+dev-lang/nasm doc
+dev-lang/perl doc
+dev-lang/python doc
+dev-lang/swi-prolog doc
+dev-scheme/racket doc
+media-gfx/gimp doc

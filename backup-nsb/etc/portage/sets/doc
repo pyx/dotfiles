@@ -1,0 +1,18 @@
+# Application - Documentation and Tools
+app-doc/gimp-help
+app-office/abiword
+app-office/dia
+app-office/gnumeric
+app-office/libreoffice
+app-text/antiword
+app-text/diction
+app-text/highlight
+app-text/htmldoc
+app-text/htmltidy
+app-text/mupdf
+app-text/pandoc
+app-text/texlive
+app-text/xchm
+app-text/zathura-meta
+dev-texlive/texlive-luatex
+kde-apps/okular

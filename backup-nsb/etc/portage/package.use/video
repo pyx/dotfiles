@@ -1,0 +1,3 @@
+media-video/ffmpeg vaapi threads
+media-video/mplayer bidi
+virtual/ffmpeg threads vaapi
