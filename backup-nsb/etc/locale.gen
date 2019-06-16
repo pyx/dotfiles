@@ -20,6 +20,7 @@
 # rebuilt for you.  After updating this file, you can simply run `locale-gen`
 # yourself instead of re-emerging glibc.
 
+en_CA.UTF-8 UTF-8
 en_US ISO-8859-1
 en_US.UTF-8 UTF-8
 zh_CN GB18030
