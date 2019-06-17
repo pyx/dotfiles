@@ -1,4 +1,4 @@
-media-gfx/blender blender-game python_single_target_python3_4
+media-gfx/blender blender-game
 media-gfx/gimp aalib jpeg2k postscript python smp wmf xpm
-media-gfx/gmic gimp
+media-gfx/gmic gimp fftw
 sci-libs/fftw threads

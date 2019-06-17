@@ -4,7 +4,7 @@ app-admin/eclean-kernel
 app-admin/logrotate
 app-admin/syslog-ng
 net-misc/dhcpcd
-net-print/cndrvcups-lb
+#net-print/cndrvcups-lb
 sys-boot/grub
 sys-fs/btrfs-progs
 sys-fs/dosfstools

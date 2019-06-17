@@ -2,3 +2,4 @@ dev-libs/openssl -bindist
 dev-qt/qtnetwork -bindist
 net-analyzer/wireshark gtk3 -gtk2 -qt4
 net-misc/openssh -bindist
+net-p2p/deluge webinterface
