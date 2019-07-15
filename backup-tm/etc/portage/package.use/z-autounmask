@@ -148,3 +148,12 @@ sys-apps/the_silver_searcher lzma
 # required by @selected
 # required by @world (argument)
 >=net-libs/zeromq-4.2.5 drafts
+# required by dev-libs/libxml2-2.9.9-r1::gentoo[icu]
+# required by media-libs/netpbm-10.76.00::gentoo[xml]
+# required by x11-misc/xscreensaver-5.43::gentoo
+# required by xfce-base/xfce4-session-4.13.3::gentoo[xscreensaver]
+# required by xfce-base/xfce4-meta-4.14_pre2::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/icu-64.2 abi_x86_32
