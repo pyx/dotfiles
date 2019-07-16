@@ -1,3 +1,4 @@
 media-sound/audacious chardet gtk3 -gtk -qt5
 media-sound/audacity id3tag
+media-plugins/alsa-plugins -pulseaudio
 media-plugins/audacious-plugins cue ffmpeg gtk3 -gtk -qt5
