@@ -1,5 +1,6 @@
 # Application - Audio
 media-plugins/audacious-plugins
+media-sound/apulse
 media-sound/ardour
 media-sound/audacity
 media-sound/gmpc
