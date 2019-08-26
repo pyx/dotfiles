@@ -175,9 +175,18 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.65.0 icu
-# required by net-wireless/wpa_supplicant-2.6-r8::gentoo[-gnutls,ssl,-libressl]
-# required by net-misc/wicd-1.7.4-r3::gentoo
-# required by @network
+# required by kde-plasma/kwin-5.13.3::gentoo
+# required by kde-plasma/plasma-workspace-5.13.3::gentoo
+# required by kde-plasma/kde-cli-tools-5.13.3::gentoo
+# required by kde-plasma/kscreenlocker-5.13.3::gentoo
+>=media-libs/mesa-18.1.4 wayland
+# required by dev-python/pyzmq-17.1.0::gentoo
+# required by dev-python/qtconsole-4.3.1::gentoo
+# required by dev-python/ipython-5.4.1-r1::gentoo[qt5]
+# required by @py
 # required by @selected
 # required by @world (argument)
->=dev-libs/openssl-1.0.2o-r4 bindist
+>=net-libs/zeromq-4.2.5 drafts
+# required by dev-python/wxpython-4.0.6::gentoo
+# required by dev-python/wxpython (argument)
+>=x11-libs/wxGTK-3.0.4-r301 gstreamer

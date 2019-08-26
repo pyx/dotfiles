@@ -18,3 +18,5 @@ dev-scheme/racket
 net-libs/nodejs
 sys-devel/clang
 virtual/commonlisp
+virtual/pypy
+virtual/pypy3

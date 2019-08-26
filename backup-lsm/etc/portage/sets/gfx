@@ -1,7 +1,7 @@
 # Application - Graphics
-media-gfx/blender
+#media-gfx/blender
 media-gfx/gimp
-media-gfx/gmic gimp
+#media-gfx/gmic gimp
 media-gfx/inkscape
 media-gfx/mcomix
 media-gfx/mypaint

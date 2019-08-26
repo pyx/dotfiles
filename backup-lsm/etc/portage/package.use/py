@@ -1,8 +1,8 @@
 dev-python/django sqlite
 dev-python/ipython emacs notebook sqlite wxwidgets -qt4
 dev-python/markdown pygments
-dev-python/pypy-bin sqlite tk
-dev-python/pypy3-bin sqlite tk
+#dev-python/pypy-bin sqlite tk
+#dev-python/pypy3-bin sqlite tk
 dev-python/pysfml examples
 dev-python/sphinx latex
-virtual/pypy3 sqlite
+#virtual/pypy3 sqlite
