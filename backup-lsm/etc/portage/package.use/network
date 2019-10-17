@@ -1,1 +1,2 @@
 net-analyzer/wireshark gtk3 -gtk2 -qt4
+net-misc/dhcpcd -ipv6
