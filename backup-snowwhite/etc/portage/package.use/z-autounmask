@@ -5,11 +5,6 @@
 # required by @system
 # required by @world (argument)
 >=dev-lang/spidermonkey-17.0.0-r3:17 -jit
-# required by media-gfx/mypaint-1.1.0-r1
-# required by @gfx
-# required by @selected
-# required by @world (argument)
-=dev-libs/protobuf-2.5.0-r2 python
 # required by kde-base/libkexiv2-4.14.3
 # required by kde-base/okular-4.14.3[jpeg]
 # required by @doc
@@ -194,3 +189,43 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.65.0 icu
+# required by kde-plasma/kwin-5.13.3::gentoo
+# required by kde-plasma/plasma-workspace-5.13.3::gentoo
+# required by kde-plasma/kde-cli-tools-5.13.3::gentoo
+# required by kde-plasma/kscreenlocker-5.13.3::gentoo
+>=media-libs/mesa-18.1.4 wayland
+# required by dev-python/pyzmq-17.1.0::gentoo
+# required by dev-python/qtconsole-4.3.1::gentoo
+# required by dev-python/ipython-5.4.1-r1::gentoo[qt5]
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=net-libs/zeromq-4.2.5 drafts
+# required by virtual/pypy3-6.0.0::gentoo
+# required by dev-python/setuptools-40.8.0::gentoo[python_targets_pypy3]
+# required by dev-python/pycryptodome-3.7.3::gentoo
+# required by net-misc/youtube-dl-2019.03.18::gentoo
+# required by @network
+# required by @selected
+# required by @world (argument)
+=dev-python/pypy3-6.0.0 sqlite
+# required by virtual/pypy-6.0.0::gentoo
+# required by dev-python/setuptools-40.8.0::gentoo[python_targets_pypy]
+# required by dev-python/pycryptodome-3.7.3::gentoo
+# required by net-misc/youtube-dl-2019.03.18::gentoo
+# required by @network
+# required by @selected
+# required by @world (argument)
+=dev-python/pypy-6.0.0 sqlite
+# required by dev-python/wxpython-4.0.6::gentoo
+# required by dev-python/wxpython (argument)
+>=x11-libs/wxGTK-3.0.4-r301 gstreamer
+# required by dev-libs/libxml2-2.9.9-r1::gentoo[icu]
+# required by kde-frameworks/kio-5.60.0::gentoo
+# required by kde-frameworks/kparts-5.60.0::gentoo
+# required by kde-frameworks/khtml-5.60.0::gentoo
+# required by kde-apps/okular-19.04.3::gentoo[chm]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=dev-libs/icu-64.2 abi_x86_32
