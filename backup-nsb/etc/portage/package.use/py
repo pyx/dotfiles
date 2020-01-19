@@ -5,4 +5,3 @@ dev-python/pypy-bin sqlite tk
 dev-python/pypy3-bin sqlite tk
 dev-python/pysfml examples
 dev-python/sphinx latex
-virtual/pypy3 sqlite

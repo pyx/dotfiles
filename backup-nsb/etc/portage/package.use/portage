@@ -1,2 +1,3 @@
 app-portage/eix sqlite
 app-portage/layman git mercurial
+app-portage/gemato -python_targets_pypy3

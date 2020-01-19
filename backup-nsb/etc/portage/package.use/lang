@@ -1,7 +1,8 @@
 dev-lang/erlang emacs hipe kpoll odbc
 dev-lang/ghc binary llvm
 dev-lang/rust clang
-dev-python/pypy-bin sqlite
+dev-python/pypy sqlite tk
+dev-python/pypy3 sqlite tk
 dev-lang/ocaml tk
 dev-lang/python berkdb sqlite tk
 dev-lang/spidermonkey jit
@@ -13,4 +14,4 @@ sys-devel/clang python
 sys-devel/llvm clang ocaml python
 sys-devel/gcc go multislot
 virtual/pypy sqlite tk
-virtual/pypy sqlite tk
+virtual/pypy3 sqlite tk
