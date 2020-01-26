@@ -11,4 +11,3 @@ dev-ml/macaque
 dev-ml/menhir
 dev-ml/ocaml-sqlite3
 dev-ml/opam
-dev-ml/utop

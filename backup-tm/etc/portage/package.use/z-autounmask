@@ -112,11 +112,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
-# required by app-vim/vim-latex-1.8.23.20141116::gentoo
-# required by @vim
-# required by @selected
-# required by @world (argument)
->=app-editors/gvim-8.0.1056 python_single_target_python2_7 -python_single_target_python3_6
 # required by dev-qt/qtcore-5.9.2::gentoo
 # required by dev-qt/qtgui-5.9.2::gentoo
 # required by dev-qt/qtwidgets-5.9.2::gentoo

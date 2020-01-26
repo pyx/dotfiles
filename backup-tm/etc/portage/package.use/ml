@@ -1,1 +1,3 @@
+dev-ml/lwt -camlp4
 dev-ml/opam darcs git mercurial rsync
+dev-ml/pgocaml -camlp4
