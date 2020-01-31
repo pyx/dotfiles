@@ -13,8 +13,10 @@ dev-lang/swi-prolog
 dev-lang/vala
 dev-lisp/clisp
 dev-lisp/sbcl
-dev-python/pypy-bin
-dev-python/pypy3-bin
+dev-python/pypy
+dev-python/pypy-exe-bin
+dev-python/pypy3
+dev-python/pypy3-exe-bin
 dev-scheme/chicken
 dev-scheme/racket
 net-libs/nodejs
