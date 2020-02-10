@@ -2,7 +2,7 @@
 #nm-applet &
 # -or-
 dunst &
-wicd-gtk --tray &
+connman-gtk --tray &
 ibus-daemon -d -x -r
 compton -c &
 conky &
