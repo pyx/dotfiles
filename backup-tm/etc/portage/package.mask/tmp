@@ -1,2 +1,2 @@
-# failed to build with media-libs/libid3tag-0.15.1b-r4
-#=dev-util/gperf-3.1
+# opam(cudf, extlib) failed to build with this. https://bugs.gentoo.org/704146
+>dev-lang/ocaml-4.09
