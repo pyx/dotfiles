@@ -4,7 +4,7 @@ net-analyzer/netcat
 net-analyzer/nmap
 net-analyzer/tcpdump
 net-analyzer/wireshark
+net-misc/connman-gtk
 net-misc/whois
-net-misc/wicd
 net-misc/youtube-dl
 net-wireless/broadcom-sta
