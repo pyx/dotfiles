@@ -1,6 +1,5 @@
 # Development - Python Specific
 dev-python/bottle
-dev-python/fabric
 dev-python/flask
 dev-python/qrcode
 dev-python/sphinx
