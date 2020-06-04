@@ -1,3 +1,5 @@
+*/* PYTHON_TARGETS: python3_6 python3_7 python3_8
+#*/* PYTHON_SINGLE_TARGET: -* python3_6
 dev-python/django sqlite
 dev-python/ipython emacs notebook sqlite wxwidgets -qt4
 dev-python/markdown pygments

@@ -26,10 +26,3 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.65.0 icu
-# required by media-gfx/gimp-2.9.8-r1::gentoo
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=media-libs/libmypaint-1.4.0 gegl
-# required by @__auto_slot_operator_replace_installed__ (argument)
->=net-libs/libtorrent-rasterbar-1.2.3 -python_targets_python3_5
