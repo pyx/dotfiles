@@ -187,9 +187,9 @@ mode "launch" {
 	# d: Dwb
 	bindsym d exec dwb
 	bindsym Shift+d exec dwb; mode "default"
-	# e: Evince
-	bindsym e exec evince
-	bindsym Shift+e exec evince; mode "default"
+	# e: Email, Thunderbird
+	bindsym e exec thunderbird
+	bindsym Shift+e exec thunderbird; mode "default"
 	# f: Firfox
 	bindsym f exec firefox
 	bindsym Shift+f exec firefox; mode "default"
