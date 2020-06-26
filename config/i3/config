@@ -245,8 +245,9 @@ assign [class="Firefox"] → 1
 assign [class="Google-chrome"] → 1
 assign [class="Uzbl"] → 1
 
-# 2: editors
+# 2: editors/productivity
 assign [class="Gvim"] → 2
+assign [class="Thunderbird"] → 2
 
 # 3: terminal enumerator
 assign [class="Gnome-terminal"] → 3
