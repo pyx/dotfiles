@@ -244,3 +244,14 @@
 # required by @selected
 # required by @world (argument)
 >=sys-devel/gcc-9.2.0-r3 graphite
+# required by dev-python/sphinx-2.4.3::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/sphinx_rtd_theme-0.4.3 -python_targets_python2_7
+# required by dev-python/requests-2.24.0::gentoo
+# required by dev-python/sphinx-3.1.1::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/idna-2.10 python_targets_python3_6

@@ -1,5 +1,2 @@
 # Application - Mail
-mail-client/mailx
-mail-client/mutt
-mail-mta/msmtp
-net-mail/offlineimap
+mail-client/thunderbird-bin
