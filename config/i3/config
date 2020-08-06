@@ -184,9 +184,9 @@ mode "launch" {
 	# c: google-Chrome
 	bindsym c exec google-chrome
 	bindsym Shift+c exec google-chrome; mode "default"
-	# d: Dwb
-	bindsym d exec dwb
-	bindsym Shift+d exec dwb; mode "default"
+	# d: DAW
+	bindsym d exec ardour6
+	bindsym Shift+d exec ardour6; mode "default"
 	# e: Email, Thunderbird
 	bindsym e exec thunderbird
 	bindsym Shift+e exec thunderbird; mode "default"
@@ -240,7 +240,6 @@ bindsym $mod+backslash mode "launch"
 
 # Specific Window Assignment -------------------------------------- {{{1
 # 1: Web Browsers
-assign [class="Dwb"] → 1
 assign [class="Firefox"] → 1
 assign [class="Google-chrome"] → 1
 assign [class="Uzbl"] → 1
@@ -276,6 +275,7 @@ assign [class="Nomacs"] → 6
 assign [class="Viewnior"] → 6
 
 # 7: multimedia
+assign [class="Ardour"] → 7
 assign [class="Audacious"] → 7
 for_window [class="Audacious"] floating enable
 assign [class="smplayer"] → 7
