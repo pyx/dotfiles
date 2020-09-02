@@ -26,3 +26,10 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.65.0 icu
+# required by xfce-base/xfce4-panel-4.15.4::gentoo
+# required by xfce-extra/xfce4-power-manager-1.7.0::gentoo[panel-plugin]
+# required by xfce-base/xfce4-meta-4.14-r2::gentoo[upower]
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3
