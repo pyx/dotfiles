@@ -1,6 +1,8 @@
 # Development - Python Specific
 dev-python/bottle
 dev-python/flask
+dev-python/pypy-exe-bin
+dev-python/pypy3-exe-bin
 dev-python/sphinx
 dev-python/tox
 dev-python/virtualenv
