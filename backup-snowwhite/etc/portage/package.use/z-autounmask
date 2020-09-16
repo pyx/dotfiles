@@ -255,3 +255,9 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/idna-2.10 python_targets_python3_6
+# required by xfce-base/xfce4-panel-4.15.4::gentoo
+# required by xfce-base/xfce4-meta-4.16_pre1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3
