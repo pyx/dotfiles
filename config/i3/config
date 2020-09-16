@@ -176,59 +176,59 @@ bindsym $mod+r mode "resize"
 
 # Mode "launch" --------------------------------------------------- {{{1
 mode "launch" {
-	# hotkey to launch
-	# Shift + hotkey to launch then exit launch mode
+	# hotkey to launch then exit launch mode
+	# Shift + hotkey to launch
 	# a: Audacious
-	bindsym a exec audacious
-	bindsym Shift+a exec audacious; mode "default"
+	bindsym a exec audacious; mode "default"
+	bindsym Shift+a exec audacious
 	# c: google-Chrome
-	bindsym c exec google-chrome
-	bindsym Shift+c exec google-chrome; mode "default"
+	bindsym c exec google-chrome; mode "default"
+	bindsym Shift+c exec google-chrome
 	# d: DAW
-	bindsym d exec ardour6
-	bindsym Shift+d exec ardour6; mode "default"
+	bindsym d exec ardour6; mode "default"
+	bindsym Shift+d exec ardour6
 	# e: Email, Thunderbird
-	bindsym e exec thunderbird
-	bindsym Shift+e exec thunderbird; mode "default"
+	bindsym e exec thunderbird; mode "default"
+	bindsym Shift+e exec thunderbird
 	# f: Firfox
-	bindsym f exec firefox
-	bindsym Shift+f exec firefox; mode "default"
+	bindsym f exec firefox; mode "default"
+	bindsym Shift+f exec firefox
 	# g: Gimp
-	bindsym g exec gimp
-	bindsym Shift+g exec gimp; mode "default"
+	bindsym g exec gimp; mode "default"
+	bindsym Shift+g exec gimp
 	# h: devHelp
-	bindsym h exec devhelp
-	bindsym Shift+h exec devhelp; mode "default"
+	bindsym h exec devhelp; mode "default"
+	bindsym Shift+h exec devhelp
 	# i: Inkscape
-	bindsym i exec inkscape
-	bindsym Shift+i exec inkscape; mode "default"
+	bindsym i exec inkscape; mode "default"
+	bindsym Shift+i exec inkscape
 	# k: K3b
-	bindsym k exec k3b
-	bindsym Shift+k exec k3b; mode "default"
+	bindsym k exec k3b; mode "default"
+	bindsym Shift+k exec k3b
 	# m: Mypaint
-	bindsym m exec mypaint
-	bindsym Shift+m exec mypaint; mode "default"
+	bindsym m exec mypaint; mode "default"
+	bindsym Shift+m exec mypaint
 	# n: Nemiver
-	bindsym n exec nemiver
-	bindsym Shift+n exec nemiver; mode "default"
+	bindsym n exec nemiver; mode "default"
+	bindsym Shift+n exec nemiver
 	# o: Okular
-	bindsym o exec okular
-	bindsym Shift+o exec okular; mode "default"
+	bindsym o exec okular; mode "default"
+	bindsym Shift+o exec okular
 	# s: Smplayer
-	bindsym s exec smplayer
-	bindsym Shift+s exec smplayer; mode "default"
+	bindsym s exec smplayer; mode "default"
+	bindsym Shift+s exec smplayer
 	# t: Thunar
-	bindsym t exec thunar
-	bindsym Shift+t exec thunar; mode "default"
+	bindsym t exec thunar; mode "default"
+	bindsym Shift+t exec thunar
 	# u: Uzbl
-	bindsym u exec uzbl-tabbed
-	bindsym Shift+u exec uzbl-tabbed; mode "default"
+	bindsym u exec uzbl-tabbed; mode "default"
+	bindsym Shift+u exec uzbl-tabbed
 	# v: gVim
-	bindsym v exec gvim
-	bindsym Shift+v exec gvim; mode "default"
+	bindsym v exec gvim; mode "default"
+	bindsym Shift+v exec gvim
 	# z: Zathura
-	bindsym z exec zathura
-	bindsym Shift+z exec zathura; mode "default"
+	bindsym z exec zathura; mode "default"
+	bindsym Shift+z exec zathura
 	# Enter, Escape or backslash: back to normal
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
