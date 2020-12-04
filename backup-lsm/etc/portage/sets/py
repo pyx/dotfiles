@@ -9,5 +9,3 @@ dev-python/sphinx
 dev-python/tox
 dev-python/virtualenv
 www-servers/tornado
-dev-python/pypy-bin
-dev-python/pypy3-bin

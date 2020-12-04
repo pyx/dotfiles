@@ -1,14 +1,2 @@
 # Development - OCaml Specific
-dev-ml/async
-dev-ml/async_extra
-dev-ml/async_unix
-dev-ml/batteries
-dev-ml/cairo-ocaml
-dev-ml/calendar
-dev-ml/core
-dev-ml/core_extended
-dev-ml/macaque
-dev-ml/menhir
-dev-ml/ocaml-sqlite3
 dev-ml/opam
-dev-ml/utop
