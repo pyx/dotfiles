@@ -14,3 +14,5 @@ smtpserver = /usr/bin/msmtp
 [user]
 name = Philip Xu
 email = pyx@xrefactor.com
+[pull]
+	ff = only

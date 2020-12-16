@@ -125,7 +125,6 @@ set statusline+=%*                            " restore normal highlight
 " Ctrl-P ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3736
 " http://kien.github.com/ctrlp.vim/
-" https://bitbucket.org/kien/ctrlp.vim/
 " git clone git://github.com/kien/ctrlp.vim.git
 "
 " Mappings:
@@ -146,8 +145,8 @@ nnoremap <leader>q :CtrlPQuickfix<CR>
 nnoremap <leader>t :CtrlPTag<CR>
 
 " Gundo ----------------------------------------------- {{{2
-" https://sjl.bitbucket.io/gundo.vim/
-" hg clone https://bitbucket.org/sjl/gundo.vim
+" https://github.com/sjl/gundo.vim
+" git clone git://github.com/sjl/gundo.vim.git
 nnoremap <leader>u :GundoToggle<CR>
 let g:gundo_prefer_python3 = 1
 
