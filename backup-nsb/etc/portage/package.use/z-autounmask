@@ -42,3 +42,13 @@
 # required by @selected
 # required by @world (argument)
 >=sys-libs/zlib-1.2.11-r3 static-libs
+# required by dev-ml/ocamlgraph-2.0.0::gentoo
+# required by dev-ml/dose3-5.0.1_p16::gentoo
+# required by dev-ml/opam-repository-2.0.8::gentoo
+# required by dev-ml/opam-state-2.0.8::gentoo
+# required by dev-ml/opam-client-2.0.8::gentoo
+# required by dev-ml/opam-2.0.8-r1::gentoo
+# required by @ml
+# required by @selected
+# required by @world (argument)
+>=dev-ml/stdlib-shims-0.3.0 ocamlopt
