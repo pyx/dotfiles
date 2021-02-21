@@ -1,4 +1,5 @@
 # X11, Window Managers, Desktop Environments and Tools
+gui-libs/display-manager-init
 x11-apps/mesa-progs
 x11-apps/setxkbmap
 x11-apps/xrandr

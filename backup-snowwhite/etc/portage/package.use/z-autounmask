@@ -270,3 +270,6 @@
 # required by @selected
 # required by @world (argument)
 >=sys-libs/zlib-1.2.11-r3 static-libs
+# required by dev-ml/ocamlgraph-2.0.0::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=dev-ml/stdlib-shims-0.2.0 ocamlopt
