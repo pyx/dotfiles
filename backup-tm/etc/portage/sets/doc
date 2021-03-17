@@ -3,7 +3,7 @@ app-doc/gimp-help
 app-office/abiword
 app-office/dia
 app-office/gnumeric
-app-office/libreoffice
+app-office/libreoffice-bin
 app-text/antiword
 app-text/diction
 app-text/highlight
