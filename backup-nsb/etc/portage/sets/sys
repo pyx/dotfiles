@@ -4,7 +4,7 @@ app-admin/eclean-kernel
 app-admin/logrotate
 app-admin/sysklogd
 net-misc/dhcpcd
-#net-print/cndrvcups-lb
+net-print/cndrvcups-lb
 sys-apps/bubblewrap
 sys-boot/grub
 sys-kernel/linux-firmware
