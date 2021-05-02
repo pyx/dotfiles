@@ -238,3 +238,8 @@
 # required by @selected
 # required by @world (argument)
 >=dev-ml/stdlib-shims-0.3.0 ocamlopt
+# required by kde-apps/okular-21.04.0::gentoo[pdf]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=app-text/poppler-21.04.0 nss
