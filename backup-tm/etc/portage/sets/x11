@@ -13,6 +13,12 @@ x11-misc/slim
 x11-misc/urxvt-perls
 x11-misc/xclip
 x11-wm/i3
+x11-wm/lumina
+xfce-base/thunar
 xfce-base/xfce4-meta
 xfce-extra/thunar-archive-plugin
+xfce-extra/thunar-volman
 xfce-extra/tumbler
+xfce-extra/xfce4-notifyd
+x11-terms/xfce4-terminal
+#

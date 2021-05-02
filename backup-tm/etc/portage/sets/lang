@@ -19,5 +19,5 @@ dev-lisp/sbcl
 dev-scheme/chicken
 dev-scheme/racket
 net-libs/nodejs
-sys-devel/clang
+#sys-devel/clang
 virtual/commonlisp

@@ -101,10 +101,10 @@ ${color0}NETWORK${if_up enp1s0}
   ${color5}Upload ${alignr}${color}${upspeed enp1s0} kb/s
   ${color5}Download ${alignr}${color}${downspeed enp1s0} kb/s
   ${color7}${upspeedgraph enp1s0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph enp1s0 25,115 c4c4c4 a3a3a3}
-${endif}${if_up wlp2s0}
-  ${alignc}${color blue}wifi  ${color a3a3a3}${addr wlp2s0}
-  ${color5}Upload ${alignr}${color}${upspeed wlp2s0} kb/s
-  ${color5}Download ${alignr}${color}${downspeed wlp2s0} kb/s
-  ${color7}${upspeedgraph wlp2s0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph wlp2s0 25,115 c4c4c4 a3a3a3}
+${endif}${if_up wlan0}
+  ${alignc}${color blue}wifi  ${color a3a3a3}${addr wlan0}
+  ${color5}Upload ${alignr}${color}${upspeed wlan0} kb/s
+  ${color5}Download ${alignr}${color}${downspeed wlan0} kb/s
+  ${color7}${upspeedgraph wlan0 25,115 c4c4c4 a3a3a3} ${color7}${downspeedgraph wlan0 25,115 c4c4c4 a3a3a3}
 ${endif}
 ]]
