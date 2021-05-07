@@ -1,4 +1,0 @@
-# opam(cudf, extlib) failed to build with this. https://bugs.gentoo.org/704146
-# using unofficial overlay
-# layman -o 'https://raw.github.com/pyx/ml-overlay/master/repositories.xml' -f -a ml-overlay
-#>dev-lang/ocaml-4.09

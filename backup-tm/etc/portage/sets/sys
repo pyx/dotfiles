@@ -1,8 +1,7 @@
 # System Tools
-app-forensics/chkrootkit
 app-admin/eclean-kernel
 app-admin/logrotate
-app-admin/syslog-ng
+app-admin/sysklogd
 net-misc/dhcpcd
 net-print/cndrvcups-lb
 sys-apps/bubblewrap
