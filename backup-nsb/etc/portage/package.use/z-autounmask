@@ -62,3 +62,11 @@
 # required by @selected
 # required by @world (argument)
 >=media-video/ffmpeg-4.4 opus vpx theora jpeg2k
+# required by media-gfx/fbida-2.14-r2::gentoo[X]
+# required by x11-misc/xscreensaver-6.01::gentoo
+# required by xfce-base/xfce4-session-4.16.0::gentoo[xscreensaver]
+# required by xfce-base/xfce4-meta-4.16-r2::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-libs/motif-2.3.8-r2 xft
