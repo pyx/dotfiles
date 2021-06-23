@@ -3,10 +3,7 @@ games-arcade/frozen-bubble
 games-emulation/dosbox
 games-emulation/nestopia
 games-misc/cowsay
-#games-puzzle/2048-ml
 games-puzzle/zaz
 games-strategy/0ad
-# move games-strategy/ufo-ai games-strategy/ufoai
-#games-strategy/ufoai
 games-strategy/warzone2100
 games-strategy/wesnoth
