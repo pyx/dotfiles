@@ -188,3 +188,11 @@ sys-apps/the_silver_searcher lzma
 # required by @selected
 # required by @world (argument)
 >=app-text/poppler-21.04.0 nss
+# required by x11-libs/pango-1.48.7::gentoo
+# required by x11-misc/gxmessage-3.4.3::gentoo
+# required by x11-wm/fluxbox-1.3.7-r4::gentoo
+# required by x11-wm/lumina-1.6.0::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.10.4 harfbuzz
