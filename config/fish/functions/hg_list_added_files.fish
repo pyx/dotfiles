@@ -4,5 +4,5 @@ function hg_list_added_files --argument desc --description 'list added files as 
 	if not test $desc
 		set desc 'Added File'
 	end
-	hg_list_files "$desc" (hg status --no-status --added ^/dev/null)
+	hg_list_files "$desc" (hg status --no-status --added 2>/dev/null)
 end

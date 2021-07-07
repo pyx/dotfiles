@@ -5,10 +5,10 @@ function hg_list_patch_queues --argument desc --description 'list available patc
 	if not test $desc
 		set desc 'Patch Queue'
 	end
-	for queue in (hg qqueue --active ^/dev/null)
+	for queue in (hg qqueue --active 2>/dev/null)
 		echo -e "$queue\t$desc (active)"
 	end
-	for queue in (hg qqueue --list --quiet ^/dev/null)
+	for queue in (hg qqueue --list --quiet 2>/dev/null)
 		echo -e "$queue\t$desc"
 	end
 end

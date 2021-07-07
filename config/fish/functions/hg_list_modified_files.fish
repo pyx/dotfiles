@@ -4,5 +4,5 @@ function hg_list_modified_files --argument desc --description 'list modified fil
 	if not test $desc
 		set desc 'Modified File'
 	end
-	hg_list_files "$desc" (hg status --no-status --modified ^/dev/null)
+	hg_list_files "$desc" (hg status --no-status --modified 2>/dev/null)
 end

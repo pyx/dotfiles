@@ -5,7 +5,7 @@ function hg_list_branches --argument desc --description 'list branches'
 	if not test $desc
 		set desc 'Named Branch'
 	end
-	for branch in (hg branches --quiet ^/dev/null)
+	for branch in (hg branches --quiet 2>/dev/null)
 		echo -e "$branch\t$desc"
 	end
 end

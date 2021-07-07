@@ -5,7 +5,7 @@ function hg_list_tags --argument desc --description 'list tags'
 	if not test $desc
 		set desc 'Tag'
 	end
-	for tag in (hg tags --quiet ^/dev/null)
+	for tag in (hg tags --quiet 2>/dev/null)
 		echo -e "$tag\t$desc"
 	end
 end

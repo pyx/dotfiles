@@ -1,7 +1,7 @@
 # print git repository information
 
 function print_git_repos_info --description 'Print Git repository information'
-	set _branch (git branch --no-color ^/dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
+	set _branch (git branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
 	if not test $_branch
 		# not inside a git repository
 		return 0

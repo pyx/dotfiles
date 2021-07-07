@@ -7,5 +7,5 @@ function hg_list_revs --argument rev template --description 'list revision numbe
 	if not test $template
 		set template '{node}\t{rev} in {phase}\n{rev}\t{node|short}: {desc|firstline}\n{bookmarks % \'{bookmark}\tBookmark at {node|short}:{rev}\n\'}{tags % \'{tag}\tTag on {node|short}:{rev}\n\'}'
 	end
-	hg log --rev $rev --template $template ^/dev/null
+	hg log --rev $rev --template $template 2>/dev/null
 end

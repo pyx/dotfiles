@@ -7,7 +7,7 @@ function hg_list_signed_changesets --argument desc --description 'list signed ch
 	if not test $desc
 		set desc 'Signed Changeset'
 	end
-	for cset in (hg sigs ^/dev/null | grep -o '[0-9][0-9]*:[a-z0-9]\{40\}')
+	for cset in (hg sigs 2>/dev/null | grep -o '[0-9][0-9]*:[a-z0-9]\{40\}')
 		echo $cset | tr : ' ' | read num hash
 		echo -e "$hash\t$desc: $num"
 	end

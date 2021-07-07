@@ -4,5 +4,5 @@ function hg_list_deleted_files --argument desc --description 'list deleted files
 	if not test $desc
 		set desc 'Deleted File'
 	end
-	hg_list_files "$desc" (hg status --no-status --deleted ^/dev/null)
+	hg_list_files "$desc" (hg status --no-status --deleted 2>/dev/null)
 end

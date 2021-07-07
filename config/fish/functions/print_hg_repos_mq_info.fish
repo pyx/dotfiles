@@ -1,12 +1,12 @@
 # print mercurial repository mq information
 
 function print_hg_repos_mq_info --description 'Print MQ information of Mercurial repository'
-	set _mq_applied (hg qapplied ^/dev/null | tr '\n' ' ')
+	set _mq_applied (hg qapplied 2>/dev/null | tr '\n' ' ')
 	if not test $_mq_applied
 		return 0
 	end
 	# top patch commit message
-	set _mq_top_patch (hg qheader ^/dev/null | head -n1)
+	set _mq_top_patch (hg qheader 2>/dev/null | head -n1)
 	# elements to be displayed:
 	# left arrow
 	set la $CC_WHITE'<-'$CC_RESET

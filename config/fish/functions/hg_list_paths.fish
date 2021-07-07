@@ -1,7 +1,7 @@
 # Helper function
 
 function hg_list_paths --description 'list paths defined in hgrc'
-	for path in (hg paths ^/dev/null)
+	for path in (hg paths 2>/dev/null)
 		# in format
 		# name = url
 		set -l name ''

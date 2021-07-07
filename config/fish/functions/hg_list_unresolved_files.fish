@@ -4,5 +4,5 @@ function hg_list_unresolved_files --argument desc --description 'list unresolved
 	if not test $desc
 		set desc 'Unresolved File'
 	end
-	hg_list_files "$desc" (hg resolve --no-status --list ^/dev/null)
+	hg_list_files "$desc" (hg resolve --no-status --list 2>/dev/null)
 end

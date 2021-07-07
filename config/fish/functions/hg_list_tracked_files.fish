@@ -5,5 +5,5 @@ function hg_list_tracked_files --argument desc --description 'list tracked files
 	if not test $desc
 		set desc 'Tracked File'
 	end
-	hg_list_files "$desc" (hg manifest $rev ^/dev/null)
+	hg_list_files "$desc" (hg manifest $rev 2>/dev/null)
 end

@@ -5,7 +5,7 @@ function hg_list_unapplied_patches --argument desc --description 'list unapplied
 	if not test $desc
 		set desc 'Unapplied Patch'
 	end
-	for patch in (hg qunapplied ^/dev/null)
+	for patch in (hg qunapplied 2>/dev/null)
 		echo -e "$patch\t$desc"
 	end
 end

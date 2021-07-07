@@ -1,19 +1,19 @@
 # print mercurial repository information
 
 function print_hg_repos_info --description 'Print Mercurial repository information'
-	set _rev_id (hg id -in ^/dev/null)
+	set _rev_id (hg id -in 2>/dev/null)
 	if not test $_rev_id
 		# not inside a mercurial repository
 		return 0
 	end
 	# branch
-	set _branch (hg id -b ^/dev/null)
+	set _branch (hg id -b 2>/dev/null)
 	# tags
-	set _tags (hg id -t ^/dev/null)
+	set _tags (hg id -t 2>/dev/null)
 	# bookmarks
-	set _bookmarks (hg id -B ^/dev/null)
+	set _bookmarks (hg id -B 2>/dev/null)
 	# phase
-	set _phase (hg phase . ^/dev/null | cut -d ' ' -f 2)
+	set _phase (hg phase . 2>/dev/null | cut -d ' ' -f 2)
 
 	# elements to be displayed:
 	# right arrow
