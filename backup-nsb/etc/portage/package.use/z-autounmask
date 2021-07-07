@@ -70,3 +70,9 @@
 # required by @selected
 # required by @world (argument)
 >=x11-libs/motif-2.3.8-r2 xft
+# required by x11-libs/pango-1.48.7::gentoo
+# required by x11-misc/dunst-1.6.1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.10.4 harfbuzz
