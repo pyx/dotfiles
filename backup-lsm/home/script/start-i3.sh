@@ -4,7 +4,7 @@
 dunst &
 connman-gtk --tray &
 ibus-daemon -d -x -r
-compton -c &
+picom -c &
 conky &
 /usr/bin/volumeicon &
 xsetroot -cursor_name left_ptr
