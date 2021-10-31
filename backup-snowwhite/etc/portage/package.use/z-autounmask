@@ -284,3 +284,13 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/freetype-2.10.4 harfbuzz
+# required by games-strategy/wesnoth-1.16.0-r1::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=dev-libs/boost-1.77.0-r2 context
+# required by games-strategy/wesnoth-1.16.0-r1::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+=dev-libs/boost-1.76.0-r1 context
