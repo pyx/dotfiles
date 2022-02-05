@@ -294,3 +294,14 @@
 # required by @selected
 # required by @world (argument)
 =dev-libs/boost-1.76.0-r1 context
+# required by sys-libs/compiler-rt-sanitizers-13.0.1::gentoo
+# required by sys-devel/clang-runtime-13.0.1::gentoo[sanitize,compiler-rt]
+# required by sys-devel/clang-13.0.1::gentoo
+# required by sys-devel/clang-common-13.0.1::gentoo
+>=virtual/libcrypt-2 abi_x86_32
+# required by virtual/libcrypt-2::gentoo
+# required by sys-libs/compiler-rt-sanitizers-13.0.1::gentoo
+# required by sys-devel/clang-runtime-13.0.1::gentoo[sanitize,compiler-rt]
+# required by sys-devel/clang-13.0.1::gentoo
+# required by sys-devel/clang-common-13.0.1::gentoo
+>=sys-libs/libxcrypt-4.4.27 abi_x86_32
