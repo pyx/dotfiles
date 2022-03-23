@@ -81,3 +81,9 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.77.0-r2 context
+# required by net-libs/glib-networking-2.72.0::gentoo
+# required by media-gfx/gimp-2.10.30::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=net-libs/gnutls-3.7.3-r1 pkcs11
