@@ -19,5 +19,6 @@ dev-scheme/chicken
 dev-scheme/racket
 net-libs/nodejs
 sys-devel/clang
+sys-devel/gdb
 virtual/commonlisp
 virtual/jdk
