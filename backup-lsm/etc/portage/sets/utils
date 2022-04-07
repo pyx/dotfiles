@@ -7,7 +7,6 @@ dev-util/ninja
 dev-util/glade
 dev-util/gnome-devel-docs
 dev-util/meld
-dev-util/nemiver
 dev-util/source-highlight
 dev-util/strace
 dev-util/valgrind
