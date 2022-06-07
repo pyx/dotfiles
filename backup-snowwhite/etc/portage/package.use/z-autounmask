@@ -305,3 +305,8 @@
 # required by sys-devel/clang-13.0.1::gentoo
 # required by sys-devel/clang-common-13.0.1::gentoo
 >=sys-libs/libxcrypt-4.4.27 abi_x86_32
+# required by x11-misc/urxvt-perls-2.3-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-terms/rxvt-unicode-9.30 perl
