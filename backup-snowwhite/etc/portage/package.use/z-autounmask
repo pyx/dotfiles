@@ -310,3 +310,8 @@
 # required by @selected
 # required by @world (argument)
 >=x11-terms/rxvt-unicode-9.30 perl
+# required by media-sound/ardour-6.9-r2::gentoo
+# required by @audio
+# required by @selected
+# required by @world (argument)
+>=media-libs/suil-0.10.16-r1 gtk2
