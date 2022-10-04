@@ -315,3 +315,8 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/suil-0.10.16-r1 gtk2
+# required by media-gfx/blender-3.3.0::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.12.1-r1 brotli
