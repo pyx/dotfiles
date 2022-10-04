@@ -4,7 +4,6 @@ media-sound/alsa-utils
 media-sound/apulse sdk
 media-sound/ardour
 media-sound/audacity
-media-sound/gmpc
 media-sound/hydrogen
 media-sound/lmms
 media-sound/mp3unicode
