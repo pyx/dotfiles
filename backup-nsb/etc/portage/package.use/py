@@ -1,4 +1,4 @@
-*/* PYTHON_TARGETS: python3_8 python3_9 python3_10
+*/* PYTHON_TARGETS: python3_8 python3_9 python3_10 python3_11
 dev-python/django sqlite
 dev-python/ipython emacs notebook sqlite wxwidgets -qt4
 dev-python/markdown pygments
