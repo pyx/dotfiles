@@ -1,31 +1,8 @@
-# required by media-gfx/graphviz-2.40.1-r1::gentoo
-# required by dev-python/pydot-1.4.1::gentoo
-# required by dev-tex/dot2tex-2.9.0::gentoo
-# required by dev-tex/dot2texi-3.0::gentoo
-# required by app-text/texlive-2017::gentoo[graphics]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=media-libs/gd-2.2.5-r2 fontconfig
 # required by app-shells/fish-3.0.2::gentoo
 # required by @shell
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libpcre2-10.33 pcre32
-# required by dev-ml/ocamlgraph-1.8.8::gentoo[gtk]
-# required by dev-ml/dose3-5.0.1::gentoo
-# required by dev-ml/opam-1.3.1-r1::gentoo
-# required by dev-ml/re2-0.9.1::gentoo
-# required by dev-ml/core_extended-0.9.0::gentoo
-# required by @ml
-# required by @selected
-# required by @world (argument)
->=dev-ml/lablgtk-2.18.5 gnomecanvas
-# required by games-strategy/wesnoth-1.14.7::gentoo
-# required by @games
-# required by @selected
-# required by @world (argument)
->=dev-libs/boost-1.65.0 icu
 # required by xfce-base/xfce4-panel-4.15.4::gentoo
 # required by xfce-extra/xfce4-power-manager-1.7.0::gentoo[panel-plugin]
 # required by xfce-base/xfce4-meta-4.14-r2::gentoo[upower]
@@ -33,25 +10,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libdbusmenu-16.04.0-r1 gtk3
-# required by sys-libs/libunwind-1.5.0::gentoo[zlib]
-# required by dev-cpp/glog-0.4.0::gentoo
-# required by app-i18n/librime-1.5.3-r1::gentoo
-# required by app-i18n/rime-data-0.38.20180515::gentoo
-# required by app-i18n/ibus-rime-1.4.0::gentoo
-# required by @im
-# required by @selected
-# required by @world (argument)
->=sys-libs/zlib-1.2.11-r3 static-libs
-# required by dev-ml/ocamlgraph-2.0.0::gentoo
-# required by dev-ml/dose3-5.0.1_p16::gentoo
-# required by dev-ml/opam-repository-2.0.8::gentoo
-# required by dev-ml/opam-state-2.0.8::gentoo
-# required by dev-ml/opam-client-2.0.8::gentoo
-# required by dev-ml/opam-2.0.8-r1::gentoo
-# required by @ml
-# required by @selected
-# required by @world (argument)
->=dev-ml/stdlib-shims-0.3.0 ocamlopt
 # required by kde-apps/okular-21.04.0::gentoo[pdf]
 # required by @doc
 # required by @selected
@@ -70,23 +28,11 @@
 # required by @selected
 # required by @world (argument)
 >=x11-libs/motif-2.3.8-r2 xft
-# required by x11-libs/pango-1.48.7::gentoo
-# required by x11-misc/dunst-1.6.1::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=media-libs/freetype-2.10.4 harfbuzz
 # required by games-strategy/wesnoth-1.16.0-r1::gentoo
 # required by @games
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.77.0-r2 context
-# required by net-libs/glib-networking-2.72.0::gentoo
-# required by media-gfx/gimp-2.10.30::gentoo
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=net-libs/gnutls-3.7.3-r1 pkcs11
 # required by x11-misc/urxvt-perls-2.3-r1::gentoo
 # required by @x11
 # required by @selected
