@@ -1,15 +1,3 @@
-# required by media-gfx/graphviz-2.38.0-r1::gentoo
-# required by dev-cpp/pangomm-2.40.1::gentoo[doc]
-# required by dev-cpp/gtksourceviewmm-3.18.0::gentoo
-# required by dev-util/nemiver-0.9.6::gentoo
-# required by @utils (argument)
->=media-libs/gd-2.2.3 fontconfig
-# required by dev-qt/qtcore-5.7.1-r1::gentoo
-# required by dev-qt/qtgui-5.7.1::gentoo
-# required by dev-qt/qtopengl-5.7.1::gentoo
-# required by sci-astronomy/stellarium-0.15.1::gentoo
-# required by @gui (argument)
->=dev-libs/libpcre-8.40 pcre16
 # required by dev-libs/libxml2-2.9.4-r1::gentoo
 # required by net-print/cndrvcups-common-lb-3.20::gentoo
 # required by net-print/cndrvcups-lb-3.20::gentoo
@@ -17,101 +5,10 @@
 >=sys-libs/zlib-1.2.11 abi_x86_32
 # required by net-print/cndrvcups-lb-3.20::gentoo
 # required by @sys (argument)
->=virtual/jpeg-62 abi_x86_32
-# required by virtual/jpeg-62::gentoo
-# required by net-print/cndrvcups-lb-3.20::gentoo
-# required by @sys (argument)
->=media-libs/libjpeg-turbo-1.5.1 abi_x86_32
-# required by net-print/cndrvcups-lb-3.20::gentoo
-# required by @sys (argument)
 >=dev-libs/libxml2-2.9.4-r1 abi_x86_32
 # required by app-shells/fish-2.4.0-r1::gentoo
 # required by @shell (argument)
 >=dev-libs/libpcre2-10.22 pcre32
-# required by media-libs/phonon-4.9.1::gentoo[gstreamer]
-# required by kde-frameworks/khtml-5.30.0::gentoo
-# required by kde-apps/okular-16.12.1::gentoo
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=media-libs/phonon-gstreamer-4.9.0 qt5
-# required by dev-ml/ocamlgraph-1.8.7::gentoo[gtk]
-# required by dev-ml/dose3-5.0.1::gentoo
-# required by dev-ml/opam-1.3.0::gentoo
-# required by dev-ml/async_extra-113.33.00::gentoo
-# required by dev-ml/async-113.33.00::gentoo
-# required by @ml
-# required by @selected
-# required by @world (argument)
->=dev-ml/lablgtk-2.18.5 gnomecanvas
-# required by media-libs/phonon-gstreamer-4.9.0::gentoo
->=media-libs/phonon-4.9.1 qt5
-# required by kde-plasma/polkit-kde-agent-5.8.5::gentoo
-# required by kde-frameworks/kauth-5.30.0::gentoo[policykit]
-# required by kde-frameworks/kconfigwidgets-5.30.0::gentoo
-# required by kde-frameworks/kxmlgui-5.30.0::gentoo
-# required by kde-frameworks/khtml-5.30.0::gentoo
-# required by kde-apps/okular-16.12.1::gentoo
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=sys-auth/polkit-qt-0.112.0-r1 qt5
-# required by kde-apps/okular-16.12.1::gentoo[crypt]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=app-crypt/qca-2.1.1-r1 qt5
-# required by media-gfx/mypaint-1.2.1::gentoo
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=dev-libs/protobuf-3.1.0 python
-# required by kde-frameworks/knotifications-5.30.0::gentoo[dbus]
-# required by kde-frameworks/khtml-5.30.0::gentoo
-# required by kde-apps/okular-16.12.1::gentoo
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=dev-libs/libdbusmenu-qt-0.9.3_pre20160218 qt5
-# required by kde-apps/libkexiv2-16.12.1::gentoo
-# required by kde-apps/okular-16.12.1::gentoo[jpeg]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=media-gfx/exiv2-0.25-r2 xmp
-# required by kde-apps/okular-16.12.1::gentoo[pdf]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=app-text/poppler-0.51.0 qt5
-# required by kde-frameworks/kcoreaddons-5.30.1::gentoo
-# required by kde-frameworks/kinit-5.30.0::gentoo
-# required by kde-frameworks/kded-5.30.0::gentoo
-# required by kde-frameworks/kio-5.30.0::gentoo
-# required by kde-plasma/kactivitymanagerd-5.8.5::gentoo
-# required by kde-frameworks/kactivities-5.30.0::gentoo
-# required by kde-apps/okular-16.12.1::gentoo
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=dev-qt/qtcore-5.7.1-r1 icu
-# required by media-gfx/gimp-2.9.4-r1::gentoo
-# required by media-plugins/gimp-resynthesizer-0.16::gentoo
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=media-libs/libmypaint-1.3.0 gegl
-# required by dev-qt/qtsingleapplication-2.6.1_p20150629::gentoo
-# required by media-video/smplayer-17.10.0::gentoo
-# required by @video
-# required by @selected
-# required by @world (argument)
->=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
-# required by media-video/smplayer-17.10.0::gentoo
-# required by @video
-# required by @selected
-# required by @world (argument)
->=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
 # required by dev-qt/qtcore-5.9.2::gentoo
 # required by dev-qt/qtgui-5.9.2::gentoo
 # required by dev-qt/qtwidgets-5.9.2::gentoo
@@ -121,28 +18,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libpcre2-10.30 pcre16
-# required by app-office/libreoffice-5.4.2.2::gentoo
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=dev-libs/xmlsec-1.2.24-r1 nss
-# required by media-plugins/audacious-plugins-3.9::gentoo
-# required by media-sound/audacious-3.9::gentoo
->=dev-libs/glib-2.52.3 utils
-# need this to compile
-sys-apps/the_silver_searcher lzma
-# required by games-strategy/wesnoth-1.14.1::gentoo
-# required by @games
-# required by @selected
-# required by @world (argument)
->=dev-libs/boost-1.65.0 icu
-# required by dev-python/pyzmq-17.1.0::gentoo
-# required by dev-python/qtconsole-4.3.1::gentoo
-# required by dev-python/ipython-5.4.1-r1::gentoo[qt5]
-# required by @py
-# required by @selected
-# required by @world (argument)
->=net-libs/zeromq-4.2.5 drafts
 # required by dev-libs/libxml2-2.9.9-r1::gentoo[icu]
 # required by media-libs/netpbm-10.76.00::gentoo[xml]
 # required by x11-misc/xscreensaver-5.43::gentoo
@@ -152,13 +27,6 @@ sys-apps/the_silver_searcher lzma
 # required by @selected
 # required by @world (argument)
 >=dev-libs/icu-64.2 abi_x86_32
-# required by xfce-base/xfce4-panel-4.15.4::gentoo
-# required by xfce-extra/xfce4-power-manager-1.7.0::gentoo[panel-plugin]
-# required by xfce-base/xfce4-meta-4.14-r2::gentoo[upower]
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=dev-libs/libdbusmenu-16.04.0-r1 gtk3
 # required by sys-libs/libunwind-1.5.0::gentoo[zlib]
 # required by dev-cpp/glog-0.4.0::gentoo
 # required by app-i18n/librime-1.5.3-r1::gentoo
@@ -168,42 +36,8 @@ sys-apps/the_silver_searcher lzma
 # required by @selected
 # required by @world (argument)
 >=sys-libs/zlib-1.2.11-r3 static-libs
-# required by dev-ml/ocamlgraph-2.0.0::gentoo
-# required by dev-ml/dose3-5.0.1_p16::gentoo
-# required by dev-ml/opam-repository-2.0.8::gentoo
-# required by dev-ml/opam-state-2.0.8::gentoo
-# required by dev-ml/opam-client-2.0.8::gentoo
-# required by dev-ml/opam-2.0.8-r1::gentoo
-# required by @ml
-# required by @selected
-# required by @world (argument)
->=dev-ml/stdlib-shims-0.3.0 ocamlopt
 # required by x11-wm/lumina-1.6.0::gentoo
 # required by @x11
 # required by @selected
 # required by @world (argument)
 >=dev-qt/qtmultimedia-5.15.2 widgets
-# required by kde-apps/okular-21.04.0::gentoo[pdf]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=app-text/poppler-21.04.0 nss
-# required by x11-libs/pango-1.48.7::gentoo
-# required by x11-misc/gxmessage-3.4.3::gentoo
-# required by x11-wm/fluxbox-1.3.7-r4::gentoo
-# required by x11-wm/lumina-1.6.0::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=media-libs/freetype-2.10.4 harfbuzz
-# required by net-libs/glib-networking-2.72.0::gentoo
-# required by media-gfx/gimp-2.10.30::gentoo
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=net-libs/gnutls-3.7.3-r1 pkcs11
-# required by x11-misc/urxvt-perls-2.3-r1::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=x11-terms/rxvt-unicode-9.30 perl
