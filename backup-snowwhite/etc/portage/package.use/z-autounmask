@@ -1,36 +1,3 @@
-# required by sys-auth/polkit-0.112-r2
-# required by sys-auth/consolekit-0.4.6[policykit]
-# required by sys-auth/pambase-20140313[consolekit]
-# required by sys-apps/openrc-0.13.6[pam]
-# required by @system
-# required by @world (argument)
->=dev-lang/spidermonkey-17.0.0-r3:17 -jit
-# required by kde-base/libkexiv2-4.14.3
-# required by kde-base/okular-4.14.3[jpeg]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=media-gfx/exiv2-0.24 xmp
-# required by dev-ml/ocamlgraph-1.8.5[gtk]
-# required by dev-ml/dose3-3.3_beta2-r2
-# required by dev-ml/opam-1.2.0
-# required by dev-ml/react-1.2.0
-# required by dev-ml/lwt-2.4.6[react]
-# required by dev-ml/lambda-term-1.8
-# required by dev-ml/utop-1.16
-# required by @ml
-# required by @selected
-# required by @world (argument)
->=dev-ml/lablgtk-2.18.3 gnomecanvas
-# required by media-gfx/graphviz-2.36.0
-# required by media-gfx/pydot-1.0.28-r2
-# required by dev-tex/dot2tex-2.9.0
-# required by dev-tex/dot2texi-3.0
-# required by app-text/texlive-2014[graphics]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=media-libs/gd-2.0.35-r4 fontconfig
 # required by dev-qt/qtcore-5.4.0
 # required by dev-qt/qtwidgets-5.4.0
 # required by dev-qt/qtquick1-5.4.0
@@ -41,185 +8,26 @@
 >=dev-libs/libpcre-8.36 pcre16
 # required by net-print/cndrvcups-lb-2.90::gentoo
 # required by @sys (argument)
->=virtual/jpeg-62 abi_x86_32
+#    >=virtual/jpeg-62 abi_x86_32
 # required by net-print/cndrvcups-lb-2.90::gentoo
 # required by @sys (argument)
 >=dev-libs/libxml2-2.9.2 abi_x86_32
-# required by media-gfx/mypaint-1.1.0-r2::gentoo
-# required by @gfx (argument)
->=dev-libs/protobuf-2.6.1-r3 python
 # required by dev-libs/libxml2-2.9.2::gentoo
 # required by net-libs/libsoup-2.48.1::gentoo
 # required by gnome-base/gvfs-1.22.4::gentoo[http]
 # required by app-editors/gedit-3.14.3::gentoo
 # required by @editors (argument)
 >=sys-libs/zlib-1.2.8-r1 abi_x86_32
-# required by virtual/jpeg-62::gentoo
-# required by net-print/cndrvcups-lb-2.90::gentoo
-# required by @sys (argument)
->=media-libs/libjpeg-turbo-1.4.0 abi_x86_32
-# required by gnome-base/gvfs-1.26.2::gentoo
-# required by app-editors/gedit-3.16.4::gentoo
-# required by @editors
-# required by @selected
-# required by @world (argument)
->=dev-libs/libgdata-0.17.3 gnome
-# required by gnome-base/gnome-keyring-3.18.3::gentoo
-# required by app-crypt/libsecret-0.18.3::gentoo
-# required by net-libs/gnome-online-accounts-3.18.2.1::gentoo
-# required by dev-libs/libgdata-0.17.3::gentoo[gnome]
-# required by gnome-base/gvfs-1.26.2::gentoo
-# required by app-editors/gedit-3.16.4::gentoo
-# required by @editors
-# required by @selected
-# required by @world (argument)
->=app-crypt/pinentry-0.9.6-r6 gnome-keyring
-# required by dev-qt/qtwebkit-5.5.1::gentoo
-# required by dev-qt/qtwebkit (argument)
->=dev-qt/qtcore-5.5.1 icu
-# required by media-sound/pulseaudio-7.1::gentoo[alsa-plugin,alsa]
-# required by x11-misc/i3status-2.10::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=media-plugins/alsa-plugins-1.1.0 pulseaudio
-# required by kde-plasma/polkit-kde-agent-5.6.3::gentoo
-# required by kde-frameworks/kauth-5.21.0::gentoo[policykit]
-# required by kde-frameworks/kconfigwidgets-5.21.0::gentoo
-# required by kde-frameworks/kcmutils-5.21.0::gentoo
-# required by kde-apps/khelpcenter-5.6.2-r1::gentoo
-# required by kde-base/kdelibs-4.14.19::gentoo[handbook]
-# required by kde-apps/kdebase-kioslaves-15.12.3::gentoo
-# required by www-client/rekonq-2.4.2-r1::gentoo
-# required by @www
-# required by @selected
-# required by @world (argument)
->=sys-auth/polkit-qt-0.112.0-r1 qt5
-# required by kde-frameworks/knotifications-5.21.0::gentoo[dbus]
-# required by kde-frameworks/kio-5.21.0::gentoo
-# required by kde-frameworks/kinit-5.21.0::gentoo
-# required by kde-frameworks/kded-5.21.0::gentoo
-# required by kde-frameworks/kdelibs4support-5.21.0::gentoo
-# required by kde-apps/khelpcenter-5.6.2-r1::gentoo
-# required by kde-base/kdelibs-4.14.19::gentoo[handbook]
-# required by kde-apps/kdebase-kioslaves-15.12.3::gentoo
-# required by www-client/rekonq-2.4.2-r1::gentoo
-# required by @www
-# required by @selected
-# required by @world (argument)
->=dev-libs/libdbusmenu-qt-0.9.3_pre20140619-r1 qt5
-# required by media-libs/phonon-4.9.0::gentoo[gstreamer]
-# required by kde-frameworks/khtml-5.21.0::gentoo
-# required by kde-apps/khelpcenter-5.6.2-r1::gentoo
-# required by kde-base/kdelibs-4.14.19::gentoo[handbook]
-# required by kde-apps/kdebase-kioslaves-15.12.3::gentoo
-# required by www-client/rekonq-2.4.2-r1::gentoo
-# required by @www
-# required by @selected
-# required by @world (argument)
->=media-libs/phonon-gstreamer-4.9.0 qt5
-# required by media-libs/phonon-gstreamer-4.9.0::gentoo
->=media-libs/phonon-4.9.0 qt5
-# required by media-gfx/gimp-2.9.4::gentoo
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=media-libs/libmypaint-1.3.0_beta1 gegl
-# required by virtual/pypy-5.0.0::gentoo
-# required by dev-python/setuptools-24.0.2::gentoo[python_targets_pypy]
-# required by dev-python/autopep8-1.2.4::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
-=dev-python/pypy-5.0.0 sqlite
-# required by dev-scheme/guile-2.0.12-r1::gentoo
-# required by sys-devel/autogen-5.18.4::gentoo
-# required by net-libs/gnutls-3.4.14::gentoo[tools]
-# required by net-analyzer/wireshark-2.1.1::gentoo
-# required by @network
-# required by @selected
-# required by @world (argument)
->=dev-libs/boehm-gc-7.4.2 threads
-# required by kde-apps/okular-16.12.0::gentoo[pdf]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=app-text/poppler-0.49.0 qt5
-# required by kde-apps/okular-16.12.0::gentoo[crypt]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=app-crypt/qca-2.1.1-r1 qt5
 # required by app-shells/fish-2.4.0-r1::gentoo
 # required by @shell
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libpcre2-10.22 pcre32
-# required by dev-qt/qtcore-5.9.2::gentoo
-# required by dev-qt/qtserialport-5.9.2::gentoo
-# required by sci-astronomy/stellarium-0.16.0-r1::gentoo
-# required by @gui
-# required by @selected
-# required by @world (argument)
->=dev-libs/libpcre2-10.30 pcre16
-# required by media-video/smplayer-17.10.0::gentoo
-# required by @video
-# required by @selected
-# required by @world (argument)
->=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
-# required by dev-qt/qtsingleapplication-2.6.1_p20150629::gentoo
-# required by media-video/smplayer-17.10.0::gentoo
-# required by @video
-# required by @selected
-# required by @world (argument)
->=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
-# required by x11-wm/i3-4.14.1::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=x11-base/xorg-server-1.19.5 xvfb
-# required by app-office/libreoffice-5.4.2.2::gentoo
-# required by libreoffice (argument)
->=dev-libs/xmlsec-1.2.24-r1 nss
-# required by media-plugins/audacious-plugins-3.9::gentoo
-# required by media-sound/audacious-3.9::gentoo
->=dev-libs/glib-2.52.3 utils
 # required by games-strategy/wesnoth-1.14.1::gentoo
 # required by @games
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.65.0 icu
-# required by kde-plasma/kwin-5.13.3::gentoo
-# required by kde-plasma/plasma-workspace-5.13.3::gentoo
-# required by kde-plasma/kde-cli-tools-5.13.3::gentoo
-# required by kde-plasma/kscreenlocker-5.13.3::gentoo
->=media-libs/mesa-18.1.4 wayland
-# required by dev-python/pyzmq-17.1.0::gentoo
-# required by dev-python/qtconsole-4.3.1::gentoo
-# required by dev-python/ipython-5.4.1-r1::gentoo[qt5]
-# required by @py
-# required by @selected
-# required by @world (argument)
->=net-libs/zeromq-4.2.5 drafts
-# required by virtual/pypy3-6.0.0::gentoo
-# required by dev-python/setuptools-40.8.0::gentoo[python_targets_pypy3]
-# required by dev-python/pycryptodome-3.7.3::gentoo
-# required by net-misc/youtube-dl-2019.03.18::gentoo
-# required by @network
-# required by @selected
-# required by @world (argument)
-=dev-python/pypy3-6.0.0 sqlite
-# required by virtual/pypy-6.0.0::gentoo
-# required by dev-python/setuptools-40.8.0::gentoo[python_targets_pypy]
-# required by dev-python/pycryptodome-3.7.3::gentoo
-# required by net-misc/youtube-dl-2019.03.18::gentoo
-# required by @network
-# required by @selected
-# required by @world (argument)
-=dev-python/pypy-6.0.0 sqlite
-# required by dev-python/wxpython-4.0.6::gentoo
-# required by dev-python/wxpython (argument)
->=x11-libs/wxGTK-3.0.4-r301 gstreamer
 # required by dev-libs/libxml2-2.9.9-r1::gentoo[icu]
 # required by kde-frameworks/kio-5.60.0::gentoo
 # required by kde-frameworks/kparts-5.60.0::gentoo
@@ -229,38 +37,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/icu-64.2 abi_x86_32
-# required by media-libs/gegl-0.4.18::gentoo
-# required by media-libs/libmypaint-1.4.0::gentoo[gegl]
-# required by media-gfx/gimp-2.9.8-r1::gentoo
-# required by media-plugins/gimp-resynthesizer-2.0.3-r1::gentoo
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=media-libs/babl-0.1.72 introspection
-# required by @__auto_slot_operator_replace_installed__ (argument)
->=net-libs/libtorrent-rasterbar-1.2.2-r1 -python_targets_python3_5
-# required by media-gfx/darktable-3.0.0::gentoo[openmp]
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=sys-devel/gcc-9.2.0-r3 graphite
-# required by dev-python/sphinx-2.4.3::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/sphinx_rtd_theme-0.4.3 -python_targets_python2_7
-# required by dev-python/requests-2.24.0::gentoo
-# required by dev-python/sphinx-3.1.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/idna-2.10 python_targets_python3_6
-# required by xfce-base/xfce4-panel-4.15.4::gentoo
-# required by xfce-base/xfce4-meta-4.16_pre1::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=dev-libs/libdbusmenu-16.04.0-r1 gtk3
 # required by sys-libs/libunwind-1.5.0::gentoo[zlib]
 # required by dev-cpp/glog-0.4.0::gentoo
 # required by app-i18n/librime-1.5.3-r1::gentoo
@@ -270,9 +46,6 @@
 # required by @selected
 # required by @world (argument)
 >=sys-libs/zlib-1.2.11-r3 static-libs
-# required by dev-ml/ocamlgraph-2.0.0::gentoo
-# required by @__auto_slot_operator_replace_installed__ (argument)
->=dev-ml/stdlib-shims-0.2.0 ocamlopt
 # required by kde-apps/okular-21.04.2::gentoo[pdf]
 # required by @doc
 # required by @selected
@@ -289,27 +62,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/boost-1.77.0-r2 context
-# required by games-strategy/wesnoth-1.16.0-r1::gentoo
-# required by @games
-# required by @selected
-# required by @world (argument)
-=dev-libs/boost-1.76.0-r1 context
-# required by sys-libs/compiler-rt-sanitizers-13.0.1::gentoo
-# required by sys-devel/clang-runtime-13.0.1::gentoo[sanitize,compiler-rt]
-# required by sys-devel/clang-13.0.1::gentoo
-# required by sys-devel/clang-common-13.0.1::gentoo
->=virtual/libcrypt-2 abi_x86_32
-# required by virtual/libcrypt-2::gentoo
-# required by sys-libs/compiler-rt-sanitizers-13.0.1::gentoo
-# required by sys-devel/clang-runtime-13.0.1::gentoo[sanitize,compiler-rt]
-# required by sys-devel/clang-13.0.1::gentoo
-# required by sys-devel/clang-common-13.0.1::gentoo
->=sys-libs/libxcrypt-4.4.27 abi_x86_32
-# required by x11-misc/urxvt-perls-2.3-r1::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=x11-terms/rxvt-unicode-9.30 perl
 # required by media-sound/ardour-6.9-r2::gentoo
 # required by @audio
 # required by @selected

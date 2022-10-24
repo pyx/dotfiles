@@ -1,5 +1,4 @@
 dev-libs/boost python
-dev-libs/libpeas -python_targets_python3_3 python_targets_python3_4 -python_targets_python3_5
 media-libs/harfbuzz icu
 media-libs/libpng apng
 media-libs/libsfml examples
