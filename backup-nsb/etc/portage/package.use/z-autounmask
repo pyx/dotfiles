@@ -48,3 +48,10 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/freetype-2.12.1-r1 brotli
+# required by media-libs/sdl2-ttf-2.20.0::gentoo
+# required by dev-python/pygame-2.1.2-r1::gentoo
+# required by net-p2p/deluge-2.1.1-r1::gentoo[python_single_target_python3_10,gui,sound]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.12.1-r2 harfbuzz
