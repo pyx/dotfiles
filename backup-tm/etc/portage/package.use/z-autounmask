@@ -41,3 +41,8 @@
 # required by @selected
 # required by @world (argument)
 >=dev-qt/qtmultimedia-5.15.2 widgets
+# required by x11-misc/urxvt-perls-2.3-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-terms/rxvt-unicode-9.31 perl
