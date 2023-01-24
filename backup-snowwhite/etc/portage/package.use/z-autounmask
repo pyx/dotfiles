@@ -72,3 +72,8 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/freetype-2.12.1-r1 brotli
+# required by x11-misc/urxvt-perls-2.3-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-terms/rxvt-unicode-9.31 perl
