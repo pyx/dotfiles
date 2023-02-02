@@ -6,5 +6,5 @@ net-analyzer/tcpdump
 net-analyzer/wireshark
 net-misc/connman-gtk
 net-misc/whois
-net-misc/youtube-dl
+net-misc/yt-dlp
 net-wireless/broadcom-sta
