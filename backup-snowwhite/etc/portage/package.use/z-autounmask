@@ -77,3 +77,9 @@
 # required by @selected
 # required by @world (argument)
 >=x11-terms/rxvt-unicode-9.31 perl
+# required by app-emulation/wine-vanilla-8.1::gentoo[sdl]
+# required by virtual/wine-0-r10::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=media-libs/libsdl2-2.26.3 haptic
