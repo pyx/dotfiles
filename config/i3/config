@@ -284,6 +284,7 @@ for_window [class="smplayer"] floating enable
 # 8: others
 assign [class="Amule"] → 8
 assign [class="Deluge"] → 8
+assign [class="mtga.exe"] → 8
 
 # Autostart ------------------------------------------------------- {{{1
 exec --no-startup-id ~/.scripts/start-i3.sh
