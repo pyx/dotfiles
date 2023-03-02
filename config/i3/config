@@ -240,7 +240,7 @@ bindsym $mod+backslash mode "launch"
 
 # Specific Window Assignment -------------------------------------- {{{1
 # 1: Web Browsers
-assign [class="Firefox"] → 1
+assign [class="firefox"] → 1
 assign [class="Google-chrome"] → 1
 assign [class="Uzbl"] → 1
 
