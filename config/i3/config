@@ -246,7 +246,7 @@ assign [class="Uzbl"] → 1
 
 # 2: editors/productivity
 assign [class="Gvim"] → 2
-assign [class="Thunderbird"] → 2
+assign [class="thunderbird"] → 2
 
 # 3: terminal enumerator
 assign [class="Gnome-terminal"] → 3
