@@ -83,3 +83,9 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/libsdl2-2.26.3 haptic
+# required by app-emulation/wine-vanilla-8.10::gentoo[samba]
+# required by virtual/wine-0-r10::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=net-fs/samba-4.18.3 winbind
