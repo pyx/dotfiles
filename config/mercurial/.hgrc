@@ -67,7 +67,7 @@ hgext.schemes =
 hgext.share =
 hgext.shelve =
 hgext.transplant =
-#hggit =
+hggit =
 #hgsubversion =
 
 [mq]
