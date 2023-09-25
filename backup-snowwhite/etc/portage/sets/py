@@ -1,6 +1,7 @@
 # Development - Python Specific
 dev-python/bottle
 dev-python/flask
+dev-python/pdm
 dev-python/qrcode
 dev-python/sphinx
 dev-python/tox
