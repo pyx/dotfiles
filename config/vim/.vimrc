@@ -205,7 +205,9 @@ let g:slime_paste_file = tempname()
 " Slimv ----------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2531
 " https://bitbucket.org/kovisoft/slimv/
+" https://github.com/kovisoft/slimv
 " #hg clone https://bitbucket.org/kovisoft/slimv
+" #git clone https://github.com/kovisoft/slimv.git
 " let g:slimv_swank_cmd = '! urxvt -e sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp &'
 " Join all closing parenthesis when appropriate
 " let g:paredit_electric_return = 1
