@@ -15,10 +15,6 @@ strip-this-from = strip -r "first(ancestors(.)-ancestors($1))"
 # then delete the BOOKMARK
 strip-bookmark = !$HG strip -r "first(ancestors($1)-ancestors(.))" && $HG bookmark -d "$1"
 
-[bookmarks]
-# mimic git's behavior
-#track.current = True
-
 [color]
 lg.author = green
 lg.bookmarks = bold green
@@ -46,41 +42,21 @@ vimdiff =
 gvimdiff = gvim -df
 
 [extensions]
-hgext.bookmarks =
-hgext.churn =
-hgext.color =
+churn =
 hgext.convert =
 hgext.extdiff =
 hgext.gpg =
-hgext.graphlog =
-hgext.highlight =
+highlight =
 hgext.histedit =
-hgext.mq =
-hgext.parentrevspec =
 hgext.patchbomb =
-hgext.progress =
-hgext.purge =
-hgext.rebase =
-hgext.record =
-hgext.relink =
 hgext.schemes =
-hgext.share =
-hgext.shelve =
-hgext.transplant =
 hggit =
-#hgsubversion =
-
-[mq]
-# For Mercurial >= 2.1
-# Enable secret phase integration.
-# This integration is off by default for backward compatibility.
-secret=true
-
-[phases]
-#all new commit can be secret by default
-#new-commit=secret
-#but this might be better
-#hg commit --config phases.new-commit=secret
+purge =
+rebase =
+relink =
+share =
+shelve =
+strip =
 
 [ui]
 username = Philip Xu <pyx@xrefactor.com>

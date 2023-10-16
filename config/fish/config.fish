@@ -72,7 +72,6 @@ function on_print_prompt_header --on-event print_prompt_header
 	if test $prompt_show_repos_info = 1
 		print_git_repos_info
 		print_hg_repos_info
-		print_hg_repos_mq_info
 	end
 	set cwd $prompt_color_cwd(prompt_pwd)
 	echo -e "$__ph_login $__ph_user $__ph_at $__ph_host $__ph_bind $cwd"
