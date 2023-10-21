@@ -509,6 +509,11 @@ if has("autocmd")
     " globally.
     autocmd BufReadPre,BufNew,BufNewFile *.hs,*.lhs :let maplocalleader=","
 
+  " Dune Support -------------------------------------- {{{2
+  augroup dune_support
+    au!
+    autocmd FileType dune call PareditInitBuffer()
+
   " Hy Support ---------------------------------------- {{{2
   augroup hy_support
     au!
