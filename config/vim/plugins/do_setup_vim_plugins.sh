@@ -1,9 +1,5 @@
 #!/bin/sh
-mkdir -p "$HOME"/.vim/bundle &&
-cd "$HOME"/.vim/bundle &&
+mkdir -p "$HOME"/.vim/pack/plugins/start &&
+cd "$HOME"/.vim/pack/plugins/start &&
 rm -rf */ &&
-grep -E '^" (hg|git|svn)' "$HOME"/.vimrc | cut --bytes=3- | sh &&
-# assuming pathogen was installed. otherwise(vundle, maybe) we don't need this script.
-mkdir -p "$HOME"/.vim/autoload &&
-rm -f "$HOME"/.vim/autoload/pathogen.vim &&
-ln -sn "$HOME"/.vim/bundle/vim-pathogen/autoload/pathogen.vim "$HOME"/.vim/autoload/pathogen.vim
+grep -E '^" P (hg|git)' "$HOME"/.vimrc | cut --bytes=5- | sh

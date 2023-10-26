@@ -1,7 +1,4 @@
 " -*- vim: set sts=2 sw=2 et fdm=marker: -------------  vim modeline -*-
-" [Pathogen] ------------------------------------------ {{{1
-call pathogen#infect()
-
 " Basic Settings -------------------------------------- {{{1
 " use a POSIX shell, need this as fish is default shell now
 set shell=/bin/bash
@@ -107,25 +104,15 @@ set statusline+=%#ModeMsg#%3p%%               " % through file in lines
 set statusline+=%*                            " restore normal highlight
 
 " Plugins --------------------------------------------- {{{1
-" Abolish --------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=1545
-" https://github.com/tpope/vim-abolish/
-" git clone https://github.com/tpope/vim-abolish.git
-
-" Calendar -------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=52
-" https://github.com/mattn/calendar-vim/
-" git clone https://github.com/mattn/calendar-vim
-
 " Commentary ------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=3695
 " https://github.com/tpope/vim-commentary/
-" git clone https://github.com/tpope/vim-commentary.git
+" P git clone https://github.com/tpope/vim-commentary.git
 
 " Ctrl-P ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3736
 " http://kien.github.com/ctrlp.vim/
-" git clone https://github.com/kien/ctrlp.vim.git
+" P git clone https://github.com/kien/ctrlp.vim.git
 "
 " Mappings:
 " let g:ctrlp_map = '<C-P>'
@@ -146,7 +133,7 @@ nnoremap <leader>t :CtrlPTag<CR>
 
 " Gundo ----------------------------------------------- {{{2
 " https://github.com/sjl/gundo.vim
-" git clone https://github.com/sjl/gundo.vim.git
+" P git clone https://github.com/sjl/gundo.vim.git
 nnoremap <leader>u :GundoToggle<CR>
 let g:gundo_prefer_python3 = 1
 
@@ -154,11 +141,6 @@ let g:gundo_prefer_python3 = 1
 " http://projects.haskell.org/haskellmode-vim/
 " installed from gentoo haskell overlay
 let g:haddock_browser = '/usr/bin/firefox-bin'
-
-" Indent Python --------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=974
-" https://github.com/vim-scripts/indentpython.vim/
-" git clone https://github.com/vim-scripts/indentpython.vim.git
 
 " matchit.vim ----------------------------------------- {{{2
 " enable matchit.vim
@@ -173,32 +155,21 @@ let g:netrw_liststyle = 3
 " http://www.vim.org/scripts/script.php?script_id=3998
 " https://bitbucket.org/kovisoft/paredit
 " https://github.com/kovisoft/paredit
-" #hg clone https://bitbucket.org/pyx/paredit
-" git clone https://github.com/kovisoft/paredit
-
-" Pathogen -------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2332
-" https://github.com/tpope/vim-pathogen/
-" git clone https://github.com/tpope/vim-pathogen.git
-
-" py.test --------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3424
-" https://github.com/alfredodeza/pytest.vim/
-" git clone https://github.com/alfredodeza/pytest.vim.git
+" P git clone https://github.com/kovisoft/paredit
 
 " Rainbow Parentheses Improved ------------------------ {{{2
 " https://github.com/luochen1990/rainbow
-" git clone https://github.com/luochen1990/rainbow.git
+" P git clone https://github.com/luochen1990/rainbow.git
 let g:rainbow_active = 0
 
 " Repeat ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2136
 " https://github.com/tpope/vim-repeat/
-" git clone https://github.com/tpope/vim-repeat.git
+" P git clone https://github.com/tpope/vim-repeat.git
 
 " Slime ----------------------------------------------- {{{2
 " https://github.com/jpalardy/vim-slime
-" git clone https://github.com/jpalardy/vim-slime.git
+" P git clone https://github.com/jpalardy/vim-slime.git
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
 
@@ -206,8 +177,7 @@ let g:slime_paste_file = tempname()
 " http://www.vim.org/scripts/script.php?script_id=2531
 " https://bitbucket.org/kovisoft/slimv/
 " https://github.com/kovisoft/slimv
-" #hg clone https://bitbucket.org/kovisoft/slimv
-" #git clone https://github.com/kovisoft/slimv.git
+" git clone https://github.com/kovisoft/slimv.git
 " let g:slimv_swank_cmd = '! urxvt -e sbcl --load ' . $HOME . '/.vim/bundle/slimv/slime/start-swank.lisp &'
 " Join all closing parenthesis when appropriate
 " let g:paredit_electric_return = 1
@@ -215,22 +185,17 @@ let g:slime_paste_file = tempname()
 " Speeddating ----------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=2120
 " https://github.com/tpope/vim-speeddating/
-" git clone https://github.com/tpope/vim-speeddating.git
+" P git clone https://github.com/tpope/vim-speeddating.git
 
 " Surround -------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=1697
 " https://github.com/tpope/vim-surround/
-" git clone https://github.com/tpope/vim-surround.git
-
-" Tabular --------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3464
-" https://github.com/godlygeek/tabular/
-" git clone https://github.com/godlygeek/tabular.git
+" P git clone https://github.com/tpope/vim-surround.git
 
 " Tagbar ---------------------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3465
 " http://github.com/majutsushi/tagbar/
-" git clone https://github.com/majutsushi/tagbar.git
+" P git clone https://github.com/majutsushi/tagbar.git
 nnoremap <leader>tb :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
@@ -264,67 +229,25 @@ let g:tagbar_type_hy = {
   \ ]
 \ }
 
-" TaskList -------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2607
-" https://github.com/vim-scripts/TaskList.vim
-" git clone https://github.com/vim-scripts/TaskList.vim
-nmap <unique> <leader>tl <Plug>TaskList
-
-" TimL ------------------------------------------------ {{{2
-" tpope is the man
-" https://github.com/tpope/timl
-" git clone https://github.com/tpope/timl.git
-
 " Vim CSS Color --------------------------------------- {{{2
 " https://github.com/skammer/vim-css-color/
-" #git clone https://github.com/skammer/vim-css-color.git
+" git clone https://github.com/skammer/vim-css-color.git
 "
 " ap's clone, this one has way shorter startup time.
 " https://github.com/ap/vim-css-color/
-" git clone https://github.com/ap/vim-css-color.git
+" P git clone https://github.com/ap/vim-css-color.git
 "
 " let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " Vim Hy ---------------------------------------------- {{{2
 " Hy language official support
 " https://github.com/hylang/vim-hy
-" git clone https://github.com/hylang/vim-hy.git
-
-" Vim Table Mode -------------------------------------- {{{2
-" Dependency: Tabular
-" https://github.com/dhruvasagar/vim-table-mode/
-" git clone https://github.com/dhruvasagar/vim-table-mode.git
-let g:table_mode_map_prefix = '<Leader>-'
-let g:table_mode_tableize_op_map = '<Leader>-T'
+" P git clone https://github.com/hylang/vim-hy.git
 
 " vim-indent-object ----------------------------------- {{{2
 " http://www.vim.org/scripts/script.php?script_id=3037
 " https://github.com/michaeljsmith/vim-indent-object/
-" git clone https://github.com/michaeljsmith/vim-indent-object.git
-
-" VimIm ----------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2506
-" http://code.google.com/p/vimim/
-" https://github.com/vimim/vimim/
-" #svn checkout https://vimim.googlecode.com/svn/trunk/ vimim
-" git clone https://github.com/vimim/vimim.git
-"
-" vimim settings, show menu background color
-let g:vimim_cloud = -1
-let g:vimim_map = 'no-gi'
-"let g:vimim_mode = 'static'
-"let g:vimim_mycloud = 0
-let g:vimim_toggle = 'pinyin'
-
-" vimwiki --------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=2226
-" http://code.google.com/p/vimwiki/
-" https://github.com/vimwiki/vimwiki
-" #hg clone https://code.google.com/p/vimwiki/
-" git clone https://github.com/vimwiki/vimwiki.git
-let g:vimwiki_folding = 'expr'
-let g:vimwiki_hl_cb_checked = 1
-let g:vimwiki_hl_headers = 1
+" P git clone https://github.com/michaeljsmith/vim-indent-object.git
 
 " Fonts ----------------------------------------------- {{{1
 if has("gui_running")
@@ -418,7 +341,7 @@ endif
 
 " base16:
 " https://github.com/chriskempson/base16-vim
-" git clone https://github.com/chriskempson/base16-vim.git
+" C git clone https://github.com/chriskempson/base16-vim.git
 "
 " hemisu:
 " only works in gVim
@@ -426,14 +349,15 @@ endif
 " ir_black:
 " http://blog.toddwerth.com/entries/8
 " http://blog.toddwerth.com/entry_files/8/ir_black.vim
+" C git clone https://github.com/twerth/ir_black.git
 "
 " preto
 " https://github.com/ewilazarus/preto
-" git clone https://github.com/ewilazarus/preto.git
+" C git clone https://github.com/ewilazarus/preto.git
 "
 " tomorrow:
 " https://github.com/chriskempson/vim-tomorrow-theme/
-" git clone https://github.com/chriskempson/vim-tomorrow-theme.git
+" C git clone https://github.com/chriskempson/vim-tomorrow-theme.git
 " Tomorrow-N is Tomorrow-Night
 " Tomorrow-N-BL is Tomorrow-Night-Blue
 " Tomorrow-N-BR is Tomorrow-Night-Bright
