@@ -76,33 +76,6 @@ if has("gui_running")
   set guioptions-=L
 endif
 
-" Status Line ----------------------------------------- {{{1
-set laststatus=2
-
-set statusline=%#ColorColumn#%2n              " buffer number
-set statusline+=%*»                           " separator
-set statusline+=%<                            " truncate here
-set statusline+=%#DiffChange#%{PWDName()}%*   " current working directory
-set statusline+=%#DiffAdd#%f%*                " path to the file in the buffer
-set statusline+=%#DiffOrig#%{CurrentTag()}%*  " current tag
-set statusline+=%*»                           " separator
-set statusline+=%#Title#%{ReposType()}%*      " current repository type
-set statusline+=%*»                           " separator
-set statusline+=%#ModeMsg#%{RevisionInfo()}%* " current revision info
-set statusline+=%#DiffText#%m                 " modified flag
-set statusline+=%r                            " readonly flag
-set statusline+=%*»                           " separator
-set statusline+=%#CursorLine#(%l/%L,%c)%*»    " line no./no. of lines,col no.
-set statusline+=%=«                           " right align the rest
-set statusline+=%#Cursor#%02B                 " value of current char in hex
-set statusline+=%*«                           " separator
-set statusline+=%#ErrorMsg#%o                 " byte offset
-set statusline+=%*«                           " separator
-set statusline+=%#Title#%y                    " filetype
-set statusline+=%*«                           " separator
-set statusline+=%#ModeMsg#%3p%%               " % through file in lines
-set statusline+=%*                            " restore normal highlight
-
 " Plugins --------------------------------------------- {{{1
 " Commentary ------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=3695
@@ -142,9 +115,20 @@ let g:gundo_prefer_python3 = 1
 " installed from gentoo haskell overlay
 let g:haddock_browser = '/usr/bin/firefox-bin'
 
+" Lightline ------------------------------------------- {{{2
+" https://github.com/itchyny/lightline.vim
+" P git clone https://github.com/itchyny/lightline.vim.git
+set laststatus=2
+
+" Indent Guides --------------------------------------- {{{2
+" https://github.com/preservim/vim-indent-guides
+" P git clone https://github.com/preservim/vim-indent-guides.git
+" uncomment to enable it by default
+" let g:indent_guides_enable_on_vim_startup = 1
+
 " matchit.vim ----------------------------------------- {{{2
 " enable matchit.vim
-runtime macros/matchit.vim
+packadd! matchit
 
 " Netrw ----------------------------------------------- {{{2
 " comes with vim
