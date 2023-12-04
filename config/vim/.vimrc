@@ -23,6 +23,8 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set wildignore+=*.o,*.obj,*.a,*.so
 " ignore python cache files
 set wildignore+=*.pyc,*.pyo,*/__pycache__
+" ignore opam files
+set wildignore+=*/_opam
 
 set backup
 set backupdir=~/.tmp,~/tmp,/var/tmp,/tmp
@@ -43,7 +45,7 @@ endif
 " tabs and spaces
 set listchars+=tab:▸\ ,trail:⋅,nbsp:⋅
 " eols and others
-set listchars+=eol:¬,extends:»,precedes:«
+set listchars+=eol:⌝,extends:»,precedes:«
 
 " highlight columns after 'textwidth'
 set colorcolumn=+1,+2,+4,+5,+6,+7,+8
@@ -83,9 +85,8 @@ endif
 " P git clone https://github.com/tpope/vim-commentary.git
 
 " Ctrl-P ---------------------------------------------- {{{2
-" http://www.vim.org/scripts/script.php?script_id=3736
-" http://kien.github.com/ctrlp.vim/
-" P git clone https://github.com/kien/ctrlp.vim.git
+" https://github.com/ctrlpvim/ctrlp.vim
+" P git clone https://github.com/ctrlpvim/ctrlp.vim
 "
 " Mappings:
 " let g:ctrlp_map = '<C-P>'
@@ -94,15 +95,15 @@ endif
 " Match window, top of the screen:
 " let g:ctrlp_match_window_bottom = 0
 " switching between buffers
-nnoremap <leader><Tab> :CtrlPBuffer<CR>
+" nnoremap <leader><Tab> :CtrlPBuffer<CR>
 " line mode
-nnoremap <leader>l :CtrlPLine<CR>
+" nnoremap <leader>l :CtrlPLine<CR>
 " mixed mode
-nnoremap <leader>m :CtrlPMixed<CR>
+" nnoremap <leader>m :CtrlPMixed<CR>
 " quickfix mode
-nnoremap <leader>q :CtrlPQuickfix<CR>
+" nnoremap <leader>q :CtrlPQuickfix<CR>
 " goto tags
-nnoremap <leader>t :CtrlPTag<CR>
+" nnoremap <leader>t :CtrlPTag<CR>
 
 " Gundo ----------------------------------------------- {{{2
 " https://github.com/sjl/gundo.vim
@@ -119,6 +120,8 @@ let g:haddock_browser = '/usr/bin/firefox-bin'
 " https://github.com/itchyny/lightline.vim
 " P git clone https://github.com/itchyny/lightline.vim.git
 set laststatus=2
+" no need to display mode since the information is in the statusline
+set noshowmode
 
 " Indent Guides --------------------------------------- {{{2
 " https://github.com/preservim/vim-indent-guides
