@@ -95,7 +95,7 @@ endif
 " Match window, top of the screen:
 " let g:ctrlp_match_window_bottom = 0
 " switching between buffers
-" nnoremap <leader><Tab> :CtrlPBuffer<CR>
+nnoremap <leader><Tab> :CtrlPBuffer<CR>
 " line mode
 " nnoremap <leader>l :CtrlPLine<CR>
 " mixed mode
