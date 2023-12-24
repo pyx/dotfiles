@@ -1,5 +1,5 @@
 # Development - Python Specific
 dev-python/pdm
 dev-python/pypy-exe-bin
-dev-python/pypy3-exe-bin
+dev-python/pypy3_10-exe-bin
 dev-python/virtualenv
