@@ -17,6 +17,7 @@ dev-scheme/chicken
 dev-scheme/racket
 net-libs/nodejs
 sys-devel/clang
-sys-devel/gdb
+# move sys-devel/gdb dev-debug/gdb
+dev-debug/gdb
 virtual/commonlisp
 virtual/jdk

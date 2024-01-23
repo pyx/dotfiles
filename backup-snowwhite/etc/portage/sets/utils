@@ -3,10 +3,13 @@ app-admin/apache-tools
 app-text/sloccount
 dev-util/ccache
 dev-util/cscope
-dev-util/ninja
+# move dev-util/ninja dev-build/ninja
+dev-build/ninja
 dev-util/glade
 dev-util/gnome-devel-docs
 dev-util/meld
 dev-util/source-highlight
-dev-util/strace
-dev-util/valgrind
+# move dev-util/strace dev-debug/strace
+dev-debug/strace
+# move dev-util/valgrind dev-debug/valgrind
+dev-debug/valgrind
