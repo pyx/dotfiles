@@ -94,3 +94,10 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/pillow-10.2.0-r1 webp
+# required by xfce-base/xfce4-panel-4.19.3::gentoo[dbusmenu]
+# required by xfce-base/xfce4-power-manager-4.19.2::gentoo[panel-plugin]
+# required by xfce-base/xfce4-meta-4.18-r1::gentoo[upower]
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3

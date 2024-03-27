@@ -11,13 +11,10 @@ dev-lang/swi-prolog
 dev-lang/vala
 dev-lisp/clisp
 dev-lisp/sbcl
-dev-python/pypy-exe-bin
-dev-python/pypy3-exe-bin
 dev-scheme/chicken
 dev-scheme/racket
 net-libs/nodejs
 sys-devel/clang
-# move sys-devel/gdb dev-debug/gdb
 dev-debug/gdb
 virtual/commonlisp
 virtual/jdk
