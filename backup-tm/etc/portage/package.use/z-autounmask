@@ -46,3 +46,17 @@
 # required by @selected
 # required by @world (argument)
 >=x11-terms/rxvt-unicode-9.31 perl
+# required by dev-libs/libxml2-2.12.6::gentoo[lzma]
+# required by app-doc/gimp-help-2.10.34-r2::gentoo
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=app-arch/xz-utils-5.6.1 abi_x86_32
+# required by xfce-base/xfce4-panel-4.19.3::gentoo[dbusmenu]
+# required by xfce-base/thunar-4.19.2::gentoo[trash-panel-plugin]
+# required by xfce-base/thunar-volman-4.18.0::gentoo
+# required by xfce-base/xfce4-meta-4.18-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3
