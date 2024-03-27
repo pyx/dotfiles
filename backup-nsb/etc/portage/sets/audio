@@ -1,7 +1,7 @@
 # Application - Audio
 media-plugins/audacious-plugins
 media-sound/alsa-utils
-media-sound/apulse sdk
+media-sound/apulse
 media-sound/ardour
 media-sound/audacity
 media-sound/hydrogen

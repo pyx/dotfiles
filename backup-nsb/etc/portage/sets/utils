@@ -3,6 +3,7 @@ app-admin/apache-tools
 app-text/sloccount
 dev-build/ninja
 dev-debug/gdb
+dev-debug/strace
 dev-debug/valgrind
 dev-util/ccache
 dev-util/cscope
@@ -10,5 +11,3 @@ dev-util/glade
 dev-util/gnome-devel-docs
 dev-util/meld
 dev-util/source-highlight
-# move dev-util/strace dev-debug/strace
-dev-debug/strace
