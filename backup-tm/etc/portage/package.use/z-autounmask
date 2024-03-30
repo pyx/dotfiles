@@ -60,3 +60,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libdbusmenu-16.04.0-r2 gtk3
+# required by dev-libs/libxml2-2.12.6::gentoo[lzma]
+# required by libxml2 (argument)
+>=app-arch/xz-utils-5.4.2 abi_x86_32
