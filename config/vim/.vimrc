@@ -50,6 +50,9 @@ set listchars+=eol:⌝,extends:»,precedes:«
 " highlight columns after 'textwidth'
 set colorcolumn=+1,+2,+4,+5,+6,+7,+8
 
+" use number column for signs
+set signcolumn=number
+
 if has('mouse')
   set mouse=a
 endif
