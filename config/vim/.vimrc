@@ -589,11 +589,6 @@ if has("autocmd")
     "     func()
     autocmd FileType c,cpp,vala setlocal cinoptions+=t0
 
-  " Update repository and revision info --------------- {{{2
-  augroup update_rev_info
-    au!
-    autocmd BufReadPost,BufWritePost,FileChangedShellPost * call UpdateRevisionInfo()
-
   " Leave insert mode after 15 seconds of no input ---- {{{2
   augroup auto_escape
     au!
@@ -810,24 +805,6 @@ function! PWDName()
   return l:pwd_name
 endfunction
 
-" ReposType ------------------------------------------- {{{2
-" Return repository type if current file is inside one
-function! ReposType()
-  if !exists('b:repos_type')
-    return ''
-  endif
-  return b:repos_type
-endfunction
-
-" RevisionInfo ---------------------------------------- {{{2
-" Return revision info of current file
-function! RevisionInfo()
-  if !exists('b:revision_info')
-    return ''
-  endif
-  return b:revision_info
-endfunction
-
 " StripTrailingWhitespace ----------------------------- {{{2
 function! StripTrailingWhitespace()
   " To disable this function, either set ft as keep_whitespace prior saving
@@ -855,57 +832,6 @@ function! ToggleCurrentTag()
 endfunction
 command! -nargs=0 CurrentTagToggle call ToggleCurrentTag()
 nnoremap <leader>ct :CurrentTagToggle<CR>
-
-" UpdateRevisionInfo ---------------------------------- {{{2
-" Update revision info of current file
-function! UpdateRevisionInfo()
-  let b:revision_info = ""
-  let b:repos_type = ""
-
-  if expand("%") == ""
-    " No existing file is loaded.
-    return
-  endif
-
-  " lookup path, starts from directory of current file
-  " searching up upward, until file system root.
-  let l:cur_dir_and_up = expand("%:p:h") . ';'
-  let l:repos_info_cmd = ""
-
-  " Is this inside a mercurial repository?
-  let l:root = finddir('.hg', l:cur_dir_and_up)
-  if l:root != ""
-    " this is an hg repos.
-    let b:repos_type = "Mercurial"
-    if !exists("g:hg_id_flag")
-      let g:hg_id_flag = '-Bbint'
-    endif
-    let l:repos_info_cmd = "hg id " . g:hg_id_flag
-  else
-    let l:root = finddir('.git', l:cur_dir_and_up)
-    if l:root != ""
-      "  git repository
-      let b:repos_type = "Git"
-      let l:repos_info_cmd = "git branch"
-    endif
-  endif
-  " inside repository
-  if l:repos_info_cmd != ""
-    " root of repository
-    let l:repos_root = fnamemodify(l:root, ":p:h")
-    " try to get revision info
-    let l:info = system("cd " . l:repos_root . " && " . l:repos_info_cmd)
-    if v:shell_error == 0
-      " with return code 0, assuming nothing went wrong
-      if b:repos_type ==# "Git"
-        " git does not provide enough customization for output so we need to
-        " remove first 2 chars manually, e.g, the '* ' part of '* master'
-        let l:info = strpart(l:info, 2)
-      endif
-      let b:revision_info = substitute(l:info, '\n.*', '', 'g')
-    endif
-  endif
-endfunction
 
 " Load local vimrc if exists -------------------------- {{{1
 if filereadable(glob("~/.vimrc.local"))
