@@ -25,6 +25,8 @@ set wildignore+=*.o,*.obj,*.a,*.so
 set wildignore+=*.pyc,*.pyo,*/__pycache__
 " ignore opam files
 set wildignore+=*/_opam
+" ignore rust output files
+set wildignore+=*/target/*
 
 set backup
 set backupdir=~/.tmp,~/tmp,/var/tmp,/tmp
