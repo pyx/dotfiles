@@ -3,6 +3,7 @@ app-admin/apache-tools
 app-text/sloccount
 dev-util/ccache
 dev-util/cscope
+dev-util/ctags
 # move dev-util/ninja dev-build/ninja
 dev-build/ninja
 dev-util/glade
