@@ -1,7 +1,7 @@
 dev-lang/erlang emacs hipe kpoll odbc
 #dev-lang/ghc binary llvm
 dev-lang/ghc binary
-#dev-lang/rust clang
+dev-lang/rust-bin clippy doc profiler rust-analyzer rust-src rustfmt verify-sig
 dev-python/pypy sqlite
 dev-python/pypy3 sqlite
 dev-lang/ocaml tk
