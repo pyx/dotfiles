@@ -87,6 +87,7 @@ endif
 " Asynchronous Lint Engine ---------------------------- {{{2
 " https://github.com/dense-analysis/ale
 " P git clone --depth 1 https://github.com/dense-analysis/ale.git
+let g:ale_virtualtext_cursor = 'current'
 
 " Commentary ------------------------------------------ {{{2
 " http://www.vim.org/scripts/script.php?script_id=3695
