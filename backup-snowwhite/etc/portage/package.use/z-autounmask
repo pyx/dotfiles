@@ -101,3 +101,8 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libdbusmenu-16.04.0-r2 gtk3
+# required by games-strategy/wesnoth-1.18.0::gentoo[-dedicated]
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=media-libs/sdl2-image-2.8.2 webp
