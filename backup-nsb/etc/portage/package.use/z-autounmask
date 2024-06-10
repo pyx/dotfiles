@@ -75,3 +75,126 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/sdl2-image-2.8.2 webp
+# required by app-i18n/ibus-hangul-1.5.4::gentoo[python_single_target_python3_11]
+# required by @im
+# required by @selected
+# required by @world (argument)
+>=app-i18n/ibus-1.5.29 python_targets_python3_11
+# required by app-i18n/ibus-1.5.29::gentoo[python]
+# required by app-i18n/ibus-anthy-1.5.16::gentoo[python_single_target_python3_12]
+# required by @im
+# required by @selected
+# required by @world (argument)
+>=dev-python/pygobject-3.46.0 python_targets_python3_11
+# required by dev-python/pygobject-3.46.0::gentoo[cairo]
+# required by dev-util/meld-3.22.2::gentoo[python_single_target_python3_12]
+# required by @utils
+# required by @selected
+# required by @world (argument)
+>=dev-python/pycairo-1.26.0 python_targets_python3_11
+# required by dev-python/pycairo-1.26.0::gentoo
+# required by media-gfx/mcomix-3.1.0::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=dev-python/gpep517-16 python_targets_python3_11
+# required by dev-python/pycairo-1.26.0::gentoo
+# required by media-gfx/mcomix-3.1.0::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=dev-python/setuptools-70.0.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-text-3.12.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/more-itertools-10.2.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/ordered-set-4.1.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/packaging-24.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/platformdirs-4.2.2 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/wheel-0.43.0 python_targets_python3_11
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/setuptools-scm-8.1.0 python_targets_python3_11
+# required by dev-python/gpep517-16::gentoo
+# required by dev-python/attrs-23.2.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/installer-0.7.0 python_targets_python3_11
+# required by dev-python/backports-tarfile-1.2.0::gentoo
+# required by dev-python/jaraco-context-5.3.0::gentoo[python_targets_python3_11,-python_targets_python3_10,-python_targets_pypy3]
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/flit-core-3.9.0 python_targets_python3_11
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-context-5.3.0 python_targets_python3_11
+# required by dev-python/jaraco-text-3.12.0::gentoo
+# required by dev-python/setuptools-70.0.0::gentoo
+# required by dev-python/automat-22.10.0::gentoo
+# required by dev-python/twisted-24.3.0::gentoo
+# required by net-p2p/deluge-2.1.1-r5::gentoo[python_single_target_python3_12]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-functools-4.0.1 python_targets_python3_11
