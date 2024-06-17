@@ -198,3 +198,46 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/jaraco-functools-4.0.1 python_targets_python3_11
+# required by kde-apps/okular-24.05.1::gentoo[pdf]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=app-text/poppler-24.06.0 qt6
+# required by kde-frameworks/kwallet-6.3.0::gentoo
+# required by kde-frameworks/kio-6.3.0::gentoo[kwallet]
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+>=app-crypt/qca-2.3.8 qt6
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+>=kde-frameworks/kwindowsystem-6.3.0 wayland
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+>=sys-auth/polkit-qt-0.200.0 qt6
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+>=dev-qt/qt5compat-6.7.1 qml
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+>=kde-frameworks/kconfig-6.3.0 qml
+# required by dev-qt/qtwayland-6.7.1::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+>=dev-qt/qtbase-6.7.1 wayland
