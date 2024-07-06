@@ -13,7 +13,6 @@ dev-lisp/clisp
 dev-lisp/sbcl
 dev-scheme/chicken
 dev-scheme/racket
-net-libs/nodejs
 sys-devel/clang
 dev-debug/gdb
 virtual/commonlisp
