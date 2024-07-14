@@ -241,3 +241,11 @@
 # required by kde-frameworks/kio-6.3.0::gentoo
 # required by kde-frameworks/kcmutils-6.3.0::gentoo
 >=dev-qt/qtbase-6.7.1 wayland
+# required by dev-python/setuptools-70.2.0-r1::gentoo
+# required by dev-python/pdm-backend-2.3.2::gentoo
+# required by dev-python/dep-logic-0.4.1::gentoo
+# required by dev-python/pdm-2.16.1::gentoo[-test]
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/trove-classifiers-2024.7.2 python_targets_python3_11
