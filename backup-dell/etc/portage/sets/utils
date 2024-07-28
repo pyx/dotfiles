@@ -1,0 +1,14 @@
+# Development - Tools
+app-admin/apache-tools
+app-text/sloccount
+dev-build/ninja
+dev-debug/gdb
+dev-util/ccache
+dev-util/cscope
+dev-util/ctags
+dev-util/glade
+dev-util/gnome-devel-docs
+dev-util/meld
+dev-util/source-highlight
+dev-debug/strace
+dev-debug/valgrind

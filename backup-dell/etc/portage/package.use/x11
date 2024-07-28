@@ -1,0 +1,4 @@
+x11-apps/mesa-progs egl gles1 gles2
+x11-base/xorg-server xnest
+x11-terms/rxvt-unicode 256-color blink fading-colors iso14755 pixbuf unicode3 xft
+xfce-base/tumbler ffmpeg

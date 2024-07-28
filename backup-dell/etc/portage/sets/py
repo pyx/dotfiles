@@ -1,0 +1,5 @@
+# Development - Python Specific
+dev-python/pdm
+dev-python/sphinx
+dev-python/tox
+dev-python/virtualenv

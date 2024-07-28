@@ -1,0 +1,105 @@
+# required by app-shells/fish-3.0.2::gentoo
+# required by @shell
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre2-10.33 pcre32
+# required by xfce-base/xfce4-panel-4.15.4::gentoo
+# required by xfce-extra/xfce4-power-manager-1.7.0::gentoo[panel-plugin]
+# required by xfce-base/xfce4-meta-4.14-r2::gentoo[upower]
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3
+# required by kde-apps/okular-21.04.0::gentoo[pdf]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=app-text/poppler-21.04.0 nss
+# required by media-gfx/blender-2.93.0::gentoo[ffmpeg]
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-video/ffmpeg-4.4 opus vpx theora jpeg2k
+# required by media-gfx/fbida-2.14-r2::gentoo[X]
+# required by x11-misc/xscreensaver-6.01::gentoo
+# required by xfce-base/xfce4-session-4.16.0::gentoo[xscreensaver]
+# required by xfce-base/xfce4-meta-4.16-r2::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-libs/motif-2.3.8-r2 xft
+# required by games-strategy/wesnoth-1.16.0-r1::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=dev-libs/boost-1.77.0-r2 context
+# required by x11-misc/urxvt-perls-2.3-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-terms/rxvt-unicode-9.30 perl
+# required by media-sound/ardour-6.9-r2::gentoo
+# required by @audio
+# required by @selected
+# required by @world (argument)
+>=media-libs/suil-0.10.16-r1 gtk2
+# required by media-gfx/blender-3.3.0::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.12.1-r1 brotli
+# required by media-libs/sdl2-ttf-2.20.0::gentoo
+# required by dev-python/pygame-2.1.2-r1::gentoo
+# required by net-p2p/deluge-2.1.1-r1::gentoo[python_single_target_python3_10,gui,sound]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.12.1-r2 harfbuzz
+# required by app-emulation/wine-vanilla-8.1::gentoo[sdl]
+# required by virtual/wine-0-r10::gentoo
+# required by wine (argument)
+>=media-libs/libsdl2-2.26.2 haptic
+# required by app-emulation/wine-vanilla-8.10::gentoo[samba]
+# required by virtual/wine-0-r10::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=net-fs/samba-4.18.3 winbind
+# required by kde-apps/okular-24.05.1::gentoo[pdf]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=app-text/poppler-24.06.0 qt6
+# required by kde-frameworks/kwallet-6.3.0::gentoo
+# required by kde-frameworks/kio-6.3.0::gentoo[kwallet]
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+>=app-crypt/qca-2.3.8 qt6
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+>=kde-frameworks/kwindowsystem-6.3.0 wayland
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+>=sys-auth/polkit-qt-0.200.0 qt6
+# required by kde-frameworks/kirigami-6.3.0::gentoo
+# required by kde-frameworks/ksvg-6.3.0::gentoo
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+>=dev-qt/qt5compat-6.7.1 qml
+# required by kde-plasma/libplasma-6.0.90-r1::gentoo
+# required by kde-plasma/polkit-kde-agent-6.0.90-r1::gentoo
+# required by kde-frameworks/kauth-6.3.0-r1::gentoo[policykit]
+# required by kde-frameworks/kio-6.3.0::gentoo
+# required by kde-frameworks/kcmutils-6.3.0::gentoo
+>=kde-frameworks/kconfig-6.3.0 qml

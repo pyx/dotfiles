@@ -1,0 +1,4 @@
+media-gfx/blender blender-game
+media-gfx/gimp jpeg2k postscript python smp wmf xpm
+media-gfx/gmic -qt5
+sci-libs/fftw threads

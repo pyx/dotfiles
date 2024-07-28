@@ -1,0 +1,5 @@
+app-text/texlive cjk games graphics music png publishers science extra tex4ht xetex linguas_zh l10n_zh
+app-text/texlive-core cjk xetex
+app-text/zathura sqlite 
+app-text/zathura-meta cb djvu postscript
+kde-apps/okular chm djvu ebook mobi
