@@ -489,6 +489,7 @@ if has("autocmd")
     autocmd FileType javascript setlocal sw=2 sts=2 et
     autocmd FileType jinja setlocal sw=2 sts=2 et
     autocmd FileType jinja2 setlocal sw=2 sts=2 et
+    autocmd FileType json setlocal sw=2 sts=2 et
     autocmd FileType lisp setlocal sw=2 sts=2 et
     autocmd FileType lua setlocal sw=2 sts=2 et
     autocmd FileType markdown setlocal sw=4 sts=4 et
