@@ -249,3 +249,9 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/trove-classifiers-2024.7.2 python_targets_python3_11
+# required by net-misc/curl-8.9.1::gentoo[curl_quic_openssl,quic]
+# required by www-client/google-chrome-127.0.6533.72::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-libs/openssl-3.3.1-r1 quic
