@@ -103,3 +103,10 @@
 # required by kde-frameworks/kio-6.3.0::gentoo
 # required by kde-frameworks/kcmutils-6.3.0::gentoo
 >=kde-frameworks/kconfig-6.3.0 qml
+# required by dev-qt/qtwayland-6.7.2-r3::gentoo
+# required by kde-plasma/libplasma-6.1.4::gentoo
+# required by kde-plasma/polkit-kde-agent-6.1.4::gentoo
+# required by kde-frameworks/kauth-6.5.0::gentoo[policykit]
+# required by kde-frameworks/kio-6.5.0::gentoo
+# required by kde-frameworks/kcmutils-6.5.0::gentoo
+>=dev-qt/qtbase-6.7.2-r2 wayland
