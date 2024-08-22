@@ -2,6 +2,7 @@
 app-admin/apache-tools
 app-text/sloccount
 dev-build/ninja
+dev-db/sqlitebrowser
 dev-debug/gdb
 dev-util/ccache
 dev-util/cscope
