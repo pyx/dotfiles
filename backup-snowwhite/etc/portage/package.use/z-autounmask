@@ -175,3 +175,16 @@
 # required by @selected
 # required by @world (argument)
 >=dev-qt/qtbase-6.7.1 wayland
+# required by dev-qt/qtbase-6.7.2-r4::gentoo[gtk,widgets,gui]
+# required by kde-apps/libkcddb-24.08.0::gentoo
+# required by kde-apps/k3b-24.08.0::gentoo
+# required by @file
+# required by @selected
+# required by @world (argument)
+>=x11-libs/gtk+-3.24.42-r1 wayland
+# required by x11-libs/gtk+-3.24.42-r1::gentoo[wayland]
+# required by www-client/firefox-bin-129.0.2::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=media-libs/mesa-24.2.0 wayland
