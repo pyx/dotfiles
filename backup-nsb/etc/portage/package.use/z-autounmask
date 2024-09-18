@@ -270,3 +270,15 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/mesa-24.2.0 wayland
+# required by dev-python/setuptools-75.0.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-24.2.2::gentoo
+# required by media-libs/gst-plugins-base-1.22.11-r1::gentoo[opengl,gles2]
+# required by media-plugins/gst-plugins-cdparanoia-1.22.11::gentoo
+# required by media-plugins/gst-plugins-meta-1.20.6::gentoo[cdda]
+# required by app-emulation/wine-vanilla-9.17::gentoo[gstreamer]
+# required by virtual/wine-0-r10::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-collections-5.1.0 python_targets_python3_11
