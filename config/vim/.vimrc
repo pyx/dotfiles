@@ -18,7 +18,7 @@ set title
 set wildmenu
 set wildmode=list:longest,list:full
 " ignore files inside vcs dirs
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.venv/*,*/venv/*
 " ignore object code files
 set wildignore+=*.o,*.obj,*.a,*.so
 " ignore python cache files
