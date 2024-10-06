@@ -188,3 +188,9 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/mesa-24.2.0 wayland
+# required by media-sound/drumstick-2.9.1::gentoo
+# required by media-sound/kmetronome-1.3.0::gentoo
+# required by @audio
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qttools-6.7.3 designer
