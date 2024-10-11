@@ -1,0 +1,23 @@
+# System Tools
+app-forensics/chkrootkit
+app-admin/eclean-kernel
+app-admin/logrotate
+app-admin/sysklogd
+net-misc/dhcpcd
+# Canon TS5020 printer
+net-print/cnijfilter2
+net-print/cndrvcups-lb
+net-print/cups-filters
+sys-apps/bubblewrap
+sys-boot/grub
+sys-kernel/linux-firmware
+sys-fs/dosfstools
+sys-fs/mtools
+sys-fs/mtpfs
+sys-fs/ntfs3g
+sys-fs/simple-mtpfs
+sys-kernel/gentoo-kernel-bin
+sys-process/acct
+sys-process/htop
+sys-process/lsof
+virtual/cron

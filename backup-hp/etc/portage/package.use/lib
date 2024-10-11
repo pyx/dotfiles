@@ -1,0 +1,3 @@
+media-libs/libpng apng
+sys-libs/pam -vim-syntax
+sys-libs/zlib minizip

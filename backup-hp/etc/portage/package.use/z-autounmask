@@ -1,0 +1,27 @@
+# required by media-sound/ardour-8.8::gentoo
+# required by @audio
+# required by @selected
+# required by @world (argument)
+>=sci-libs/fftw-3.3.10 threads
+# required by media-sound/ardour-8.8::gentoo
+# required by @audio
+# required by @selected
+# required by @world (argument)
+>=media-libs/suil-0.10.20 gtk2
+# required by net-print/cndrvcups-lb-3.70::gentoo
+# required by @sys
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.12.8 abi_x86_32
+# required by x11-misc/urxvt-perls-2.3-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-terms/rxvt-unicode-9.31-r3 perl
+# required by xfce-base/xfce4-panel-4.18.6::gentoo[dbusmenu]
+# required by xfce-base/xfce4-power-manager-4.18.4::gentoo[panel-plugin]
+# required by xfce-base/xfce4-meta-4.18-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3

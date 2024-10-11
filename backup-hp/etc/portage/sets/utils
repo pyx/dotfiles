@@ -1,0 +1,12 @@
+# Development - Tools
+app-admin/apache-tools
+app-text/sloccount
+dev-db/sqlitebrowser
+dev-debug/gdb
+dev-util/ccache
+dev-util/cscope
+dev-util/ctags
+dev-util/meld
+dev-util/source-highlight
+dev-debug/strace
+dev-debug/valgrind
