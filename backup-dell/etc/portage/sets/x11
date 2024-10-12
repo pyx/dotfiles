@@ -9,9 +9,9 @@ x11-misc/dunst
 x11-misc/lightdm
 x11-misc/i3lock
 x11-misc/i3status
-x11-misc/picom
 x11-misc/urxvt-perls
 x11-misc/xclip
+x11-misc/xcompmgr
 x11-wm/i3
 xfce-base/tumbler
 xfce-base/xfce4-meta
