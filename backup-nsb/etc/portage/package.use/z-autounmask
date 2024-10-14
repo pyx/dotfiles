@@ -282,3 +282,6 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/jaraco-collections-5.1.0 python_targets_python3_11
+# required by gui-wm/wayfire-0.9.0::gentoo
+# required by gui-wm/wayfire (argument)
+>=gui-libs/wlroots-0.17.4:0 x11-backend

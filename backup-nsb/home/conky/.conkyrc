@@ -64,8 +64,8 @@ ${alignr}${color3}${sysname} ${kernel} ${color}on ${color3}${machine}
   ${alignc}${color2}${time %a %d %b %Y} ${color4}-${color9}${time %j}${color4}- ${color}${time %I:%M} ${color3}${time %p %Z}
   ${color5}CPU 0:${color} ${freq_g 1} GHz ${cpu cpu1}%  ${color1}${cpubar cpu1}
   ${color5}CPU 1:${color} ${freq_g 2} GHz ${cpu cpu2}%  ${color2}${cpubar cpu2}
-  ${color5}CPU 2:${color} ${freq_g 1} GHz ${cpu cpu3}%  ${color3}${cpubar cpu3}
-  ${color5}CPU 3:${color} ${freq_g 2} GHz ${cpu cpu4}%  ${color4}${cpubar cpu4}
+  ${color5}CPU 2:${color} ${freq_g 3} GHz ${cpu cpu3}%  ${color3}${cpubar cpu3}
+  ${color5}CPU 3:${color} ${freq_g 4} GHz ${cpu cpu4}%  ${color4}${cpubar cpu4}
   ${color1}${cpugraph cpu1 25,55 c4c4c4 a3a3a3} ${color2}${cpugraph cpu2 25,55 c4c4c4 a3a3a3} ${color3}${cpugraph cpu3 25,55 c4c4c4 a3a3a3} ${color4}${cpugraph cpu4 25,55 c4c4c4 a3a3a3}
 
   ${color5}Battery: ${color}${battery}
