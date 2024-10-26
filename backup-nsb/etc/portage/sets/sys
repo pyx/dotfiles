@@ -6,6 +6,7 @@ app-admin/sysklogd
 net-misc/dhcpcd
 net-print/cndrvcups-lb
 net-print/cups-filters
+net-misc/chrony
 sys-apps/bubblewrap
 sys-boot/grub
 sys-kernel/linux-firmware
