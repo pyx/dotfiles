@@ -13,5 +13,6 @@ dev-lisp/clisp
 dev-lisp/sbcl
 dev-scheme/chicken
 dev-scheme/racket
-sys-devel/clang
+# move sys-devel/clang llvm-core/clang
+llvm-core/clang
 virtual/commonlisp
