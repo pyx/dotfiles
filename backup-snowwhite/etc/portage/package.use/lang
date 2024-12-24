@@ -9,8 +9,10 @@ dev-lang/yasm python
 dev-lisp/sbcl ldb
 dev-scheme/chicken emacs
 dev-scheme/racket backtrace futures jit places plot threads
-sys-devel/clang python
-sys-devel/llvm clang ocaml python
+# move sys-devel/clang llvm-core/clang
+llvm-core/clang python
+# move sys-devel/llvm llvm-core/llvm
+llvm-core/llvm clang ocaml python
 sys-devel/gcc go multislot
 virtual/pypy sqlite
 virtual/pypy3 sqlite
