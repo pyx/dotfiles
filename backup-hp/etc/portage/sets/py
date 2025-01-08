@@ -1,2 +1,4 @@
 # Development - Python Specific
 dev-python/pdm
+dev-python/poetry
+dev-python/typing-extensions
