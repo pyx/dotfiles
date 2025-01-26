@@ -3,6 +3,7 @@ app-admin/eclean-kernel
 app-admin/logrotate
 app-admin/sysklogd
 net-misc/dhcpcd
+net-misc/chrony
 net-print/cndrvcups-lb
 net-print/cups-filters
 sys-apps/bubblewrap
