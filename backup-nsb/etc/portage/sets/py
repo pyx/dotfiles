@@ -2,6 +2,7 @@
 dev-python/bottle
 dev-python/flask
 dev-python/pdm
+dev-python/poetry
 dev-python/sphinx
 dev-python/tox
 dev-python/virtualenv
