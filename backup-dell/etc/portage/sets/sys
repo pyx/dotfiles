@@ -4,6 +4,7 @@ app-admin/eclean-kernel
 app-admin/logrotate
 app-admin/sysklogd
 net-misc/dhcpcd
+net-misc/chrony
 # Canon TS5020 printer
 net-print/cnijfilter2
 net-print/cndrvcups-lb
