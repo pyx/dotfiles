@@ -3,6 +3,7 @@ app-forensics/chkrootkit
 app-admin/logrotate
 app-admin/syslog-ng
 net-misc/dhcpcd
+net-misc/chrony
 net-print/cndrvcups-lb
 net-print/cups-filters
 sys-apps/bubblewrap
