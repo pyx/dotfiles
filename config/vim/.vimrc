@@ -298,6 +298,7 @@ endif
 " dw_purple      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " dw_red         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " dw_yellow      | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
+" fencai         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " fruity         | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " fu             | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
 " gummybears     | dark       | ✓     | ✓    | ✓   | ✓          | ✓      | ✓       | ✓    | ✓
@@ -342,6 +343,10 @@ endif
 " https://github.com/chriskempson/base16-vim
 " C git clone https://github.com/chriskempson/base16-vim.git
 "
+" fencai:
+" https://github.com/pyx/fencai.vim
+" C git clone https://github.com/pyx/fencai.vim.git
+"
 " hemisu:
 " only works in gVim
 "
@@ -365,7 +370,7 @@ endif
 
 if has("gui_running")
   set background=dark
-  colorscheme badwolf
+  colorscheme fencai
 else
   set t_Co=256
   set background=dark
