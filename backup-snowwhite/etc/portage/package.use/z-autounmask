@@ -194,3 +194,8 @@
 # required by @selected
 # required by @world (argument)
 >=dev-qt/qttools-6.7.3 designer
+# required by media-gfx/blender-4.3.2-r1::gentoo[ffmpeg]
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-video/ffmpeg-7.1.1 lame
