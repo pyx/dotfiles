@@ -285,3 +285,8 @@
 # required by gui-wm/wayfire-0.9.0::gentoo
 # required by gui-wm/wayfire (argument)
 >=gui-libs/wlroots-0.17.4:0 x11-backend
+# required by media-gfx/blender-4.3.2-r1::gentoo[ffmpeg]
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-video/ffmpeg-7.1.1 lame
