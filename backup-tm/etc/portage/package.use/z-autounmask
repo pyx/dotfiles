@@ -63,3 +63,17 @@
 # required by dev-libs/libxml2-2.12.6::gentoo[lzma]
 # required by libxml2 (argument)
 >=app-arch/xz-utils-5.4.2 abi_x86_32
+# required by media-libs/gegl-0.4.56::gentoo
+# required by media-gfx/gimp-2.10.38-r1::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-libs/babl-0.1.112 introspection
+# 
+>=media-libs/gegl-0.4.56 introspection
+# required by xfce-base/libxfce4ui-4.20.1::gentoo
+# required by x11-terms/xfce4-terminal-1.1.5::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/gobject-introspection-1.84.0 doctool
