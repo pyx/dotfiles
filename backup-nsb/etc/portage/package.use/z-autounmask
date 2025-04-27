@@ -303,3 +303,13 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/gobject-introspection-1.82.0-r2 doctool
+# required by media-gfx/blender-4.4.1::gentoo[bullet]
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=sci-physics/bullet-3.21 double-precision
+# required by media-gfx/blender-4.4.1::gentoo[opensubdiv]
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-libs/opensubdiv-3.6.0-r2 tbb
