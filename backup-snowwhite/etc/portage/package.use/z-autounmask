@@ -224,3 +224,121 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/opensubdiv-3.6.0-r2 tbb
+# required by dev-python/hatchling-1.27.0::gentoo[-test]
+# required by dev-python/hatch-vcs-0.4.0::gentoo
+# required by dev-python/urllib3-2.4.0::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/trove-classifiers-2025.5.1.12 python_targets_python3_12
+# required by dev-python/imagesize-1.4.1::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/setuptools-80.2.0 python_targets_python3_12
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/charset-normalizer-3.4.2 python_targets_python3_12
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-collections-5.1.0 python_targets_python3_12
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-functools-4.1.0 python_targets_python3_12
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-text-4.0.0 python_targets_python3_12
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/more-itertools-10.7.0 python_targets_python3_12
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/packaging-25.0 python_targets_python3_12
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/platformdirs-4.3.7 python_targets_python3_12
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+=dev-python/wheel-0.45.1 python_targets_python3_12
+# required by dev-python/hatch-vcs-0.4.0::gentoo
+# required by dev-python/urllib3-2.4.0::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/setuptools-scm-8.3.1 python_targets_python3_12
+# required by dev-python/charset-normalizer-3.4.2::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/id-1.5.0::gentoo
+# required by dev-python/pdm-2.24.1::gentoo[-test]
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/gpep517-19 python_targets_python3_12
+# required by dev-python/wheel-0.45.1::gentoo
+# required by dev-python/pillow-11.2.1::gentoo
+# required by dev-python/qrcode-8.2::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/flit-core-3.12.0 python_targets_python3_12
+# required by dev-python/jaraco-text-4.0.0::gentoo
+# required by dev-python/jaraco-collections-5.1.0::gentoo
+# required by dev-python/setuptools-80.2.0::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-context-6.0.1-r1 python_targets_python3_12
+# required by dev-python/gpep517-19::gentoo
+# required by dev-python/pyyaml-6.0.2::gentoo
+# required by media-libs/mesa-25.0.5::gentoo
+# required by www-client/google-chrome-136.0.7103.59::gentoo
+# required by @www
+# required by @selected
+# required by @world (argument)
+>=dev-python/installer-0.7.0 python_targets_python3_12
