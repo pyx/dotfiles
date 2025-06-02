@@ -2,6 +2,5 @@
 app-vim/colorschemes
 app-vim/extra-syntax
 app-vim/nginx-syntax
-app-vim/rust-vim
 app-vim/vim-spell-en
 app-vim/vimpython

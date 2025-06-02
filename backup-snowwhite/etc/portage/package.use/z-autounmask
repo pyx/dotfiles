@@ -342,3 +342,108 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/installer-0.7.0 python_targets_python3_12
+# required by dev-python/sphinxcontrib-htmlhelp-2.1.0-r1::gentoo
+>=dev-python/sphinx-8.2.3 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/alabaster-1.0.0 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/babel-2.17.0 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/docutils-0.21.2 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/imagesize-1.4.1 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/jinja2-3.1.6 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/pygments-2.19.1 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/requests-2.32.3 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/roman-numerals-py-3.1.0 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/snowballstemmer-3.0.1 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-devhelp-2.0.0-r1::gentoo
+>=dev-python/sphinxcontrib-applehelp-2.0.0-r1 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/sphinxcontrib-devhelp-2.0.0-r1 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/sphinxcontrib-htmlhelp-2.1.0-r1 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/sphinxcontrib-jsmath-1.0.1-r4 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/sphinxcontrib-qthelp-2.0.0-r1 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/sphinxcontrib-serializinghtml-2.0.0-r1 python_targets_python3_12
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/certifi-3024.7.22 python_targets_python3_12
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/idna-3.10 python_targets_python3_12
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/urllib3-2.4.0 python_targets_python3_12
+# required by dev-python/urllib3-2.4.0::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/pysocks-1.7.1-r2 python_targets_python3_12
+# required by dev-python/urllib3-2.4.0::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/hatch-vcs-0.5.0 python_targets_python3_12
+# required by dev-python/urllib3-2.4.0::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/hatchling-1.27.0 python_targets_python3_12
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/pygments-2.19.1::gentoo
+# required by dev-python/docutils-0.21.2::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/editables-0.5 python_targets_python3_12
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/pygments-2.19.1::gentoo
+# required by dev-python/docutils-0.21.2::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/pathspec-0.12.1 python_targets_python3_12
+# required by dev-python/hatchling-1.27.0::gentoo
+# required by dev-python/pygments-2.19.1::gentoo
+# required by dev-python/docutils-0.21.2::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/pluggy-1.6.0 python_targets_python3_12
+# required by dev-python/jinja2-3.1.6::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/markupsafe-3.0.2 python_targets_python3_12
+# required by dev-python/docutils-0.21.2::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/pillow-11.2.1 python_targets_python3_12
+# required by dev-python/pillow-11.2.1::gentoo
+# required by dev-python/docutils-0.21.2::gentoo
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-applehelp-2.0.0-r1::gentoo
+>=dev-python/olefile-0.47 python_targets_python3_12

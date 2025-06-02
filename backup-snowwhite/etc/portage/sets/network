@@ -3,8 +3,6 @@ net-analyzer/mtr
 net-analyzer/netcat
 net-analyzer/nmap
 net-analyzer/tcpdump
-net-analyzer/wireshark
 net-misc/connman-gtk
 net-misc/whois
-net-misc/yt-dlp
 net-wireless/broadcom-sta
