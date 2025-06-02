@@ -313,3 +313,11 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/opensubdiv-3.6.0-r2 tbb
+# required by dev-python/certifi-3024.7.22::gentoo
+# required by dev-python/requests-2.32.3::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/poetry-2.1.3::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/setuptools-80.8.0 python_targets_python3_12
