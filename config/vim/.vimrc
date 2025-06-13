@@ -246,6 +246,11 @@ let g:tagbar_type_hy = {
 " https://github.com/michaeljsmith/vim-indent-object/
 " P git clone https://github.com/michaeljsmith/vim-indent-object.git
 
+" vim-sexp -------------------------------------------- {{{2
+" turn on vim-sexp for Hy
+let g:sexp_filetypes = exists('g:sexp_filetypes') ?
+      \ g:sexp_filetypes . ',hy' : 'clojure,scheme,lisp,timl,hy'
+
 " Fonts ----------------------------------------------- {{{1
 if has("gui_running")
   " Envy Code R
