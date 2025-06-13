@@ -152,7 +152,7 @@ let g:netrw_liststyle = 3
 " http://www.vim.org/scripts/script.php?script_id=3998
 " https://bitbucket.org/kovisoft/paredit
 " https://github.com/kovisoft/paredit
-" P git clone https://github.com/kovisoft/paredit
+" git clone https://github.com/kovisoft/paredit
 
 " Rainbow Parentheses Improved ------------------------ {{{2
 " https://github.com/luochen1990/rainbow
@@ -247,9 +247,17 @@ let g:tagbar_type_hy = {
 " P git clone https://github.com/michaeljsmith/vim-indent-object.git
 
 " vim-sexp -------------------------------------------- {{{2
+" S-expressions editing
+" https://github.com/guns/vim-sexp
+" P git clone https://github.com/guns/vim-sexp.git
 " turn on vim-sexp for Hy
 let g:sexp_filetypes = exists('g:sexp_filetypes') ?
       \ g:sexp_filetypes . ',hy' : 'clojure,scheme,lisp,timl,hy'
+
+" vim-sexp-mappings-for-regular-people ---------------- {{{1
+" Helpful mappings on top of vim-sexp
+" https://github.com/tpope/vim-sexp-mappings-for-regular-people
+" P git clone https://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 
 " Fonts ----------------------------------------------- {{{1
 if has("gui_running")
