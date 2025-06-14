@@ -321,3 +321,17 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/setuptools-80.8.0 python_targets_python3_12
+# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
+# required by dev-lang/ghc-9.2.8::gentoo[doc]
+# required by @lang
+# required by @selected
+# required by @world (argument)
+>=dev-python/sphinx-8.2.3 python_targets_python3_12
+# required by dev-python/sphinx-8.2.3::gentoo
+# required by dev-python/sphinxcontrib-jquery-4.1::gentoo
+# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
+# required by dev-lang/ghc-9.2.8::gentoo[doc]
+# required by @lang
+# required by @selected
+# required by @world (argument)
+>=dev-python/requests-2.32.4 python_targets_python3_12
