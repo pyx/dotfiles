@@ -254,7 +254,7 @@ let g:tagbar_type_hy = {
 let g:sexp_filetypes = exists('g:sexp_filetypes') ?
       \ g:sexp_filetypes . ',hy' : 'clojure,scheme,lisp,timl,hy'
 
-" vim-sexp-mappings-for-regular-people ---------------- {{{1
+" vim-sexp-mappings-for-regular-people ---------------- {{{2
 " Helpful mappings on top of vim-sexp
 " https://github.com/tpope/vim-sexp-mappings-for-regular-people
 " P git clone https://github.com/tpope/vim-sexp-mappings-for-regular-people.git
