@@ -439,3 +439,31 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/markupsafe-3.0.3 python_targets_python3_12
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/id-1.5.0::gentoo
+# required by dev-python/pdm-2.26.0::gentoo[-test]
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/idna-3.11 python_targets_python3_12
+# required by dev-python/pillow-12.0.0::gentoo
+# required by net-p2p/deluge-2.2.0::gentoo[python_single_target_python3_13]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/pybind11-3.0.1 python_targets_python3_12
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.0.0::gentoo
+# required by net-p2p/deluge-2.2.0::gentoo[python_single_target_python3_13]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/scikit-build-core-0.11.6 python_targets_python3_12
+# required by dev-python/scikit-build-core-0.11.6::gentoo
+# required by dev-python/pybind11-3.0.1::gentoo
+# required by dev-python/pillow-12.0.0::gentoo
+# required by net-p2p/deluge-2.2.0::gentoo[python_single_target_python3_13]
+# required by @gui
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyproject-metadata-0.9.1 python_targets_python3_12
