@@ -8,6 +8,7 @@ net-misc/dhcpcd
 net-print/cnijfilter2
 net-print/cndrvcups-lb
 net-print/cups-filters
+net-print/hplip
 sys-apps/bubblewrap
 sys-boot/grub
 sys-kernel/linux-firmware
