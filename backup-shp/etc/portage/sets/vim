@@ -1,0 +1,6 @@
+# Vim Specific
+app-vim/colorschemes
+app-vim/extra-syntax
+app-vim/nginx-syntax
+app-vim/vim-spell-en
+app-vim/vimpython

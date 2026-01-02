@@ -1,0 +1,28 @@
+# required by media-libs/gegl-0.4.66::gentoo
+# required by media-gfx/gimp-3.0.6::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-libs/babl-0.1.118 introspection
+# required by media-gfx/gimp-3.0.6::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-libs/gegl-0.4.66 introspection
+# required by xfce-base/xfce4-panel-4.20.6::gentoo[dbusmenu]
+# required by xfce-base/xfce4-power-manager-4.20.0::gentoo
+# required by xfce-base/xfce4-meta-4.20::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libdbusmenu-16.04.0-r4 gtk3
+# required by x11-misc/urxvt-perls-2.3-r1::gentoo
+# required by @x11
+# required by @selected
+# required by @world (argument)
+>=x11-terms/rxvt-unicode-9.31-r4 perl
+# required by app-doc/gimp-help-3.0.0::gentoo
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.15.1 python_targets_python3_14 python

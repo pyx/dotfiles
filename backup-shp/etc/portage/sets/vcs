@@ -1,0 +1,5 @@
+# Development - Version Control Systems
+dev-vcs/fossil
+dev-vcs/git
+dev-vcs/hg-git
+dev-vcs/mercurial

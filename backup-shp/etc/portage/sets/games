@@ -1,0 +1,6 @@
+# Games
+games-board/simsu
+games-emulation/dosbox
+games-misc/cowsay
+#games-puzzle/2048-ml
+virtual/wine

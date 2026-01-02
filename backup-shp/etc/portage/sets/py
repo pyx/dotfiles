@@ -1,0 +1,4 @@
+# Development - Python Specific
+dev-python/pdm
+dev-python/qrcode
+dev-python/virtualenv

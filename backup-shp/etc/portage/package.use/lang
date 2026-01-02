@@ -1,0 +1,7 @@
+dev-lang/ocaml latex tk
+dev-lang/python berkdb sqlite tk
+llvm-core/clang python
+llvm-core/llvm clang ocaml python
+sys-devel/gcc go multislot
+virtual/pypy sqlite
+virtual/pypy3 sqlite

@@ -1,0 +1,10 @@
+*/* abi_x86_32
+dev-libs/boost python
+media-libs/harfbuzz icu
+media-libs/libpng apng
+media-libs/libsfml examples
+media-libs/mesa gles1 gles2
+media-libs/phonon gstreamer -vlc
+net-libs/libtorrent-rasterbar python
+sys-libs/pam -vim-syntax
+sys-libs/zlib minizip
