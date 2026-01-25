@@ -197,3 +197,45 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/jaraco-context-6.0.2 python_targets_python3_11 python_targets_python3_12
+# required by dev-python/docutils-0.22.4::gentoo
+# required by gnome-base/librsvg-2.60.0::gentoo
+# required by app-text/djvu-3.5.29::gentoo
+# required by app-text/zathura-djvu-0.2.10::gentoo
+# required by app-text/zathura-meta-0-r1::gentoo[djvu]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=dev-python/pillow-12.1.0 python_targets_python3_12
+# required by dev-python/scikit-build-core-0.11.6::gentoo
+# required by dev-python/rapidfuzz-3.14.3::gentoo
+# required by dev-python/cleo-2.1.0::gentoo
+# required by dev-python/poetry-2.2.1-r1::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/pathspec-1.0.0 python_targets_python3_12
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/markdown-3.10.1::gentoo
+# required by dev-libs/gobject-introspection-1.84.0-r1::gentoo[-test,doctool,python_single_target_python3_13]
+# required by dev-lang/vala-0.56.18::gentoo
+# required by @lang
+# required by @selected
+# required by @world (argument)
+>=dev-python/packaging-26.0 python_targets_python3_12 python_targets_python3_11
+# required by dev-python/setuptools-80.9.0-r1::gentoo
+# required by dev-python/markdown-3.10.1::gentoo
+# required by dev-libs/gobject-introspection-1.84.0-r1::gentoo[-test,doctool,python_single_target_python3_13]
+# required by dev-lang/vala-0.56.18::gentoo
+# required by @lang
+# required by @selected
+# required by @world (argument)
+>=dev-python/wheel-0.46.2 python_targets_python3_11 python_targets_python3_12
+# required by dev-python/mypy-1.19.1::gentoo
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_14,-python_targets_python3_11,python_targets_python3_13,native-extensions,python_targets_python3_12]
+# required by dev-python/requests-2.32.5::gentoo
+# required by dev-python/sphinx-9.1.0::gentoo
+# required by dev-lang/ghc-9.2.8::gentoo[doc]
+# required by @lang
+# required by @selected
+# required by @world (argument)
+>=dev-python/setuptools-80.10.1 python_targets_python3_11 python_targets_python3_12
