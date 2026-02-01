@@ -26,3 +26,9 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libxml2-2.15.1 python_targets_python3_14 python
+# required by media-sound/drumstick-2.11.0::gentoo
+# required by media-sound/kmetronome-1.4.1::gentoo
+# required by @audio
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qttools-6.10.2 designer
