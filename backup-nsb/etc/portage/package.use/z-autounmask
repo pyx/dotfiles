@@ -239,3 +239,27 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/setuptools-80.10.1 python_targets_python3_11 python_targets_python3_12
+# required by app-doc/gimp-help-3.0.2::gentoo
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.15.1 python python_targets_python3_14
+# required by dev-python/sphinx-9.1.0::gentoo
+# required by dev-lang/ghc-9.2.8::gentoo[doc]
+# required by @lang
+# required by @selected
+# required by @world (argument)
+>=dev-python/babel-2.18.0 python_targets_python3_12
+# required by dev-python/setuptools-81.0.0::gentoo
+# required by dev-python/cachetools-7.0.1::gentoo
+# required by dev-python/tox-4.35.0::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/jaraco-text-4.2.0 python_targets_python3_12 python_targets_python3_11
+# required by dev-util/premake-5.0.0_beta7::gentoo[lua_single_target_lua5-3]
+# required by games-strategy/0ad-0.28.0::gentoo
+# required by @games
+# required by @selected
+# required by @world (argument)
+>=dev-lua/luasocket-3.1.0 lua_targets_lua5-3
