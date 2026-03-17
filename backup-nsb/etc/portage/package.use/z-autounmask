@@ -263,3 +263,20 @@
 # required by @selected
 # required by @world (argument)
 >=dev-lua/luasocket-3.1.0 lua_targets_lua5-3
+# required by dev-python/sphinx-9.1.0::gentoo
+# required by dev-lang/ghc-9.2.8::gentoo[doc]
+# required by @lang
+# required by @selected
+# required by @world (argument)
+>=dev-python/requests-2.32.5-r1 python_targets_python3_12
+# required by dev-python/sphinx-9.1.0::gentoo
+# required by app-shells/fish-4.5.0-r2::gentoo[doc]
+# required by @shell
+# required by @selected
+# required by @world (argument)
+>=dev-python/imagesize-2.0.0 python_targets_python3_12
+# required by media-gfx/blender-5.0.0::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.14.2 brotli
