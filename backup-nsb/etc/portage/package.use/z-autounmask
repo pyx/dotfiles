@@ -1,178 +1,6 @@
-# required by media-gfx/blender-4.4.3::gentoo[ffmpeg]
-# required by @gfx
-# required by @selected
-# required by @world (argument)
-=media-video/ffmpeg-7.1.3 opus theora vpx lame
-# required by dev-python/scikit-build-core-0.11.6::gentoo
-# required by dev-python/pybind11-3.0.1::gentoo
-# required by dev-python/pillow-12.0.0::gentoo
-# required by dev-python/docutils-0.22.3::gentoo
-# required by dev-libs/glib-2.84.4::gentoo
-# required by net-libs/libsoup-3.6.5-r1::gentoo
-# required by gnome-base/gvfs-1.56.1-r2::gentoo[http]
-# required by xfce-base/thunar-4.20.6::gentoo[udisks]
-# required by xfce-base/thunar-volman-4.20.0::gentoo
-# required by xfce-base/xfce4-meta-4.20::gentoo
-# required by @x11
-# required by @selected
-# required by @world (argument)
->=dev-python/pyproject-metadata-0.10.0 python_targets_python3_12
-# required by dev-python/requests-2.32.5::gentoo
-# required by media-gfx/blender-5.0.0::gentoo[python_single_target_python3_13]
-# required by @gfx
-# required by @selected
-# required by @world (argument)
->=dev-python/charset-normalizer-3.4.4-r1 python_targets_python3_12
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[native-extensions,-python_targets_python3_11,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/mypy-1.19.0 python_targets_python3_12
-# required by dev-python/mypy-1.19.0::gentoo[native-extensions,-test]
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[native-extensions,-python_targets_python3_11,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/librt-0.6.3 python_targets_python3_12
-# required by dev-python/mypy-1.19.0::gentoo[native-extensions,-test]
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[native-extensions,-python_targets_python3_11,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/mypy-extensions-1.1.0 python_targets_python3_12
-# required by dev-python/mypy-1.19.0::gentoo[native-extensions,-test]
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[native-extensions,-python_targets_python3_11,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/psutil-7.1.3 python_targets_python3_12
-# required by dev-python/mypy-1.19.0::gentoo[native-extensions,-test]
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[native-extensions,-python_targets_python3_11,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/typing-extensions-4.15.0 python_targets_python3_12
-# required by dev-python/mypy-1.19.0::gentoo[native-extensions]
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[native-extensions,-python_targets_python3_11,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/types-psutil-7.1.3.20251130 python_targets_python3_12
-# required by dev-python/mypy-1.19.0::gentoo[native-extensions]
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[native-extensions,-python_targets_python3_11,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/types-setuptools-80.9.0.20250822 python_targets_python3_12
-# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/sphinx-9.0.0 python_targets_python3_12
-# required by dev-python/setuptools-80.9.0-r1::gentoo
-# required by dev-python/mypy-1.19.0::gentoo
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,native-extensions,-python_targets_python3_14,python_targets_python3_12,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/sphinx-9.0.4::gentoo
-# required by dev-python/sphinxcontrib-jquery-4.1::gentoo
-# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/trove-classifiers-2025.12.1.14 python_targets_python3_11 python_targets_python3_12
-# required by dev-python/setuptools-80.9.0-r1::gentoo
-# required by dev-python/librt-0.7.3::gentoo
-# required by dev-python/mypy-1.19.0::gentoo
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_13,python_targets_python3_12,native-extensions,-python_targets_python3_14]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/sphinx-9.0.4::gentoo
-# required by dev-python/sphinxcontrib-jquery-4.1::gentoo
-# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/platformdirs-4.5.1 python_targets_python3_11 python_targets_python3_12
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/sphinx-9.0.4::gentoo
-# required by dev-python/sphinxcontrib-jquery-4.1::gentoo
-# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/urllib3-2.6.1 python_targets_python3_12
-# required by dev-python/pygments-2.19.2::gentoo
-# required by dev-tex/minted-3.4.0::gentoo
-# required by dev-texlive/texlive-latexextra-2024_p72895-r1::gentoo
-# required by dev-tex/biblatex-3.20-r1::gentoo
-# required by dev-tex/biber-2.20-r3::gentoo
->=dev-python/hatchling-1.28.0 python_targets_python3_12
-# required by dev-python/hatchling-1.28.0::gentoo
-# required by dev-python/urllib3-2.6.2::gentoo
-# required by dev-python/dulwich-0.24.10::gentoo
-# required by dev-vcs/hg-git-1.2.0-r1::gentoo
-# required by @vcs
-# required by @selected
-# required by @world (argument)
->=dev-python/editables-0.5 python_targets_python3_12
-# required by dev-python/hatchling-1.28.0::gentoo
-# required by dev-python/urllib3-2.6.2::gentoo
-# required by dev-python/dulwich-0.24.10::gentoo
-# required by dev-vcs/hg-git-1.2.0-r1::gentoo
-# required by @vcs
-# required by @selected
-# required by @world (argument)
->=dev-python/pluggy-1.6.0 python_targets_python3_12
 # required by media-gfx/blender-5.0.0::gentoo[ffmpeg]
 # required by @__auto_slot_operator_replace_installed__ (argument)
 >=media-video/ffmpeg-8.0.1 theora lame opus vpx
-# required by dev-python/sphinx-9.0.4-r1::gentoo
-# required by dev-python/sphinxcontrib-jquery-4.1::gentoo
-# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/docutils-0.22.4 python_targets_python3_12
-# required by dev-python/sphinx-9.0.4-r1::gentoo
-# required by dev-python/sphinxcontrib-jquery-4.1::gentoo
-# required by dev-python/sphinx-rtd-theme-3.0.2::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/roman-numerals-4.1.0 python_targets_python3_12
-# required by dev-python/setuptools-80.9.0-r1::gentoo
-# required by dev-python/distlib-0.4.0::gentoo
-# required by dev-python/virtualenv-20.35.4-r1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/jaraco-functools-4.4.0 python_targets_python3_12 python_targets_python3_11
 # required by media-libs/gegl-0.4.66::gentoo
 # required by media-gfx/gimp-3.0.6::gentoo
 # required by @gfx
@@ -184,99 +12,24 @@
 # required by @selected
 # required by @world (argument)
 >=media-libs/gegl-0.4.66 introspection
-# required by dev-python/jaraco-text-4.0.0::gentoo
-# required by dev-python/jaraco-collections-5.2.1::gentoo
-# required by dev-python/setuptools-80.9.0-r1::gentoo
-# required by dev-python/librt-0.7.5::gentoo
-# required by dev-python/mypy-1.19.1::gentoo
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_12,-python_targets_python3_14,native-extensions,python_targets_python3_13]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/cachecontrol-0.14.3::gentoo
-# required by dev-python/poetry-2.2.1-r1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/jaraco-context-6.0.2 python_targets_python3_11 python_targets_python3_12
-# required by dev-python/docutils-0.22.4::gentoo
-# required by gnome-base/librsvg-2.60.0::gentoo
-# required by app-text/djvu-3.5.29::gentoo
-# required by app-text/zathura-djvu-0.2.10::gentoo
-# required by app-text/zathura-meta-0-r1::gentoo[djvu]
-# required by @doc
-# required by @selected
-# required by @world (argument)
->=dev-python/pillow-12.1.0 python_targets_python3_12
-# required by dev-python/scikit-build-core-0.11.6::gentoo
-# required by dev-python/rapidfuzz-3.14.3::gentoo
-# required by dev-python/cleo-2.1.0::gentoo
-# required by dev-python/poetry-2.2.1-r1::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/pathspec-1.0.0 python_targets_python3_12
-# required by dev-python/setuptools-80.9.0-r1::gentoo
-# required by dev-python/markdown-3.10.1::gentoo
-# required by dev-libs/gobject-introspection-1.84.0-r1::gentoo[-test,doctool,python_single_target_python3_13]
-# required by dev-lang/vala-0.56.18::gentoo
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/packaging-26.0 python_targets_python3_12 python_targets_python3_11
-# required by dev-python/setuptools-80.9.0-r1::gentoo
-# required by dev-python/markdown-3.10.1::gentoo
-# required by dev-libs/gobject-introspection-1.84.0-r1::gentoo[-test,doctool,python_single_target_python3_13]
-# required by dev-lang/vala-0.56.18::gentoo
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/wheel-0.46.2 python_targets_python3_11 python_targets_python3_12
-# required by dev-python/mypy-1.19.1::gentoo
-# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_14,-python_targets_python3_11,python_targets_python3_13,native-extensions,python_targets_python3_12]
-# required by dev-python/requests-2.32.5::gentoo
-# required by dev-python/sphinx-9.1.0::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/setuptools-80.10.1 python_targets_python3_11 python_targets_python3_12
 # required by app-doc/gimp-help-3.0.2::gentoo
 # required by @doc
 # required by @selected
 # required by @world (argument)
 >=dev-libs/libxml2-2.15.1 python python_targets_python3_14
-# required by dev-python/sphinx-9.1.0::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/babel-2.18.0 python_targets_python3_12
-# required by dev-python/setuptools-81.0.0::gentoo
-# required by dev-python/cachetools-7.0.1::gentoo
-# required by dev-python/tox-4.35.0::gentoo
-# required by @py
-# required by @selected
-# required by @world (argument)
->=dev-python/jaraco-text-4.2.0 python_targets_python3_12 python_targets_python3_11
 # required by dev-util/premake-5.0.0_beta7::gentoo[lua_single_target_lua5-3]
 # required by games-strategy/0ad-0.28.0::gentoo
 # required by @games
 # required by @selected
 # required by @world (argument)
 >=dev-lua/luasocket-3.1.0 lua_targets_lua5-3
-# required by dev-python/sphinx-9.1.0::gentoo
-# required by dev-lang/ghc-9.2.8::gentoo[doc]
-# required by @lang
-# required by @selected
-# required by @world (argument)
->=dev-python/requests-2.32.5-r1 python_targets_python3_12
-# required by dev-python/sphinx-9.1.0::gentoo
-# required by app-shells/fish-4.5.0-r2::gentoo[doc]
-# required by @shell
-# required by @selected
-# required by @world (argument)
->=dev-python/imagesize-2.0.0 python_targets_python3_12
 # required by media-gfx/blender-5.0.0::gentoo
 # required by @gfx
 # required by @selected
 # required by @world (argument)
 >=media-libs/freetype-2.14.2 brotli
+# required by media-gfx/gimp-3.2.0::gentoo[doc]
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=dev-libs/gobject-introspection-1.84.0-r2 doctool
