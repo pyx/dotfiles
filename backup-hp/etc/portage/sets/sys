@@ -4,9 +4,6 @@ app-admin/eclean-kernel
 app-admin/logrotate
 app-admin/sysklogd
 net-misc/dhcpcd
-# Canon TS5020 printer
-net-print/cnijfilter2
-net-print/cndrvcups-lb
 net-print/cups-filters
 net-print/hplip
 sys-apps/bubblewrap
