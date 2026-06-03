@@ -33,3 +33,37 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/gobject-introspection-1.84.0-r2 doctool
+# required by media-gfx/blender-5.0.0::gentoo
+# required by @gfx
+# required by @selected
+# required by @world (argument)
+>=media-video/ffmpeg-8.1.1 xvid
+# required by dev-python/setuptools-82.0.1::gentoo
+# required by dev-python/dulwich-1.2.4::gentoo
+# required by dev-vcs/hg-git-1.2.0_p20260328::gentoo
+# required by @vcs
+# required by @selected
+# required by @world (argument)
+>=dev-python/more-itertools-11.1.0 python_targets_python3_12 python_targets_python3_11
+# required by dev-python/setuptools-82.0.1::gentoo
+# required by dev-python/dulwich-1.2.4::gentoo
+# required by dev-vcs/hg-git-1.2.0_p20260328::gentoo
+# required by @vcs
+# required by @selected
+# required by @world (argument)
+>=dev-python/trove-classifiers-2026.5.22.10 python_targets_python3_12 python_targets_python3_11
+# required by dev-python/requests-2.34.2::gentoo
+# required by dev-python/requests-toolbelt-1.0.0::gentoo
+# required by dev-python/poetry-2.4.1::gentoo
+# required by @py
+# required by @selected
+# required by @world (argument)
+>=dev-python/idna-3.16 python_targets_python3_12
+# required by dev-python/sphinx-9.1.0::gentoo
+# required by app-text/zathura-0.5.14::gentoo[man]
+# required by app-text/zathura-cb-0.1.11::gentoo
+# required by app-text/zathura-meta-0-r1::gentoo[cb]
+# required by @doc
+# required by @selected
+# required by @world (argument)
+>=dev-python/snowballstemmer-3.1.0 python_targets_python3_12
